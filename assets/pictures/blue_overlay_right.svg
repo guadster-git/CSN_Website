@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1268" height="750" viewBox="0 0 1268 750">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.62" y1="1" x2="0.134" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#edf4f4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rechteck_146" data-name="Rechteck 146" width="1268" height="750" fill="url(#linear-gradient)"/>
+</svg>
