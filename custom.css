@@ -71,6 +71,13 @@
 .navbar_heading{
     letter-spacing:  0.54px;
 }
+.icon:hover{
+    color: #28A5BC;
+}
+.icon:hover .icon_jump{
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
 .navbar_heading::after {
     content: '';
     position: absolute;
@@ -197,9 +204,9 @@
     top: 50%;
     right: 20%;
 }
-.carousel_indicators [data-bs-target] {
+.carousel_indicators{
     width: 16px;
-    height: 16px;
+    height: 45px;
 }
 
 .carousel_indicators .active{
