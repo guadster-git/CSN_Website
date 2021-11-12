@@ -1,11 +1,12 @@
 /* Layout */
 
+.z_front{
+    z-index: 999999;
+}
 .hide{
     display: none;
 }
-.hide_cookie{
-    display: none!important;
-}
+
 .box{
     margin-left: 7%;
     margin-right: 7%;
@@ -59,7 +60,7 @@
 }
 
 .arrow_after:hover{
-    color: #000;
+    color: #104055;
 }
 .arrow_after:hover:after{
     padding-left: 5px;
@@ -394,6 +395,9 @@
 }
 .icons_height{
     height: 25px;
+}
+.icons_height #search{
+    background-image: url("/assets/pictures/search.png");
 }
 
 .box_navbar_top{

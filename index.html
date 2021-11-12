@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font/stylesheet.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 
@@ -50,14 +51,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 
 <!--TOP BAR DONE -->
 
@@ -162,11 +155,11 @@
 
         <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden" data-bs-ride="carousel">
 
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" ></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <div class="carousel-indicators z_front" >
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
 
             <div class="carousel-inner">
@@ -925,6 +918,11 @@
     let checkCookie = document.cookie.indexOf("CookieBy=CSN"); //checking our cookie
     //if cookie is set then hide the cookie box else show it
     checkCookie !== -1 ? overlay.classList.add("hide") : overlay.classList.remove("hide");
+
+</script>
+
+<script>
+    feather.replace()
 </script>
 
 </body>
