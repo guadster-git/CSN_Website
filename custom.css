@@ -243,12 +243,25 @@
     box-shadow: none;
     border-color: #28A5BC50;
 }
+.form-control{
+    border-right: 0;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+
+}
 .search_button{
-    background-color: #ebebeb;
-    border: #ebebeb;
+    background-color: transparent;
+    border: 1px solid #ebebeb;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 0 5px 5px 0;
+}
+.search_button:focus{
+    border-color: #28A5BC50;
+}
+.search_bar:hover .form-control, .search_bar:hover .search_button{
+    border-color: #28A5BC50;
 }
 
  /* Circles */
