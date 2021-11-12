@@ -1,5 +1,9 @@
 /* Layout */
 
+.no_gutter_x{
+    --bs-gutter-x: 0;
+}
+
 .z_front{
     z-index: 999999;
 }
