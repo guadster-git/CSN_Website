@@ -8,8 +8,8 @@
 }
 
 .box{
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 .inner_box{
     margin-left: 14%;
@@ -409,6 +409,7 @@
 
 .box_navbar_top{
     border-radius: 0 0 0 5px;
+    width: 45%;
 }
 /* Buttons */
 
@@ -483,6 +484,7 @@
 .social_media_row:hover .social_media{
     display: none;
 }
+
 
 /* Colors */
 
