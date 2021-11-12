@@ -469,10 +469,22 @@
     border-color: white;
 }
 
+/* Footer */
+
+.top_border{
+    border-top: 1px solid #EBEBEB20;
+}
+.social_media_hover{
+    display: none;
+}
+.social_media_row:hover .social_media_hover{
+    display: block;
+}
+.social_media_row:hover .social_media{
+    display: none;
+}
 
 /* Colors */
-
-
 
 .bg-primary{
     background-color: #28A5BC!important;
