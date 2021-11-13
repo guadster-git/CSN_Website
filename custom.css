@@ -1,4 +1,7 @@
 /* Layout */
+.overflow-x-hidden{
+    overflow-x: hidden;
+}
 .height_banner{
     height: 780px;
 }
@@ -120,6 +123,24 @@
 .navbar_heading:focus::after{
     transform: translate3d(0, 0, 0);
 }
+
+/* List */
+
+
+ul.arrow_list li{
+    content: "asdfsd";
+    list-style-image: url('/assets/pictures/list_icon_blue.svg');
+}
+ul.arrow_list li:before {
+    content: url("/assets/pictures/list_icon_blue.svg");
+    padding-right: 100px;
+}
+ul.arrow_list li:after{
+    content: url('assets/pictures/carousel_icon_prev.svg');
+}
+
+
+
 /* Carousel */
 
 
@@ -405,10 +426,14 @@
 .container_banner{
     width: 641px;
     height: 533px;
-    top: 108px;
     border-radius: 50px 50px 50px 0;
     padding-left: 80px!important;
     padding-top: 60px;
+}
+.banner_container_branding{
+    height: 100%;
+    top: 0;
+    right: 0;
 }
 .icons_height{
     height: 25px;
@@ -520,6 +545,26 @@
 }
 .full:hover{
     border-color: white;
+}
+
+/* Cards */
+
+.card_white{
+    box-shadow: 0 0 20px #00000010;
+    height: 245px;
+    padding-top: 42px;
+    border-radius: 10px;
+    width: 24%;
+}
+.card_image_container{
+    height: 70px;
+    color: #28A5BC;
+}
+.card_text{
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 /* Footer */

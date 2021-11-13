@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.979" height="62.65" viewBox="0 0 85.979 62.65">
+  <g id="Gruppe_250" data-name="Gruppe 250" transform="translate(-157.056 -513.871)">
+    <path id="Pfad_356" data-name="Pfad 356" d="M185.083,546.143v-24.72a27.439,27.439,0,1,0,28.36,27.42h-25.66A2.7,2.7,0,0,1,185.083,546.143Z" transform="translate(0 -1.265)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Pfad_357" data-name="Pfad 357" d="M187.157,548.217V531.344a19.595,19.595,0,1,0,20.512,19.573H189.856A2.7,2.7,0,0,1,187.157,548.217Z" transform="translate(-2.074 -3.339)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Pfad_358" data-name="Pfad 358" d="M189.416,550.482v-8.3a11.044,11.044,0,1,0,11.964,11h-9.265A2.7,2.7,0,0,1,189.416,550.482Z" transform="translate(-4.333 -5.604)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <rect id="Rechteck_167" data-name="Rechteck 167" width="56.452" height="32.207" rx="3.413" transform="translate(185.083 515.371)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="Gruppe_249" data-name="Gruppe 249" transform="translate(192.75 523.525)">
+      <path id="Pfad_359" data-name="Pfad 359" d="M201.786,540.889V525.68h2.1v13.235h7.186v1.973Z" transform="translate(-201.786 -525.68)" fill="#28a5bc" stroke="#28a5bc" stroke-width="1"/>
+      <path id="Pfad_360" data-name="Pfad 360" d="M216.656,540.889V525.68H218.8v15.209Z" transform="translate(-204.894 -525.68)" fill="#28a5bc" stroke="#28a5bc" stroke-width="1"/>
+      <path id="Pfad_361" data-name="Pfad 361" d="M233.539,525.68h2.21l-5.857,15.209h-2.08l-5.727-15.209h2.231l4.592,12.507Z" transform="translate(-206.029 -525.68)" fill="#28a5bc" stroke="#28a5bc" stroke-width="1"/>
+      <path id="Pfad_362" data-name="Pfad 362" d="M242.082,540.889V525.68h9.245v1.951h-7.143v4.678h6.479v1.972h-6.479v4.655h7.143v1.953Z" transform="translate(-210.209 -525.68)" fill="#28a5bc" stroke="#28a5bc" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
