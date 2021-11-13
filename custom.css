@@ -417,7 +417,7 @@
 }
 /* Buttons */
 
-button{
+.button{
     font-size: 16px;
     text-transform: uppercase;
     line-height: 16px;
@@ -428,14 +428,10 @@ button{
     padding-left: 28px;
     padding-right: 28px;
     background-color: transparent;
-
-
-
 }
 
 .button_white{
     color: white;
-    font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     height: 53px;
@@ -448,6 +444,10 @@ button{
     padding-top: 13px;
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
+}
+.blue_button{
+    color: #28A5BC;
+    border-color: #28A5BC;
 }
 .white_button{
     color: white;
@@ -568,6 +568,9 @@ a{
 }
 a:hover{
     color: inherit;
+}
+.font-regular{
+    font-family: "Azo Sans", Helvetica, Arial, serif;
 }
 .font_bold{
     font-family: "Azo Sans", Helvetica, Arial, serif;
