@@ -128,17 +128,11 @@
 
 
 ul.arrow_list li{
-    content: "asdfsd";
     list-style-image: url('/assets/pictures/list_icon_blue.svg');
 }
-ul.arrow_list li:before {
-    content: url("/assets/pictures/list_icon_blue.svg");
-    padding-right: 100px;
+ul.arrow_list{
+    padding-left: 15px;
 }
-ul.arrow_list li:after{
-    content: url('assets/pictures/carousel_icon_prev.svg');
-}
-
 
 
 /* Carousel */
