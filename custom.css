@@ -5,12 +5,16 @@
 }
 
 .z_front{
-    z-index: 999999;
+    z-index: 90;
 }
 .hide{
     display: none;
 }
+.box_gegenüberstellung{
+    margin-left: 140px;
+    margin-right: 140px;
 
+}
 .box{
     margin-left: 140px;
     margin-right: 140px;
