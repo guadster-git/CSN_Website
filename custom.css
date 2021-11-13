@@ -240,7 +240,7 @@
     color: #9B9B94;
 }
 .dropdown_font:hover{
-    color: #2f2f2e;
+    color: #28A5BC;
 }
 
 .active_heading{
@@ -417,6 +417,22 @@
 }
 /* Buttons */
 
+button{
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px;
+    font-weight: bold;
+    height: 53px;
+    border-radius: 10px 0 10px 0;
+    border: 1px solid white;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: transparent;
+
+
+
+}
+
 .button_white{
     color: white;
     font-size: 16px;
@@ -433,12 +449,26 @@
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
 }
+.white_button{
+    color: white;
+}
+.white_button:after{
+    padding-left: 15px;
+    content: url("assets/pictures/arrow_right.svg");
+}
 .button_white:hover:after{
     content: url("assets/pictures/arrow_right_orange.svg");
 }
 .button_white:hover{
     color: #E37517;
     background-color: white;
+}
+.white_button:hover{
+    color: #E37517;
+    background-color: white;
+}
+.white_button:hover:after{
+    content: url("assets/pictures/arrow_right_orange.svg");
 }
 
 .button_blue{
@@ -506,9 +536,7 @@
 }
 
 /* Fonts */
-body{
-    font-family: "Azo Sans" ,Helvetica, Arial, serif;
-}
+
 p{
     font-family: "Azo Sans Lt" ,Helvetica, Arial, serif;
     font-size: 18px;
