@@ -284,14 +284,14 @@
  /* Circles */
 
 .communication_blue_circle_thin{
-    left: -23%;
+    left: -27%;
 }
 .communication_blue_circle_fat{
-    left: -17%;
+    left: -20%;
 }
 .communication_grey{
-    bottom: -30%;
-    right: 7%;
+    top: 45%;
+    right: 2%;
 }
 .communication_orange_circle{
     right: 0;
@@ -408,6 +408,7 @@
     top: 108px;
     border-radius: 50px 50px 50px 0;
     padding-left: 80px!important;
+    padding-top: 60px;
 }
 .icons_height{
     height: 25px;
@@ -535,6 +536,10 @@
 .social_media_row:hover .social_media{
     display: none;
 }
+.footer_list{
+    margin-bottom: 0;
+    line-height: 40px;
+}
 
 
 /* Colors */
@@ -606,6 +611,10 @@ a:hover{
 }
 .f-20{
     font-size: 20px;
+}
+.f-35{
+    font-size: 35px;
+    line-height: 50px;
 }
 .font_navbar{
     font-size: 14px;
