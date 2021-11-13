@@ -1,9 +1,13 @@
 /* Layout */
+
+.margin_card_section{
+    margin-bottom: 160px;
+}
 .overflow-x-hidden{
     overflow-x: hidden;
 }
 .height_banner{
-    height: 780px;
+    height: 750px;
 }
 .no_gutter_x{
     --bs-gutter-x: 0;
@@ -129,6 +133,7 @@
 
 ul.arrow_list li{
     list-style-image: url('/assets/pictures/list_icon_blue.svg');
+    line-height: 40px;
 }
 ul.arrow_list{
     padding-left: 15px;
@@ -655,6 +660,9 @@ a:hover{
     font-size: 35px;
     line-height: 50px;
 }
+.f-18{
+    font-size: 18px;
+}
 .font_navbar{
     font-size: 14px;
 }
@@ -662,3 +670,11 @@ a:hover{
     font-size: 20px;
     line-height: 35px;
 }
+
+/**************     Conferencing ***********/
+#conferenceBanner_1{
+
+    left: 0;
+    right: auto;
+}
+
