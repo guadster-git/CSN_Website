@@ -555,7 +555,7 @@
 /* Fonts */
 
 p{
-    font-family: "Azo Sans Lt" ,Helvetica, Arial, serif;
+    font-family: "Azo Sans Regular" ,Helvetica, Arial, serif;
     font-size: 18px;
     line-height: 30px;
 }
@@ -587,7 +587,7 @@ a:hover{
     color: inherit;
 }
 .font-regular{
-    font-family: "Azo Sans", Helvetica, Arial, serif;
+    font-family: "Azo Sans Regular", Helvetica, Arial, serif;
 }
 .font_bold{
     font-family: "Azo Sans", Helvetica, Arial, serif;
@@ -598,10 +598,14 @@ a:hover{
     font-weight: 500;
 }
 .font_light{
+    font-family: "Azo Sans Lt", Helvetica, Arial, serif;
     font-weight: 300;
 }
 .footer_heading{
     font-size: 25px;
+}
+.f-20{
+    font-size: 20px;
 }
 .font_navbar{
     font-size: 14px;
