@@ -1,5 +1,7 @@
 /* Layout */
-
+.height_banner{
+    height: 780px;
+}
 .no_gutter_x{
     --bs-gutter-x: 0;
 }
@@ -13,7 +15,6 @@
 .box_gegenüberstellung{
     margin-left: 140px;
     margin-right: 140px;
-
 }
 .box{
     margin-left: 140px;
@@ -456,6 +457,18 @@
 .white_button{
     color: white;
 }
+.blue_button:after{
+    padding-left: 15px;
+    content: url("assets/pictures/arrow_right_blue.svg");
+}
+.blue_button:hover:after{
+    content: url("assets/pictures/arrow_right.svg");
+}
+.blue_button:hover{
+    background-color: #E37517;
+    color: white;
+    border-color: #E37517;
+}
 .white_button:after{
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
@@ -584,9 +597,16 @@ a:hover{
     font-family: "Azo Sans Md", Helvetica, Arial, serif;
     font-weight: 500;
 }
+.font_light{
+    font-weight: 300;
+}
 .footer_heading{
     font-size: 25px;
 }
 .font_navbar{
     font-size: 14px;
+}
+.font_all_inclusive{
+    font-size: 20px;
+    line-height: 35px;
 }
