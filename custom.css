@@ -1,5 +1,7 @@
 /* Layout */
-
+.picture_column_width{
+    width: 688px;
+}
 .conference_column_width{
     width: 479px;
 }
