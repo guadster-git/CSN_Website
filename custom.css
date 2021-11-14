@@ -612,7 +612,7 @@ ul.arrow_list{
 /* Fonts */
 
 p{
-    font-family: "Azo Sans Regular" ,Helvetica, Arial, serif;
+    font-family: "Azo Sans" ,Helvetica, Arial, serif;
     font-size: 18px;
     line-height: 30px;
 }
@@ -644,7 +644,7 @@ a:hover{
     color: inherit;
 }
 .font-regular{
-    font-family: "Azo Sans Regular", Helvetica, Arial, serif;
+    font-family: "Azo Sans", Helvetica, Arial, serif;
 }
 .font_bold{
     font-family: "Azo Sans", Helvetica, Arial, serif;
