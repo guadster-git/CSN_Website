@@ -1,4 +1,11 @@
 /* Layout */
+
+.small_banner_height{
+    height: 350px;
+}
+.tiles_height{
+    height: 850px;
+}
 .picture_column_width{
     width: 688px;
 }
@@ -684,5 +691,9 @@ a:hover{
 
     left: 0;
     right: auto;
+}
+#first_tile{
+    background-image: url("assets/pictures/first_tile.png");
+
 }
 
