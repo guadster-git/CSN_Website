@@ -106,7 +106,7 @@
                         <h3 class="my-auto me-5  py-1 navbar_heading position-relative" id="online"><a href="">CSN <span class="font_bold">Online Beratung</span></a></h3>
                         <h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a href="">Warum CSN</a></h3>
                     </div>
-                    <div class="d-flex my-auto align-items-center text-uppercase">
+                    <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
                         <div class="d-flex flex-column align-self-center pe-5 icon">
                             <div class="mx-auto icons_height icon_jump">
                                 <i data-feather="mail"></i>
@@ -125,6 +125,11 @@
                             </div>
                             <p class="mx-auto no_padding_bot font_navbar font_medium">Deutsch</p>
                         </div>
+                    </div>
+
+                    <!-- Mobile Menu Hamburger -->
+                    <div class="align-items-center" id="hamburger">
+                        <button id="hamburger_button"><img src="assets/pictures/hamburger.svg" alt=""></button>
                     </div>
                 </div>
             </div>
@@ -246,14 +251,14 @@
 
 <!-- Navbar Mobile -->
 
-<section>
-    <nav class="container_mobile_nav d-flex flex-row">
-        <div class="grey_sidebar pt-5 d-flex justify-content-center align-items-start">
-            <img src="assets/pictures/menu_close.svg" alt="" class="align-self-center">
+<section id="mobile-menu" class="hide">
+    <nav class="container_mobile_nav d-flex flex-row position-absolute">
+        <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
+            <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start"></button>
         </div>
         <div class="main_navigation_mobile">
             <div class="navigation_inner_box">
-                <div class="d-flex justify-content-between my-3">
+                <div class="d-flex justify-content-between my-4">
                     <div class="d-flex col-auto">
                         <div class="d-flex align-items-center">
                             <i data-feather="globe" class="me-2"></i>
@@ -271,18 +276,25 @@
             </div>
             <div class="mobile_search_container">
                 <div class="navigation_inner_box d-flex w-100 py-4">
-                    <div class="mobile_search_input">
-                        <input type="text" class="mobile_search_bar"/>
+                    <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
+                        <div class="mobile_search_input_container">
+                            <input type="search" placeholder="Suche ..." class="mobile_search_input" id="mobile-search-input"/>
+                        </div>
+                        <div class="mobile_search_icon d-flex justify-content-end pe-3">
+                            <button class="search_button d-flex align-items-center" id="mobile_search_button"><i data-feather="search"></i></button>
+                        </div>
                     </div>
-                    <div class="mobile_search_icon">
-                        <i data-feather="search"></i>
-                    </div>
-
                 </div>
             </div>
+            <div class="navigation_inner_box py-3">
+                <ul class="mobile_nav_items">
+                    <li><a href="" class="font_bold">Startseite</a></li>
+                    <li><a href="">CSN <span class="font_bold">Conferencing</span></a></li>
+                    <li><a href="">CSN <span class="font_bold">Online Beratung</span></a></li>
+                    <li><a href="" class="font_bold">Warum CSN</a></li>
+                </ul>
+            </div>
         </div>
-
-
     </nav>
 </section>
 
@@ -832,6 +844,16 @@
 </section>
 
 <script>
+    const close_button = document.getElementById("closing_button");
+    const hamburger = document.getElementById("hamburger_button");
+    const mobile_menu = document.getElementById("mobile-menu");
+    close_button.addEventListener("click", function (){
+        mobile_menu.classList.add("hide");
+    })
+    hamburger.addEventListener("click", function (){
+        mobile_menu.classList.remove("hide");
+    })
+
     const unhide_conferencing = document.getElementById("conferencing");
     const unhide_online = document.getElementById("online");
     const unhide_warum = document.getElementById("warum");
@@ -851,6 +873,7 @@
         unhide_warum.classList.remove("active_heading");
     })
     unhide_conferencing.addEventListener("mouseover", function (){
+        console.log("Hello")
         dropdown_suche.classList.remove("show");
         suche.classList.remove("active_heading");
         dropdown_conferencing.classList.add("show");
