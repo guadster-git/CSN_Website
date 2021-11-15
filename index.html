@@ -862,6 +862,7 @@
     const dropdown_conferencing = document.getElementById("dropdown_conferencing");
     const dropdown_online = document.getElementById("dropdown_online");
     const dropdown_warum = document.getElementById("dropdown_warum");
+    console.log(unhide_conferencing);
 
     suche.addEventListener("mouseover", function (){
         dropdown_suche.classList.add("show");
@@ -873,7 +874,6 @@
         unhide_warum.classList.remove("active_heading");
     })
     unhide_conferencing.addEventListener("mouseover", function (){
-        console.log("Hello")
         dropdown_suche.classList.remove("show");
         suche.classList.remove("active_heading");
         dropdown_conferencing.classList.add("show");
