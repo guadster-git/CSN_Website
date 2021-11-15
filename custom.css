@@ -147,6 +147,7 @@
 ul.arrow_list li{
     list-style-image: url('/assets/pictures/list_icon_blue.svg');
     line-height: 40px;
+    font-size: 18px;
     padding-left: 10px;
 
 }
@@ -318,6 +319,20 @@ ul.arrow_list{
 
  /* Circles */
 
+.small_banner_fat_circle{
+    left: 60%;
+    bottom: 20%;
+}
+.small_banner_thin_circle{
+    left: 50%;
+    top: 15%;
+}
+.small_banner_medium_circle{
+    top: 45%;
+    left: 60%;
+    opacity: 10%;
+}
+
 .communication_blue_circle_thin{
     left: -27%;
 }
@@ -461,6 +476,11 @@ ul.arrow_list{
     width: 45%;
 }
 /* Buttons */
+
+.anchor_button:hover{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
 
 .button{
     font-size: 16px;
@@ -696,4 +716,79 @@ a:hover{
     background-image: url("assets/pictures/first_tile.png");
 
 }
+.accordion_container{
+    box-shadow: 0 0 20px #00000010;
+    border-radius: 10px;
+}
+.accordion_button{
+    font-size: 22px;
+    color: #2F2F2E;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+
+}
+.accordion_button:not(.collapsed):after{
+    width: 1.25rem;
+    height: 1.25rem;
+    content: url("assets/pictures/accordion_collapse.svg");
+    margin-left: auto;
+
+}
+.accordion_button:after{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: url("assets/pictures/accordion_expand.svg");
+    transition: transform 0.2s ease-in-out;
+}
+.accordion_collapse{
+    text-align: left;
+}
+#bank{
+    width: 72px;
+    height: 62px;
+}
+
+/* Navbar Mobile*/
+
+.container_mobile_nav{
+    height: 100vh;
+    width: 100vw;
+}
+
+.grey_sidebar{
+    background-color: #707070;
+    width: 15%;
+}
+.main_navigation_mobile{
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
