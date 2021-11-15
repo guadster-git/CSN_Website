@@ -840,6 +840,11 @@ a:hover{
 #mobile-menu{
     transition: opacity 2s ease-in;
 }
+#navbar_items{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
 
 
 /* MEDIA QUERIES */
