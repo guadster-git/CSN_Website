@@ -762,6 +762,7 @@ a:hover{
 .grey_sidebar{
     background-color: #707070;
     width: 15%;
+    height: 100%;
 }
 .main_navigation_mobile{
     width: 85%;
