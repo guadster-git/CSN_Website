@@ -781,6 +781,13 @@ a:hover{
 .mobile_search_icon{
     width: 20%;
 }
+.mobile_search_bar{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+
+}
 
 
 
