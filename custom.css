@@ -768,6 +768,11 @@ a:hover{
     width: 85%;
     height: 100%;
 }
+.navigation_inner_box{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 
 
 
