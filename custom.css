@@ -845,6 +845,12 @@ a:hover{
     padding-left: 0;
     margin-bottom: 0;
 }
+.section_mobile_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
 
 
 /* MEDIA QUERIES */
@@ -857,6 +863,9 @@ a:hover{
     }
     #dropdown_enabler{
         display: none!important;
+    }
+    .box_navbar_top{
+        width: 70%;
     }
 }
 
