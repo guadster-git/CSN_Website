@@ -6,6 +6,9 @@
 .tiles_height{
     height: 850px;
 }
+#online_tiles .tiles_height{
+    height: 730px;
+}
 .picture_column_width{
     width: 688px;
 }
@@ -233,6 +236,9 @@ ul.arrow_list{
 }
 #carousel_conference .slider_left{
     width: 1400px;
+}
+#warum_carousel .slider_left, #carousel_online .slider_left {
+    width: 1286px;
 }
 .carousel_banner{
     width: 460px;
