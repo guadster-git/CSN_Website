@@ -14,7 +14,7 @@
 }
 
 .margin_card_section{
-    padding-bottom: 160px;
+    padding-bottom: 100px;
 }
 .overflow-x-hidden{
     overflow-x: hidden;
@@ -886,6 +886,14 @@ a:hover{
 }
 .online_heading_height{
     height: 80px;
+}
+.columns_2{
+    width: 630px;
+    height: 320px;
+}
+.warum_columns_height{
+    height: 75px;
+
 }
 
 
