@@ -913,6 +913,18 @@ a:hover{
     }
 }
 
+@media (min-width: 2200px) {
+    .box{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .inner_box{
+        margin-right: 27.5%;
+        margin-left: 27.5%;
+    }
+
+}
+
 
 
 
