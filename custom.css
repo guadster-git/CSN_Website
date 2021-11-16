@@ -106,6 +106,9 @@
 .icon:hover{
     color: #28A5BC;
 }
+.icon_jump{
+    transition: margin-top 150ms ease-in, margin-bottom 150ms ease-in;
+}
 .icon:hover .icon_jump{
     margin-bottom: 5px;
     margin-top: -5px;
