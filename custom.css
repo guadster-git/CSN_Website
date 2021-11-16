@@ -903,10 +903,10 @@ a:hover{
         display: flex;
     }
     #icon_section_navbar{
-        display: none;
+        display: none!important;
     }
     #dropdown_enabler{
-        display: none;
+        display: none!important;
     }
     .box_navbar_top{
         width: 70%;
