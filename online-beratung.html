@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <title>Online Beratung</title>
+</head>
+<body class="overflow-x-hidden">
+
+<!--- Cookie --->
+
+<div class="overlay" id="overlay">
+    <div class="cookie position-fixed d-flex justify-content-between">
+        <div class=" d-flex flex-column overflow-hidden justify-content-between font_medium">
+            <div class="d-flex">
+                <div class="me-3 flex-shrink-0 width_cookie">
+                    <img src="assets/pictures/cookie.svg" alt="" class="cookie_img">
+                </div>
+                <span>Wir verwenden Cookies, um unsere Website und unseren Service für Sie zu Optimieren.</span>
+            </div>
+
+            <div>
+                <div class="form-check form-switch my-3 d-flex">
+                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox"
+                           id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label my-auto" for="flexSwitchCheckChecked">Funktionale Cookies</label>
+                </div>
+                <div class="form-check form-switch my-3 d-flex">
+                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox">
+                    <label class="form-check-label my-auto">Statische Cookies</label>
+                </div>
+                <div class="form-check form-switch my-3 d-flex">
+                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox">
+                    <label class="form-check-label my-auto">Marketing Cookies</label>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <button type="button" class="button_cookie accept_all my-3 text-uppercase" id="all_cookies">Ausgewählte
+                    Cookies zulassen
+                </button>
+                <button type="button" class="button_cookie accept_functional text-uppercase" id="functional_cookies">Nur
+                    funktionale Cookies zulassen
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--TOP BAR DONE -->
+
+<section id="navbar" class="d-flex justify-content-end">
+    <div class="bg-primary py-2 box_navbar_top">
+        <div class="box-right d-flex justify-content-between box-right ps-3 text-uppercase text-white">
+            <div class="">
+                <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
+                <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
+            </div>
+
+            <div class="">
+                <span class="font_navbar font-regular me-3">Bereits registriert?</span>
+                <span class="font_navbar font_bold arrow_after">Login</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="navbar-" class="hide">
+    <div class="row">
+        <div class="col-6 position-relative"></div>
+        <div class="col-6 bg-primary py-2 box_navbar_top">
+            <div class="box-right d-flex justify-content-between align-content-center box-right ps-3 text-uppercase text-white">
+                <div class="">
+                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
+                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
+                </div>
+
+                <div class="">
+                    <span class="font_navbar me-3">Bereits registriert?</span>
+                    <span class="font_navbar font_bold arrow_after">Login</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Navbar -->
+
+<section id="navbar_sticky">
+    <div class="position-relative">
+        <div class="box">
+            <nav class="d-flex justify-content-between py-4">
+                <div class="d-flex ps-0">
+                    <a href="index.html"><img src="assets/pictures/CSN_Wortbildmarke_RZ.svg" alt=""
+                                              class=" banner_height"></a>
+                </div>
+                <div class="d-flex justify-content-between text-uppercase" id="dropdown_enabler">
+                    <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
+                        <li><h3 class="my-auto me-5 py-1 navbar_heading position-relative" id="conferencing"><a
+                                href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3></li>
+                        <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative" id="online"><a
+                                href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></h3>
+                        </li>
+                        <li><h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a
+                                href="warum.html">Warum CSN</a></h3></li>
+                    </ul>
+                </div>
+                <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
+                    <div class="d-flex flex-column align-self-center pe-5 icon">
+                        <div class="mx-auto icons_height icon_jump">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="">Kontakt</a></p>
+                    </div>
+                    <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
+                        <div class="mx-auto icons_height icon_jump">
+                            <i data-feather="search"></i>
+                        </div>
+                        <p class="mx-auto no_padding_bot font_navbar font_medium">Suche</p>
+                    </div>
+                    <div class="d-flex flex-column align-content-center icon">
+                        <div class="mx-auto icons_height icon_jump">
+                            <i data-feather="globe"></i>
+                        </div>
+                        <p class="mx-auto no_padding_bot font_navbar font_medium">Deutsch</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Hamburger -->
+                <div class="align-items-center" id="hamburger">
+                    <button id="hamburger_button"><img src="assets/pictures/hamburger.svg" alt=""></button>
+                </div>
+            </nav>
+        </div>
+        <div id="dropdown_bar">
+            <div class="hide bg-white" id="dropdown_conferencing">
+                <div class="box border-top d-flex justify-content-center py-3">
+                    <h3 class="mx-5 dropdown_font"><a href="#">Enthaltene Produkte</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Einsatzbereiche</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Branchen</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Unsere Highlights</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Präsentations-Features</a></h3>
+                </div>
+            </div>
+            <div class="hide bg-white" id="dropdown_online">
+                <div class="box border-top d-flex justify-content-center py-3 ">
+                    <h3 class="mx-5 dropdown_font"><a href="#">Highlights</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Vorteile</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Sicherheit</a></h3>
+                </div>
+            </div>
+            <div class="hide bg-white" id="dropdown_warum">
+                <div class="box border-top d-flex justify-content-center py-3">
+                    <h3 class="mx-5 dropdown_font"><a href="#">Vorzüge</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Vorzüge</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="#">Vorzüge</a></h3>
+                </div>
+            </div>
+            <div class="hide bg-white" id="dropdown_suche">
+                <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
+                    <div class="input-group search_bar w-25">
+                        <input type="text" class="form-control" placeholder="Suche" aria-label="Recipient's username"
+                               aria-describedby="basic-addon2">
+                        <button class="search_button d-flex align-items-center"><img src="assets/pictures/search.svg"
+                                                                                     alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Navbar Mobile ToDo: slide-in -->
+
+<section id="mobile-menu" class="hide section_mobile_menu">
+    <nav class="container_mobile_nav d-flex flex-row position-absolute">
+        <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
+            <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
+            </button>
+        </div>
+        <div class="main_navigation_mobile">
+            <div class="navigation_inner_box">
+                <div class="d-flex justify-content-between my-4">
+                    <div class="d-flex col-auto">
+                        <div class="d-flex align-items-center">
+                            <i data-feather="globe" class="me-2"></i>
+                            <span class="font_medium">DE</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-auto">
+                        <div class="d-flex align-items-center">
+                            <i data-feather="mail" class="me-2"></i>
+                            <span class="font_medium">Kontakt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_search_container">
+                <div class="navigation_inner_box d-flex w-100 py-4">
+                    <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
+                        <div class="mobile_search_input_container">
+                            <input type="search" placeholder="Suche ..." class="mobile_search_input"
+                                   id="mobile-search-input"/>
+                        </div>
+                        <div class="mobile_search_icon d-flex justify-content-end pe-3">
+                            <button class="search_button d-flex align-items-center" id="mobile_search_button"><i
+                                    data-feather="search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation_inner_box py-3">
+                <ul class="mobile_nav_items">
+                    <li><a href="" class="font_bold">Startseite</a></li>
+                    <li><a href="">CSN <span class="font_bold">Conferencing</span></a></li>
+                    <li><a href="">CSN <span class="font_bold">Online Beratung</span></a></li>
+                    <li><a href="" class="font_bold">Warum CSN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- Slider DONE -->
+
+<section class="position-relative">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
+         data-bs-ride="carousel">
+
+        <div class="carousel-indicators z_front carousel_points">
+            <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex flex-wrap justify-content-end active" data-bs-interval="10000">
+                <img src="assets/pictures/slide_1.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> Das brandneue CSN
+                        bringt Conferencing und Online-Beratung auf die nächste Stufe</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_2.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> Ihr Full Service Provider
+                        für digitale Beratung, Webinare & Konferenzen</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_3.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> CSN verbindet – <br>
+                        Online-Berater, Kunden, Moderatoren, Aktionäre, Mitarbeiter, …</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_4.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> Die einfache & sichere Kommunikationsplattform „Made in Germany"</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+        </div>
+        <div class="position-absolute made_in_germany d-flex flex-column">
+            <img src="assets/pictures/german_stripes.svg" alt="">
+            <span style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</span>
+        </div>
+
+        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute circle_thin_banner">
+        <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute circle_blue_banner">
+        <img src="assets/pictures/white_fat_circle.svg" alt="" class="position-absolute circle_middle_banner">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+
+</section>
+
+<!-- Overview Column-->
+
+<section class="position-relative py-5 overview">
+    <div class="box">
+        <div class="d-flex justify-content-between pt-5">
+            <div class="online_column_width">
+                <div class="row online_heading_height">
+                    <div class="col-2 me-3 d-flex align-items-center">
+                        <img src="assets/pictures/face_to_face.svg" alt="">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        <h4>Face-to-Face dank <br>
+                            Videoberatung</h4>
+                    </div>
+                </div>
+                <div>
+                    <p class="pt-3 ">Mit der Face-to-Face Videoberatung von CSN bleiben
+                        Sie auch während der Pandemie mit Ihren Kunden, Interessenten und Bewerbern in Kontakt.
+                        Einfach, sicher und genauso persönlich wie in Ihrer Filiale.</p>
+                </div>
+            </div>
+
+            <div class="online_column_width">
+                <div class="row online_heading_height">
+                    <div class="col-2 me-3 d-flex">
+                        <img src="assets/pictures/speaking_black.svg" alt="">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        <h4>Online-Beratung als <br>
+                            digitales Erlebnis</h4>
+                    </div>
+                </div>
+                <div>
+                    <p class="pt-3">Zeigen Sie Ihren Kunden vorbereitete Präsentationen,
+                        Erklärvideos oder teilen Sie Ihren Bildschirm.
+                        Kalkulationen im Whiteboard, Umfragen, Downloadfreigaben u.v.m.
+                        machen eine Online-Beratung zu einem echten Erlebnis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="online_column_width">
+                <div class="row online_heading_height">
+                    <div class="col-2 me-3 d-flex align-items-center">
+                        <img src="assets/pictures/signature_black.svg" alt="">
+                    </div>
+                    <div class="col-8 d-flex align-items-center">
+                        <h4>Elektronische Unterschrift <br>
+                            der Umwelt zuliebe</h4>
+                    </div>
+                </div>
+                <div>
+                    <p class="pt-3">Im Rahmen einer CSN. Online-Beratung können Verträge gemeinsam ausgefüllt
+                        und direkt vom Kunden rechtssicher digital unterschrieben werden.
+                        Das papierlose Verfahren vereinfacht den Vertragsabschluss und schont die Umwelt.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex w-100 justify-content-center align-items-center my-5">
+            <a href=""><img src="assets/pictures/anchor_button.svg" alt="" class="anchor_button"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Tiles DONE -->
+
+<section>
+
+    <div class="row gx-0">
+        <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex">
+            <div class="box text-white">
+                <h2 class="font_light mb-4">Vom Trend zur Realität nicht nur in <br>
+                    <span class="font_medium">der Finanz- und Versicherungsbranche</span>
+                </h2>
+                <p>
+                    Seit einiger Zeit wandelt sich das Beratungskonzept im Dienstleistungssektor.
+                    Die klassische Beratung in der Filiale wird von der digitalen Beratung über das Internet abgelöst. Dieser Wandel findet nicht nur in der Finanz- und Versicherungswelt statt, sondern in allen beratungsintensiven Branchen.
+                    Für viele Menschen ist Online-Beratung schon fast so selbstverständlich
+                    wie Online-Banking.
+                </p>
+                <button class="button white_button mt-4">Testaccount anfordern</button>
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12 tiles_height" id="first_tile">
+            <img src="assets/pictures/first_tile.png" alt="">
+        </div>
+    </div>
+    <div class="row gx-0">
+
+        <div class="col-lg-6 col-md-12 tiles_height" id="second_tile">
+            <img src="assets/pictures/second_tile.png" alt="">
+        </div>
+
+        <div class="col-lg-6 col-md-12 bg-secondary tiles_height align-items-center d-flex">
+            <div class="box text-white">
+                <h2 class="font_light mb-4">Die Vorteile der digitalen <br>
+                    <span class="font_medium">Beratung liegen auf der Hand</span>
+                </h2>
+                <p>
+                    Die Vorteile einer digitalen Beratung liegen auf der Hand. Kunde und Berater müssen
+                    sich nicht mehr vor Ort treffen und sparen so Zeit und Fahrkosten.
+                    An einem Ort und mit einem Gerät Ihrer Wahl loggen sie sich in die
+                    Online-Beratungssitzung ein und können interaktiv miteinander kommunizieren.
+                </p>
+                <button class="button white_button mt-4">Unser Video ansehen</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Card Section --->
+<section class="margin_card_section">
+    <div class="box">
+
+        <div class="text-center my-5 py-5">
+            <h2 class="f-35 font_medium">Unsere Highlights im Überblick</h2>
+            <div class="d-flex justify-content-center pt-4">
+                <p class="w-50">In einer CSN. Online-Beratung stehen dem Berater vielfältige Funktionen zur Seite, um
+                    dem Kunden ein
+                    ansprechendes Erlebnis zu vermitteln und die Beratung erfolgreich zum Abschluss zu bringen.</p>
+
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-wrap justify-content-between mt-3">
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-wrap justify-content-between mt-3">
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-5 py-5 text-center">
+            <h2 class="font_medium">Weitere Features</h2>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between ">
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-wrap justify-content-between mt-3">
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+            <div class="card_white">
+                <div class="d-flex flex-column text-center">
+                    <div class="card_image_container">
+                        <img src="/assets/pictures/phone_forwarded.svg" alt="">
+                    </div>
+                    <h4>
+                        Dial-Out Konferenzen
+                    </h4>
+                    <p class="card_text font-regular">Teilnehmer werden vom Konferenzsystem angerufen</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--Picture Column-->
+
+<section class=" py-5 grey_background">
+    <div class="box my-5">
+        <div class="text-center">
+            <h2 class="f-35">CSN Conferencing</h2>
+            <h2 class="font_medium f-35">Der Einsatz im Geschäftsalltag</h2>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-end mt-lg-5">
+                    <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>Von kleinen Ad-hoc Teambesprechungen bis hin zur großen Telefonkonferenz
+                            mit mehreren tausend Teilnehmern – CSN. hat sich in über 20 Jahren als
+                            Telefonkonferenz-Anbieter erfolgreich am Markt etabliert. Wir bieten Ihnen die klassische
+                            Telefonkonferenz ohne großen Aufwand:
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>
+                                    erstklassige Sprachqualität in HD
+                                </li>
+                                <li>
+                                    Dial-In oder Dial-Out Konferenzen
+                                </li>
+                                <li>
+                                    Einfache Einrichtung & komfortable Websteuerung
+                                </li>
+                                <li>
+                                    Einwahlrufnummern in verschiedenen Ländern
+                                </li>
+                                <li>
+                                    Rauschunterdrückung & Pegelanpassung
+                                </li>
+                                <li>
+                                    MP3-Gesprächsmitschnitte & Playbackfunktion
+                                </li>
+                                <li>
+                                    Abschließbare Konferenzräume & sichere PIN
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zur klassischen Telefonkonferenzen</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_thin">
+                <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_fat">
+                <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+                <div class="d-flex justify-content-center align-content-center">
+                    <img src="assets/pictures/circle_image_left.png" alt="" class="w-75">
+                </div>
+
+            </div>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/orange_circle.svg" alt=""
+                     class="w-75 position-absolute online_orange_circle">
+                <div class="d-flex justify-content-center pe-5 align-content-center">
+                    <img src="assets/pictures/circle_image_right.png" alt="" class="w-75">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-start mt-lg-5 ">
+                    <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
+                    <div class="picture_column_width">
+                        <p>
+                            Webinare sind Fortbildungen, die über das Internet abgehalten werden.
+                            Oft werden sie auch als Online-Seminar oder Online-Training bezeichnet.
+                            CSN hat sich auf Webinare spezialisiert. Von der Teilnehmer-Registrierung,
+                            über vielfältige Webinar-Modi bis hin zur Auswertung und Zertifizierung
+                            – die Durchführung eines Online-Seminars war noch nie so einfach.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <ul class="arrow_list font_medium f-18">
+                            <li>
+                                frei konfigurierbare Anmeldeformulare
+                            </li>
+                            <li>
+                                Branding in Ihrem Design
+                            </li>
+                            <li>
+                                Umfragen und Multiple-Choice-Tests
+                            </li>
+                            <li>
+                                leistungsstarke Webinar-Modi
+                            </li>
+                            <li>
+                                interaktive Funktionen
+                            </li>
+                            <li>
+                                aufschlussreiche Analysen
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Webinaren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-end mt-lg-5">
+                    <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>Von kleinen Ad-hoc Teambesprechungen bis hin zur großen Telefonkonferenz
+                            mit mehreren tausend Teilnehmern – CSN. hat sich in über 20 Jahren als
+                            Telefonkonferenz-Anbieter erfolgreich am Markt etabliert. Wir bieten Ihnen die klassische
+                            Telefonkonferenz ohne großen Aufwand:
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>
+                                    erstklassige Sprachqualität in HD
+                                </li>
+                                <li>
+                                    Dial-In oder Dial-Out Konferenzen
+                                </li>
+                                <li>
+                                    Einfache Einrichtung & komfortable Websteuerung
+                                </li>
+                                <li>
+                                    Einwahlrufnummern in verschiedenen Ländern
+                                </li>
+                                <li>
+                                    Rauschunterdrückung & Pegelanpassung
+                                </li>
+                                <li>
+                                    MP3-Gesprächsmitschnitte & Playbackfunktion
+                                </li>
+                                <li>
+                                    Abschließbare Konferenzräume & sichere PIN
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zur klassischen Telefonkonferenzen</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_thin">
+                <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_fat">
+                <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+                <div class="d-flex justify-content-center align-content-center">
+                    <img src="assets/pictures/circle_image_left.png" alt="" class="w-75">
+                </div>
+
+            </div>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/orange_circle.svg" alt=""
+                     class="w-75 position-absolute online_orange_circle">
+                <div class="d-flex justify-content-center pe-5 align-content-center">
+                    <img src="assets/pictures/circle_image_right.png" alt="" class="w-75">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-start mt-lg-5 ">
+                    <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
+                    <div class="picture_column_width">
+                        <p>
+                            Webinare sind Fortbildungen, die über das Internet abgehalten werden.
+                            Oft werden sie auch als Online-Seminar oder Online-Training bezeichnet.
+                            CSN hat sich auf Webinare spezialisiert. Von der Teilnehmer-Registrierung,
+                            über vielfältige Webinar-Modi bis hin zur Auswertung und Zertifizierung
+                            – die Durchführung eines Online-Seminars war noch nie so einfach.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <ul class="arrow_list font_medium f-18">
+                            <li>
+                                frei konfigurierbare Anmeldeformulare
+                            </li>
+                            <li>
+                                Branding in Ihrem Design
+                            </li>
+                            <li>
+                                Umfragen und Multiple-Choice-Tests
+                            </li>
+                            <li>
+                                leistungsstarke Webinar-Modi
+                            </li>
+                            <li>
+                                interaktive Funktionen
+                            </li>
+                            <li>
+                                aufschlussreiche Analysen
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Webinaren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-end mt-lg-5">
+                    <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>Von kleinen Ad-hoc Teambesprechungen bis hin zur großen Telefonkonferenz
+                            mit mehreren tausend Teilnehmern – CSN. hat sich in über 20 Jahren als
+                            Telefonkonferenz-Anbieter erfolgreich am Markt etabliert. Wir bieten Ihnen die klassische
+                            Telefonkonferenz ohne großen Aufwand:
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>
+                                    erstklassige Sprachqualität in HD
+                                </li>
+                                <li>
+                                    Dial-In oder Dial-Out Konferenzen
+                                </li>
+                                <li>
+                                    Einfache Einrichtung & komfortable Websteuerung
+                                </li>
+                                <li>
+                                    Einwahlrufnummern in verschiedenen Ländern
+                                </li>
+                                <li>
+                                    Rauschunterdrückung & Pegelanpassung
+                                </li>
+                                <li>
+                                    MP3-Gesprächsmitschnitte & Playbackfunktion
+                                </li>
+                                <li>
+                                    Abschließbare Konferenzräume & sichere PIN
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zur klassischen Telefonkonferenzen</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_thin">
+                <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_fat">
+                <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+                <div class="d-flex justify-content-center align-content-center">
+                    <img src="assets/pictures/circle_image_left.png" alt="" class="w-75">
+                </div>
+
+            </div>
+        </div>
+        <div class="row my-5 py-5">
+            <div class="col-lg-6 col-md-12 position-relative">
+                <img src="assets/pictures/orange_circle.svg" alt=""
+                     class="w-75 position-absolute online_orange_circle">
+                <div class="d-flex justify-content-center pe-5 align-content-center">
+                    <img src="assets/pictures/circle_image_right.png" alt="" class="w-75">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-start mt-lg-5 ">
+                    <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
+                    <div class="picture_column_width">
+                        <p>
+                            Webinare sind Fortbildungen, die über das Internet abgehalten werden.
+                            Oft werden sie auch als Online-Seminar oder Online-Training bezeichnet.
+                            CSN hat sich auf Webinare spezialisiert. Von der Teilnehmer-Registrierung,
+                            über vielfältige Webinar-Modi bis hin zur Auswertung und Zertifizierung
+                            – die Durchführung eines Online-Seminars war noch nie so einfach.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <ul class="arrow_list font_medium f-18">
+                            <li>
+                                frei konfigurierbare Anmeldeformulare
+                            </li>
+                            <li>
+                                Branding in Ihrem Design
+                            </li>
+                            <li>
+                                Umfragen und Multiple-Choice-Tests
+                            </li>
+                            <li>
+                                leistungsstarke Webinar-Modi
+                            </li>
+                            <li>
+                                interaktive Funktionen
+                            </li>
+                            <li>
+                                aufschlussreiche Analysen
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Webinaren</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<!--Banner -->
+
+<section class="position-relative overflow-hidden height_banner">
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left">
+    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_middle">
+    <img src="assets/pictures/blue_fat.svg" alt="" class="position-absolute banner_top_left">
+    <img src="assets/pictures/banner_online.png" alt="">
+    <img src="assets/pictures/overlay_banner_left.svg" alt="" class="position-absolute"
+         style="top: 0; left: 0; height: 850px;">
+    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute"
+         style="top: 0; right: 0; height: 750px; width: 400px;">
+    <div class="box position-absolute d-flex align-items-center banner_container_branding" id="conferenceBanner_1">
+        <div class="container_banner text-white back bg-primary">
+            <h2 style="font-size: 35px; line-height: 45px;">Branding in Ihrem <br><span class="font_medium">eigenen Corporate Design</span>
+            </h2>
+            <p class="pt-3 mb-4 pb-3" style="width: 507px;">Für eine hohen <span
+                    class="font_bold">Wiedererkennungswert</span> bei Ihren Kunden passen wir unsere Login-Seiten,
+                Landingpages,
+                Mails und Webformulare ganz einfach an Ihr <span class="font_bold">Corporate Design</span> an.
+                Unser unkompliziertes <span class="font_bold">Branding-Tool</span> bietet Ihnen die Möglichkeit,
+                aktionsspezifische Designs und Layouts für Anmelde- und Umfrageformulare zu erstellen.</p>
+            <button class="button white_button mt-4">Kontaktieren Sie uns</button>
+        </div>
+    </div>
+</section>
+
+<!--- 2 Items Gegenüberstellung -->
+
+<section>
+    <div class="box py-5">
+        <div class="d-flex justify-content-between my-5">
+            <div class="d-flex flex-column width_2_columns">
+                <div class="row w-100 gx-0">
+                    <div class="col-2">
+                        <img src="assets/pictures/certificate.svg" alt="">
+                    </div>
+                    <div class="col-10">
+                        <h2 class="font_light">
+                            Geprüfte und zertifizierte <br>
+                            <span class="font_medium">Software/Standorte</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <p>
+                        Die Funktionalität, Verlässlichkeit und Sicherheit ist ein wesentlicher Faktor bei der Wahl einer Beratungsplattform.
+                        Durch die OPDV-Zertifizierung und der Entwicklung gem.
+                        ISO/IEC 9126 gewährleisten wir einen hohen Qualitätsstandard, um Ihnen eine einfach zu bedienende,
+                        zuverlässige und sicheres Beratungs-Software zu bieten.
+                    </p>
+                </div>
+                <div>
+                    <button class="button blue_button">Zertifikat anzeigen</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column width_2_columns">
+                <div class="row w-100 gx-0">
+                    <div class="col-2">
+                        <img src="assets/pictures/secure_lock.svg" alt="">
+                    </div>
+                    <div class="col-10">
+                        <h2 class="font_light">
+                            Wir garantieren Ihnen die <br>
+                            <span class="font_medium">Sicherheit Ihrer Daten</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <p>
+                        Die aktuellsten Datenschutz- und Sicherheitsfunktionen gehören bei CSN zum Standardumfang. Die Nutzung der CSN.
+                        Online-Beratung erfolgt ausschließlich über sichere HTTPS-Verbindung in der sämtliche Daten 256-Bit AES verschlüsselt übertragen werden.
+                    </p>
+                </div>
+                <div>
+                    <button class="button blue_button">Mehr zum Thema Datensicherheit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--- Blue Banner DONE --->
+
+<section class="bg-primary position-relative overflow-hidden">
+    <div class="box py-5 my-5 ">
+        <img src="assets/pictures/circle_AI_Left_top.png" alt="" class="position-absolute contact_bottom_right">
+        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute contact_right">
+        <img src="assets/pictures/circle_AI_fat.png" alt="" class="position-absolute contact_top_right">
+        <h4 class="text-white text-center font_medium" style="font-size: 30px;">Nehmen Sie Kontakt mit uns auf und
+            sprechen Sie mit einem unserer Experten.</h4>
+        <div class="row justify-content-between align-content-center d-flex text-white pt-5">
+            <div class="col-4 d-flex flex-column pt-3">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+            <div class="col-4 d-flex flex-column pt-3">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+            <div class="col-4 d-flex flex-column pt-3">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">info@csn-gmbh.de</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---Footer DONE --->
+
+<section class="bg-secondary position-relative">
+    <div class="box">
+        <div class="row py-5 no_gutter_x ">
+            <div class="col-md-3 col-sm-12 d-flex justify-content-start align-content-center  ">
+                <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center text-white my-auto  ">
+                <span class="align-middle text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
+            </div>
+            <div class="col-md-3 d-flex justify-content-between ">
+                <div class="d-flex my-auto">
+                    <div class="button_white full d-flex">
+                        <span class="my-auto">Kostenlos testen</span>
+                    </div>
+                </div>
+                <div class="flex-column my-auto justify-content-end icon">
+                    <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
+                        <i data-feather="globe"></i>
+                    </div>
+                    <span class="text-white no_padding_bot text-uppercase mx-auto font_medium font_navbar">Deutsch</span>
+                </div>
+            </div>
+        </div>
+        <div class="row py-5 top_border no_gutter_x">
+            <div class="col-md-3 text-white ps-0">
+                <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
+                <div class="font_light">
+                    <p class="font_medium footer_list">Enthaltene Produkte</p>
+                    <p class="font_light footer_list">Telefonkonferenzen</p>
+                    <p class="font_light footer_list">Webinare & Online Training</p>
+                    <p class="font_light footer_list">Webkonferenzen</p>
+                    <p class="font_light footer_list">Videokonferenzen</p>
+                    <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
+                </div>
+
+                <div class="font_light pt-4">
+                    <p class="font_medium footer_list">Einsatzbereiche</p>
+                    <p class="font_light footer_list">Marketing & Vertrieb</p>
+                    <p class="font_light footer_list">Schulung & Training</p>
+                    <p class="font_light footer_list">Business-Konferenzen</p>
+                    <p class="font_light footer_list">Investor Relations Konferenzen</p>
+                    <p class="font_light footer_list">Recruiting</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-white">
+                <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</p>
+                <div class="font_light">
+                    <p class="font_medium footer_list">Produkt-Features</p>
+                    <p class="font_light footer_list">Video-Beratung</p>
+                    <p class="font_light footer_list">Text- und Videochat</p>
+                    <p class="font_light footer_list">Digitale Unterschrift</p>
+                    <p class="font_light footer_list">Dateifreigabe & Mediathek</p>
+                    <p class="font_light footer_list">Umfragen</p>
+                </div>
+
+                <div class="font_light pt-4">
+                    <p class="font_medium footer_list">Branchen</p>
+                    <p class="font_light footer_list">Versicherungen & Makler</p>
+                    <p class="font_light footer_list">Banken & Immobilien</p>
+                    <p class="font_light footer_list">Einzelhandel / Onlineshops</p>
+                    <p class="font_light footer_list">Gesundheitswesen</p>
+                    <p class="font_light footer_list">Telekommunikation</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-white">
+                <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
+                <div class="font_light">
+                    <p class="font_medium footer_list">Highlights</p>
+                    <p class="font_light footer_list">20 Jahre Markterfahrung</p>
+                    <p class="font_light footer_list">Modernste Webtechnologien</p>
+                    <p class="font_light footer_list">Inhouse Kundenservice</p>
+                    <p class="font_light footer_list">Kostenlose Schulung & Beratung</p>
+                    <p class="font_light footer_list">Premium Operatorservicen</p>
+                </div>
+
+                <div class="font_light pt-4">
+                    <p class="font_medium footer_list">Über uns</p>
+                    <p class="font_light footer_list">Unsere Vision</p>
+                    <p class="font_light footer_list">CSN Leitlinien</p>
+                    <p class="font_light footer_list">Made and hosted in Germany</p>
+                    <p class="font_light footer_list">zertifiziert und sicher</p>
+                    <p class="font_light footer_list">DSGVO-, BDSG- und TKG-konform</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column justify-content-between text-white">
+                <div>
+                    <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
+                    <div class="font_light">
+                        <p class="font_light footer_list">Impressum</p>
+                        <p class="font_light footer_list">Datenschutzerklärung</p>
+                        <p class="font_light footer_list">Haftungsausschluss</p>
+                        <p class="font_light footer_list">Allgemeine Geschäftsbedingungen</p>
+                        <p class="font_light footer_list">Kontakt</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="font_light pb-3">
+                        <p class="font_medium text-uppercase">Folgen Sie uns Bei</p>
+                        <div class="row pe-5">
+                            <div class="col-3 social_media_row">
+                                <a href="#"><img src="assets/pictures/facebook_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/facebook.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-3 social_media_row">
+                                <a href="#"><img src="assets/pictures/twitter_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/twitter.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-3 social_media_row">
+                                <a href="#"><img src="assets/pictures/instagram_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/instagram.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-3 social_media_row">
+                                <a href="#"><img src="assets/pictures/youtube_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/youtube.png" alt="" class="social_media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#navbar" style="position: absolute; right: 40px; bottom: 50px;"><img src="assets/pictures/to_top_arrow.svg"
+                                                                                  alt=""></a>
+</section>
+
+<script>
+    const close_button = document.getElementById("closing_button");
+    const hamburger = document.getElementById("hamburger_button");
+    const mobile_menu = document.getElementById("mobile-menu");
+    close_button.addEventListener("click", function () {
+        mobile_menu.classList.add("hide");
+    })
+    hamburger.addEventListener("click", function () {
+        mobile_menu.classList.remove("hide");
+    })
+    const unhide_conferencing = document.getElementById("conferencing");
+    const unhide_online = document.getElementById("online");
+    const unhide_warum = document.getElementById("warum");
+    const suche = document.getElementById("suche");
+    const dropdown_suche = document.getElementById("dropdown_suche");
+    const dropdown_conferencing = document.getElementById("dropdown_conferencing");
+    const dropdown_online = document.getElementById("dropdown_online");
+    const dropdown_warum = document.getElementById("dropdown_warum");
+
+    suche.addEventListener("mouseover", function () {
+        dropdown_suche.classList.add("show");
+        dropdown_conferencing.classList.remove("show")
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_conferencing.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.add("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.add("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_online.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.add("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.add("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_warum.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.add("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.add("active_heading");
+    })
+
+    dropdown_suche.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_conferencing.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_online.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_warum.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+
+    function leave_function() {
+        dropdown_suche.classList.remove("show");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        suche.classList.remove("active_heading")
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    }
+
+    window.onscroll = function () {
+        make_sticky()
+    };
+
+    const navbar = document.getElementById("navbar_sticky");
+    const sticky = navbar.offsetTop;
+
+    function make_sticky() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("nav_sticky")
+        } else {
+            navbar.classList.remove("nav_sticky");
+        }
+    }
+
+    const cookieBox = document.querySelector(".cookie");
+    const overlay = document.getElementById("overlay");
+    const acceptBtn_all = document.getElementById("all_cookies");
+    const acceptBtn_functional = document.getElementById("functional_cookies");
+    acceptBtn_all.onclick = () => {
+        //setting cookie for 1 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
+        if (document.cookie) { //if cookie is set
+            cookieBox.classList.add("hide_cookie"); //hide cookie box
+        } else { //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+        //removing overlay
+        overlay.classList.add("hide");
+    }
+    acceptBtn_functional.onclick = () => {
+        //setting cookie for 1 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
+        if (document.cookie) { //if cookie is set
+            cookieBox.classList.add("hide_cookie"); //hide cookie box
+        } else { //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+        //removing overlay
+        overlay.classList.add("hide");
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=CSN"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie !== -1 ? overlay.classList.add("hide") : overlay.classList.remove("hide");
+
+</script>
+
+<script>
+    feather.replace();
+</script>
+
+</body>
+</html>

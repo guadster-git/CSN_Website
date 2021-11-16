@@ -14,7 +14,7 @@
 }
 
 .margin_card_section{
-    margin-bottom: 160px;
+    padding-bottom: 160px;
 }
 .overflow-x-hidden{
     overflow-x: hidden;
@@ -25,6 +25,7 @@
 .no_gutter_x{
     --bs-gutter-x: 0;
 }
+
 
 .z_front{
     z-index: 90;
@@ -97,6 +98,8 @@
 }
 /* Navbar */
 
+
+
 .navbar_heading{
     letter-spacing:  0.54px;
 }
@@ -140,7 +143,11 @@
 .navbar_heading:focus::after{
     transform: translate3d(0, 0, 0);
 }
-
+/* Overview */
+.overview{
+    box-shadow: 0 0 20px #00000020;
+    z-index: 3;
+}
 /* List */
 
 
@@ -158,6 +165,15 @@ ul.arrow_list{
 
 /* Carousel */
 
+.carousel-indicators [data-bs-target]{
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+}
+.carousel-indicators .active{
+    background-color: #28A5BC;
+}
 
 .carousel-control-prev{
     width: 7%;
@@ -707,6 +723,10 @@ a:hover{
 }
 
 /**************     Conferencing ***********/
+
+.linear_background{
+    background: linear-gradient(180deg, white, #EFEFEF35);
+}
 #conferenceBanner_1{
 
     left: 0;
@@ -853,16 +873,32 @@ a:hover{
 }
 
 
+/***** Online ********/
+
+.width_2_columns{
+    width: 700px;
+}
+.grey_background{
+    background-color: #EFEFEF35;
+}
+.online_column_width{
+    width: 488px;
+}
+.online_heading_height{
+    height: 80px;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 1670px) {
     #hamburger{
         display: flex;
     }
     #icon_section_navbar{
-        display: none!important;
+        display: none;
     }
     #dropdown_enabler{
-        display: none!important;
+        display: none;
     }
     .box_navbar_top{
         width: 70%;
