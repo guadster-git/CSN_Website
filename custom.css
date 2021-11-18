@@ -529,29 +529,33 @@ ul.arrow_list{
     padding-left: 28px;
     padding-right: 28px;
     background-color: transparent;
+
 }
 
-.button_white{
+
+
+.white_button{
     color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 53px;
-    border-radius: 10px 0 10px 0;
-    border: 1px solid white;
-    padding-left: 28px;
-    padding-right: 28px;
+    transition-duration: 200ms;
+    transition-property: background-color, color, content;
 }
-.button_white:after{
-    padding-top: 13px;
+.white_button:after{
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
+
 }
+
+.white_button:hover{
+    color: #E37517;
+    background-color: white;
+}
+.white_button:hover:after{
+    content: url("assets/pictures/arrow_right_orange.svg");
+}
+
 .blue_button{
     color: #28A5BC;
     border-color: #28A5BC;
-}
-.white_button{
-    color: white;
 }
 .blue_button:after{
     padding-left: 15px;
@@ -565,49 +569,9 @@ ul.arrow_list{
     color: white;
     border-color: #E37517;
 }
-.white_button:after{
-    padding-left: 15px;
-    content: url("assets/pictures/arrow_right.svg");
-}
-.button_white:hover:after{
-    content: url("assets/pictures/arrow_right_orange.svg");
-}
-.button_white:hover{
-    color: #E37517;
-    background-color: white;
-}
-.white_button:hover{
-    color: #E37517;
-    background-color: white;
-}
-.white_button:hover:after{
-    content: url("assets/pictures/arrow_right_orange.svg");
-}
 
-.button_blue{
-    color: #28A5BC;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 53px;
-    border-radius: 10px 0 10px 0;
-    border: 1px solid #28A5BC;
-    padding-left: 28px;
-    padding-right: 28px;
-}
-.button_blue:after{
-    padding-top: 13px;
-    padding-left: 15px;
-    content: url("assets/pictures/arrow_right_blue.svg");
-}
-.button_blue:hover:after{
-    content: url("assets/pictures/arrow_right.svg");
-}
-.button_blue:hover{
-    background-color: #E37517;
-    color: white;
-    border-color: #E37517;
-}
+
+
 .full{
     border-radius: 5px;
     border-color: #28A5BC;
@@ -837,15 +801,20 @@ a:hover{
 
 .section_mobile_menu{
     position: fixed;
+    height: 100vh;
+    width: 30vw;
     top: 0;
     left: 0;
     z-index: 999;
-    transition: width 5s ease-in;
+    transition: all 5s ease-in;
+}
+.navbar_width{
+    width: 80vw!important;
 }
 
 .container_mobile_nav{
-    height: 100vh;
-    width: 80vw;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 999;
@@ -956,6 +925,10 @@ a:hover{
 .columns_2{
     width: 630px;
     height: 320px;
+}
+.columns_2_small{
+    width: 630px;
+    height: 270px;
 }
 .warum_columns_height{
     height: 75px;

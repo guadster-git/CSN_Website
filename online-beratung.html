@@ -1165,11 +1165,13 @@
     const close_button = document.getElementById("closing_button");
     const hamburger = document.getElementById("hamburger_button");
     const mobile_menu = document.getElementById("mobile-menu");
+
     close_button.addEventListener("click", function () {
         mobile_menu.classList.add("hide");
     })
     hamburger.addEventListener("click", function () {
         mobile_menu.classList.remove("hide");
+
     })
     const unhide_conferencing = document.getElementById("conferencing");
     const unhide_online = document.getElementById("online");
