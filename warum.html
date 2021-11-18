@@ -181,7 +181,7 @@
 
 <!-- Navbar Mobile ToDo: slide-in -->
 
-<section id="mobile-menu" class="hide section_mobile_menu">
+<section id="mobile-menu" class=" section_mobile_menu">
     <nav class="container_mobile_nav d-flex flex-row position-absolute" id="mobile_container">
         <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
             <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
@@ -745,11 +745,7 @@
                 <span class="align-middle text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
             </div>
             <div class="col-md-3 d-flex justify-content-between ">
-                <div class="d-flex my-auto">
-                    <div class="button_white full d-flex">
-                        <span class="my-auto">Kostenlos testen</span>
-                    </div>
-                </div>
+                <button class="button blue_full_button">Kostenlos Testen</button>
                 <div class="flex-column my-auto justify-content-end icon">
                     <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
                         <i data-feather="globe"></i>
@@ -868,11 +864,17 @@
     const close_button = document.getElementById("closing_button");
     const hamburger = document.getElementById("hamburger_button");
     const mobile_menu = document.getElementById("mobile-menu");
+    const mobile_menu_width_helper = document.getElementById("mobile_container");
+    const styles = window.getComputedStyle(mobile_menu_width_helper);
+    const mobile_width = styles.width;
+    console.log("hello");
+    console.log(mobile_width);
     close_button.addEventListener("click", function () {
-        mobile_menu.classList.add("hide");
+        mobile_menu.style.width="0";
     })
     hamburger.addEventListener("click", function () {
-        mobile_menu.classList.remove("hide");
+        mobile_menu.style.setProperty('width', mobile_width);
+
     })
     const unhide_conferencing = document.getElementById("conferencing");
     const unhide_online = document.getElementById("online");
