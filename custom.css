@@ -171,6 +171,10 @@ ul.arrow_list{
 
 /* Carousel */
 
+.carousel-indicators{
+    margin-bottom: 2rem;
+}
+
 .carousel-indicators [data-bs-target]{
     margin-right: 8px;
     margin-left: 8px;
@@ -505,6 +509,10 @@ ul.arrow_list{
 }
 /* Buttons */
 
+.anchor_button{
+    transition: 200ms ease-in;
+}
+
 .anchor_button:hover{
     margin-top: 10px;
     margin-bottom: -10px;
@@ -611,15 +619,53 @@ ul.arrow_list{
 
 /* Cards */
 
-.card_white{
-    box-shadow: 0 0 20px #00000010;
-    height: 245px;
-    padding-top: 42px;
-    border-radius: 10px;
+.flip_container{
+    perspective: 1000px;
+
+    min-height: 245px;
+
     width: 24%;
 }
+.flip_container:hover .flip_inner{
+    transform: rotateY(180deg);
+}
+
+.flip_card_white, .card_blue{
+    box-shadow: 0 0 20px #00000010;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip_card_white{
+    padding-top: 42px;
+}
+
+.card_text_inner{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.card_blue{
+    padding-left: 7%;
+    padding-right: 7%;
+    color: white;
+    background-color: #28A5BC;
+    transform: rotateY(180deg);
+}
+.flip_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+
 .card_image_container{
-    height: 70px;
+    height: 75px;
     color: #28A5BC;
 }
 .card_text{
@@ -627,6 +673,10 @@ ul.arrow_list{
     line-height: 22px;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+.card_white h4, .card_blue h4{
+    margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -910,6 +960,15 @@ a:hover{
 .warum_columns_height{
     height: 75px;
 
+}
+
+/* Warum CSN */
+
+#warum_banner .container_banner{
+    height: 424px;
+}
+.warum_banner_overlay{
+    height: 750px;
 }
 
 
