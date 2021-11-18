@@ -542,6 +542,7 @@ ul.arrow_list{
 .white_button:after{
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
+    transition: all 2000ms ease-in;
 
 }
 
