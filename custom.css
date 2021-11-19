@@ -601,7 +601,13 @@ ul.arrow_list{
 .flip_container:hover .flip_inner{
     transform: rotateY(180deg);
 }
-
+.normal_card{
+    min-height: 245px;
+    width: 24%;
+    box-shadow: 0 0 20px #00000010;
+    border-radius: 10px;
+    padding-top: 42px;
+}
 .flip_card_white, .card_blue{
     box-shadow: 0 0 20px #00000010;
     border-radius: 10px;
@@ -612,6 +618,9 @@ ul.arrow_list{
 }
 .flip_card_white{
     padding-top: 42px;
+}
+#einzeilige_cards .flip_card_white{
+    padding-top: 54px;
 }
 
 .card_text_inner{
@@ -634,17 +643,23 @@ ul.arrow_list{
     transform-style: preserve-3d;
 }
 
-
+#einzeilige_cards .card_image_container{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 110px;
+}
 
 .card_image_container{
-    height: 75px;
+    height: 90px;
     color: #28A5BC;
 }
 .card_text{
     font-size: 16px;
     line-height: 22px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .card_white h4, .card_blue h4{
