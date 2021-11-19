@@ -149,6 +149,9 @@
 .navbar_heading:focus::after{
     transform: translate3d(0, 0, 0);
 }
+.active_nav_heading{
+    color: #28A5BC;
+}
 /* Overview */
 .overview{
     box-shadow: 0 0 20px #00000020;
