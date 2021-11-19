@@ -991,6 +991,140 @@
 </script>
 
 <script>
+    const close_button = document.getElementById("closing_button");
+    const hamburger = document.getElementById("hamburger_button");
+    const mobile_menu = document.getElementById("mobile-menu");
+    const mobile_menu_width_helper = document.getElementById("mobile_container");
+    const styles = window.getComputedStyle(mobile_menu_width_helper);
+    const mobile_width = styles.width;
+    close_button.addEventListener("click", function () {
+        mobile_menu.style.width = "0";
+    })
+    hamburger.addEventListener("click", function () {
+        mobile_menu.style.setProperty('width', mobile_width);
+
+    })
+    const unhide_conferencing = document.getElementById("conferencing");
+    const unhide_online = document.getElementById("online");
+    const unhide_warum = document.getElementById("warum");
+    const suche = document.getElementById("suche");
+    const dropdown_suche = document.getElementById("dropdown_suche");
+    const dropdown_conferencing = document.getElementById("dropdown_conferencing");
+    const dropdown_online = document.getElementById("dropdown_online");
+    const dropdown_warum = document.getElementById("dropdown_warum");
+
+    suche.addEventListener("mouseover", function () {
+        dropdown_suche.classList.add("show");
+        dropdown_conferencing.classList.remove("show")
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_conferencing.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.add("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.add("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_online.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.add("show");
+        dropdown_warum.classList.remove("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.add("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    })
+    unhide_warum.addEventListener("mouseover", function () {
+        dropdown_suche.classList.remove("show");
+        suche.classList.remove("active_heading");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.add("show");
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.add("active_heading");
+    })
+
+    dropdown_suche.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_conferencing.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_online.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+    dropdown_warum.addEventListener("mouseleave", function () {
+        leave_function()
+    })
+
+    function leave_function() {
+        dropdown_suche.classList.remove("show");
+        dropdown_conferencing.classList.remove("show");
+        dropdown_online.classList.remove("show");
+        dropdown_warum.classList.remove("show");
+        suche.classList.remove("active_heading")
+        unhide_conferencing.classList.remove("active_heading");
+        unhide_online.classList.remove("active_heading");
+        unhide_warum.classList.remove("active_heading");
+    }
+
+    window.onscroll = function () {
+        make_sticky()
+    };
+
+    const navbar = document.getElementById("navbar_sticky");
+    const sticky = navbar.offsetTop;
+
+    function make_sticky() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("nav_sticky")
+        } else {
+            navbar.classList.remove("nav_sticky");
+        }
+    }
+
+    const cookieBox = document.querySelector(".cookie");
+    const overlay = document.getElementById("overlay");
+    const acceptBtn_all = document.getElementById("all_cookies");
+    const acceptBtn_functional = document.getElementById("functional_cookies");
+    acceptBtn_all.onclick = () => {
+        //setting cookie for 1 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
+        if (document.cookie) { //if cookie is set
+            cookieBox.classList.add("hide_cookie"); //hide cookie box
+        } else { //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+        //removing overlay
+        overlay.classList.add("hide");
+    }
+    acceptBtn_functional.onclick = () => {
+        //setting cookie for 1 month, after one month it'll be expired automatically
+        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
+        if (document.cookie) { //if cookie is set
+            cookieBox.classList.add("hide_cookie"); //hide cookie box
+        } else { //if cookie not set then alert an error
+            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+        }
+        //removing overlay
+        overlay.classList.add("hide");
+    }
+    let checkCookie = document.cookie.indexOf("CookieBy=CSN"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie !== -1 ? overlay.classList.add("hide") : overlay.classList.remove("hide");
+
+</script>
+
+<script>
     feather.replace()
 </script>
 
