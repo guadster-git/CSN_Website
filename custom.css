@@ -34,7 +34,7 @@
     z-index: 90;
 }
 .hide{
-    display: none;
+    display: none!important;
 }
 .box_gegenüberstellung{
     margin-left: 140px;
@@ -602,6 +602,9 @@ ul.arrow_list{
     width: 24%;
 }
 .flip_container:hover .flip_inner{
+    transform: rotateY(180deg);
+}
+.apply_flip{
     transform: rotateY(180deg);
 }
 .normal_card{

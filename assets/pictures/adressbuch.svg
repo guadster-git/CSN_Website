@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.241" height="60.17" viewBox="0 0 50.241 60.17">
+  <g id="Gruppe_204" data-name="Gruppe 204" transform="translate(-260.736 -94.093)">
+    <path id="Pfad_270" data-name="Pfad 270" d="M266.726,108.474v-7s0-5.878,5.877-5.878h32.014s5.971.313,5.971,5.972V145.99s.125,6.675-6.675,6.675H273.6s-6.777,1.251-6.777-6.777v-6.9" transform="translate(-1.113)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Linie_73" data-name="Linie 73" x2="6.628" transform="translate(262.236 109.101)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Linie_74" data-name="Linie 74" x2="6.628" transform="translate(262.236 121.479)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Linie_75" data-name="Linie 75" y2="7.128" transform="translate(265.55 114.351)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Linie_76" data-name="Linie 76" x2="6.628" transform="translate(262.299 134.548)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="Linie_77" data-name="Linie 77" y2="7.128" transform="translate(265.613 127.419)" fill="none" stroke="#28a5bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="Gruppe_203" data-name="Gruppe 203" transform="translate(274.283 108.599)">
+      <path id="Pfad_271" data-name="Pfad 271" d="M296.116,133.33a5.8,5.8,0,0,1-4.65,2.58c-3.52,0-5.981-2.658-5.981-6.684,0-5.239,3.6-9.109,7.817-9.109a4.308,4.308,0,0,1,4.182,2.58l.354-2.073h3.087l-2.11,9.812a5.393,5.393,0,0,0-.117,1.1c0,.9.391,1.6,1.483,1.6,2.189,0,4.224-3.517,4.224-7.427,0-5.707-4.339-9.968-10.946-9.968-6.879,0-12,5-12,12.469,0,6.842,4.612,11.962,12.429,11.962a12.682,12.682,0,0,0,8.015-2.735l1.6,2.11a15,15,0,0,1-9.616,3.479c-9.148,0-15.635-5.981-15.635-14.853a14.914,14.914,0,0,1,15.167-15.285c7.935,0,13.992,5.473,13.992,12.783,0,5.824-3.361,10.163-7.426,10.163C298.15,135.831,296.546,135.05,296.116,133.33Zm-2.775-10.281c-2.814,0-4.65,2.854-4.65,5.747,0,2.384.78,4.261,3.323,4.261,2.658,0,4.495-2.658,4.612-6.333C296.625,124.417,295.451,123.048,293.34,123.048Z" transform="translate(-278.253 -112.885)" fill="#28a5bc"/>
+    </g>
+  </g>
+</svg>
