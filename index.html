@@ -109,7 +109,8 @@
                     <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
                         <li><h3 class="my-auto me-5 py-1 navbar_heading position-relative" id="conferencing"><a
                                 href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3></li>
-                        <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative" id="online"><a
+                        <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative"
+                                id="online"><a
                                 href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></h3>
                         </li>
                         <li><h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a
@@ -121,7 +122,7 @@
                         <div class="mx-auto icons_height icon_jump">
                             <i data-feather="mail"></i>
                         </div>
-                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="">Kontakt</a></p>
+                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a></p>
                     </div>
                     <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
                         <div class="mx-auto icons_height icon_jump">
@@ -313,6 +314,79 @@
 
 
     </section>
+<section class="position-relative">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden" data-bs-ride="carousel">
+
+        <div class="carousel-indicators z_front" >
+            <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex flex-wrap justify-content-end active" data-bs-interval="10000">
+                <img src="assets/pictures/slide_1.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> Das brandneue CSN
+                        bringt Conferencing und Online-Beratung auf die nächste Stufe</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left" >
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_2.png"  alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2> Ihr Full Service Provider
+                        für digitale Beratung, Webinare & Konferenzen</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left" >
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_3.png"  alt="..." >
+                <div class="carousel_banner position-absolute">
+                    <h2> CSN verbindet – <br>
+                        Online-Berater, Kunden, Moderatoren, Aktionäre, Mitarbeiter, …</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left" >
+            </div>
+            <div class="carousel-item d-flex flex-wrap justify-content-end" data-bs-interval="10000">
+                <img src="assets/pictures/slide_4.png"  alt="..." >
+                <div class="carousel_banner position-absolute">
+                    <h2> Die einfache & sichere Kommunikationsplattform „Made in Germany"</h2>
+                    <button class="button white_button button_carousel">Mehr erfahren</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left" >
+            </div>
+        </div>
+        <div class="position-absolute made_in_germany d-flex flex-column">
+            <img src="assets/pictures/german_stripes.svg" alt="">
+            <span style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</span>
+        </div>
+
+        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute circle_thin_banner">
+        <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute circle_blue_banner">
+        <img src="assets/pictures/white_fat_circle.svg" alt="" class="position-absolute circle_middle_banner">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+
+</section>
 
 <!-- Logos DONE -->
 
@@ -818,11 +892,11 @@
                 <div>
                     <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
                     <div class="font_light">
-                        <p class="font_light footer_list">Impressum</p>
-                        <p class="font_light footer_list">Datenschutzerklärung</p>
+                        <p class="font_light footer_list"><a href="Impressum.html">Impressum</a></p>
+                        <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
                         <p class="font_light footer_list">Haftungsausschluss</p>
-                        <p class="font_light footer_list">Allgemeine Geschäftsbedingungen</p>
-                        <p class="font_light footer_list">Kontakt</p>
+                        <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
+                        <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
                     </div>
                 </div>
                 <div>

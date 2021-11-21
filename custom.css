@@ -29,12 +29,16 @@
     --bs-gutter-x: 0;
 }
 
+.subpages_box{
+    margin-right: 30%;
+    margin-left: 140px;
+}
 
 .z_front{
     z-index: 90;
 }
 .hide{
-    display: none!important;
+    display: none;
 }
 .box_gegenüberstellung{
     margin-left: 140px;
@@ -969,6 +973,84 @@ a:hover{
 }
 .warum_banner_overlay{
     height: 750px;
+}
+
+/* Datenschutz, Impressum, AGBs */
+
+#datenschutz p{
+    font-family: "Azo Sans Lt", Helvetica, Arial, serif;
+}
+.heading_datenschutz{
+    color: #28A5BC;
+    font-size: 22px;
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-weight: 500;
+}
+.subheading_datenschutz{
+    font-size: 20px;
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-weight: 500;
+}
+#datenschutz a{
+    color: #28A5BC;
+}
+.width_datenschutz_mail{
+    width: 70px;
+}
+#AGB p{
+    font-family: "Azo Sans Lt", Helvetica, Arial, serif;
+}
+#AGB a{
+    color: #28A5BC;
+}
+#AGB h3{
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-weight: 500;
+}
+#kontaktform .form-control{
+    border: 1px solid lightgrey;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+
+
+}
+#kontaktform label{
+    display: none;
+}
+#form_nachricht textarea{
+    height: 270px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.25rem;
+    color: gray;
+}
+textarea:focus-visible{
+    outline: none!important;
+}
+.textfeld:focus-visible::placeholder{
+    color: transparent!important;
+}
+#form_nachricht .form-control{
+    vertical-align: top;
+
+}
+#kontaktform .form-control:focus::placeholder{
+    color: transparent;
+}
+
+#kontaktform .form-select{
+    background-color: lightgrey;
+}
+#kontaktform .form-select:focus{
+    box-shadow: none;
+    border-color: transparent;
+    background-color: lightgrey;
+}
+.submit_button{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 
