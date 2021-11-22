@@ -21,9 +21,9 @@ class MyNavbar extends HTMLElement {
             </ul>
         </div>
         <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
-            <div class="d-flex flex-column align-self-center pe-5 icon">
-                <div class="mx-auto icons_height icon_jump">
-                    <i data-feather="mail"></i>
+            <div class="d-flex flex-column  pe-5 icon">
+                <div class="mx-auto icons_height icon_jump" >
+                    <a href="Kontakt.html"><i data-feather="mail"></i></a>
                 </div>
                 <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a></p>
             </div>
@@ -167,9 +167,7 @@ class MyFooter extends HTMLElement {
         this.innerHTML = `
 <section class="bg-primary position-relative overflow-hidden">
     <div class="box py-5 my-5 ">
-        <img src="assets/pictures/circle_AI_Left_top.png" alt="" class="position-absolute contact_bottom_right">
-        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute contact_right">
-        <img src="assets/pictures/circle_AI_fat.png" alt="" class="position-absolute contact_top_right">
+       
         <h4 class="text-white text-center font_medium" style="font-size: 30px;">Nehmen Sie Kontakt mit uns auf und
             sprechen Sie mit einem unserer Experten.</h4>
         <div class="row justify-content-between align-content-center d-flex text-white pt-5">
@@ -200,8 +198,9 @@ class MyFooter extends HTMLElement {
 
 <!---Footer DONE --->
 
-<section class="bg-secondary position-relative">
-    <div class="box">
+<section class="bg-secondary position-relative overflow-hidden">
+    <img src="/assets/pictures/footer_globe.svg" alt="" class="footer_globe position-absolute">
+    <div class="box position-relative" id="footer">
         <div class="row py-5 no_gutter_x ">
             <div class="col-md-3 col-sm-12 d-flex justify-content-start align-content-center  ">
                 <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
@@ -321,7 +320,7 @@ class MyFooter extends HTMLElement {
             </div>
         </div>
     </div>
-    <a href="#navbar" style="position: absolute; right: 40px; bottom: 50px;"><img src="assets/pictures/to_top_arrow.svg"
+    <a href="#navbar" class="footer_anchor position-absolute"><img src="assets/pictures/to_top_arrow.svg"
                                                                                   alt=""></a>
 </section>
 `
