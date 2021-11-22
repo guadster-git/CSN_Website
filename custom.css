@@ -267,6 +267,15 @@ ul.arrow_list{
     padding: 49px;
 }
 
+#nav_conferencing #conferencing{
+    color: #28A5BC;
+}
+#nav_online #online{
+    color: #28A5BC;
+}
+#nav_warum #warum{
+    color: #28A5BC;
+}
 
 
 .made_in_germany{
