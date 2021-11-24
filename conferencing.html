@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/font/stylesheet.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="assets/js/add_components.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="assets/pictures/CSN_Favicon.ico">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -104,10 +105,12 @@
                     <div class="d-flex justify-content-between text-uppercase " id="dropdown_enabler">
                         <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
                             <li><h3 class="my-auto me-5 py-1 navbar_heading position-relative" id="conferencing"><a
-                                    href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3></li>
+                                    href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3>
+                            </li>
                             <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative"
                                     id="online"><a
-                                    href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></h3>
+                                    href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a>
+                            </h3>
                             </li>
                             <li><h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a
                                     href="warum.html">Warum CSN</a></h3></li>
@@ -118,7 +121,8 @@
                             <div class="mx-auto icons_height icon_jump">
                                 <i data-feather="mail"></i>
                             </div>
-                            <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a></p>
+                            <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a>
+                            </p>
                         </div>
                         <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
                             <div class="mx-auto icons_height icon_jump">
@@ -147,13 +151,15 @@
                         <h3 class="mx-5 dropdown_font"><a href="conferencing.html#bereiche">Einsatzbereiche</a></h3>
                         <h3 class="mx-5 dropdown_font"><a href="conferencing.html#branchen">Branchen</a></h3>
                         <h3 class="mx-5 dropdown_font"><a href="conferencing.html#highlights">Unsere Highlights</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a></h3>
+                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a>
+                        </h3>
                     </div>
                 </div>
                 <div class="hide bg-white" id="dropdown_online">
                     <div class="box border-top d-flex justify-content-center py-3 ">
                         <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#trend">Trend zur Realität</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#highlights">Unsere Highlights</a></h3>
+                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#highlights">Unsere Highlights</a>
+                        </h3>
                         <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#features">Weitere Features</a></h3>
                         <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#branchen">Branchen</a></h3>
                         <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#sicherheit">Sicherheit</a></h3>
@@ -170,10 +176,12 @@
                 <div class="hide bg-white" id="dropdown_suche">
                     <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
                         <div class="input-group search_bar w-25">
-                            <input type="text" class="form-control" placeholder="Suche" aria-label="Recipient's username"
+                            <input type="text" class="form-control" placeholder="Suche"
+                                   aria-label="Recipient's username"
                                    aria-describedby="basic-addon2">
-                            <button class="search_button d-flex align-items-center"><img src="assets/pictures/search.svg"
-                                                                                         alt=""></button>
+                            <button class="search_button d-flex align-items-center"><img
+                                    src="assets/pictures/search.svg"
+                                    alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -182,7 +190,6 @@
         </div>
     </div>
 </section>
-
 
 
 <!-- Navbar Mobile ToDo: slide-in -->
@@ -298,7 +305,7 @@
         </div>
         <div class="position-absolute made_in_germany d-flex flex-column">
             <img src="assets/pictures/german_stripes.svg" alt="">
-            <span style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</span>
+            <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
 
         <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute circle_thin_banner">
@@ -497,11 +504,14 @@
 
     <div class="row my-5 py-5">
         <div class="col-lg-6 col-md-12 position-relative">
-            <img src="assets/pictures/blue_thin_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_thin">
-            <img src="assets/pictures/blue_fat_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_fat">
-            <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+            <div id="conferencing_pictures_blue_middle">
+                <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_thin">
+                <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_fat">
+                <img src="assets/pictures/fat_circle_grey.svg" alt="" class="position-absolute communication_grey">
+            </div>
+
             <div class="d-flex justify-content-center align-content-center">
                 <img src="assets/pictures/conference_round_3.png" alt="" class="w-75">
             </div>
@@ -509,7 +519,7 @@
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
-                <h2 class="mb-4 pb-2 font_medium">Webkonferenzen</h2>
+                <h2 class="mb-4 pb-2 font_medium">Webkonferenzen und Online-Meetings</h2>
                 <div class="picture_column_width">
                     <p>Unsere Arbeit findet heutzutage ortsungebunden, zu verschieden Zeiten und auf unterschiedlichen
                         Geräten statt.
@@ -577,7 +587,8 @@
         </div>
         <div class="col-lg-6 col-md-12 position-relative">
             <img src="assets/pictures/orange_circle.svg" alt=""
-                 class="w-75 position-absolute communication_orange_circle">
+                 class="w-75 position-absolute conferencing_orange_circle">
+            <img src="assets/pictures/circle_grey_middle.svg" alt="" class="position-absolute conferencing_middle_grey">
             <div class="d-flex justify-content-end pe-5 align-content-center">
                 <img src="assets/pictures/conference_round_4.png" alt="" class="w-75">
             </div>
@@ -628,9 +639,9 @@
 <!--Banner -->
 
 <section class="position-relative overflow-hidden height_banner">
-    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left">
-    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_middle">
-    <img src="assets/pictures/blue_fat.svg" alt="" class="position-absolute banner_top_left">
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_reverse_thin">
+    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_reverse_medium">
+    <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_reverse_blue">
     <img src="assets/pictures/conference_banner_1.png" alt="">
     <img src="assets/pictures/overlay_banner_left.svg" alt="" class="position-absolute"
          style="top: 0; left: 0; height: 750px;">
@@ -1157,7 +1168,7 @@
     <div class="row gx-0">
 
         <div class="col-lg-6 col-md-12 tiles_height" id="second_tile">
-            <img src="assets/pictures/second_tile.png" alt="">
+            <img src="assets/pictures/sixth_tile.png" alt="">
         </div>
 
         <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex">
@@ -1261,17 +1272,23 @@
 
 
         <div class="col-lg-6 col-md-12 tiles_height overflow-hidden" id="sixth_tile">
-            <img src="assets/pictures/sixth_tile.png" alt="">
+            <img src="assets/pictures/second_tile.png" alt="">
         </div>
         <div class="col-lg-6 col-md-12 tiles_height align-items-center d-flex">
             <div class="box">
-                <h2 class="font_medium mb-4">Business-Konferenzen</h2>
+                <h2 class="font_medium mb-4">Leads generieren</h2>
                 <p class="mb-4">
-                    Suchen Sie eine virtuelle Lernumgebung, die mehr als einfache Videokonferenzen oder herkömmlichen
-                    Frontal-Unterricht bietet?
-                    Mit der innovativen Webinar-Plattform von CSN machen Sie Lernen
-                    zum Erlebnis, sowohl in 1-zu-1 Schulungen, Gruppenschulungen
-                    oder ganzen Kursreihen.
+                    Betreiben Sie modernes Marketing. Nutzen Sie unsere Conferencing Platt-form, um qualifizierte Leads
+                    für Ihr Unternehmen zu generieren. In spannen-den Live-Events oder Webcasts können Sie
+                    beispielsweise brandneue Pro-dukte präsentieren, Branchentrends zeigen und dabei den wichtigen
+                    Erst-kontakt zu potenziellen Käufern herstellen. <br> <br>
+
+                    Ziehen Sie die alle Register unseres Konferenzsystems, um Ihre Werbebot-schaft am Markt im besten
+                    Licht zu präsentieren. Zeigen Sie Powerpoint-Präsentationen, teilen Sie Ihren Bildschirm,
+                    präsentieren Sie sich Live, integ-rieren Sie Youtube-Videos, schalten sie Meinungsumfragen und
+                    chatten Sie mit Ihren Teilnehmern. Es war nicht leichter, Menschen für Ihre Idee zu be-geistern und
+                    Zugang zu hoch qualifizierten Geschäftskontakten zu bekom-men.
+
                 </p>
                 <button class="button blue_button mt-4">Beratung zur Geschäftskonferenz</button>
             </div>
@@ -1369,20 +1386,17 @@
                              data-bs-parent="#accordionConferencing">
                             <div class="accordion_collapse px-5 pt-3 pb-5">
                                 <p>
-                                    Zahlreiche Banken, Sparkassen und Fondsanbieter nutzen die Möglichkeit, Mitarbeiter,
-                                    Vertriebspartner und Kunden im Rahmen von CSN.
-                                    Online Konferenzen schnell und ohne großen Aufwand über Trends, aktuelle
-                                    Entwicklungen am Finanzmarkt und neue Produkte zu informieren.
-                                    CSN. Conferencing bietet zahlreiche interaktive Funktionen, damit Ihre
-                                    Webkonferenzen genauso begeistern, wie eine klassischen Roadshow:
+                                    Für die Weiterbildungsinitiative „gut beraten“ der Versicherungswirtschaft hat CSN.
+                                    spezielle Anpassungen vorgenommen. Teilnehmer können sich komfortabel über
+                                    Webformulare mit Ihrer VV-ID (Weiterbildungs-ID) registrieren. <br><br> Während der
+                                    Fortbildung kann die Anwesenheit Online oder telefonisch überprüft und das
+                                    vermittelte Fachwissen in Multiple-Choice-Tests abgefragt werden. Die
+                                    Weiterbildungszeiten der Teilnehmer werden automatisch er-fasst. Anschließend werden
+                                    sie den Bildungskonten in der überbetrieblichen Weiterbildungsdatenbank (WBD) von
+                                    „gut beraten“ gut geschrieben. <br><br>
                                 </p>
-                                <ul class="font_medium arrow_list my-4">
-                                    <li>Live Video der Moderatoren</li>
-                                    <li>Live Frage- und Antwortrunden / alternativ Chat</li>
-                                    <li>Statements vorab aufzeichnen und live einspielen</li>
-                                    <li>Aufzeichnung für verhinderte Teilnehmer</li>
-                                </ul>
-                                <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
+
+                                <button class="button blue_button">Testaccount für Versicherung anfordern
                                 </button>
                             </div>
                         </div>
@@ -1411,20 +1425,38 @@
                              data-bs-parent="#accordionConferencing">
                             <div class="accordion_collapse px-5 pt-3 pb-5">
                                 <p>
-                                    Zahlreiche Banken, Sparkassen und Fondsanbieter nutzen die Möglichkeit, Mitarbeiter,
-                                    Vertriebspartner und Kunden im Rahmen von CSN.
-                                    Online Konferenzen schnell und ohne großen Aufwand über Trends, aktuelle
-                                    Entwicklungen am Finanzmarkt und neue Produkte zu informieren.
-                                    CSN. Conferencing bietet zahlreiche interaktive Funktionen, damit Ihre
-                                    Webkonferenzen genauso begeistern, wie eine klassischen Roadshow:
+                                    Das Unterricht nicht zwangsläufig in einem Klassenzimmer stattfinden muss, wurde in
+                                    der Corona-Krise besonders deutlich. <br><br>
+
+                                    Die Webinar-Software von CSN bietet alle Funktionen, um Wissen effizient Online zu
+                                    vermitteln. Und zwar so, wie Sie es in klassischen Präsenzveranstaltungen gewohnt
+                                    sind. Genauso sicher und interaktiv:
+
                                 </p>
                                 <ul class="font_medium arrow_list my-4">
-                                    <li>Live Video der Moderatoren</li>
-                                    <li>Live Frage- und Antwortrunden / alternativ Chat</li>
-                                    <li>Statements vorab aufzeichnen und live einspielen</li>
-                                    <li>Aufzeichnung für verhinderte Teilnehmer</li>
+                                    <li>Mediathek statt Unterrichtsmappe</li>
+                                    <li>Online-Präsentation statt Arbeitsmaterial</li>
+                                    <li>Whiteboard statt Tafel</li>
+                                    <li>Live-Video statt Präsenz</li>
+                                    <li>Video-Broadcasts statt Multimedia-PC</li>
+                                    <li>Screen Sharing statt Beamer</li>
+                                    <li>Download-Freigaben statt Arbeitsmaterial</li>
+                                    <li>Multiple-Choice-Fragen statt Tests</li>
+                                    <li>Umfrage statt Abstimmung</li>
+                                    <li>Besprechungsmodus statt Diskussionsrunde</li>
+                                    <li>persönliche Nachrichten statt diskrete Rückfrage</li>
+                                    <li>Wortmeldung statt Handzeichen</li>
+                                    <li>Co-Moderation für weitere Lehrerkräfte</li>
+                                    <li>Teilnehmer-Freigabe für Referate</li>
+                                    <li>Textchat für eine lockere Eröffnung</li>
+                                    <li>Konferenzreports statt Anwesenheitsliste</li>
+
                                 </ul>
-                                <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
+                                <p>CSN. Blended-Learning für einen erfolgreichen Online-Unterricht. <br><br>
+
+                                    Made and hosted im Germany - zertifiziert, DSGVO-konform und sicher! <br><br>
+                                </p>
+                                <button class="button blue_button">Testaccount für Bildungseinrichtungen anfordern
                                 </button>
                             </div>
                         </div>
@@ -1451,20 +1483,26 @@
                              data-bs-parent="#accordionConferencing">
                             <div class="accordion_collapse px-5 pt-3 pb-5">
                                 <p>
-                                    Zahlreiche Banken, Sparkassen und Fondsanbieter nutzen die Möglichkeit, Mitarbeiter,
-                                    Vertriebspartner und Kunden im Rahmen von CSN.
-                                    Online Konferenzen schnell und ohne großen Aufwand über Trends, aktuelle
-                                    Entwicklungen am Finanzmarkt und neue Produkte zu informieren.
-                                    CSN. Conferencing bietet zahlreiche interaktive Funktionen, damit Ihre
-                                    Webkonferenzen genauso begeistern, wie eine klassischen Roadshow:
+                                    Weltweit müssen Behörden auf Bundes-, Landes- und kommunaler Ebene zusammenarbeiten.
+                                    CSN. bietet dafür eine maßgeschneiderte Kommunikationslösung, sicher,
+                                    browserbasiert und Firewall kompatibel. Sie funktioniert in jeder Behörde, auf jedem
+                                    Computer und selbstverständlich auch mit einem klassischen Bürotelefon. <br><br>
+                                    Digitale Bürgerdienste für mehr Service und Effizienz.
                                 </p>
                                 <ul class="font_medium arrow_list my-4">
-                                    <li>Live Video der Moderatoren</li>
-                                    <li>Live Frage- und Antwortrunden / alternativ Chat</li>
-                                    <li>Statements vorab aufzeichnen und live einspielen</li>
-                                    <li>Aufzeichnung für verhinderte Teilnehmer</li>
+                                    <li>
+                                        CSN. Videochats <br>
+                                        <span class="font-regular">reduzieren Behördengänge und verschaffen den Bürgern einen leichteren Zugang zu Ihren Dienstleistungen.</span>
+                                    </li>
+                                    <li>CSN. Online-Meetings <br>
+                                        <span class="font-regular">können Bürgerversammlungen vollständig ersetzen. Sie steigern das Engagement und die politische Bildung Ihrer Bürger</span>
+                                    </li>
+                                    <li>CSN. Infocalls <br>
+                                        <span class="font-regular">schnellen Alarmierung von Mitarbeitern und Bürgern in Notlagen und bei Gefährdungen der Gesundheit.</span>
+                                    </li>
+
                                 </ul>
-                                <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
+                                <button class="button blue_button">Testaccount für Behörden anfordern
                                 </button>
                             </div>
                         </div>
@@ -1477,301 +1515,13 @@
 
 </section>
 
-<!--- Blue Banner DONE --->
+<!--- Footer DONE --->
 
-<section class="bg-primary position-relative overflow-hidden">
-    <div class="box py-5 my-5 ">
-        <img src="assets/pictures/circle_AI_Left_top.png" alt="" class="position-absolute contact_bottom_right">
-        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute contact_right">
-        <img src="assets/pictures/circle_AI_fat.png" alt="" class="position-absolute contact_top_right">
-        <h4 class="text-white text-center font_medium" style="font-size: 30px;">Nehmen Sie Kontakt mit uns auf und
-            sprechen Sie mit einem unserer Experten.</h4>
-        <div class="row justify-content-between align-content-center d-flex text-white pt-5">
-            <div class="col-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-            <div class="col-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-            <div class="col-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">info@csn-gmbh.de</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-        </div>
-    </div>
-</section>
+<my-footer></my-footer>
 
-<!---Footer DONE --->
-
-<section class="bg-secondary position-relative">
-    <div class="box">
-        <div class="row py-5 no_gutter_x ">
-            <div class="col-md-3 col-sm-12 d-flex justify-content-start align-content-center  ">
-                <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
-            </div>
-            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center text-white my-auto  ">
-                <span class="align-middle text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
-            </div>
-            <div class="col-md-3 d-flex justify-content-between ">
-                <button class="button blue_full_button">Kostenlos Testen</button>
-                <div class="flex-column my-auto justify-content-end icon">
-                    <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
-                        <i data-feather="globe"></i>
-                    </div>
-                    <span class="text-white no_padding_bot text-uppercase mx-auto font_medium font_navbar">Deutsch</span>
-                </div>
-            </div>
-        </div>
-        <div class="row py-5 top_border no_gutter_x">
-            <div class="col-md-3 text-white ps-0">
-                <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
-                <div class="font_light">
-                    <p class="font_medium footer_list">Enthaltene Produkte</p>
-                    <p class="font_light footer_list">Telefonkonferenzen</p>
-                    <p class="font_light footer_list">Webinare & Online Training</p>
-                    <p class="font_light footer_list">Webkonferenzen</p>
-                    <p class="font_light footer_list">Videokonferenzen</p>
-                    <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
-                </div>
-
-                <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Einsatzbereiche</p>
-                    <p class="font_light footer_list">Marketing & Vertrieb</p>
-                    <p class="font_light footer_list">Schulung & Training</p>
-                    <p class="font_light footer_list">Business-Konferenzen</p>
-                    <p class="font_light footer_list">Investor Relations Konferenzen</p>
-                    <p class="font_light footer_list">Recruiting</p>
-                </div>
-            </div>
-            <div class="col-md-3 text-white">
-                <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</p>
-                <div class="font_light">
-                    <p class="font_medium footer_list">Produkt-Features</p>
-                    <p class="font_light footer_list">Video-Beratung</p>
-                    <p class="font_light footer_list">Text- und Videochat</p>
-                    <p class="font_light footer_list">Digitale Unterschrift</p>
-                    <p class="font_light footer_list">Dateifreigabe & Mediathek</p>
-                    <p class="font_light footer_list">Umfragen</p>
-                </div>
-
-                <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Branchen</p>
-                    <p class="font_light footer_list">Versicherungen & Makler</p>
-                    <p class="font_light footer_list">Banken & Immobilien</p>
-                    <p class="font_light footer_list">Einzelhandel / Onlineshops</p>
-                    <p class="font_light footer_list">Gesundheitswesen</p>
-                    <p class="font_light footer_list">Telekommunikation</p>
-                </div>
-            </div>
-            <div class="col-md-3 text-white">
-                <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
-                <div class="font_light">
-                    <p class="font_medium footer_list">Highlights</p>
-                    <p class="font_light footer_list">20 Jahre Markterfahrung</p>
-                    <p class="font_light footer_list">Modernste Webtechnologien</p>
-                    <p class="font_light footer_list">Inhouse Kundenservice</p>
-                    <p class="font_light footer_list">Kostenlose Schulung & Beratung</p>
-                    <p class="font_light footer_list">Premium Operatorservicen</p>
-                </div>
-
-                <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Über uns</p>
-                    <p class="font_light footer_list">Unsere Vision</p>
-                    <p class="font_light footer_list">CSN Leitlinien</p>
-                    <p class="font_light footer_list">Made and hosted in Germany</p>
-                    <p class="font_light footer_list">zertifiziert und sicher</p>
-                    <p class="font_light footer_list">DSGVO-, BDSG- und TKG-konform</p>
-                </div>
-            </div>
-            <div class="col-md-3 d-flex flex-column justify-content-between text-white">
-                <div>
-                    <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
-                    <div class="font_light">
-                        <p class="font_light footer_list"><a href="Impressum.html">Impressum</a></p>
-                        <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
-                        <p class="font_light footer_list">Haftungsausschluss</p>
-                        <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
-                        <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
-                    </div>
-                </div>
-                <div>
-                    <div class="font_light pb-3">
-                        <p class="font_medium text-uppercase">Folgen Sie uns Bei</p>
-                        <div class="row pe-5">
-                            <div class="col-3 social_media_row">
-                                <a href="#"><img src="assets/pictures/facebook_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/facebook.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 social_media_row">
-                                <a href="#"><img src="assets/pictures/twitter_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/twitter.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 social_media_row">
-                                <a href="#"><img src="assets/pictures/instagram_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/instagram.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 social_media_row">
-                                <a href="#"><img src="assets/pictures/youtube_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/youtube.png" alt="" class="social_media">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#navbar" style="position: absolute; right: 40px; bottom: 50px;"><img src="assets/pictures/to_top_arrow.svg"
-                                                                                  alt=""></a>
-</section>
-
-<script>
-    const close_button = document.getElementById("closing_button");
-    const hamburger = document.getElementById("hamburger_button");
-    const mobile_menu = document.getElementById("mobile-menu");
-    const mobile_menu_width_helper = document.getElementById("mobile_container");
-    const styles = window.getComputedStyle(mobile_menu_width_helper);
-    const mobile_width = styles.width;
-    close_button.addEventListener("click", function () {
-        mobile_menu.style.width = "0";
-    })
-    hamburger.addEventListener("click", function () {
-        mobile_menu.style.setProperty('width', mobile_width);
-
-    })
-    const unhide_conferencing = document.getElementById("conferencing");
-    const unhide_online = document.getElementById("online");
-    const unhide_warum = document.getElementById("warum");
-    const suche = document.getElementById("suche");
-    const dropdown_suche = document.getElementById("dropdown_suche");
-    const dropdown_conferencing = document.getElementById("dropdown_conferencing");
-    const dropdown_online = document.getElementById("dropdown_online");
-    const dropdown_warum = document.getElementById("dropdown_warum");
-
-    suche.addEventListener("mouseover", function () {
-        dropdown_suche.classList.add("show");
-        dropdown_conferencing.classList.remove("show")
-        dropdown_online.classList.remove("show");
-        dropdown_warum.classList.remove("show");
-        unhide_conferencing.classList.remove("active_heading");
-        unhide_online.classList.remove("active_heading");
-        unhide_warum.classList.remove("active_heading");
-    })
-    unhide_conferencing.addEventListener("mouseover", function () {
-        dropdown_suche.classList.remove("show");
-        suche.classList.remove("active_heading");
-        dropdown_conferencing.classList.add("show");
-        dropdown_online.classList.remove("show");
-        dropdown_warum.classList.remove("show");
-        unhide_conferencing.classList.add("active_heading");
-        unhide_online.classList.remove("active_heading");
-        unhide_warum.classList.remove("active_heading");
-    })
-    unhide_online.addEventListener("mouseover", function () {
-        dropdown_suche.classList.remove("show");
-        suche.classList.remove("active_heading");
-        dropdown_conferencing.classList.remove("show");
-        dropdown_online.classList.add("show");
-        dropdown_warum.classList.remove("show");
-        unhide_conferencing.classList.remove("active_heading");
-        unhide_online.classList.add("active_heading");
-        unhide_warum.classList.remove("active_heading");
-    })
-    unhide_warum.addEventListener("mouseover", function () {
-        dropdown_suche.classList.remove("show");
-        suche.classList.remove("active_heading");
-        dropdown_conferencing.classList.remove("show");
-        dropdown_online.classList.remove("show");
-        dropdown_warum.classList.add("show");
-        unhide_conferencing.classList.remove("active_heading");
-        unhide_online.classList.remove("active_heading");
-        unhide_warum.classList.add("active_heading");
-    })
-
-    dropdown_suche.addEventListener("mouseleave", function () {
-        leave_function()
-    })
-    dropdown_conferencing.addEventListener("mouseleave", function () {
-        leave_function()
-    })
-    dropdown_online.addEventListener("mouseleave", function () {
-        leave_function()
-    })
-    dropdown_warum.addEventListener("mouseleave", function () {
-        leave_function()
-    })
-
-    function leave_function() {
-        dropdown_suche.classList.remove("show");
-        dropdown_conferencing.classList.remove("show");
-        dropdown_online.classList.remove("show");
-        dropdown_warum.classList.remove("show");
-        suche.classList.remove("active_heading")
-        unhide_conferencing.classList.remove("active_heading");
-        unhide_online.classList.remove("active_heading");
-        unhide_warum.classList.remove("active_heading");
-    }
-
-    window.onscroll = function () {
-        make_sticky()
-    };
-
-    const navbar = document.getElementById("navbar_sticky");
-    const sticky = navbar.offsetTop;
-
-    function make_sticky() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("nav_sticky")
-        } else {
-            navbar.classList.remove("nav_sticky");
-        }
-    }
-
-    const cookieBox = document.querySelector(".cookie");
-    const overlay = document.getElementById("overlay");
-    const acceptBtn_all = document.getElementById("all_cookies");
-    const acceptBtn_functional = document.getElementById("functional_cookies");
-    acceptBtn_all.onclick = () => {
-        //setting cookie for 1 month, after one month it'll be expired automatically
-        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
-        if (document.cookie) { //if cookie is set
-            cookieBox.classList.add("hide_cookie"); //hide cookie box
-        } else { //if cookie not set then alert an error
-            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-        }
-        //removing overlay
-        overlay.classList.add("hide");
-    }
-    acceptBtn_functional.onclick = () => {
-        //setting cookie for 1 month, after one month it'll be expired automatically
-        document.cookie = "CookieBy=CSN; max-age=" + 60 * 60 * 24 * 30;
-        if (document.cookie) { //if cookie is set
-            cookieBox.classList.add("hide_cookie"); //hide cookie box
-        } else { //if cookie not set then alert an error
-            alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
-        }
-        //removing overlay
-        overlay.classList.add("hide");
-    }
-    let checkCookie = document.cookie.indexOf("CookieBy=CSN"); //checking our cookie
-    //if cookie is set then hide the cookie box else show it
-    checkCookie !== -1 ? overlay.classList.add("hide") : overlay.classList.remove("hide");
-
-</script>
+<script src="assets/js/cookie.js"></script>
+<script src="assets/js/mobile_menu.js"></script>
+<script src="assets/js/navbar.js"></script>
 
 
 <script>

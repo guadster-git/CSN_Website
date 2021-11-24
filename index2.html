@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="assets/js/add_components.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/pictures/CSN_Favicon.ico">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <title>Willkommen bei CSN</title>
+
+
+</head>
+<body class="overflow-x-hidden">
+
+<!--- Cookie --->
+
+<my-cookie></my-cookie>
+
+<!--TOP BAR DONE -->
+
+<my-topbar></my-topbar>
+
+<section id="navbar-" class="hide">
+    <div class="row">
+        <div class="col-6 position-relative"></div>
+        <div class="col-6 bg-primary py-2 box_navbar_top">
+            <div class="box-right d-flex justify-content-between align-content-center box-right ps-3 text-uppercase text-white">
+                <div class="">
+                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
+                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
+                </div>
+
+                <div class="">
+                    <span class="font_navbar me-3">Bereits registriert?</span>
+                    <span class="font_navbar font_bold arrow_after">Login</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Navbar -->
+
+<my-navbar></my-navbar>
+
+
+<my-mobile_nav></my-mobile_nav>
+
+<!-- Slider DONE -->
+
+<section class="position-relative">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
+         data-bs-ride="carousel">
+
+        <div class="carousel-indicators z_front">
+            <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex active justify-content-end align-items-center" data-bs-interval="10000">
+                <div id="circle_firstSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+
+                <img src="assets/pictures/schriftzug.png" alt="" class="firstSlide_text position-absolute">
+                <img src="assets/pictures/homepage_banner1_.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2 class="carousel_heading"> Das brandneue CSN</h2>
+                    <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                        Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+                    <button class=" button_carousel">Kostenlos testen</button>
+                </div>
+
+                <img src="assets/pictures/banner_right_overlay.png" alt=""
+                     class="position-absolute slider_right_special">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+            <div class="carousel-item d-flex align-items-center justify-content-end" data-bs-interval="10000">
+                <div id="circle_secondSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+
+                <img src="assets/pictures/slide_2.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2 class="carousel_heading">Full Service Provider</h2>
+                    <p>Für CSN Kunden sind individuelle Beratungen, Online-Schulungen und Workshops inklusive. Rufen Sie
+                        uns an und lernen Sie Ihren persönlichen Ansprechpartner kennen. </p>
+                    <button class=" button_carousel">Kostenlos testen</button>
+                </div>
+                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+            <div class="carousel-item d-flex justify-content-end align-items-center" data-bs-interval="10000">
+                <div id="circle_thirdSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider2">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/homepage_banner3.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2 class="carousel_heading"> Dynamische Entwicklung</h2>
+                    <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams, um
+                        die Wünsche und Anregungen der Kunden bestmöglich umzusetzen. </p>
+                    <button class=" button_carousel">Kostenlos testen</button>
+                </div>
+                <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right "
+                     id="home_3rd_slide_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
+                     id="home_3rd_slide">
+            </div>
+            <div class="carousel-item d-flex justify-content-end align-items-center" data-bs-interval="10000"
+                 id="banner4">
+                <div id="circle_forthSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/homepage4.png" alt="...">
+                <div class="carousel_banner position-absolute">
+                    <h2 class="carousel_heading"> Effizient & sicher</h2>
+                    <p>Unsere Kommunikationsplattform „Made in Germany“ verbindet Geschäftspartner, Kollegen und Kunden
+                        in der ganzen Welt. So einfach, effizient und sicher, wie bei Ihnen im Büro.</p>
+                    <button class=" button_carousel">kostenlos testen</button>
+                </div>
+                <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
+                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+            </div>
+        </div>
+
+        <div class="position-absolute made_in_germany d-flex flex-column">
+            <img src="assets/pictures/german_stripes.svg" alt="">
+            <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+
+</section>
+
+
+<!-- Logos DONE -->
+
+<section>
+    <div class="box d-flex justify-content-between py-4 align-content-center">
+        <div class="align-self-center">
+            <img src="assets/pictures/bonn.png" alt="">
+        </div>
+        <div class="align-self-center">
+            <img src="assets/pictures/rv.png" alt="">
+        </div>
+        <div class=" align-self-center">
+            <img src="assets/pictures/fin.png" alt="">
+        </div>
+        <div class="align-self-center">
+            <img src="assets/pictures/jdc_2.png" alt="">
+        </div>
+        <div class=" align-self-center">
+            <img src="assets/pictures/jdc.png" alt="">
+        </div>
+        <div class=" align-self-center">
+            <img src="assets/pictures/vb.png" alt="">
+        </div>
+        <div class=" align-self-center">
+            <img src="assets/pictures/condor.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Gegenüberstellung DONE -->
+
+<section>
+    <div class="row ">
+        <div class="col-lg-6 col-md-12 bg-secondary pb-5 mb-lg-4 ">
+            <div class="box_gegenüberstellung py-3 ">
+                <h2 class="text-white py-5">CSN <span class="font_medium">Conferencing</span></h2>
+                <div class="height-column mb-3">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <img src="assets/pictures/video_symbol.svg" alt="">
+                        </div>
+                        <div class="col-lg-10 col-md-8 mt-2">
+                            <h4 class="text-white font_bold">Full-Service Conferencing „Made by CSN“</h4>
+                            <p class="text-white">Die einfache, zuverlässige und sichere Konferenzplattform mit vollem
+                                Funktionsumfang und persönlicher Betreuung. Wir sind
+                                Full-Service Anbieter für Telefonkonferenzen, Webkonferenzen, Online-Meetings, Webinare
+                                und vieles mehr.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="height-column mb-3">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <img src="assets/pictures/audio.svg" alt="">
+                        </div>
+                        <div class="col-lg-10 col-md-8 mt-2">
+                            <h4 class="text-white font_bold">Brillante Audioqualität in HD</h4>
+                            <p class="text-white">Sowohl in Team-Meetings als auch in Großkonferenzen mit mehreren
+                                tausend Teilnehmern.
+                                Die Audioqualität Ihrer Konferenz überzeugt mit automatischer Rauschunterdrückung und
+                                Pegelanpassung.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button white_button">Weitere Highlights</button>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 bg-primary pb-5 mb-4">
+            <div class="box_gegenüberstellung py-3 pb-5">
+                <h2 class="text-white py-5">CSN <span class="font_medium">Online Beratung</span></h2>
+                <div class="height-column mb-3">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <img src="assets/pictures/speaking.svg" alt="">
+                        </div>
+                        <div class="col-lg-10 col-md-8 mt-2">
+                            <h4 class="text-white font_bold">Für besten Kundenservice und Vertrieb</h4>
+                            <p class="text-white">Online-Präsentationen, Screensharing, Videochat und vieles mehr.
+                                Kinderleicht zu bedienen im Browser Ihrer Wahl.
+                                Die Online-Beratung von CSN benötigt keine Installation, ist sofort einsatzbereit und
+                                sicher.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="height-column mb-3">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <img src="assets/pictures/video_symbol.svg" alt="">
+                        </div>
+                        <div class="col-lg-10 col-md-8 mt-2">
+                            <h4 class="text-white font_bold">MiFID II konform und OPDV zertifiziert</h4>
+                            <p class="text-white">Elektronisch durchgeführte Finanzanlageberatungen müssen
+                                aufge-zeichnet werden. Die CSN. Online- und Video-Beratung
+                                bietet ein MiFID II und FinVermV konformes Taping und ist für den Einsatz
+                                in Sparkassen und Banken OPDV-zertifiziert.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button white_button">Weitere Highlights</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Picture Column DONE-->
+
+<section class="box my-5 py-5">
+    <div class="text-center">
+        <h2 class="f-35">Willkommen bei CSN <br>
+            <span class="font_medium">Ihrem Spezialisten für digitale Beratung, Webinare & Konferenzen</span></h2>
+        <p class=" mx-auto mt-4 font_light f-20">CSN ist ein inhabergeführtes Technologie-Unternehmen im Herzen von
+            Düsseldorf. In engem Austausch mit unseren Kunden entwickeln <br>
+            und betreiben wir seit über 20 Jahren moderne und sichere Plattformen für Webinare, Online-Meetings,
+            Telefon-, Business- und Videokonferenzen. <br> Ein besonderes Anliegen ist uns dabei ein erstklassiger
+            Kundenservice. Bei uns erhalten Sie:</p>
+    </div>
+    <div class="row my-5 py-5">
+        <div class="col-lg-6 col-md-12 position-relative">
+            <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                 class="position-absolute communication_blue_circle_thin">
+
+            <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+            <div class="d-flex justify-content-center align-content-center">
+                <img src="assets/pictures/circle_image_left.png" alt="" class="w-75">
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
+                <h2 class="mb-4 pb-2">Individuelle <span class="font_medium">Beratung</span></h2>
+                <div class="picture_column_width">
+                    <p class="font-regular">Unsere Konferenz- und Online-Beratungsplattform bietet viele Möglichkeiten,
+                        mit Ihren Kunden, Kollegen und Interessenten zu kommunizieren. Manchmal reicht eine ad-hoc Telko
+                        aus, um sich kurz abzustimmen. In anderen Fällen ist es hilfreich, zusätzlich eine
+                        Online-Präsentation oder den Bildschirm zu zeigen. Online-Fortbildungen und Businesskonferenzen
+                        bieten darüber hinaus noch viele weitere beeindruckende Funktionen. <br><br>
+
+                        Lassen Sie sich von unserem erfahrenen Operator-Team beraten. <br>
+                        Wir finden gemeinsam eine Lösung, die am besten zu Ihren Anforderungen passt.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-start mt-4">
+                    <button class="button blue_button">Individuelle Beratung</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5 py-5">
+        <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-column justify-content-start mt-lg-5 ">
+                <h2 class="mb-4 pb-2">Kostenfreie <span class="font_medium">Schulung</span></h2>
+                <div class="picture_column_width">
+                    <p class="font-regular">Als Kunde von CSN. können Sie jederzeit und so oft sie wollen eine
+                        kostenlose Schulung anfordern. Unser Trainer-Team zeigt Ihnen auf Wunsch jede Funktion und gibt
+                        Ihnen wertvolle Tipps, damit Ihr nächster Termin zu einem Erlebnis wird. <br><br>
+
+                        Dabei ist es ganz egal, ob Sie bisher nur 3er Konferenzen über Ihr Bürotelefon initiiert haben
+                        und jetzt eine Webkonferenz mit 1.000 Teilnehmern organisieren müssen. Auch einen Vertriebsprofi
+                        der alten Schule, der seine erste Beratung Online durchführen möchte, bringen wir sicher auf den
+                        Weg.
+
+                    </p>
+                </div>
+                <div class="d-flex justify-content-start mt-4">
+                    <button class="button blue_button">Kostenfreie Schulung</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 position-relative">
+            <img src="assets/pictures/orange_circle.svg" alt=""
+                 class="w-75 position-absolute communication_orange_circle">
+            <div class="d-flex justify-content-end pe-5 align-content-center">
+                <img src="assets/pictures/circle_image_right.png" alt="" class="w-75">
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5 py-5">
+        <div class="col-lg-6 col-md-12 position-relative">
+            <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                 class="position-absolute communication_blue_circle_thin_opposite">
+
+            <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey_opposite">
+            <div class="d-flex justify-content-center align-content-center">
+                <img src="assets/pictures/round_3_new.png" alt="" class="w-75">
+            </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
+                <h2 class="mb-4 pb-2">Persönlicher <span class="font_medium">Ansprechpartner</span></h2>
+                <div class="picture_column_width">
+                    <p class="font-regular">Wir lieben den persönlichen Kontakt. Ihr persönlicher Ansprechpartner
+                    </p>
+                    <ul class="arrow_list font_medium">
+                        <li>empfiehlt Ihnen erste Schritte und Strategien für Ihre Veranstaltungen</li>
+                        <li>hat ein offenes Ohr für Anregungen und Wünsche</li>
+                        <li>unterstützen Sie bei Fragen zum Vertrag, Rechnung und Produkt</li>
+                        <li>erstellt Berichte und Analysen zur Steigerung der Effizienz</li>
+                        <li>ist im Notfall für Sie da</li>
+
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-start mt-4">
+                    <button class="button blue_button">Kostenlos testen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- All-Inclusive DONE -->
+
+<section class="position-relative py-5 bg-secondary position-relative overflow-hidden">
+
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute inclusive_left w-25">
+    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute inclusive_top_left">
+    <img src="assets/pictures/blue_fat.svg" alt="" class="position-absolute inclusive_bottom_left">
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute inclusive_right">
+    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute inclusive_bottom_right">
+    <img src="assets/pictures/blue_fat.svg" alt="" class="position-absolute inclusive_top_right">
+
+    <div class="my-lg-5 py-lg-5">
+        <div class="text-white text-center">
+            <h2 class="text-center">All-Inclusive <span class="font_medium">Software</span></h2>
+            <div class="d-flex justify-content-center">
+                <p class="w-50 py-4 font_all_inclusive font_light">Wenn Sie es leid sind, unterschiedliche Pläne und
+                    Preise zu vergleichen und für jedes Einsatzgebiet einen anderen Anbieter zu suchen, dann sind sie
+                    bei uns genau richtig. Bei CSN ist alles drin. Ein Produkt, ein Preis, alle Funktionen. Neben
+                    Einzellizenzen bieten wir auch attraktive Unternehmens-Flatrates.</p>
+            </div>
+            <button class="button white_button mt-4">Kontaktieren Sie uns</button>
+        </div>
+    </div>
+</section>
+
+<!-- Columns Conferencing DONE -->
+
+<section class="py-5 my-5">
+    <div class="inner_box mb-5">
+        <div class="text-center py-5 mb-5">
+            <h2>CSN Conferencing</h2>
+            <h2 class="font_medium">Unsere Highlights im Überblick</h2>
+        </div>
+        <div class="row height-column-conferencing">
+            <div class="col-lg-6 col-md-12">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/headphones.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Professioneller Operatorservice ganz nach Kundenwunsch</h4>
+                    </div>
+                </div>
+                <p class="pt-3 pe-5">Unser erfahrenes Operator-Team begleitet Ihre Veranstaltungen bei Bedarf von A-Z.
+                    Wir beraten Sie in der Planungsphase, helfen Ihnen bei der Einrichtung und Durchführung und stehen
+                    Ihnen natürlich auch für eine Nachbesprechung zur Verfügung.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ps-lg-5">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/board.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Anmelde- und Umfrageformulare mit eigenem Branding</h4>
+                    </div>
+                </div>
+                <p class="pt-3">Zur komfortablen Registrierung der Teilnehmer und zur Durchführung
+                    von Umfragen können Sie Formulare in Ihrem Corporate Design gestalten.
+                    Die Einrichtung der Formulare ist kinderleicht und bietet Ihnen viel Spielraum für eigene
+                    Ideen.</p>
+            </div>
+        </div>
+        <div class="row height-column-conferencing">
+            <div class="col-lg-6 col-md-12">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/mp4.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Gesprächsmitschnitte und
+                            Videos zur Archivierung</h4>
+                    </div>
+                </div>
+                <p class="pt-3 pe-5">Wichtige Telefon- und Webkonferenzen können Sie bei uns aufzeichnen
+                    und Ihren Kunden im Nachgang als Video oder Webcast bereitstellen.
+                    Zur Archivierung stehen Gesprächsmitschnitte im MP3- und Videos im
+                    MP4-Format zum Download bereit.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ps-lg-5">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/video.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Playback-Konferenz mit Live
+                            Frage- und Antwortrunde
+                        </h4>
+                    </div>
+                </div>
+                <p class="pt-3">Sie planen eine wichtige Webkonferenz und Ihr Gastredner sagt kurzfristig ab. Zeichnen
+                    Sie den Beitrag Ihres Referenten einfach im Vorfeld auf und spielen sie ihn als Playback in die
+                    Live-Konferenz ein. Alternativ können Sie auch eine ganze Veranstaltung aufzeichnen. </p>
+            </div>
+        </div>
+        <div class="row height-column-conferencing">
+            <div class="col-lg-6 col-md-12">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/wizard.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Wizard zur einfachen Konferenzbuchung</h4>
+                    </div>
+                </div>
+                <p class="pt-3 pe-5">Die Einrichtung einer Konferenz ist bei CSN besonders einfach.
+                    Ein übersichtlicher Wizard passt sich an Ihre Anforderungen an und führt
+                    Sie Schritt für Schritt durch den Buchungsvorgang.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ps-lg-5">
+                <div class="row conferencing_heading">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/dashboard.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Dashboard mit Übersicht
+                            aller Aktivitäten</h4>
+                    </div>
+                </div>
+                <p class="pt-3">Nach dem Login erwartet Sie in Ihrem Account eine Übersicht über alle Aktivitäten.
+                    Schnellstartfunktionen und Shortcuts erleichtern die Bedienung und machen das Dashboard zu Ihrer
+                    persönlichen Schaltzentrale.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="button blue_button">Mehr Infos zum Produkt CSN Conferencing</button>
+        </div>
+    </div>
+</section>
+
+<!--Banner DONE -->
+
+<section class="position-relative overflow-hidden height_banner">
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left">
+    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left2">
+    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_middle">
+    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute banner_top_left">
+    <img src="assets/pictures/banner_2.png" alt="">
+    <img src="assets/pictures/blue_overlay_right.svg" alt="" class="position-absolute" style="top: 0; right: 0;">
+    <div class="box position-absolute d-flex align-items-center banner_container_branding">
+        <div class="container_banner text-white back bg-primary">
+            <h2 style="font-size: 35px; line-height: 45px;">Branding in Ihrem <br><span class="font_medium">eigenen Corporate Design</span>
+            </h2>
+            <p class="pt-3 mb-4 pb-3" style="width: 507px;">Für eine hohen <span
+                    class="font_bold">Wiedererkennungswert</span> bei Ihren Kunden passen wir unsere Login-Seiten,
+                Landingpages,
+                Mails und Webformulare ganz einfach an Ihr <span class="font_bold">Corporate Design</span> an.
+                Unser unkompliziertes <span class="font_bold">Branding-Tool</span> bietet Ihnen die Möglichkeit,
+                aktionsspezifische Designs und Layouts für Anmelde- und Umfrageformulare zu erstellen.</p>
+            <button class="button white_button mt-4">Kontaktieren Sie uns</button>
+        </div>
+    </div>
+</section>
+
+<!-- Columns Beratung DONE-->
+
+<section class="py-5 my-5">
+    <div class="inner_box mb-5">
+        <div class="text-center py-5 mb-5">
+            <h2>CSN Online Beratung</h2>
+            <h2 class="font_medium">Alle Highlights im Überblick</h2>
+        </div>
+        <div class="row height-column-beratung">
+            <div class="col-lg-6 col-md-12">
+                <div class="row heading_column_height">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/cloud.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Mediathek mit vorbereiteten Präsentationen</h4>
+                    </div>
+                </div>
+                <p class="pt-3 pe-5">Speichern Sie Ihre Präsentationen, Broschüren, Erklärvideos, Verträge
+                    und Downloads komfortabel und sicher in ihrer persönlichen Mediathek.
+                    So haben Sie Ihre vollständigen Beratungsunterlagen stets zur Hand und können
+                    eine professionelle Online-Beratung zu jeder Zeit und an jedem beliebigen Ort starten. </p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ps-lg-5">
+                <div class="row heading_column_height">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/signature.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4>Digitale Unterschrift <br>
+                            Einfach, schnell, rechtssicher</h4>
+                    </div>
+                </div>
+                <p class="pt-3">Mit der elektronischen Unterschrift können Sie Verträge einfach, schnell,
+                    rechtssicher und DSGVO-konform innerhalb einer Online-Beratung zum Abschluss bringen.
+                    Wir unterstützen alle führenden Anbieter digitaler Signaturen, die von Ihren Gesellschaften in der
+                    Regel vorgeschrieben werden.</p>
+            </div>
+        </div>
+        <div class="row height-column-beratung">
+            <div class="col-lg-6 col-md-12">
+                <div class="row heading_column_height">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/electricity.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4 class="pt-3">Einfache Integration in Ihre
+                            eigene Website</h4>
+                    </div>
+                </div>
+                <p class="pt-3 pe-5">Holen Sie Ihre Interessenten und Kunden direkt auf Ihrer Website ab.
+                    Die CSN. Online-Beratung kann nahtlos in Ihre Homepage integriert oder komplett eigenständig in
+                    Ihrem Corporate Design genutzt werden.
+                    Wir finden für Sie passende Lösung.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 ps-lg-5">
+                <div class="row heading_column_height">
+                    <div class="col-1 me-5">
+                        <img src="assets/pictures/diamond.svg" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4 class="pt-3">Brillante Qualität dank innovativer Technologien</h4>
+                    </div>
+                </div>
+                <p class="pt-3">Neueste Technologien wie WebRTC und HTML5 sorgen für eine kristallklare und stabile
+                    Qualität in der CSN. Online- und Video-Beratung.
+                    Moderne Webframeworks und ein responsive Webdesign stellen sicher, dass Ihre Inhalte auf allen
+                    Geräten und Displaygrößen gut aussehen.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="blue_button button mt-4">Mehr Infos zum Produkt CSN Online-Beratung</button>
+        </div>
+    </div>
+</section>
+
+<!--- Footer DONE --->
+
+<my-footer></my-footer>
+
+<script src="assets/js/cookie.js"></script>
+<script src="assets/js/mobile_menu.js"></script>
+<script src="assets/js/navbar.js"></script>
+
+<script>
+    feather.replace()
+</script>
+
+</body>
+</html>

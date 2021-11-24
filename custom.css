@@ -65,10 +65,10 @@
     height: 120px;
 }
 .height-column-conferencing{
-    height: 280px;
+    min-height: 280px;
 }
 .height-column-beratung{
-    height: 320px;
+    min-height: 320px;
 }
 .no_padding_bot{
     padding-bottom: 0;
@@ -81,7 +81,7 @@
     height: 80px;
 }
 .conferencing_heading{
-    height: 75px;
+    min-height: 75px;
 }
 
 .banner_height{
@@ -125,7 +125,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.1em;
+    height: 2px;
     background-color: #00000026;
     opacity: 0;
     transition: opacity 500ms, transform 500ms;
@@ -181,10 +181,14 @@ ul.arrow_list{
 }
 
 .firstSlide_text{
-    right: 140px;
+    right: 220px;
     z-index: 3;
 
 
+}
+.slider_right_special{
+    width: 500px;
+    height: 780px;
 }
 
 .carousel_heading{
@@ -356,9 +360,7 @@ ul.arrow_list{
 }
 
 
-#home_3rd_slide_right{
 
-}
 
 .made_in_germany{
     bottom: 36px;
@@ -559,7 +561,27 @@ ul.arrow_list{
     z-index: 1;
 
 }
-
+.conferencing_middle_grey{
+    left: 60%;
+    top: 50%;
+}
+.conferencing_orange_circle{
+    left: 15%;
+}
+#conferencing_pictures_blue_middle .communication_grey{
+    top: 0;
+    left: 0;
+}
+#conferencing_pictures_blue_middle .communication_blue_circle_thin{
+    left: 40%;
+    top: 30%;
+    width: 60%;
+}
+#conferencing_pictures_blue_middle .communication_blue_circle_fat{
+    top: 35%;
+    left: 38%;
+    width: 60%;
+}
 
 .banner_reverse_medium{
     left: 45%;
@@ -690,14 +712,21 @@ ul.arrow_list{
     border-top: none;
     border-left: none;
     border-right: none;
-
     background-color: transparent;
+    transition: 200ms;
 }
 .button_carousel:after{
     position: absolute;
     right: 0;
     padding-left: 100px;
     content: url("assets/pictures/arrow_right_blue.png");
+}
+.button_carousel:hover{
+    color: #E37517;
+    border-color: #E37517;
+}
+.button_carousel:hover:after{
+    content: url("assets/pictures/arrow_right_orange.svg");
 }
 
 .anchor_button{
@@ -728,7 +757,7 @@ ul.arrow_list{
 .white_button{
     color: white;
     transition-duration: 200ms;
-    transition-property: background-color, color, content;
+    transition-property: background-color, color;
 }
 .white_button:after{
     padding-left: 15px;
@@ -748,6 +777,8 @@ ul.arrow_list{
 .blue_button{
     color: #28A5BC;
     border-color: #28A5BC;
+    transition-duration: 200ms;
+    transition-property: background-color, color;
 }
 .blue_button:after{
     padding-left: 15px;
@@ -769,6 +800,7 @@ ul.arrow_list{
     border-radius: 5px;
     border-color: #28A5BC;
     background-color: #28A5BC;
+    transition: all 200ms;
 }
 .blue_full_button:hover{
     background-color: #E37517;
@@ -877,6 +909,12 @@ ul.arrow_list{
 .footer_list{
     margin-bottom: 0;
     line-height: 40px;
+}
+.footer_list:not(:first-child):hover{
+    color: #28A5BC;
+}
+.special_child:hover{
+    color: #28A5BC;
 }
 .footer_globe{
     z-index: 1;
@@ -1230,29 +1268,28 @@ a:hover{
 textarea:focus-visible{
     outline: none!important;
 }
-.textfeld:focus-visible::placeholder{
-    color: transparent!important;
-}
-#form_nachricht .form-control{
-    vertical-align: top;
 
-}
+
 #kontaktform .form-control:focus::placeholder{
     color: transparent;
 }
 
 #kontaktform .form-select{
     background-color: lightgrey;
+
+
 }
 #kontaktform .form-select:focus{
     box-shadow: none;
     border-color: transparent;
     background-color: lightgrey;
+
 }
 .submit_button{
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 
 
 /* MEDIA QUERIES */
@@ -1273,14 +1310,35 @@ textarea:focus-visible{
 
 @media (min-width: 2200px) {
     .box{
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+    .box_gegenüberstellung{
+        margin-left: 44%;
+        margin-right: 15%;
+    }
+    #right_column_gegenüberstellung .box_gegenüberstellung{
+        margin-left: 15%;
+        margin-right: 44%;
     }
     .inner_box{
         margin-right: 27.5%;
         margin-left: 27.5%;
     }
 
+}
+@media (max-width: 576px){
+    .conference_heading{
+        min-height: 500px;
+    }
+    .box{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .container_mobile_nav{
+        width: 100vw;
+    }
 }
 
 
