@@ -274,6 +274,7 @@ ul.arrow_list{
     width: 1286px;
 }
 .carousel_banner{
+    position: absolute;
     width: 445px;
     height: 414px;
     background-color: white;
@@ -1289,7 +1290,9 @@ textarea:focus-visible{
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
 }
-
+.all_inclusive{
+    width: 50%;
+}
 
 
 /* MEDIA QUERIES */
@@ -1338,6 +1341,55 @@ textarea:focus-visible{
     }
     .container_mobile_nav{
         width: 100vw;
+    }
+    .box_gegenüberstellung{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .carousel_banner{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background-color: white;
+        border-radius: 50px 50px 50px 0;
+        left: 0;
+        top: 60%;
+        z-index: 9999;
+        color: black;
+        padding: 49px;
+    }
+    .banner_image{
+        height: 60%;
+        object-fit: contain;
+    }
+    .slider_right{
+        display: none;
+    }
+    .slider_left{
+        display: none;
+    }
+    .slider_right_special{
+        display: none;
+    }
+    #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
+        display: none;
+    }
+    .carousel-indicators [data-bs-target]{
+        margin-bottom: 80%;
+    }
+    .made_in_germany{
+        transform: rotate(270deg);
+        margin-bottom: 80%;
+        right: 2%;
+    }
+
+}
+@media (max-width: 992px) {
+    .circles{
+        display: none;
+    }
+    .all_inclusive{
+        width: 75%;
     }
 }
 
