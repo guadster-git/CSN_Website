@@ -1372,8 +1372,10 @@ textarea:focus-visible{
         height: 100%;
     }
     .banner_image{
-        height: 800px;
-        object-fit: cover;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: -70%;
     }
     .slider_right{
         display: none;
@@ -1393,7 +1395,7 @@ textarea:focus-visible{
     .made_in_germany{
         transform: rotate(270deg);
         margin-bottom: 120%;
-        right: 0;
+        right: -15%;
         margin-right: 0!important;
     }
 
