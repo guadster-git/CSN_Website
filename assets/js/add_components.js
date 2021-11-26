@@ -165,36 +165,7 @@ customElements.define('my-cookie', MyCookie);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-<section class="bg-primary position-relative overflow-hidden">
-    <div class="box py-5 my-5 ">
-       
-        <h4 class="text-white text-center font_medium" style="font-size: 30px;">Nehmen Sie Kontakt mit uns auf und
-            sprechen Sie mit einem unserer Experten.</h4>
-        <div class="row justify-content-between align-content-center d-flex text-white pt-5">
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
-                </div>
-                <p class="text-center pt-3 footer_heading font_light">info@csn-gmbh.de</p>
-                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!---Footer DONE --->
 
@@ -259,7 +230,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">Telekommunikation</p>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-6 text-white">
+            <div class="col-xl-3 col-lg-4 col-6 text-white mt-md-5 mt-xl-0">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
                     <p class="font_medium footer_list">Highlights</p>
@@ -279,7 +250,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">DSGVO-, BDSG- und TKG-konform</p>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-6 d-flex flex-column justify-content-between text-white mt-lg-5">
+            <div class="col-xl-3 col-lg-4 col-6 d-flex flex-column justify-content-between text-white mt-md-5 mt-xl-0">
                 <div>
                     <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
                     <div class="font_light">
@@ -290,7 +261,7 @@ class MyFooter extends HTMLElement {
                         <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
                     </div>
                 </div>
-                <div class="mt-xl-0 mt-5">
+                <div class="mt-xl-0 mt-5 mt-xl-0">
                     <div class="font_light pb-3">
                         <p class="font_medium text-uppercase">Folgen Sie uns Bei</p>
                         <div class="row pe-5">
@@ -328,6 +299,47 @@ class MyFooter extends HTMLElement {
 }
 
 customElements.define('my-footer', MyFooter);
+
+class MyPreFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+<section class="bg-primary position-relative overflow-hidden">
+    <div class="box py-5 my-5 ">
+       
+        <h4 class="text-white text-center font_medium mx-5" style="font-size: 30px; line-height: 1.8">Nehmen Sie Kontakt mit uns auf und
+            sprechen Sie mit einem unserer Experten.</h4>
+        <div class="row justify-content-between align-content-center d-flex text-white pt-5">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0">
+                <div class="height-contact d-flex justify-content-center">
+                    <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
+                </div>
+                <p class="text-center pt-3 footer_heading font_light">info@csn-gmbh.de</p>
+                <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
+            </div>
+        </div>
+    </div>
+</section>
+
+`
+    }
+}
+
+customElements.define('my-prefooter', MyPreFooter);
+
 
 class MyMobileNavbar extends HTMLElement {
     connectedCallback() {

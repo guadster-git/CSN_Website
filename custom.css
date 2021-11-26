@@ -1371,22 +1371,33 @@ textarea:focus-visible{
 
 
 @media (max-width: 992px) {
+    .box{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .box_navbar_top{
+        width: 100%;
+        border-radius: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .box-right{
+        margin-right: 0;
+    }
+
     .carousel-control-next{
         right: 5%;
     }
     .carousel-control-prev{
         left: 5%;
     }
-    .box{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
     .circles{
         display: none;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon{
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
     }
     .all_inclusive{
         width: 75%;
@@ -1406,26 +1417,18 @@ textarea:focus-visible{
         position: absolute;
         width: 80%;
         height: 30%;
-
         background-color: white;
         border-radius: 50px 50px 50px 0;
-        bottom: 100px;
+        bottom: 0px;
         z-index: 9999;
         color: black;
         padding: 40px;
-        margin-right: auto;
+        right: 0;
+        left: 0;
         margin-left: auto;
+        margin-right: auto;
+    }
 
-    }
-    .box_navbar_top{
-        width: 100%;
-        border-radius: 0;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .box-right{
-        margin-right: 0;
-    }
     .carousel_button_container{
         width: 100%;
         height: 50px;
@@ -1437,9 +1440,12 @@ textarea:focus-visible{
         height: 100%;
     }
     .banner_image{
-        height: 700px;
+        height: 80%;
         position: absolute;
-
+        top: 0;
+    }
+    .circle_image{
+        width: 50%;
     }
     .slider_right{
         display: none;
