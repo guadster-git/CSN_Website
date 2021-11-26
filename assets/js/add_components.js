@@ -6,7 +6,7 @@ class MyNavbar extends HTMLElement {
             <nav class="d-flex justify-content-between py-4">
             <div class="d-flex ps-0">
             <a href="index.html"><img src="assets/pictures/CSN_Wortbildmarke_RZ.svg" alt=""
-        class="banner_height"></a>
+        class="banner_height img-fluid"></a>
     </div>
         <div class="d-flex justify-content-between text-uppercase " id="dropdown_enabler">
             <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
@@ -98,7 +98,7 @@ class MyTopbar extends HTMLElement {
         this.innerHTML = `
 <section id="navbar" class="d-flex justify-content-end">
     <div class="bg-primary py-2 box_navbar_top">
-        <div class="box-right d-flex justify-content-between box-right ps-3 text-uppercase text-white">
+        <div class="box-right d-flex justify-content-between box-right ps-lg-3 text-uppercase text-white">
             <div class="">
                 <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
                 <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
@@ -171,21 +171,21 @@ class MyFooter extends HTMLElement {
         <h4 class="text-white text-center font_medium" style="font-size: 30px;">Nehmen Sie Kontakt mit uns auf und
             sprechen Sie mit einem unserer Experten.</h4>
         <div class="row justify-content-between align-content-center d-flex text-white pt-5">
-            <div class="col-4 d-flex flex-column pt-3">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
                 <div class="height-contact d-flex justify-content-center">
                     <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
                 </div>
                 <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
-            <div class="col-4 d-flex flex-column pt-3">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
                 <div class="height-contact d-flex justify-content-center">
                     <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
                 </div>
                 <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
-            <div class="col-4 d-flex flex-column pt-3">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
                 <div class="height-contact d-flex justify-content-center">
                     <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
                 </div>
@@ -219,7 +219,7 @@ class MyFooter extends HTMLElement {
             </div>
         </div>
         <div class="row py-5 top_border no_gutter_x">
-            <div class="col-md-3 text-white ps-0">
+            <div class="col-xl-3 col-lg-4 col-6 text-white ps-0">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
                 <div class="font_light">
                     <p class="font_medium footer_list">Enthaltene Produkte</p>
@@ -239,7 +239,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">Recruiting</p>
                 </div>
             </div>
-            <div class="col-md-3 text-white">
+            <div class="col-xl-3 col-lg-4 col-6 text-white">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</p>
                 <div class="font_light">
                     <p class="font_medium footer_list">Produkt-Features</p>
@@ -259,7 +259,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">Telekommunikation</p>
                 </div>
             </div>
-            <div class="col-md-3 text-white">
+            <div class="col-xl-3 col-lg-4 col-6 text-white">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
                     <p class="font_medium footer_list">Highlights</p>
@@ -279,7 +279,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">DSGVO-, BDSG- und TKG-konform</p>
                 </div>
             </div>
-            <div class="col-md-3 d-flex flex-column justify-content-between text-white">
+            <div class="col-xl-3 col-lg-4 col-6 d-flex flex-column justify-content-between text-white mt-lg-5">
                 <div>
                     <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
                     <div class="font_light">
@@ -290,7 +290,7 @@ class MyFooter extends HTMLElement {
                         <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
                     </div>
                 </div>
-                <div>
+                <div class="mt-xl-0 mt-5">
                     <div class="font_light pb-3">
                         <p class="font_medium text-uppercase">Folgen Sie uns Bei</p>
                         <div class="row pe-5">

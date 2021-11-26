@@ -45,8 +45,8 @@
     margin-right: 140px;
 }
 .box{
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 .inner_box{
     margin-left: 14%;
@@ -189,6 +189,7 @@ ul.arrow_list{
 .slider_right_special{
     width: 500px;
     height: 780px;
+    right: 0;
 }
 
 .carousel_heading{
@@ -1331,51 +1332,185 @@ textarea:focus-visible{
     }
 
 }
+@media (max-width: 1199px) {
+
+    .box_navbar_top{
+        width: 75%;
+
+    }
+    .box-right{
+        margin-right: 9%;
+    }
+    .carousel_banner{
+        left: 20%;
+    }
+    .carousel-control-prev{
+        left: 5%;
+    }
+    .carousel-control-next{
+        right: 5%;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+    .all_inclusive{
+        width: 70%;
+    }
+    #all_inclusive .circles{
+        display: none;
+    }
+    .banner_container_branding{
+        z-index: 1;
+    }
+
+
+
+
+}
+
 
 @media (max-width: 992px) {
+    .carousel-control-next{
+        right: 5%;
+    }
+    .carousel-control-prev{
+        left: 5%;
+    }
+    .box{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .circles{
         display: none;
     }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        height: 2rem;
+        width: 2rem;
+    }
     .all_inclusive{
         width: 75%;
-    }
-}
-
-@media (max-width: 576px){
-    .slider_height{
-        height: 1000px;
-    }
-    .box{
-        margin-left: 7%;
-        margin-right: 7%;
     }
     .container_mobile_nav{
         width: 100vw;
     }
     .box_gegenüberstellung{
-        margin-right: 7%;
-        margin-left: 7%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .slider_height{
+        height: 1000px;
     }
     .carousel_banner{
+        text-align: center;
         position: absolute;
-        width: 100%;
-        height: 40%;
+        width: 80%;
+        height: 30%;
+
         background-color: white;
         border-radius: 50px 50px 50px 0;
-        left: 0;
-        bottom: 0;
+        bottom: 100px;
         z-index: 9999;
         color: black;
-        padding: 49px;
+        padding: 40px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .box_navbar_top{
+        width: 100%;
+        border-radius: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .box-right{
+        margin-right: 0;
+    }
+    .carousel_button_container{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+
     }
     .carousel-inner, .carousel-item{
         height: 100%;
     }
     .banner_image{
-        height: 600px;
+        height: 700px;
+        position: absolute;
+
+    }
+    .slider_right{
+        display: none;
+    }
+    .slider_left{
+        display: none;
+    }
+    .slider_right_special{
+        display: none;
+    }
+    #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
+        display: none;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    .made_in_germany{
+        display: none!important;
+        transform: rotate(270deg);
+        top: 400px;
+        right: 0;
+        height: 20px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .box{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .box_gegenüberstellung{
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+
+    /*** Carousel ***/
+
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button_carousel{
+        bottom: 30px;
+        padding-right: 30px;
+    }
+
+    .slider_height{
+        height: 88vh;
+        margin-top: 12vh;
+    }
+    .container_mobile_nav{
+        width: 100vw;
+    }
+
+    .carousel_banner{
+        height: 50%;
+        padding: 25px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .carousel-inner, .carousel-item{
+        height: 100%;
+    }
+    .banner_image{
+        height: 50%;
         position: absolute;
         top: 0;
-        right: -70%;
     }
     .slider_right{
         display: none;
@@ -1392,12 +1527,7 @@ textarea:focus-visible{
     .carousel-indicators{
         margin-bottom: 90%;
     }
-    .made_in_germany{
-        transform: rotate(270deg);
-        margin-bottom: 120%;
-        right: -15%;
-        margin-right: 0!important;
-    }
+
 
 }
 
