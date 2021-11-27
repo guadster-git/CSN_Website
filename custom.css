@@ -1078,7 +1078,7 @@ a:hover{
     text-transform: uppercase;
     background-color: transparent;
     color: #28A5BC;
-    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    letter-spacing: 1px;
     font-size: 18px;
     border: none;
     margin-left: 7%;
@@ -1087,6 +1087,7 @@ a:hover{
     padding-left: 0;
 }
 .footer_expand_icon{
+    color: white;
     position: absolute;
     right: 0;
     top: 27px;
@@ -1104,7 +1105,7 @@ a:hover{
 }
 .footer_button:not(.collapsed) .footer_expand_icon{
     transform: rotate(45deg);
-    color: white;
+    color: #28A5BC;
 }
 .footer_item{
     border-top: 2px solid #28A5BC50;

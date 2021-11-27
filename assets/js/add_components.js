@@ -169,7 +169,7 @@ class MyFooter extends HTMLElement {
 
 <!---Footer DONE --->
 
-<section class="bg-secondary position-relative overflow-hidden">
+<section class="bg-secondary position-relative overflow-hidden d-none d-md-block">
     <img src="/assets/pictures/footer_globe.svg" alt="" class="footer_globe position-absolute">
     <div class="box position-relative" id="footer">
         <div class="row py-5 no_gutter_x ">
