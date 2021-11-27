@@ -1546,6 +1546,10 @@ textarea:focus-visible{
     .container_mobile_nav{
         width: 100vw;
     }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        height: 55px;
+        width: 55px;
+    }
     .box_gegenüberstellung{
         margin-right: 10%;
         margin-left: 10%;
@@ -1606,6 +1610,10 @@ textarea:focus-visible{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .carousel-control-next, .carousel-control-prev{
+        align-items: normal;
+        top: calc(35% - 27px);
+    }
 
 
 }
@@ -1630,15 +1638,26 @@ textarea:focus-visible{
     .button_carousel{
         padding-right: 35px;
     }
+    .carousel-control-next, .carousel-control-prev{
+        top: calc(30% - 27px);
+    }
+    .carousel-control-next{
+        right: 2%;
+    }
+    .carousel-control-prev{
+        left: 2%;
+    }
+    .carousel-control-next-icon{
+        padding-right: 5px;
+    }
+    .carousel-control-prev-icon{
+        padding-left: 5px;
+    }
     
 }
 
 @media (max-width: 576px){
 
-    .box{
-        margin-left: 7%;
-        margin-right: 7%;
-    }
     .box_gegenüberstellung{
         margin-right: 7%;
         margin-left: 7%;
@@ -1646,28 +1665,27 @@ textarea:focus-visible{
 
     /*** Carousel ***/
 
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
+
     .button_carousel{
-        bottom: 30px;
+        bottom: 5%;
         padding-right: 30px;
     }
-
     .slider_height{
-        height: 88vh;
-        margin-top: 12vh;
+        height: 90vh;
     }
     .container_mobile_nav{
         width: 100vw;
     }
-
-
-
     .carousel-inner, .carousel-item{
         height: 100%;
     }
+    .background_carousel_container{
+        height: 50%;
+    }
+    .carousel_banner{
+        min-height: 50%;
+    }
+
 
     .slider_right{
         display: none;
@@ -1681,9 +1699,11 @@ textarea:focus-visible{
     #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
         display: none;
     }
-    .carousel-indicators{
-        margin-bottom: 90%;
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        width: 100%;
+        height: 7%;
     }
+
 
 
 }
