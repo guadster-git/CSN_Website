@@ -173,15 +173,15 @@ class MyFooter extends HTMLElement {
     <img src="/assets/pictures/footer_globe.svg" alt="" class="footer_globe position-absolute">
     <div class="box position-relative" id="footer">
         <div class="row py-5 no_gutter_x ">
-            <div class="col-md-3 col-sm-12 d-flex justify-content-start align-content-center  ">
+            <div class="col-4 col-xxl-3  d-flex justify-content-start align-content-center order-0">
                 <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
             </div>
-            <div class="col-md-6 col-sm-12 d-flex justify-content-center align-content-center text-white my-auto  ">
-                <span class="align-middle text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
+            <div class="col-12 col-xxl-6 d-flex footer_text_column align-items-center text-white order-2 order-xxl-1 mt-4 mt-xxl-0">
+                <span class="text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
             </div>
-            <div class="col-md-3 d-flex justify-content-between ">
+            <div class="col-8 col-xxl-3 d-flex footer_last_column order-1  order-xxl-2">
                 <button class="button blue_full_button">Kostenlos Testen</button>
-                <div class="flex-column my-auto justify-content-end icon">
+                <div class="flex-column my-auto justify-content-end icon ms-4 d-none d-lg-block">
                     <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
                         <i data-feather="globe"></i>
                     </div>
@@ -230,7 +230,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list">Telekommunikation</p>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-6 text-white mt-md-5 mt-xl-0">
+            <div class="col-xl-3 col-lg-4 col-6 text-white mt-5 mt-lg-0">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
                     <p class="font_medium footer_list">Highlights</p>
@@ -306,7 +306,7 @@ class MyPreFooter extends HTMLElement {
 <section class="bg-primary position-relative overflow-hidden">
     <div class="box py-5 my-5 ">
        
-        <h4 class="text-white text-center font_medium mx-5" style="font-size: 30px; line-height: 1.8">Nehmen Sie Kontakt mit uns auf und
+        <h4 class="text-white text-center font_medium mx-sm-5" style="font-size: 30px; line-height: 1.8">Nehmen Sie Kontakt mit uns auf und
             sprechen Sie mit einem unserer Experten.</h4>
         <div class="row justify-content-between align-content-center d-flex text-white pt-5">
             <div class="col-12 col-lg-4 d-flex flex-column pt-3">

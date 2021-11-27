@@ -176,6 +176,41 @@ ul.arrow_list{
 
 /* Carousel */
 
+.background_carousel_container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/pictures/online_carousel_1.png");
+}
+#home_firstSlide{
+    background-image: url("assets/pictures/homepage_banner1_.png");
+}
+#home_secondSlide{
+    background-image: url("assets/pictures/slide_2.png");
+}
+#home_thirdSlide{
+    background-image: url("assets/pictures/slide_3.png");
+}
+#home_forthSlide{
+    background-image: url("assets/pictures/homepage4.png");
+}
+#online_firstSlide{
+    background-image: url("assets/pictures/online_carousel_1.png");
+}
+#online_secondSlide{
+    background-image: url("assets/pictures/online_carousel_2.png");
+}
+#online_thirdSlide{
+    background-image: url("assets/pictures/online_carousel_3.png");
+}
+#online_forthSlide{
+    background-image: url("assets/pictures/online_carousel_4.png");
+}
+
+
 .slider_height{
     height: 779px;
 }
@@ -210,6 +245,9 @@ ul.arrow_list{
 .carousel-indicators .active{
     background-color: #28A5BC;
 }
+.carousel-inner, .carousel-item{
+    height: 100%;
+}
 
 .carousel-control-prev{
     width: 7%;
@@ -232,10 +270,10 @@ ul.arrow_list{
     background-color: white;
     border-radius: 100%;
     content: url('assets/pictures/carousel_icon_prev.svg');
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-right: 5%;
-    z-index: 98;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 7px;
+    z-index: 3;
 }
 
 .carousel-control-next-icon{
@@ -244,10 +282,10 @@ ul.arrow_list{
     background-color: white;
     border-radius: 100%;
     content: url('assets/pictures/carousel_icon_next.svg');
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 5%;
-    z-index: 98;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    z-index: 3;
 }
 
 .slider_right{
@@ -281,9 +319,12 @@ ul.arrow_list{
     background-color: white;
     border-radius: 50px 50px 50px 0;
     left: 12%;
-    z-index: 9999;
+    z-index: 2;
     color: black;
     padding: 49px;
+    top: 0;
+    bottom: 0;
+
 }
 
 #nav_conferencing #conferencing{
@@ -677,8 +718,9 @@ ul.arrow_list{
     width: 641px;
     height: 533px;
     border-radius: 50px 50px 50px 0;
-    padding-left: 80px!important;
+    padding-left: 80px;
     padding-top: 60px;
+    padding-right: 80px;
 }
 .banner_container_branding{
     height: 100%;
@@ -697,6 +739,11 @@ ul.arrow_list{
     width: 45%;
 }
 /* Buttons */
+
+.carousel_inner{
+    display: flex;
+    flex-direction: column;
+}
 
 .button_carousel{
     position: absolute;
@@ -820,6 +867,7 @@ ul.arrow_list{
     perspective: 1000px;
 
     min-height: 245px;
+    margin-top: 1rem;
 
     width: 24%;
 }
@@ -835,6 +883,7 @@ ul.arrow_list{
     box-shadow: 0 0 20px #00000010;
     border-radius: 10px;
     padding-top: 42px;
+    margin-top: 1rem;
 }
 .flip_card_white, .card_blue{
     box-shadow: 0 0 20px #00000010;
@@ -1033,8 +1082,16 @@ a:hover{
     right: auto;
 }
 #first_tile{
-    background-image: url("assets/pictures/first_tile.png");
-
+    background-image: url("assets/pictures/online_tile_1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#second_tile{
+    background-image: url("assets/pictures/online_tile_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .accordion_container{
     box-shadow: 0 0 20px #00000010;
@@ -1206,6 +1263,18 @@ a:hover{
     height: 75px;
 
 }
+.banner_overlay_right{
+    right: 0;
+    top: 0;
+    height: 750px;
+    width: 400px;
+}
+.banner_overlay_left{
+    left: 0;
+    top: 0;
+    height: 850px;
+
+}
 
 /* Warum CSN */
 
@@ -1294,7 +1363,12 @@ textarea:focus-visible{
 .all_inclusive{
     width: 50%;
 }
-
+.footer_last_column{
+    justify-content: space-between;
+}
+.footer_text_column{
+    justify-content: center;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1670px) {
@@ -1310,6 +1384,12 @@ textarea:focus-visible{
     .box_navbar_top{
         width: 70%;
     }
+}
+#sicherheit{
+    background-image: url("assets/pictures/banner_online.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media (min-width: 2200px) {
@@ -1332,28 +1412,53 @@ textarea:focus-visible{
     }
 
 }
-@media (max-width: 1199px) {
+@media (max-width: 1400px) {
+    .slider_left{
+        width: 30%!important;
+        display: none;
+    }
+    .slider_right, .slider_right_special{
+        width: 20% !important;
+        display: none;
+    }
+    .background_carousel_container{
+        background-position: center center;
+    }
+    #home_secondSlide{
+        background-position: left center;
+    }
+    .footer_text_column{
+        justify-content: start;
+    }
+    .footer_last_column{
+        justify-content: end;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
 
     .box_navbar_top{
         width: 75%;
-
+    }
+    #online_tiles .tiles_height{
+        height: 500px;
+        text-align: center;
+        width: 100%;
     }
     .box-right{
         margin-right: 9%;
     }
-    .carousel_banner{
-        left: 20%;
-    }
+
+
     .carousel-control-prev{
-        left: 5%;
+        left: 1%;
     }
     .carousel-control-next{
-        right: 5%;
+        right: 1%;
     }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        padding-top: 25%;
-        padding-bottom: 25%;
-    }
+
     .all_inclusive{
         width: 70%;
     }
@@ -1361,8 +1466,55 @@ textarea:focus-visible{
         display: none;
     }
     .banner_container_branding{
-        z-index: 1;
+        z-index: 2;
     }
+    .tiles_image{
+        width: 100%;
+    }
+    .flip_container{
+        width: 32%;
+        min-height: 300px;
+    }
+    .normal_card{
+        width: 32%;
+    }
+    .circle_image{
+        width: 50%;
+    }
+    .online_fat_firstandlast, .online_thin_firstandlast, .online_grey_firstandlast, .conferencing_middle_grey, .online_grey_middle, .online_thin_middle, .online_fat_middle{
+        width: 30%;
+    }
+    .online_orange_circle, .online_orange_circle_top{
+        width: 30% !important;
+    }
+    .width_2_columns{
+        width: 100%;
+    }
+    .banner_overlay_right{
+        right: 0;
+        top: 0;
+        height: 750px;
+        width: 200px;
+    }
+    .banner_overlay_left{
+        left: 0;
+        top: 0;
+        height: 750px;
+        width: 500px;
+
+
+    }
+    .container_banner{
+        width: 600px;
+        padding: 50px;
+        height: 500px;
+    }
+    .banner_image_online{
+        width: 100%;
+        height: 100%;
+    }
+
+
 
 
 
@@ -1371,34 +1523,23 @@ textarea:focus-visible{
 
 
 @media (max-width: 992px) {
-    .box{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
     .box_navbar_top{
         width: 100%;
         border-radius: 0;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
     .box-right{
         margin-right: 0;
     }
 
-    .carousel-control-next{
-        right: 5%;
-    }
-    .carousel-control-prev{
-        left: 5%;
-    }
+
 
     .circles{
         display: none;
     }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        height: 3rem;
-        width: 3rem;
-    }
+
     .all_inclusive{
         width: 75%;
     }
@@ -1410,40 +1551,34 @@ textarea:focus-visible{
         margin-left: 10%;
     }
     .slider_height{
-        height: 1000px;
+        height: 50vh;
     }
     .carousel_banner{
-        text-align: center;
-        position: absolute;
-        width: 80%;
-        height: 30%;
+        width: 80vw;
+        height: 40%;
         background-color: white;
         border-radius: 50px 50px 50px 0;
-        bottom: 0px;
-        z-index: 9999;
+        bottom: 0;
         color: black;
-        padding: 40px;
+        padding: 49px;
         right: 0;
         left: 0;
+        top: auto;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .carousel_button_container{
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-
+    .carousel_inner h2, .carousel_inner p{
+        text-align: center;
     }
+
+    .carousel_inner{
+        align-items: center;
+    }
+
     .carousel-inner, .carousel-item{
         height: 100%;
     }
-    .banner_image{
-        height: 80%;
-        position: absolute;
-        top: 0;
-    }
+
     .circle_image{
         width: 50%;
     }
@@ -1464,11 +1599,38 @@ textarea:focus-visible{
     }
     .made_in_germany{
         display: none!important;
-        transform: rotate(270deg);
-        top: 400px;
-        right: 0;
-        height: 20px;
     }
+    .background_carousel_container{
+        height: 70%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .slider_height{
+        height: 800px;
+    }
+    .carousel_banner{
+        height: 40%;
+        padding: 40px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .banner_image{
+        height: 60%;
+        position: absolute;
+        top: 0;
+    }
+    .button_carousel{
+        padding-right: 35px;
+    }
+    
 }
 
 @media (max-width: 576px){
@@ -1501,23 +1663,12 @@ textarea:focus-visible{
         width: 100vw;
     }
 
-    .carousel_banner{
-        height: 50%;
-        padding: 25px;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-radius: 0;
-    }
+
 
     .carousel-inner, .carousel-item{
         height: 100%;
     }
-    .banner_image{
-        height: 50%;
-        position: absolute;
-        top: 0;
-    }
+
     .slider_right{
         display: none;
     }
