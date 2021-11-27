@@ -272,7 +272,7 @@ ul.arrow_list{
     content: url('assets/pictures/carousel_icon_prev.svg');
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 7px;
+    padding-right: 5px;
     z-index: 3;
 }
 
@@ -284,7 +284,7 @@ ul.arrow_list{
     content: url('assets/pictures/carousel_icon_next.svg');
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 7px;
+    padding-left: 5px;
     z-index: 3;
 }
 
@@ -1071,6 +1071,47 @@ a:hover{
     line-height: 35px;
 }
 
+/**** Mobile Footer *******/
+
+
+.footer_button{
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #28A5BC;
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-size: 18px;
+    border: none;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+    padding-left: 0;
+}
+.footer_expand_icon{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    margin-right: 7%;
+    transition: 200ms ease-in;
+}
+.mobile_footer_expand{
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.footer_item{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer_button:not(.collapsed) .footer_expand_icon{
+    transform: rotate(45deg);
+    color: white;
+}
+.footer_item{
+    border-top: 2px solid #28A5BC50;
+
+}
+
+
 /**************     Conferencing ***********/
 
 .linear_background{
@@ -1415,11 +1456,9 @@ textarea:focus-visible{
 @media (max-width: 1400px) {
     .slider_left{
         width: 30%!important;
-        display: none;
     }
     .slider_right, .slider_right_special{
         width: 20% !important;
-        display: none;
     }
     .background_carousel_container{
         background-position: center center;
@@ -1450,8 +1489,6 @@ textarea:focus-visible{
     .box-right{
         margin-right: 9%;
     }
-
-
     .carousel-control-prev{
         left: 1%;
     }
@@ -1501,8 +1538,6 @@ textarea:focus-visible{
         top: 0;
         height: 750px;
         width: 500px;
-
-
     }
     .container_banner{
         width: 600px;
@@ -1513,12 +1548,6 @@ textarea:focus-visible{
         width: 100%;
         height: 100%;
     }
-
-
-
-
-
-
 }
 
 
@@ -1533,9 +1562,9 @@ textarea:focus-visible{
     .box-right{
         margin-right: 0;
     }
-
-
-
+    .button_carousel{
+        bottom: 0;
+    }
     .circles{
         display: none;
     }
@@ -1555,7 +1584,7 @@ textarea:focus-visible{
         margin-left: 10%;
     }
     .slider_height{
-        height: 50vh;
+        height: 80vh;
     }
     .carousel_banner{
         width: 80vw;
@@ -1586,15 +1615,7 @@ textarea:focus-visible{
     .circle_image{
         width: 50%;
     }
-    .slider_right{
-        display: none;
-    }
-    .slider_left{
-        display: none;
-    }
-    .slider_right_special{
-        display: none;
-    }
+
     #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
         display: none;
     }
@@ -1609,6 +1630,8 @@ textarea:focus-visible{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
+
     }
     .carousel-control-next, .carousel-control-prev{
         align-items: normal;
@@ -1630,6 +1653,7 @@ textarea:focus-visible{
         width: 100%;
         border-radius: 0;
     }
+
     .banner_image{
         height: 60%;
         position: absolute;
@@ -1667,7 +1691,7 @@ textarea:focus-visible{
 
 
     .button_carousel{
-        bottom: 5%;
+        bottom: 10%;
         padding-right: 30px;
     }
     .slider_height{
