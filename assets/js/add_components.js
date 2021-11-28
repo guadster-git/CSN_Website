@@ -96,7 +96,7 @@ customElements.define('my-navbar', MyNavbar);
 class MyTopbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-<section id="navbar" class="d-flex justify-content-end">
+<section id="navbar" class="d-flex justify-content-end d-md-flex d-none">
     <div class="bg-primary py-2 box_navbar_top">
         <div class="box-right d-flex justify-content-between box-right ps-lg-3 text-uppercase text-white">
             <div class="">

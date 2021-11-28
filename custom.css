@@ -430,6 +430,9 @@ ul.arrow_list{
     width: 16px;
     height: 45px;
 }
+.carousel-control-next, .carousel-control-prev{
+    width: 69px;
+}
 
 .carousel_indicators .active{
     background-color: #28A5BC!important;
@@ -492,6 +495,29 @@ ul.arrow_list{
 }
 .search_bar:hover .form-control, .search_bar:hover .search_button{
     border-color: #28A5BC50;
+}
+
+/* Tiles */
+#conf_first_tile{
+    background-image: url("assets/pictures/first_tile.png");
+}
+#conf_second_tile{
+    background-image: url("assets/pictures/sixth_tile.png");
+}
+#conf_third_tile{
+    background-image: url("assets/pictures/third_tile.png");
+}
+#conf_forth_tile{
+    background-image: url("assets/pictures/forth_tile.png");
+}
+#conf_fifth_tile{
+    background-image: url("assets/pictures/fifth_tile.png");
+}
+#conf_sixth_tile{
+    background-image: url("assets/pictures/second_tile.png");
+}
+.image_tile{
+    background-position: center center;
 }
 
  /* Circles */
@@ -1482,10 +1508,19 @@ textarea:focus-visible{
     .box_navbar_top{
         width: 75%;
     }
-    #online_tiles .tiles_height{
-        height: 500px;
+    .tiles_height{
+        height: 550px;
         text-align: center;
         width: 100%;
+    }
+    .tiles_height li{
+        text-align: left;
+    }
+    .large_tile{
+        height: 700px;
+    }
+    #online_tiles .tiles_height{
+        height: 600px;
     }
     .box-right{
         margin-right: 9%;

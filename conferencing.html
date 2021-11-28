@@ -17,59 +17,11 @@
 
 <!--- Cookie --->
 
-<div class="overlay" id="overlay">
-    <div class="cookie position-fixed d-flex justify-content-between">
-        <div class=" d-flex flex-column overflow-hidden justify-content-between font_medium">
-            <div class="d-flex">
-                <span>Wir verwenden Cookies, um unsere Website und unseren Service für Sie zu Optimieren.</span>
-            </div>
-
-            <div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox"
-                           id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label my-auto" for="flexSwitchCheckChecked">Funktionale Cookies</label>
-                </div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox" checked>
-                    <label class="form-check-label my-auto">Statistische Cookies</label>
-                </div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox">
-                    <label class="form-check-label my-auto">Marketing Cookies</label>
-                </div>
-            </div>
-            <div class="d-flex flex-column">
-                <button type="button" class="button_cookie accept_all my-3 text-uppercase" id="all_cookies">Ausgewählte
-                    Cookies zulassen
-                </button>
-                <button type="button" class="button_cookie accept_functional text-uppercase" id="functional_cookies">Nur
-                    funktionale Cookies zulassen
-                </button>
-            </div>
-        </div>
-    </div>
-
-</div>
+<my-cookie></my-cookie>
 
 <!--TOP BAR DONE -->
 
-<section id="navbar" class="d-flex justify-content-end">
-    <div class="bg-primary py-2 box_navbar_top">
-        <div class="box-right d-flex justify-content-between box-right ps-3 text-uppercase text-white">
-            <div class="">
-                <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
-                <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-            </div>
-
-            <div class="">
-                <span class="font_navbar font-regular me-3">Bereits registriert?</span>
-                <span class="font_navbar font_bold arrow_after">Login</span>
-            </div>
-
-        </div>
-    </div>
-</section>
+<my-topbar></my-topbar>
 
 <section id="navbar-" class="hide">
     <div class="row">
@@ -93,156 +45,12 @@
 
 
 <!-- Navbar -->
-<section id="nav_conferencing">
-    <div id="navbar_sticky">
-        <div class="position-relative">
-            <div class="box">
-                <nav class="d-flex justify-content-between py-4">
-                    <div class="d-flex ps-0">
-                        <a href="index.html"><img src="assets/pictures/CSN_Wortbildmarke_RZ.svg" alt=""
-                                                  class="banner_height"></a>
-                    </div>
-                    <div class="d-flex justify-content-between text-uppercase " id="dropdown_enabler">
-                        <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
-                            <li><h3 class="my-auto me-5 py-1 navbar_heading position-relative" id="conferencing"><a
-                                    href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3>
-                            </li>
-                            <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative"
-                                    id="online"><a
-                                    href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a>
-                            </h3>
-                            </li>
-                            <li><h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a
-                                    href="warum.html">Warum CSN</a></h3></li>
-                        </ul>
-                    </div>
-                    <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
-                        <div class="d-flex flex-column align-self-center pe-5 icon">
-                            <div class="mx-auto icons_height icon_jump">
-                                <i data-feather="mail"></i>
-                            </div>
-                            <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a>
-                            </p>
-                        </div>
-                        <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
-                            <div class="mx-auto icons_height icon_jump">
-                                <i data-feather="search"></i>
-                            </div>
-                            <p class="mx-auto no_padding_bot font_navbar font_medium">Suche</p>
-                        </div>
-                        <div class="d-flex flex-column align-content-center icon">
-                            <div class="mx-auto icons_height icon_jump">
-                                <i data-feather="globe"></i>
-                            </div>
-                            <p class="mx-auto no_padding_bot font_navbar font_medium">Deutsch</p>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu Hamburger -->
-                    <div class="align-items-center" id="hamburger">
-                        <button id="hamburger_button"><img src="assets/pictures/hamburger.svg" alt=""></button>
-                    </div>
-                </nav>
-            </div>
-            <div id="dropdown_bar">
-                <div class="hide bg-white" id="dropdown_conferencing">
-                    <div class="box border-top d-flex justify-content-center py-3">
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#produkte">Enthaltene Produkte</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#bereiche">Einsatzbereiche</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#branchen">Branchen</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#highlights">Unsere Highlights</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a>
-                        </h3>
-                    </div>
-                </div>
-                <div class="hide bg-white" id="dropdown_online">
-                    <div class="box border-top d-flex justify-content-center py-3 ">
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#trend">Trend zur Realität</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#highlights">Unsere Highlights</a>
-                        </h3>
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#features">Weitere Features</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#branchen">Branchen</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#sicherheit">Sicherheit</a></h3>
-                    </div>
-                </div>
-                <div class="hide bg-white" id="dropdown_warum">
-                    <div class="box border-top d-flex justify-content-center py-3">
-                        <h3 class="mx-5 dropdown_font"><a href="warum.html#kriterien">Entscheidungskriterien</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="warum.html#sicherheit">Sicherheit & Service</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="warum.html#umwelt">Umwelt & Effizienz</a></h3>
-                        <h3 class="mx-5 dropdown_font"><a href="warum.html#leitlinien">CSN Leitlinien</a></h3>
-                    </div>
-                </div>
-                <div class="hide bg-white" id="dropdown_suche">
-                    <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
-                        <div class="input-group search_bar w-25">
-                            <input type="text" class="form-control" placeholder="Suche"
-                                   aria-label="Recipient's username"
-                                   aria-describedby="basic-addon2">
-                            <button class="search_button d-flex align-items-center"><img
-                                    src="assets/pictures/search.svg"
-                                    alt=""></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+<my-navbar></my-navbar>
 
 
 <!-- Navbar Mobile ToDo: slide-in -->
 
-<section id="mobile-menu" class=" section_mobile_menu">
-    <nav class="container_mobile_nav d-flex flex-row position-absolute" id="mobile_container">
-        <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
-            <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
-            </button>
-        </div>
-        <div class="main_navigation_mobile">
-            <div class="navigation_inner_box">
-                <div class="d-flex justify-content-between my-4">
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="globe" class="me-2"></i>
-                            <span class="font_medium">DE</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="mail" class="me-2"></i>
-                            <span class="font_medium">Kontakt</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile_search_container">
-                <div class="navigation_inner_box d-flex w-100 py-4">
-                    <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
-                        <div class="mobile_search_input_container">
-                            <input type="search" placeholder="Suche ..." class="mobile_search_input"
-                                   id="mobile-search-input"/>
-                        </div>
-                        <div class="mobile_search_icon d-flex justify-content-end pe-3">
-                            <button class="search_button d-flex align-items-center" id="mobile_search_button"><i
-                                    data-feather="search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="navigation_inner_box py-3">
-                <ul class="mobile_nav_items">
-                    <li><a href="" class="font_bold">Startseite</a></li>
-                    <li><a href="">CSN <span class="font_bold">Conferencing</span></a></li>
-                    <li><a href="">CSN <span class="font_bold">Online Beratung</span></a></li>
-                    <li><a href="" class="font_bold">Warum CSN</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</section>
+<my-mobile_nav></my-mobile_nav>
 
 <!-- Slider DONE -->
 
@@ -327,7 +135,7 @@
 
 <!-- Overview Column-->
 
-<section class="position-relative py-5 overview" id="produkte">
+<section class="position-relative py-5 overview overflow-x-hidden" id="produkte">
     <div class="box">
         <div class="d-flex justify-content-between pt-5">
             <div class="conference_column_width">
@@ -391,7 +199,7 @@
 
 <!--Picture Column-->
 
-<section class="box my-5 py-5" id="conference_einsatz">
+<section class="box my-5 py-5 overflow-x-hidden" id="conference_einsatz">
     <div class="text-center" id="bereiche">
         <h2 class="f-35">CSN Conferencing</h2>
         <h2 class="font_medium f-35">Der Einsatz im Geschäftsalltag</h2>
@@ -1136,7 +944,7 @@
 
 <!-- Tiles DONE -->
 
-<section>
+<section class="overflow-x-hidden">
     <div class="my-5 text-center py-5">
         <h2>
             CSN Conferencing<br>
@@ -1161,14 +969,14 @@
             </div>
 
         </div>
-        <div class="col-lg-6 col-md-12 tiles_height" id="first_tile">
-            <img src="assets/pictures/first_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height order-first order-xl-last image_tile" id="conf_first_tile">
+
         </div>
     </div>
     <div class="row gx-0">
 
-        <div class="col-lg-6 col-md-12 tiles_height" id="second_tile">
-            <img src="assets/pictures/sixth_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height image_tile" id="conf_second_tile">
+
         </div>
 
         <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex">
@@ -1188,7 +996,7 @@
     </div>
 
     <div class="row gx-0">
-        <div class="col-lg-6 col-md-12 tiles_height align-items-center d-flex">
+        <div class="col-lg-6 col-md-12 tiles_height large_tile align-items-center d-flex">
             <div class="box">
                 <h2 class="font_medium mb-4">Business-Konferenzen</h2>
                 <p class="mb-4">
@@ -1212,16 +1020,16 @@
 
         </div>
 
-        <div class="col-lg-6 col-md-12 tiles_height" id="third_tile">
-            <img src="assets/pictures/third_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height order-first order-xl-last image_tile" id="conf_third_tile">
+
         </div>
     </div>
     <div class="row gx-0">
 
-        <div class="col-lg-6 col-md-12 tiles_height" id="forth_tile">
-            <img src="assets/pictures/forth_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height image_tile" id="conf_forth_tile">
+
         </div>
-        <div class="col-lg-6 col-md-12 bg-secondary tiles_height align-items-center d-flex">
+        <div class="col-lg-6 col-md-12 bg-secondary tiles_height large_tile align-items-center d-flex">
             <div class="box text-white">
                 <h2 class="font_medium mb-4">Investor Relations Konferenzen (IR)</h2>
                 <p>
@@ -1263,18 +1071,18 @@
                 <button class="button white_button mt-4">Beratung zur Recruiting-Konferenz</button>
             </div>
         </div>
-        <div class="col-lg-6 col-md-12 tiles_height" id="fifth_tile">
-            <img src="assets/pictures/fifth_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height order-first order-xl-last image_tile" id="conf_fifth_tile">
+
         </div>
     </div>
 
     <div class="row gx-0">
 
 
-        <div class="col-lg-6 col-md-12 tiles_height overflow-hidden" id="sixth_tile">
-            <img src="assets/pictures/second_tile.png" alt="">
+        <div class="col-lg-6 col-md-12 tiles_height overflow-hidden image_tile" id="conf_sixth_tile">
+
         </div>
-        <div class="col-lg-6 col-md-12 tiles_height align-items-center d-flex">
+        <div class="col-lg-6 col-md-12 tiles_height large_tile align-items-center d-flex">
             <div class="box">
                 <h2 class="font_medium mb-4">Leads generieren</h2>
                 <p class="mb-4">
@@ -1517,6 +1325,7 @@
 
 <!--- Footer DONE --->
 
+<my-prefooter></my-prefooter>
 <my-footer></my-footer>
 
 <script src="assets/js/cookie.js"></script>
