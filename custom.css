@@ -9,9 +9,7 @@
 #online_tiles .tiles_height{
     height: 730px;
 }
-.picture_column_width{
-    width: 688px;
-}
+
 .conference_column_width{
     width: 479px;
 }
@@ -517,6 +515,7 @@ ul.arrow_list{
     background-image: url("assets/pictures/second_tile.png");
 }
 .image_tile{
+    background-size: cover;
     background-position: center center;
 }
 
@@ -551,7 +550,7 @@ ul.arrow_list{
 }
 .communication_grey_opposite{
     top: 55%;
-    left: 0%;
+    left: 0;
 }
 .communication_orange_circle{
     right: 0;
@@ -1340,7 +1339,7 @@ a:hover{
 .banner_overlay_left{
     left: 0;
     top: 0;
-    height: 850px;
+    height: 100%;
 
 }
 
@@ -1437,6 +1436,24 @@ textarea:focus-visible{
 .footer_text_column{
     justify-content: center;
 }
+.banner{
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 553px;
+    width: 641px;
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 60px;
+    border-radius: 50px 50px 50px 0;
+    left: 7%;
+}
+.banner button{
+    align-self: start;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1670px) {
@@ -1453,11 +1470,15 @@ textarea:focus-visible{
         width: 70%;
     }
 }
-#sicherheit{
-    background-image: url("assets/pictures/banner_online.png");
+.online_banner_background{
+    height: 100%;
+    width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#online_banner{
+    background-image: url("assets/pictures/banner_online.png");
 }
 
 @media (min-width: 2200px) {
@@ -1568,12 +1589,11 @@ textarea:focus-visible{
         top: 0;
         height: 750px;
         width: 200px;
+        display: none;
     }
     .banner_overlay_left{
-        left: 0;
-        top: 0;
-        height: 750px;
-        width: 500px;
+        height: 100%;
+
     }
     .container_banner{
         width: 600px;
@@ -1599,7 +1619,7 @@ textarea:focus-visible{
         margin-right: 0;
     }
     .button_carousel{
-        bottom: 0;
+        bottom: 10%;
     }
     .circles{
         display: none;
@@ -1661,6 +1681,50 @@ textarea:focus-visible{
     .made_in_germany{
         display: none!important;
     }
+    .flip_container, .normal_card{
+        width: 49%;
+    }
+    .height_banner{
+        height: 1000px;
+    }
+    .online_banner_background{
+        height: 50%;
+        overflow-y: hidden;
+    }
+    .banner_container_branding{
+        height: 50%;
+        top: auto;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .banner_overlay_left{
+        display: none;
+    }
+    .banner_overlay_right{
+        display: block;
+        left: 0;
+        transform: rotate(180deg);
+        width: 70%;
+        height: 100%;
+
+    }
+    .banner{
+        width: 100%;
+        height: 50%;
+        left: 0;
+        top: auto;
+        border-radius: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+    .banner button{
+        align-self: center;
+    }
+
+
     .background_carousel_container{
         height: 70%;
         background-position: center center;
@@ -1721,6 +1785,13 @@ textarea:focus-visible{
     .box_gegenüberstellung{
         margin-right: 7%;
         margin-left: 7%;
+    }
+    #conferencing_accordion .inner_box{
+        margin-right: 7% !important;
+        margin-left: 7% !important;
+    }
+    .large_tile{
+        height: 900px;
     }
 
     /*** Carousel ***/
