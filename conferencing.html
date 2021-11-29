@@ -23,43 +23,23 @@
 
 <my-topbar></my-topbar>
 
-<section id="navbar-" class="hide">
-    <div class="row">
-        <div class="col-6 position-relative"></div>
-        <div class="col-6 bg-primary py-2 box_navbar_top">
-            <div class="box-right d-flex justify-content-between align-content-center box-right ps-3 text-uppercase text-white">
-                <div class="">
-                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
-                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-                </div>
-
-                <div class="">
-                    <span class="font_navbar me-3">Bereits registriert?</span>
-                    <span class="font_navbar font_bold arrow_after">Login</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Navbar -->
+
 <my-navbar></my-navbar>
 
 
-<!-- Navbar Mobile ToDo: slide-in -->
+<!-- Navbar Mobile -->
 
 <my-mobile_nav></my-mobile_nav>
 
 <!-- Slider DONE -->
 
-<section class="position-relative">
+<section class="position-relative outer_box">
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
          data-bs-ride="carousel">
 
-        <div class="carousel-indicators z_front carousel_points">
+        <div class="carousel-indicators z_front">
             <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                     class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
@@ -70,60 +50,128 @@
                     aria-label="Slide 4"></button>
         </div>
 
-        <div class="carousel-inner" id="carousel_conference">
-            <div class="carousel-item d-flex align-items-center justify-content-end active" data-bs-interval="10000">
-                <img src="assets/pictures/conference_carousel_1.png" alt="...">
-                <div class="carousel_banner position-absolute">
-                    <h2> Das brandneue CSN
-                        bringt Conferencing und Online-Beratung auf die nächste Stufe</h2>
-                    <button class="  button_carousel">Mehr erfahren</button>
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex active align-items-center" data-bs-interval="10000">
+                <div class="background_carousel_container" id="home_firstSlide">
+                    <div id="circle_firstSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+
+                    <img src="assets/pictures/schriftzug.png" alt="" class="firstSlide_text position-absolute d-none d-xxl-block">
+                    <img src="assets/pictures/banner_right_overlay.png" alt=""
+                         class="position-absolute slider_right_special">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading"> Das brandneue CSN</h2>
+                        <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                            Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+
+                        <button class=" button_carousel">Kostenlos testen</button>
+                    </div>
+                </div>
+
             </div>
-            <div class="carousel-item d-flex align-items-center justify-content-end" data-bs-interval="10000">
-                <img src="assets/pictures/conference_carousel_2.png" alt="...">
-                <div class="carousel_banner position-absolute">
-                    <h2> Ihr Full Service Provider
-                        für digitale Beratung, Webinare & Konferenzen</h2>
-                    <button class="  button_carousel">Mehr erfahren</button>
+            <div class="carousel-item d-flex align-items-center " data-bs-interval="10000">
+
+
+                <div class="background_carousel_container" id="home_secondSlide">
+                    <div id="circle_secondSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading">Full Service Provider</h2>
+                        <p>Für CSN Kunden sind individuelle Beratungen, Online-Schulungen und Workshops inklusive. Rufen Sie
+                            uns an und lernen Sie Ihren persönlichen Ansprechpartner kennen. </p>
+                        <button class=" button_carousel">Kostenlos testen</button>
+                    </div>
+
+
+                </div>
+
             </div>
-            <div class="carousel-item d-flex align-items-center justify-content-end" data-bs-interval="10000">
-                <img src="assets/pictures/conference_carousel_3.png" alt="...">
-                <div class="carousel_banner position-absolute">
-                    <h2> CSN verbindet – <br>
-                        Online-Berater, Kunden, Moderatoren, Aktionäre, Mitarbeiter, …</h2>
-                    <button class="  button_carousel">Mehr erfahren</button>
+            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000">
+
+                <div class="background_carousel_container" id="home_thirdSlide">
+                    <div id="circle_thirdSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider2">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right "
+                         id="home_3rd_slide_right">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
+                         id="home_3rd_slide">
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading"> Dynamische Entwicklung</h2>
+                        <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams, um
+                            die Wünsche und Anregungen der Kunden bestmöglich umzusetzen. </p>
+                        <button class=" button_carousel">Kostenlos testen</button>
+                    </div>
+                </div>
+
             </div>
-            <div class="carousel-item d-flex align-items-center justify-content-end" data-bs-interval="10000">
-                <img src="assets/pictures/conference_carousel_4.png" alt="...">
-                <div class="carousel_banner position-absolute">
-                    <h2> Die einfache & sichere Kommunikationsplattform „Made in Germany"</h2>
-                    <button class="  button_carousel">Mehr erfahren</button>
+            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000"
+                 id="banner4">
+
+                <div class="background_carousel_container" id="home_forthSlide">
+                    <div id="circle_forthSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_left" style="transform: rotate(180deg)">
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading"> Einfach & sicher</h2>
+                        <p>Die Bedienung unserer Online-Plattform ist kinderleicht.
+                            Moderne Benutzeroberflächen und Wizards sorgen dafür, dass Sie sich sofort zurecht finden.
+                        </p>
+
+                        <button class=" button_carousel">Kostenlos testen</button>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
-        <div class="position-absolute made_in_germany d-flex flex-column">
+
+        <div class="position-absolute made_in_germany flex-column d-none d-xl-flex">
             <img src="assets/pictures/german_stripes.svg" alt="">
             <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
 
-        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute circle_thin_banner">
-        <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute circle_blue_banner">
-        <img src="assets/pictures/white_fat_circle.svg" alt="" class="position-absolute circle_middle_banner">
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon " aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -135,7 +183,7 @@
 
 <!-- Overview Column-->
 
-<section class="position-relative py-5 overview overflow-x-hidden" id="produkte">
+<section class="position-relative py-5 overview overflow-x-hidden d-none d-xxl-block" id="produkte">
     <div class="box">
         <div class="d-flex justify-content-between pt-5">
             <div class="conference_column_width">
@@ -199,270 +247,278 @@
 
 <!--Picture Column-->
 
-<section class="box my-5 py-5 overflow-x-hidden" id="conference_einsatz">
-    <div class="text-center" id="bereiche">
-        <h2 class="f-35">CSN Conferencing</h2>
-        <h2 class="font_medium f-35">Der Einsatz im Geschäftsalltag</h2>
-    </div>
-    <div class="row my-5 py-5">
-        <div class="col-lg-6 col-md-12 position-relative">
-            <img src="assets/pictures/blue_thin_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_thin">
-            <img src="assets/pictures/blue_fat_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_fat">
-            <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
-            <div class="d-flex justify-content-center align-content-center">
-                <img src="assets/pictures/conference_round_1.png" alt="" class="w-75">
-            </div>
-
+<section class="my-5 py-5 overflow-x-hidden" id="conference_einsatz">
+    <div class="box ">
+        <div class="text-center" id="bereiche">
+            <h2 class="f-35">CSN Conferencing</h2>
+            <h2 class="font_medium f-35">Der Einsatz im Geschäftsalltag</h2>
         </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
-                <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
-                <div class="picture_column_width">
-                    <p>Von kleinen Ad-hoc Teambesprechungen bis hin zur großen Telefonkonferenz
-                        mit mehreren tausend Teilnehmern – CSN. hat sich in über 20 Jahren als
-                        Telefonkonferenz-Anbieter erfolgreich am Markt etabliert. Wir bieten Ihnen die klassische
-                        Telefonkonferenz ohne großen Aufwand:
-                    <p>
-                    <div>
-                        <ul class="arrow_list font_medium f-18">
-                            <li>
-                                erstklassige Sprachqualität in HD
-                            </li>
-                            <li>
-                                Dial-In oder Dial-Out Konferenzen
-                            </li>
-                            <li>
-                                Einfache Einrichtung & komfortable Websteuerung
-                            </li>
-                            <li>
-                                Einwahlrufnummern in verschiedenen Ländern
-                            </li>
-                            <li>
-                                Rauschunterdrückung & Pegelanpassung
-                            </li>
-                            <li>
-                                MP3-Gesprächsmitschnitte & Playbackfunktion
-                            </li>
-                            <li>
-                                Abschließbare Konferenzräume & sichere PIN
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <button class="button blue_button">Beratung zur klassischen Telefonkonferenz</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row my-5 py-5">
-        <div class="col-lg-6 col-md-12">
-            <div class="d-flex flex-column justify-content-start mt-lg-5 ">
-                <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
-                <div class="picture_column_width">
-                    <p>
-                        Webinare sind Fortbildungen, die über das Internet abgehalten werden.
-                        Oft werden sie auch als Online-Seminar oder Online-Training bezeichnet.
-                        CSN hat sich auf Webinare spezialisiert. Von der Teilnehmer-Registrierung,
-                        über vielfältige Webinar-Modi bis hin zur Auswertung und Zertifizierung
-                        – die Durchführung eines Online-Seminars war noch nie so einfach.
-                    </p>
-
-                </div>
-
-                <div>
-                    <ul class="arrow_list font_medium f-18">
-                        <li>
-                            frei konfigurierbare Anmeldeformulare
-                        </li>
-                        <li>
-                            Branding in Ihrem Design
-                        </li>
-                        <li>
-                            Umfragen und Multiple-Choice-Tests
-                        </li>
-                        <li>
-                            leistungsstarke Webinar-Modi
-                        </li>
-                        <li>
-                            interaktive Funktionen
-                        </li>
-                        <li>
-                            aufschlussreiche Analysen
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <button class="button blue_button">Beratung zu Webinaren</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12 position-relative">
-            <img src="assets/pictures/orange_circle.svg" alt=""
-                 class="w-75 position-absolute communication_orange_circle">
-            <div class="d-flex justify-content-end pe-5 align-content-center">
-                <img src="assets/pictures/conference_round_2.png" alt="" class="w-75">
-            </div>
-        </div>
-    </div>
-
-    <div class="row my-5 py-5">
-        <div class="col-lg-6 col-md-12 position-relative">
-            <div id="conferencing_pictures_blue_middle">
+        <div class="row my-xl-5 py-xl-5">
+            <div class="col-xl-6 col-12 my-5 my-xl-0 py-5 py-xl-0 position-relative d-flex align-items-center justify-content-center">
                 <img src="assets/pictures/blue_thin_circle.svg" alt=""
                      class="position-absolute communication_blue_circle_thin">
                 <img src="assets/pictures/blue_fat_circle.svg" alt=""
                      class="position-absolute communication_blue_circle_fat">
-                <img src="assets/pictures/fat_circle_grey.svg" alt="" class="position-absolute communication_grey">
-            </div>
+                <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
 
-            <div class="d-flex justify-content-center align-content-center">
-                <img src="assets/pictures/conference_round_3.png" alt="" class="w-75">
-            </div>
+                <img src="assets/pictures/conference_round_1.png" alt="" class="circle_image">
 
+
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex flex-column justify-content-end mt-xl-5 ps-xl-5">
+                    <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>Von kleinen Ad-hoc Teambesprechungen bis hin zur großen Telefonkonferenz
+                            mit mehreren tausend Teilnehmern – CSN. hat sich in über 20 Jahren als
+                            Telefonkonferenz-Anbieter erfolgreich am Markt etabliert. Wir bieten Ihnen die klassische
+                            Telefonkonferenz ohne großen Aufwand:
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>
+                                    erstklassige Sprachqualität in HD
+                                </li>
+                                <li>
+                                    Dial-In oder Dial-Out Konferenzen
+                                </li>
+                                <li>
+                                    Einfache Einrichtung & komfortable Websteuerung
+                                </li>
+                                <li>
+                                    Einwahlrufnummern in verschiedenen Ländern
+                                </li>
+                                <li>
+                                    Rauschunterdrückung & Pegelanpassung
+                                </li>
+                                <li>
+                                    MP3-Gesprächsmitschnitte & Playbackfunktion
+                                </li>
+                                <li>
+                                    Abschließbare Konferenzräume & sichere PIN
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zur klassischen Telefonkonferenz</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
-                <h2 class="mb-4 pb-2 font_medium">Webkonferenzen und Online-Meetings</h2>
-                <div class="picture_column_width">
-                    <p>Unsere Arbeit findet heutzutage ortsungebunden, zu verschieden Zeiten und auf unterschiedlichen
-                        Geräten statt.
-                        Wir helfen Ihnen, mit Ihrem Team in Verbindung zu bleiben. Flexibel, sicher und interaktiv.
-                        In Webkonferenzen und Online-Meetings steigern Sie Ihre Produktivität, die Zusammenarbeit und
-                        den Kundenkontakt.
-                    <p>
+
+        <div class="row my-xl-5 py-xl-5">
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex flex-column justify-content-start mt-xl-5 ">
+                    <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
+                    <div class="picture_column_width">
+                        <p>
+                            Webinare sind Fortbildungen, die über das Internet abgehalten werden.
+                            Oft werden sie auch als Online-Seminar oder Online-Training bezeichnet.
+                            CSN hat sich auf Webinare spezialisiert. Von der Teilnehmer-Registrierung,
+                            über vielfältige Webinar-Modi bis hin zur Auswertung und Zertifizierung
+                            – die Durchführung eines Online-Seminars war noch nie so einfach.
+                        </p>
+
+                    </div>
+
                     <div>
                         <ul class="arrow_list font_medium f-18">
                             <li>
-                                Online-Präsentationen
+                                frei konfigurierbare Anmeldeformulare
                             </li>
                             <li>
-                                Screen Sharing
+                                Branding in Ihrem Design
                             </li>
                             <li>
-                                Echtzeit-Audio
+                                Umfragen und Multiple-Choice-Tests
                             </li>
                             <li>
-                                Live-Video
+                                leistungsstarke Webinar-Modi
                             </li>
                             <li>
-                                Whiteboard
+                                interaktive Funktionen
                             </li>
                             <li>
-                                Aufzeichnungen
+                                aufschlussreiche Analysen
                             </li>
                         </ul>
                     </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Webinaren</button>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <button class="button blue_button">Beratung zu Webkonferenzen</button>
+            </div>
+            <div class="col-xl-6 col-12 my-5 my-xl-0 py-5 py-xl-0 order-first order-xl-first position-relative d-flex justify-content-center align-items-center">
+                <img src="assets/pictures/orange_circle.svg" alt=""
+                     class="w-75 position-absolute communication_orange_circle" id="orange_conferencing_first">
+
+                <img src="assets/pictures/conference_round_2.png" alt="" class="circle_image">
+
+            </div>
+        </div>
+
+        <div class="row my-xl-5 py-xl-5">
+            <div class="col-xl-6 col-12 my-5 my-xl-0 py-5 py-xl-0 position-relative d-flex justify-content-center align-items-center">
+                <div id="conferencing_pictures_blue_middle">
+                    <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                         class="position-absolute communication_blue_circle_thin">
+                    <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                         class="position-absolute communication_blue_circle_fat">
+                    <img src="assets/pictures/fat_circle_grey.svg" alt="" class="position-absolute communication_grey">
+                </div>
+
+
+                <img src="assets/pictures/conference_round_3.png" alt="" class="circle_image">
+
+
+            </div>
+            <div class="col-xl-6 col-12">
+                <div class="d-flex flex-column justify-content-end mt-xl-5 ms-xl-5 ps-xl-5">
+                    <h2 class="mb-4 pb-2 font_medium">Webkonferenzen und Online-Meetings</h2>
+                    <div class="picture_column_width">
+                        <p>Unsere Arbeit findet heutzutage ortsungebunden, zu verschieden Zeiten und auf
+                            unterschiedlichen
+                            Geräten statt.
+                            Wir helfen Ihnen, mit Ihrem Team in Verbindung zu bleiben. Flexibel, sicher und interaktiv.
+                            In Webkonferenzen und Online-Meetings steigern Sie Ihre Produktivität, die Zusammenarbeit
+                            und
+                            den Kundenkontakt.
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>
+                                    Online-Präsentationen
+                                </li>
+                                <li>
+                                    Screen Sharing
+                                </li>
+                                <li>
+                                    Echtzeit-Audio
+                                </li>
+                                <li>
+                                    Live-Video
+                                </li>
+                                <li>
+                                    Whiteboard
+                                </li>
+                                <li>
+                                    Aufzeichnungen
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Webkonferenzen</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row my-5 py-5">
-        <div class="col-lg-6 col-md-12">
-            <div class="d-flex flex-column justify-content-start mt-lg-5 ">
-                <h2 class="mb-4 pb-2 font_medium">Videokonferenzen</h2>
-                <div class="picture_column_width">
-                    <p>
-                        Die Konferenz mit Blickkontakt. Bei der Beratung und in kleinen Teamkonferenzen immer beliebter.
-                        Vertrauensvoll „sitzt“ man sich gegenüber.
-                        In einem CSN. Meeting sind Videokonferenzen mit bis zu 6 Personen möglich.
-                    </p>
+        <div class="row my-xl-5 py-xl-5">
+            <div class="col-xl-6 col-12">
+                <div class="d-flex flex-column justify-content-start mt-xl-5 ">
+                    <h2 class="mb-4 pb-2 font_medium">Videokonferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>
+                            Die Konferenz mit Blickkontakt. Bei der Beratung und in kleinen Teamkonferenzen immer
+                            beliebter.
+                            Vertrauensvoll „sitzt“ man sich gegenüber.
+                            In einem CSN. Meeting sind Videokonferenzen mit bis zu 6 Personen möglich.
+                        </p>
 
-                </div>
+                    </div>
 
-                <div>
-                    <ul class="arrow_list font_medium f-18">
-                        <li>modernste Technik</li>
-                        <li>ohne Softwareinstallation</li>
-                        <li>funktioniert in jedem modernen Browser</li>
-                        <li>WebRTC und HTML5 für stabile Verbindungen</li>
-                        <li>brillante Bildqualität</li>
-                        <li>HD-Audio</li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <button class="button blue_button">Beratung zu Videkonferenzen</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-12 position-relative">
-            <img src="assets/pictures/orange_circle.svg" alt=""
-                 class="w-75 position-absolute conferencing_orange_circle">
-            <img src="assets/pictures/circle_grey_middle.svg" alt="" class="position-absolute conferencing_middle_grey">
-            <div class="d-flex justify-content-end pe-5 align-content-center">
-                <img src="assets/pictures/conference_round_4.png" alt="" class="w-75">
-            </div>
-        </div>
-    </div>
-
-    <div class="row my-5 py-5">
-        <div class="col-lg-6 col-md-12 position-relative">
-            <img src="assets/pictures/blue_thin_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_thin">
-            <img src="assets/pictures/blue_fat_circle.svg" alt=""
-                 class="position-absolute communication_blue_circle_fat">
-            <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
-            <div class="d-flex justify-content-center align-content-center">
-                <img src="assets/pictures/conference_round_5.png" alt="" class="w-75">
-            </div>
-
-        </div>
-        <div class="col-lg-6 col-md-12">
-            <div class="d-flex flex-column justify-content-end mt-lg-5 ms-lg-5 ps-lg-5">
-                <h2 class="mb-4 pb-2 font_medium">Operatorgestützte Konferenzen</h2>
-                <div class="picture_column_width">
-                    <p>Der „Rundum-Sorglos-Service“ für unsere Kunden.
-                        Kunden, Investoren und Vorstandsmitglieder haben hohe Erwartungen.
-                        Unser Operator-Team begleitet Veranstaltungen von der Planungsphase,
-                        über die Durchführung bis zur Nachbesprechung und Analyse – ganz nach Kundenwunsch.
-                    <p>
                     <div>
                         <ul class="arrow_list font_medium f-18">
-                            <li>Beratung zum Ablauf</li>
-                            <li>Gemeinsames Setup der Konferenz</li>
-                            <li>Vorbesprechung und Soundcheck</li>
-                            <li>Anmoderation und Steuerung der Q/A Runde</li>
-                            <li>Videoschnitt und -produktion</li>
-                            <li>Auswertung und Analyse</li>
-
+                            <li>modernste Technik</li>
+                            <li>ohne Softwareinstallation</li>
+                            <li>funktioniert in jedem modernen Browser</li>
+                            <li>WebRTC und HTML5 für stabile Verbindungen</li>
+                            <li>brillante Bildqualität</li>
+                            <li>HD-Audio</li>
                         </ul>
                     </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Videkonferenzen</button>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-start mt-4">
-                    <button class="button blue_button">Beratung zu Operator-Telefonkonferenzen</button>
+            </div>
+            <div class="col-xl-6 col-12 my-5 my-xl-0 py-5 py-xl-0 position-relative order-first order-xl-last d-flex justify-content-center align-items-center ">
+                <img src="assets/pictures/orange_circle.svg" alt=""
+                     class="w-75 position-absolute conferencing_orange_circle">
+                <img src="assets/pictures/circle_grey_middle.svg" alt=""
+                     class="position-absolute conferencing_middle_grey">
+
+                <img src="assets/pictures/conference_round_4.png" alt="" class="circle_image">
+
+            </div>
+        </div>
+
+        <div class="row my-xl-5 py-xl-5">
+            <div class="col-xl-6 col-12 my-5 my-xl-0 py-5 py-xl-0 position-relative d-flex justify-content-center align-items-center">
+                <img src="assets/pictures/blue_thin_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_thin">
+                <img src="assets/pictures/blue_fat_circle.svg" alt=""
+                     class="position-absolute communication_blue_circle_fat">
+                <img src="assets/pictures/grey_circle.svg" alt="" class="position-absolute communication_grey">
+
+                <img src="assets/pictures/conference_round_5.png" alt="" class="circle_image">
+
+
+            </div>
+            <div class="col-xl-6 col-12">
+                <div class="d-flex flex-column justify-content-end mt-xl-5 ms-xl-5 ps-xl-5">
+                    <h2 class="mb-4 pb-2 font_medium">Operatorgestützte Konferenzen</h2>
+                    <div class="picture_column_width">
+                        <p>Der „Rundum-Sorglos-Service“ für unsere Kunden.
+                            Kunden, Investoren und Vorstandsmitglieder haben hohe Erwartungen.
+                            Unser Operator-Team begleitet Veranstaltungen von der Planungsphase,
+                            über die Durchführung bis zur Nachbesprechung und Analyse – ganz nach Kundenwunsch.
+                        <p>
+                        <div>
+                            <ul class="arrow_list font_medium f-18">
+                                <li>Beratung zum Ablauf</li>
+                                <li>Gemeinsames Setup der Konferenz</li>
+                                <li>Vorbesprechung und Soundcheck</li>
+                                <li>Anmoderation und Steuerung der Q/A Runde</li>
+                                <li>Videoschnitt und -produktion</li>
+                                <li>Auswertung und Analyse</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <button class="button blue_button">Beratung zu Operator-Telefonkonferenzen</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <!--Banner -->
 
 <section class="position-relative overflow-hidden height_banner">
-    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_reverse_thin">
-    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_reverse_medium">
-    <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_reverse_blue">
-    <img src="assets/pictures/conference_banner_1.png" alt="">
-    <img src="assets/pictures/overlay_banner_left.svg" alt="" class="position-absolute"
-         style="top: 0; left: 0; height: 750px;">
-    <div class="box position-absolute d-flex align-items-center banner_container_branding" id="conferenceBanner_1">
-        <div class="container_banner text-white back bg-primary">
-            <h2 style="font-size: 35px; line-height: 45px;">Sicherheit Ihrer Daten. <br><span class="font_medium">Garantiert.</span>
-            </h2>
-            <p class="pt-3 mb-4 pb-3" style="width: 507px;">Die aktuellsten Datenschutz- und Sicherheitsfunktionen
-                gehören bei CSN zum Standardumfang.
-                Die Nutzung der CSN Conferencing Plattform erfolgt ausschließlich über sichere
-                HTTPS-Verbindung in der sämtliche Daten 256-Bit AES verschlüsselt übertragen werden.</p>
-            <button class="button white_button mt-4">Kontaktieren Sie uns</button>
-        </div>
+    <div class="banner_background" id="conferencing_banner_1">
+        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_reverse_thin">
+        <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_reverse_medium">
+        <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_reverse_blue">
+
+        <img src="assets/pictures/overlay_banner_left.svg" alt="" class="position-absolute conference_left_overlay">
+    </div>
+
+
+    <div class="banner bg-primary d-flex position-absolute text-white flex-column">
+        <h2 class="f-35">Sicherheit Ihrer Daten. <br><span class="font_medium">Garantiert.</span>
+        </h2>
+        <p class="pt-3 mb-4 pb-3">Die aktuellsten Datenschutz- und Sicherheitsfunktionen
+            gehören bei CSN zum Standardumfang.
+            Die Nutzung der CSN Conferencing Plattform erfolgt ausschließlich über sichere
+            HTTPS-Verbindung in der sämtliche Daten 256-Bit AES verschlüsselt übertragen werden.</p>
+        <button class="button white_button">Kontaktieren Sie uns</button>
     </div>
 </section>
 
@@ -694,23 +750,23 @@
 
 <!--Banner -->
 
-<section class="position-relative overflow-hidden height_banner" id="conferenceBanner_2">
-    <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left">
-    <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_middle">
-    <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_top_left">
-    <img src="assets/pictures/conference_banner_2.png" alt="">
-    <img src="assets/pictures/blue_overlay_right.svg" alt="" class="position-absolute" style="top: 0; right: 0;">
-    <div class="box position-absolute d-flex align-items-center banner_container_branding">
-        <div class="container_banner text-white back bg-primary">
-            <h2 style="font-size: 35px; line-height: 45px;">Geprüfte und zertifizierte <br><span class="font_medium">Software/Standorte</span>
-            </h2>
-            <p class="pt-3 mb-4 pb-3" style="width: 507px;">Die Funktionalität, Verlässlichkeit und Sicherheit ist ein
-                wesentlicher Faktor bei der Wahl eines Konferenzsystems.
-                Durch die OPDV-Zertifizierung unserer Plattform und der Entwicklung gem. ISO/IEC 9126 gewährleisten wir
-                einen hohen Qualitätsstandard, um Ihnen eine einfach zu
-                bedienende, zuverlässige und sichere Plattform zu bieten.</p>
-            <button class="button white_button mt-4">Mehr zum Thema Datensicherheit</button>
-        </div>
+<section class="position-relative overflow-hidden height_banner">
+    <div class="banner_background" id="conferencing_banner_2">
+        <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_bottom_left">
+        <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_middle">
+        <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_top_left">
+        <img src="assets/pictures/blue_overlay_right.svg" alt="" class="position-absolute overlay_right">
+    </div>
+
+    <div class="banner banner_right bg-primary d-flex position-absolute text-white flex-column">
+        <h2 class="f-35">Geprüfte und zertifizierte <br><span class="font_medium">Software/Standorte</span>
+        </h2>
+        <p class="pt-3 mb-4 pb-3">Die Funktionalität, Verlässlichkeit und Sicherheit ist ein
+            wesentlicher Faktor bei der Wahl eines Konferenzsystems.
+            Durch die OPDV-Zertifizierung unserer Plattform und der Entwicklung gem. ISO/IEC 9126 gewährleisten wir
+            einen hohen Qualitätsstandard, um Ihnen eine einfach zu
+            bedienende, zuverlässige und sichere Plattform zu bieten.</p>
+        <button class="button white_button">Mehr zum Thema Datensicherheit</button>
     </div>
 </section>
 
@@ -945,7 +1001,7 @@
 <!-- Tiles DONE -->
 
 <section class="overflow-x-hidden">
-    <div class="my-5 text-center py-5">
+    <div class="my-5 text-center py-5 box">
         <h2>
             CSN Conferencing<br>
             <span class="font_medium">Bietet Vorteile für viele Geschäftsbereiche</span>
@@ -1124,203 +1180,215 @@
 <!-- Accordion -->
 
 <section>
-    <div class="inner_box my-5 py-5" id="conferencing_accordion">
-        <div class="text-center">
-            <h2 class="font_light">
-                CSN Conferencing
-            </h2>
-            <h2 class="font_medium">
-                Für viele Branchen eine perfekte Lösung
-            </h2>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 col-xl-6">
-                <div class="accordion_container" id="accordionConferencing">
-                    <div class="accordion">
-                        <div class="accordion_heading row py-3">
-                            <div class="col-3 d-flex justify-content-center">
-                                <img src="assets/pictures/bank.svg" alt="" id="bank">
+    <div class="my-5 py-5" id="conferencing_accordion">
+        <div class="inner_box">
+            <div class="text-center">
+                <h2 class="font_light">
+                    CSN Conferencing
+                </h2>
+                <h2 class="font_medium">
+                    Für viele Branchen eine perfekte Lösung
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-xl-6">
+                    <div class="accordion_container" id="accordionConferencing">
+                        <div class="accordion">
+                            <div class="accordion_heading row py-3">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="assets/pictures/bank.svg" alt="" id="bank">
+                                </div>
+                                <div class="col-9 d-flex align-items-center pe-5">
+                                    <button class="accordion_button font_bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                        Finanzwirtschaft / Banken
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col-9 d-flex align-items-center pe-5">
-                                <button class="accordion_button font_bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                    Finanzwirtschaft / Banken
-                                </button>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionConferencing">
+                                <div class="accordion_collapse px-5 pt-3 pb-5">
+                                    <p>
+                                        Zahlreiche Banken, Sparkassen und Fondsanbieter nutzen die Möglichkeit,
+                                        Mitarbeiter,
+                                        Vertriebspartner und Kunden im Rahmen von CSN.
+                                        Online Konferenzen schnell und ohne großen Aufwand über Trends, aktuelle
+                                        Entwicklungen am Finanzmarkt und neue Produkte zu informieren.
+                                        CSN. Conferencing bietet zahlreiche interaktive Funktionen, damit Ihre
+                                        Webkonferenzen genauso begeistern, wie eine klassischen Roadshow:
+                                    </p>
+                                    <ul class="font_medium arrow_list my-4">
+                                        <li>Live Video der Moderatoren</li>
+                                        <li>Live Frage- und Antwortrunden / alternativ Chat</li>
+                                        <li>Statements vorab aufzeichnen und live einspielen</li>
+                                        <li>Aufzeichnung für verhinderte Teilnehmer</li>
+                                    </ul>
+                                    <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 mt-xl-0 col-xl-6">
+                    <div class="accordion_container">
+                        <div class="accordion">
+                            <div class="accordion_heading row py-3">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="assets/pictures/versicherung.svg" alt="" id="versicherung">
+                                </div>
+                                <div class="col-9 d-flex align-items-center pe-5">
+                                    <button class="accordion_button font_bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                        Versicherungen
+                                    </button>
+                                </div>
+                            </div>
 
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionConferencing">
-                            <div class="accordion_collapse px-5 pt-3 pb-5">
-                                <p>
-                                    Zahlreiche Banken, Sparkassen und Fondsanbieter nutzen die Möglichkeit, Mitarbeiter,
-                                    Vertriebspartner und Kunden im Rahmen von CSN.
-                                    Online Konferenzen schnell und ohne großen Aufwand über Trends, aktuelle
-                                    Entwicklungen am Finanzmarkt und neue Produkte zu informieren.
-                                    CSN. Conferencing bietet zahlreiche interaktive Funktionen, damit Ihre
-                                    Webkonferenzen genauso begeistern, wie eine klassischen Roadshow:
-                                </p>
-                                <ul class="font_medium arrow_list my-4">
-                                    <li>Live Video der Moderatoren</li>
-                                    <li>Live Frage- und Antwortrunden / alternativ Chat</li>
-                                    <li>Statements vorab aufzeichnen und live einspielen</li>
-                                    <li>Aufzeichnung für verhinderte Teilnehmer</li>
-                                </ul>
-                                <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
-                                </button>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionConferencing">
+                                <div class="accordion_collapse px-5 pt-3 pb-5">
+                                    <p>
+                                        Für die Weiterbildungsinitiative „gut beraten“ der Versicherungswirtschaft hat
+                                        CSN.
+                                        spezielle Anpassungen vorgenommen. Teilnehmer können sich komfortabel über
+                                        Webformulare mit Ihrer VV-ID (Weiterbildungs-ID) registrieren. <br><br> Während
+                                        der
+                                        Fortbildung kann die Anwesenheit Online oder telefonisch überprüft und das
+                                        vermittelte Fachwissen in Multiple-Choice-Tests abgefragt werden. Die
+                                        Weiterbildungszeiten der Teilnehmer werden automatisch er-fasst. Anschließend
+                                        werden
+                                        sie den Bildungskonten in der überbetrieblichen Weiterbildungsdatenbank (WBD)
+                                        von
+                                        „gut beraten“ gut geschrieben. <br><br>
+                                    </p>
+
+                                    <button class="button blue_button">Testaccount für Versicherung anfordern
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-3 col-xl-6">
+                    <div class="accordion_container">
+                        <div class="accordion">
+                            <div class="accordion_heading row py-3">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="assets/pictures/diplom_hut.svg" alt="" id="bildung">
+                                </div>
+                                <div class="col-9 d-flex align-items-center pe-5">
+                                    <button class="accordion_button font_bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                        Bildungseinrichtungen
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionConferencing">
+                                <div class="accordion_collapse px-5 pt-3 pb-5">
+                                    <p>
+                                        Das Unterricht nicht zwangsläufig in einem Klassenzimmer stattfinden muss, wurde
+                                        in
+                                        der Corona-Krise besonders deutlich. <br><br>
+
+                                        Die Webinar-Software von CSN bietet alle Funktionen, um Wissen effizient Online
+                                        zu
+                                        vermitteln. Und zwar so, wie Sie es in klassischen Präsenzveranstaltungen
+                                        gewohnt
+                                        sind. Genauso sicher und interaktiv:
+
+                                    </p>
+                                    <ul class="font_medium arrow_list my-4">
+                                        <li>Mediathek statt Unterrichtsmappe</li>
+                                        <li>Online-Präsentation statt Arbeitsmaterial</li>
+                                        <li>Whiteboard statt Tafel</li>
+                                        <li>Live-Video statt Präsenz</li>
+                                        <li>Video-Broadcasts statt Multimedia-PC</li>
+                                        <li>Screen Sharing statt Beamer</li>
+                                        <li>Download-Freigaben statt Arbeitsmaterial</li>
+                                        <li>Multiple-Choice-Fragen statt Tests</li>
+                                        <li>Umfrage statt Abstimmung</li>
+                                        <li>Besprechungsmodus statt Diskussionsrunde</li>
+                                        <li>persönliche Nachrichten statt diskrete Rückfrage</li>
+                                        <li>Wortmeldung statt Handzeichen</li>
+                                        <li>Co-Moderation für weitere Lehrerkräfte</li>
+                                        <li>Teilnehmer-Freigabe für Referate</li>
+                                        <li>Textchat für eine lockere Eröffnung</li>
+                                        <li>Konferenzreports statt Anwesenheitsliste</li>
+
+                                    </ul>
+                                    <p>CSN. Blended-Learning für einen erfolgreichen Online-Unterricht. <br><br>
+
+                                        Made and hosted im Germany - zertifiziert, DSGVO-konform und sicher! <br><br>
+                                    </p>
+                                    <button class="button blue_button">Testaccount für Bildungseinrichtungen anfordern
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 col-xl-6">
+                    <div class="accordion_container">
+                        <div class="accordion">
+                            <div class="accordion_heading row py-3">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <img src="assets/pictures/waage.svg" alt="" id="waage">
+                                </div>
+                                <div class="col-9 d-flex align-items-center pe-5">
+                                    <button class="accordion_button font_bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                        Behörden
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingOne"
+                                 data-bs-parent="#accordionConferencing">
+                                <div class="accordion_collapse px-5 pt-3 pb-5">
+                                    <p>
+                                        Weltweit müssen Behörden auf Bundes-, Landes- und kommunaler Ebene
+                                        zusammenarbeiten.
+                                        CSN. bietet dafür eine maßgeschneiderte Kommunikationslösung, sicher,
+                                        browserbasiert und Firewall kompatibel. Sie funktioniert in jeder Behörde, auf
+                                        jedem
+                                        Computer und selbstverständlich auch mit einem klassischen Bürotelefon. <br><br>
+                                        Digitale Bürgerdienste für mehr Service und Effizienz.
+                                    </p>
+                                    <ul class="font_medium arrow_list my-4">
+                                        <li>
+                                            CSN. Videochats <br>
+                                            <span class="font-regular">reduzieren Behördengänge und verschaffen den Bürgern einen leichteren Zugang zu Ihren Dienstleistungen.</span>
+                                        </li>
+                                        <li>CSN. Online-Meetings <br>
+                                            <span class="font-regular">können Bürgerversammlungen vollständig ersetzen. Sie steigern das Engagement und die politische Bildung Ihrer Bürger</span>
+                                        </li>
+                                        <li>CSN. Infocalls <br>
+                                            <span class="font-regular">schnellen Alarmierung von Mitarbeitern und Bürgern in Notlagen und bei Gefährdungen der Gesundheit.</span>
+                                        </li>
+
+                                    </ul>
+                                    <button class="button blue_button">Testaccount für Behörden anfordern
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 mt-3 mt-xl-0 col-xl-6">
-                <div class="accordion_container">
-                    <div class="accordion">
-                        <div class="accordion_heading row py-3">
-                            <div class="col-3 d-flex justify-content-center">
-                                <img src="assets/pictures/versicherung.svg" alt="" id="versicherung">
-                            </div>
-                            <div class="col-9 d-flex align-items-center pe-5">
-                                <button class="accordion_button font_bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                    Versicherungen
-                                </button>
-                            </div>
-                        </div>
-
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionConferencing">
-                            <div class="accordion_collapse px-5 pt-3 pb-5">
-                                <p>
-                                    Für die Weiterbildungsinitiative „gut beraten“ der Versicherungswirtschaft hat CSN.
-                                    spezielle Anpassungen vorgenommen. Teilnehmer können sich komfortabel über
-                                    Webformulare mit Ihrer VV-ID (Weiterbildungs-ID) registrieren. <br><br> Während der
-                                    Fortbildung kann die Anwesenheit Online oder telefonisch überprüft und das
-                                    vermittelte Fachwissen in Multiple-Choice-Tests abgefragt werden. Die
-                                    Weiterbildungszeiten der Teilnehmer werden automatisch er-fasst. Anschließend werden
-                                    sie den Bildungskonten in der überbetrieblichen Weiterbildungsdatenbank (WBD) von
-                                    „gut beraten“ gut geschrieben. <br><br>
-                                </p>
-
-                                <button class="button blue_button">Testaccount für Versicherung anfordern
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 mt-3 col-xl-6">
-                <div class="accordion_container">
-                    <div class="accordion">
-                        <div class="accordion_heading row py-3">
-                            <div class="col-3 d-flex justify-content-center">
-                                <img src="assets/pictures/diplom_hut.svg" alt="" id="bildung">
-                            </div>
-                            <div class="col-9 d-flex align-items-center pe-5">
-                                <button class="accordion_button font_bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                    Bildungseinrichtungen
-                                </button>
-                            </div>
-                        </div>
-
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionConferencing">
-                            <div class="accordion_collapse px-5 pt-3 pb-5">
-                                <p>
-                                    Das Unterricht nicht zwangsläufig in einem Klassenzimmer stattfinden muss, wurde in
-                                    der Corona-Krise besonders deutlich. <br><br>
-
-                                    Die Webinar-Software von CSN bietet alle Funktionen, um Wissen effizient Online zu
-                                    vermitteln. Und zwar so, wie Sie es in klassischen Präsenzveranstaltungen gewohnt
-                                    sind. Genauso sicher und interaktiv:
-
-                                </p>
-                                <ul class="font_medium arrow_list my-4">
-                                    <li>Mediathek statt Unterrichtsmappe</li>
-                                    <li>Online-Präsentation statt Arbeitsmaterial</li>
-                                    <li>Whiteboard statt Tafel</li>
-                                    <li>Live-Video statt Präsenz</li>
-                                    <li>Video-Broadcasts statt Multimedia-PC</li>
-                                    <li>Screen Sharing statt Beamer</li>
-                                    <li>Download-Freigaben statt Arbeitsmaterial</li>
-                                    <li>Multiple-Choice-Fragen statt Tests</li>
-                                    <li>Umfrage statt Abstimmung</li>
-                                    <li>Besprechungsmodus statt Diskussionsrunde</li>
-                                    <li>persönliche Nachrichten statt diskrete Rückfrage</li>
-                                    <li>Wortmeldung statt Handzeichen</li>
-                                    <li>Co-Moderation für weitere Lehrerkräfte</li>
-                                    <li>Teilnehmer-Freigabe für Referate</li>
-                                    <li>Textchat für eine lockere Eröffnung</li>
-                                    <li>Konferenzreports statt Anwesenheitsliste</li>
-
-                                </ul>
-                                <p>CSN. Blended-Learning für einen erfolgreichen Online-Unterricht. <br><br>
-
-                                    Made and hosted im Germany - zertifiziert, DSGVO-konform und sicher! <br><br>
-                                </p>
-                                <button class="button blue_button">Testaccount für Bildungseinrichtungen anfordern
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mt-3 col-xl-6">
-                <div class="accordion_container">
-                    <div class="accordion">
-                        <div class="accordion_heading row py-3">
-                            <div class="col-3 d-flex justify-content-center">
-                                <img src="assets/pictures/waage.svg" alt="" id="waage">
-                            </div>
-                            <div class="col-9 d-flex align-items-center pe-5">
-                                <button class="accordion_button font_bold collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                    Behörden
-                                </button>
-                            </div>
-                        </div>
-
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionConferencing">
-                            <div class="accordion_collapse px-5 pt-3 pb-5">
-                                <p>
-                                    Weltweit müssen Behörden auf Bundes-, Landes- und kommunaler Ebene zusammenarbeiten.
-                                    CSN. bietet dafür eine maßgeschneiderte Kommunikationslösung, sicher,
-                                    browserbasiert und Firewall kompatibel. Sie funktioniert in jeder Behörde, auf jedem
-                                    Computer und selbstverständlich auch mit einem klassischen Bürotelefon. <br><br>
-                                    Digitale Bürgerdienste für mehr Service und Effizienz.
-                                </p>
-                                <ul class="font_medium arrow_list my-4">
-                                    <li>
-                                        CSN. Videochats <br>
-                                        <span class="font-regular">reduzieren Behördengänge und verschaffen den Bürgern einen leichteren Zugang zu Ihren Dienstleistungen.</span>
-                                    </li>
-                                    <li>CSN. Online-Meetings <br>
-                                        <span class="font-regular">können Bürgerversammlungen vollständig ersetzen. Sie steigern das Engagement und die politische Bildung Ihrer Bürger</span>
-                                    </li>
-                                    <li>CSN. Infocalls <br>
-                                        <span class="font-regular">schnellen Alarmierung von Mitarbeitern und Bürgern in Notlagen und bei Gefährdungen der Gesundheit.</span>
-                                    </li>
-
-                                </ul>
-                                <button class="button blue_button">Testaccount für Behörden anfordern
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-
-
 </section>
 
 <!--- Footer DONE --->

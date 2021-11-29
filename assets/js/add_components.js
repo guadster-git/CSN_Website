@@ -461,10 +461,10 @@ class MyMobileNavbar extends HTMLElement {
             </div>
             <div class="navigation_inner_box py-3">
                 <ul class="mobile_nav_items">
-                    <li><a href="" class="font_bold">Startseite</a></li>
-                    <li><a href="">CSN <span class="font_bold">Conferencing</span></a></li>
-                    <li><a href="">CSN <span class="font_bold">Online Beratung</span></a></li>
-                    <li><a href="" class="font_bold">Warum CSN</a></li>
+                    <li><a href="index.html" class="font_bold">Startseite</a></li>
+                    <li><a href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></li>
+                    <li><a href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></li>
+                    <li><a href="warum.html" class="font_bold">Warum CSN</a></li>
                 </ul>
             </div>
         </div>

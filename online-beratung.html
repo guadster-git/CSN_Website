@@ -53,12 +53,12 @@
 
 <!-- Slider DONE -->
 
-<section class="position-relative">
+<section class="position-relative outer_box">
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
          data-bs-ride="carousel">
 
-        <div class="carousel-indicators z_front carousel_points">
+        <div class="carousel-indicators z_front">
             <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                     class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
@@ -69,84 +69,128 @@
                     aria-label="Slide 4"></button>
         </div>
 
-        <div class="carousel-inner" id="carousel_online">
-            <div class="carousel-item  active" data-bs-interval="100000">
-                <div class="background_carousel_container" id="online_firstSlide">
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex active align-items-center" data-bs-interval="10000">
+                <div class="background_carousel_container" id="home_firstSlide">
+                    <div id="circle_firstSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+
+                    <img src="assets/pictures/schriftzug.png" alt="" class="firstSlide_text position-absolute d-none d-xxl-block">
+                    <img src="assets/pictures/banner_right_overlay.png" alt=""
+                         class="position-absolute slider_right_special">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
 
                 </div>
-                <img src="assets/pictures/online_carousel_1.png" alt="..." class="hide">
-                <div class="carousel_banner position-absolute my-lg-auto">
+                <div class="carousel_banner my-lg-auto">
                     <div class="carousel_inner">
-                        <h2> Das brandneue CSN
-                            bringt Conferencing und Online-Beratung auf die nächste Stufe</h2>
+                        <h2 class="carousel_heading"> Das brandneue CSN</h2>
+                        <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                            Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
 
-                            <button class="button_carousel">Mehr erfahren</button>
-
+                        <button class=" button_carousel">Kostenlos testen</button>
                     </div>
-
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right hide">
-                <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+
             </div>
-            <div class="carousel-item" data-bs-interval="100000">
-                <img src="assets/pictures/online_carousel_2.png" alt="..." class="hide">
-                <div class="background_carousel_container" id="online_secondSlide">
+            <div class="carousel-item d-flex align-items-center " data-bs-interval="10000">
+
+
+                <div class="background_carousel_container" id="home_secondSlide">
+                    <div id="circle_secondSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                </div>
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading">Full Service Provider</h2>
+                        <p>Für CSN Kunden sind individuelle Beratungen, Online-Schulungen und Workshops inklusive. Rufen Sie
+                            uns an und lernen Sie Ihren persönlichen Ansprechpartner kennen. </p>
+                        <button class=" button_carousel">Kostenlos testen</button>
+                    </div>
+
 
                 </div>
-                <div class="carousel_banner position-absolute my-lg-auto">
-                    <h2> Ihr Full Service Provider
-                        für digitale Beratung, Webinare & Konferenzen</h2>
-                    <div class="button_carousel_container">
-                        <button class="button_carousel">Mehr erfahren</button>
-                    </div>
-                </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right hide">
-                <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+
             </div>
-            <div class="carousel-item" data-bs-interval="100000">
-                <img src="assets/pictures/online_carousel_3.png" alt="..." class="hide">
-                <div class="background_carousel_container" id="online_thirdSlide">
+            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000">
 
+                <div class="background_carousel_container" id="home_thirdSlide">
+                    <div id="circle_thirdSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider2">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right "
+                         id="home_3rd_slide_right">
+                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
+                         id="home_3rd_slide">
                 </div>
-                <div class="carousel_banner position-absolute my-lg-auto">
-                    <h2> CSN verbindet – <br>
-                        Online-Berater, Kunden, Moderatoren, Aktionäre, Mitarbeiter, …</h2>
-                    <div class="button_carousel_container">
-                        <button class="button_carousel">Mehr erfahren</button>
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading"> Dynamische Entwicklung</h2>
+                        <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams, um
+                            die Wünsche und Anregungen der Kunden bestmöglich umzusetzen. </p>
+                        <button class=" button_carousel">Kostenlos testen</button>
                     </div>
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+
             </div>
-            <div class="carousel-item   " data-bs-interval="100000">
-                <div class="background_carousel_container" id="online_forthSlide">
+            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000"
+                 id="banner4">
 
+                <div class="background_carousel_container" id="home_forthSlide">
+                    <div id="circle_forthSlide">
+                        <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                        <img src="assets/pictures/white_thin_circle.svg" alt=""
+                             class="position-absolute circle_thin_slider">
+                        <img src="assets/pictures/white_fat_circle.svg" alt=""
+                             class="position-absolute circle_middle_slider">
+                    </div>
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_right">
+                    <img src="assets/pictures/overlay_right_3rd.png" alt="" class="position-absolute slider_left" style="transform: rotate(180deg)">
                 </div>
-                <div class="carousel_banner position-absolute my-lg-auto">
-                    <h2> Die einfache & sichere Kommunikationsplattform „Made in Germany"</h2>
-                    <div class="button_carousel_container">
-                        <button class="button_carousel">Mehr erfahren</button>
+                <div class="carousel_banner my-lg-auto">
+                    <div class="carousel_inner">
+                        <h2 class="carousel_heading"> Einfach & sicher</h2>
+                        <p>Die Bedienung unserer Online-Plattform ist kinderleicht.
+                            Moderne Benutzeroberflächen und Wizards sorgen dafür, dass Sie sich sofort zurecht finden.
+                        </p>
+
+                        <button class=" button_carousel">Kostenlos testen</button>
                     </div>
 
+
                 </div>
-                <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+
             </div>
         </div>
-        <div class="position-absolute made_in_germany d-flex flex-column">
+
+        <div class="position-absolute made_in_germany flex-column d-none d-xl-flex">
             <img src="assets/pictures/german_stripes.svg" alt="">
             <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
 
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon " aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -945,7 +989,7 @@
 
 <section class="position-relative overflow-hidden height_banner">
 
-    <div class="online_banner_background" id="online_banner">
+    <div class="banner_background" id="online_banner">
         <img src="assets/pictures/white_thin_circle.svg" alt="" class="position-absolute banner_reverse_thin">
         <img src="assets/pictures/blue_medium_circle.svg" alt="" class="position-absolute banner_reverse_medium">
         <img src="assets/pictures/blue_fat_circle.svg" alt="" class="position-absolute banner_reverse_blue">
