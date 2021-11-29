@@ -1366,7 +1366,10 @@ a:hover{
     height: 424px;
 }
 .warum_banner_overlay{
-    height: 750px;
+    height: 100%;
+    width: 70%;
+    top: 0;
+    right: 0;
 }
 
 /* Datenschutz, Impressum, AGBs */
@@ -1495,6 +1498,15 @@ textarea:focus-visible{
     left: auto;
     right: 7%;
 }
+#warum_banner .banner_background{
+    background-image: url("assets/pictures/warum_banner.png");
+    background-position: 10% center;
+}
+#warum_banner .banner{
+    height: 424px;
+    left: auto;
+    right: 7%;
+}
 .overlay_right{
     right: 0;
 }
@@ -1550,6 +1562,7 @@ textarea:focus-visible{
 
 }
 @media (max-width: 1400px) {
+
 
 
     .slider_left{
@@ -1682,6 +1695,9 @@ textarea:focus-visible{
     }
     #orange_conferencing_first{
         right: 15%;
+    }
+    #sicherheit .w-60{
+        width: 100% !important;
     }
 }
 
@@ -1829,6 +1845,14 @@ textarea:focus-visible{
         top: auto;
         right: auto;
     }
+    #warum_banner .banner_background{
+        height: 60%;
+    }
+    #warum_banner .banner{
+        height: 40%;
+        right: auto;
+    }
+
 
 
 
