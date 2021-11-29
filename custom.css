@@ -1336,7 +1336,7 @@ a:hover{
     height: 80px;
 }
 .columns_2{
-    width: 630px;
+    width: 50%;
     height: 320px;
 }
 .columns_2_small{
@@ -1564,7 +1564,9 @@ textarea:focus-visible{
 @media (max-width: 1400px) {
 
 
-
+    .columns_2{
+        width: 100%;
+    }
     .slider_left{
         width: 30%!important;
     }
@@ -1893,6 +1895,9 @@ textarea:focus-visible{
         margin-right: 7% !important;
         margin-left: 7% !important;
     }
+    .warum_banner_overlay{
+        width: 20%;
+    }
     
 }
 
@@ -1901,6 +1906,12 @@ textarea:focus-visible{
     .inner_box{
         margin-right: 7%;
         margin-left: 7%;
+    }
+    #warum_banner .banner_background{
+        height: 50%;
+    }
+    #warum_banner .banner{
+        height: 50%;
     }
 
     .large_tile{
