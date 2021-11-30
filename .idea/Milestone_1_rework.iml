@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="feather-icons" level="application" />
+    <orderEntry type="library" name="tiny-slider" level="application" />
   </component>
 </module>

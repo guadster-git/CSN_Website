@@ -79,7 +79,6 @@ const navbar = document.getElementById("navbar_sticky");
 const sticky = navbar.offsetTop;
 
 function make_sticky() {
-    console.log(window.pageYOffset)
     if (window.pageYOffset >= sticky && window.pageYOffset > 0) {
         navbar.classList.add("nav_sticky")
     }else {
