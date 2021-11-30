@@ -27,7 +27,7 @@
 
 <!-- Navbar -->
 
-<my-navbar></my-navbar>
+<my-navbar id="conferencing_nav"></my-navbar>
 
 
 <!-- Navbar Mobile -->
@@ -329,7 +329,7 @@
 
 
             </div>
-            <div class="col-xl-6 col-md-12">
+            <div class="col-xl-6 col-md-12" id="Telefonkonferenzen">
                 <div class="d-flex flex-column justify-content-end mt-xl-5 ps-xl-5">
                     <h2 class="mb-4 pb-2 font_medium">Telefonkonferenzen</h2>
                     <div class="picture_column_width">
@@ -372,7 +372,7 @@
             </div>
         </div>
 
-        <div class="row my-xl-5 py-xl-5">
+        <div class="row my-xl-5 py-xl-5" id="Webinare">
             <div class="col-xl-6 col-md-12">
                 <div class="d-flex flex-column justify-content-start mt-xl-5 ">
                     <h2 class="mb-4 pb-2 font_medium">Webinare und Online-Trainings</h2>
@@ -438,7 +438,7 @@
 
 
             </div>
-            <div class="col-xl-6 col-12">
+            <div class="col-xl-6 col-12" id="Webkonferenzen">
                 <div class="d-flex flex-column justify-content-end mt-xl-5 ms-xl-5 ps-xl-5">
                     <h2 class="mb-4 pb-2 font_medium">Webkonferenzen und Online-Meetings</h2>
                     <div class="picture_column_width">
@@ -480,7 +480,7 @@
             </div>
         </div>
 
-        <div class="row my-xl-5 py-xl-5">
+        <div class="row my-xl-5 py-xl-5" id="Videokonferenzen">
             <div class="col-xl-6 col-12">
                 <div class="d-flex flex-column justify-content-start mt-xl-5 ">
                     <h2 class="mb-4 pb-2 font_medium">Videokonferenzen</h2>
@@ -532,7 +532,7 @@
 
 
             </div>
-            <div class="col-xl-6 col-12">
+            <div class="col-xl-6 col-12" id="Operatorkonferenzen">
                 <div class="d-flex flex-column justify-content-end mt-xl-5 ms-xl-5 ps-xl-5">
                     <h2 class="mb-4 pb-2 font_medium">Operatorgestützte Konferenzen</h2>
                     <div class="picture_column_width">
@@ -1525,14 +1525,14 @@
 
 <!-- Tiles DONE -->
 
-<section class="overflow-x-hidden">
+<section class="overflow-x-hidden" id="Einsatzbereiche">
     <div class="my-5 text-center py-5 box">
         <h2>
             CSN Conferencing<br>
             <span class="font_medium">Bietet Vorteile für viele Geschäftsbereiche</span>
         </h2>
     </div>
-    <div class="row gx-0">
+    <div class="row gx-0" id="Marketing">
         <div class="col-lg-6 col-md-12 bg-secondary tiles_height align-items-center d-flex">
             <div class="box text-white">
                 <h2 class="font_medium mb-4">Marketing / Vertrieb</h2>
@@ -1560,7 +1560,7 @@
 
         </div>
 
-        <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex">
+        <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex" id="Schulung">
             <div class="box text-white">
                 <h2 class="font_medium mb-4">Schulung / Training</h2>
                 <p>
@@ -1576,7 +1576,7 @@
         </div>
     </div>
 
-    <div class="row gx-0">
+    <div class="row gx-0" id="Business-Konferenzen">
         <div class="col-lg-6 col-md-12 tiles_height large_tile align-items-center d-flex">
             <div class="box">
                 <h2 class="font_medium mb-4">Business-Konferenzen</h2>
@@ -1605,7 +1605,7 @@
 
         </div>
     </div>
-    <div class="row gx-0">
+    <div class="row gx-0" id="Investor">
 
         <div class="col-lg-6 col-md-12 tiles_height image_tile" id="conf_forth_tile">
 
@@ -1635,7 +1635,7 @@
 
         </div>
     </div>
-    <div class="row gx-0">
+    <div class="row gx-0" id="Recruiting">
 
 
         <div class="col-lg-6 col-md-12 bg-primary tiles_height align-items-center d-flex">
@@ -1923,57 +1923,7 @@
 <my-mobile_footer></my-mobile_footer>
 
 
-<script type="module">
-
-    const slider = tns({
-        container: '.my-slider',
-        items: 1,
-        slideBy: '1',
-        autoplay: true,
-        gutter: 150,
-        controls: false,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 6000,
-        mouseDrag: true,
-        speed: 1000,
-        responsive: {
-            992: {
-                items: 2,
-                gutter: 150
-            }
-        }
-    });
-    const slider_cards_2 = tns({
-        container: '.card_slider_2',
-        items: 1,
-        center: true,
-        slideBy: '1',
-        autoplay: true,
-        mouseDrag: true,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 6000,
-        speed: 1000,
-        nav: false,
-        controlsContainer: "#card_control_2",
-
-    });
-    const slider_cards_1 = tns({
-        container: '.card_slider_1',
-        items: 1,
-        center: true,
-        slideBy: '1',
-        autoplay: true,
-        mouseDrag: true,
-        autoplayButtonOutput: false,
-        autoplayTimeout: 6000,
-        speed: 1000,
-        nav: false,
-        controlsContainer: "#card_control_1",
-
-    });
-</script>
-
-
+<script src="assets/js/slider.js"></script>
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/mobile_menu.js"></script>
 <script src="assets/js/navbar.js"></script>

@@ -48,6 +48,7 @@
 .box{
     margin-left: 7%;
     margin-right: 7%;
+    max-width: 1920px;
 }
 .inner_box{
     margin-left: 14%;
@@ -104,7 +105,9 @@
 }
 /* Navbar */
 
-
+#conferencing_nav #conferencing, #online_nav #online, #warum_nav #warum {
+    color: #28A5BC;
+}
 
 .navbar_heading{
     letter-spacing:  0.54px;
@@ -208,6 +211,30 @@ ul.arrow_list{
     background-image: url("assets/pictures/online_carousel_3.png");
 }
 #online_forthSlide{
+    background-image: url("assets/pictures/online_carousel_4.png");
+}
+#conferencing_firstSlide{
+    background-image: url("assets/pictures/online_carousel_1.png");
+}
+#conferencing_secondSlide{
+    background-image: url("assets/pictures/online_carousel_2.png");
+}
+#conferencing_thirdSlide{
+    background-image: url("assets/pictures/online_carousel_3.png");
+}
+#conferencing_forthSlide{
+    background-image: url("assets/pictures/online_carousel_4.png");
+}
+#warum_firstSlide{
+    background-image: url("assets/pictures/online_carousel_1.png");
+}
+#warum_secondSlide{
+    background-image: url("assets/pictures/online_carousel_2.png");
+}
+#warum_thirdSlide{
+    background-image: url("assets/pictures/online_carousel_3.png");
+}
+#warum_forthSlide{
     background-image: url("assets/pictures/online_carousel_4.png");
 }
 
@@ -1535,8 +1562,8 @@ textarea:focus-visible{
 .tns-nav button{
     margin-right: 5px;
     margin-left: 5px;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     border-radius: 100%;
     border: none;
     z-index: 2;
@@ -1601,7 +1628,7 @@ textarea:focus-visible{
     }
 }
 
-@media (min-width: 2200px) {
+/** @media (min-width: 2200px) {
     .box{
         margin-left: 22%;
         margin-right: 22%;
@@ -1620,6 +1647,12 @@ textarea:focus-visible{
         margin-left: 27.5%;
     }
 
+} **/
+@media (min-width: 1921px){
+    .box{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (max-width: 1400px) {
 
@@ -1795,7 +1828,7 @@ textarea:focus-visible{
     }
     .carousel_banner{
         width: 80vw;
-        height: 40%;
+        height: 50%;
         background-color: white;
         border-radius: 50px 50px 50px 0;
         bottom: 0;
@@ -1895,7 +1928,7 @@ textarea:focus-visible{
 
 
     .background_carousel_container{
-        height: 70%;
+        height: 60%;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1950,6 +1983,12 @@ textarea:focus-visible{
         border-radius: 50px 50px 50px 0;
     }
 
+    .flip_container{
+        height: 300px;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 1rem;
+    }
 
     .carousel_banner{
         height: 40%;

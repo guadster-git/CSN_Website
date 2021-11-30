@@ -193,61 +193,61 @@ class MyFooter extends HTMLElement {
             <div class="col-xl-3 col-lg-4 col-6 text-white ps-0">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list">Enthaltene Produkte</p>
-                    <p class="font_light footer_list">Telefonkonferenzen</p>
-                    <p class="font_light footer_list">Webinare & Online Training</p>
-                    <p class="font_light footer_list">Webkonferenzen</p>
-                    <p class="font_light footer_list">Videokonferenzen</p>
-                    <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
+                    <p class="font_medium footer_list"><a href="/conferencing.html#produkte"></a>Enthaltene Produkte</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen"></a>Telefonkonferenzen</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare"></a>Webinare & Online Training</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen"></a>Webkonferenzen</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen"></a>Videokonferenzen</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen"></a>Operatorgestützte Konferenzen</p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Einsatzbereiche</p>
-                    <p class="font_light footer_list">Marketing & Vertrieb</p>
-                    <p class="font_light footer_list">Schulung & Training</p>
-                    <p class="font_light footer_list">Business-Konferenzen</p>
-                    <p class="font_light footer_list">Investor Relations Konferenzen</p>
-                    <p class="font_light footer_list">Recruiting</p>
+                    <p class="font_medium footer_list"><a href="/conferencing.html#Einsatzbereiche"></a>Einsatzbereiche</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Marketing"></a>Marketing & Vertrieb</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Schulung"></a>Schulung & Training</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Business-Konferenzen"></a>Business-Konferenzen</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Investor"></a>Investor Relations Konferenzen</p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Recruiting"></a>Recruiting</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 text-white">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list">Produkt-Features</p>
-                    <p class="font_light footer_list">Video-Beratung</p>
-                    <p class="font_light footer_list">Text- und Videochat</p>
-                    <p class="font_light footer_list">Digitale Unterschrift</p>
-                    <p class="font_light footer_list">Dateifreigabe & Mediathek</p>
-                    <p class="font_light footer_list">Umfragen</p>
+                    <p class="font_medium footer_list"><a href="/online-beratung.html#highlights"></a>Produkt-Features</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Video-Beratung</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Text- und Videochat</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Digitale Unterschrift</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Dateifreigabe & Mediathek</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Umfragen</p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Branchen</p>
-                    <p class="font_light footer_list">Versicherungen & Makler</p>
-                    <p class="font_light footer_list">Banken & Immobilien</p>
-                    <p class="font_light footer_list">Einzelhandel / Onlineshops</p>
-                    <p class="font_light footer_list">Gesundheitswesen</p>
-                    <p class="font_light footer_list">Telekommunikation</p>
+                    <p class="font_medium footer_list"><a href="/online-beratung.html#branchen"></a>Branchen</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Versicherungen"></a>Versicherungen & Makler</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Banken"></a>Banken & Immobilien</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Einzelhandel"></a>Einzelhandel / Onlineshops</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Gesundheit"></a>Gesundheitswesen</p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Telekommunikation"></a>Telekommunikation</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 text-white mt-5 mt-lg-0">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list">Highlights</p>
-                    <p class="font_light footer_list">20 Jahre Markterfahrung</p>
-                    <p class="font_light footer_list">Modernste Webtechnologien</p>
-                    <p class="font_light footer_list">Inhouse Kundenservice</p>
-                    <p class="font_light footer_list">Kostenlose Schulung & Beratung</p>
-                    <p class="font_light footer_list">Premium Operatorservicen</p>
+                    <p class="font_medium footer_list"><a href="/warum.html#kriterien"></a>Highlights</p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>20 Jahre Markterfahrung</p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Modernste Webtechnologien</p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Inhouse Kundenservice</p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Kostenlose Schulung & Beratung</p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Premium Operatorservicen</p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list">Über uns</p>
-                    <p class="font_light footer_list">Unsere Vision</p>
-                    <p class="font_light footer_list">CSN Leitlinien</p>
-                    <p class="font_light footer_list">Made and hosted in Germany</p>
-                    <p class="font_light footer_list">zertifiziert und sicher</p>
-                    <p class="font_light footer_list">DSGVO-, BDSG- und TKG-konform</p>
+                    <p class="font_medium footer_list"><a href="/warum.html#sicherheit"></a>Über uns</p>
+                    <p class="font_light footer_list"><a href="/warum.html#umwelt"></a>Unsere Vision</p>
+                    <p class="font_light footer_list"><a href="/warum.html#umwelt"></a>CSN Leitlinien</p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>Made and hosted in Germany</p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>zertifiziert und sicher</p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>DSGVO-, BDSG- und TKG-konform</p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 d-flex flex-column justify-content-between text-white mt-md-5 mt-xl-0">
