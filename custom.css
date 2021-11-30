@@ -1613,6 +1613,14 @@ textarea:focus-visible{
     width: 36px;
     height: 36px;
 }
+#kontakt_banner .background_carousel_container{
+    background-image: url("assets/pictures/kontaktBanner.jpeg");
+    background-size: cover;
+    background-position: center 30%;
+}
+#kontakt_banner .carousel_banner{
+    height: 300px;
+}
 
 
 /* MEDIA QUERIES */
@@ -1817,6 +1825,7 @@ textarea:focus-visible{
     #home_forthSlide{
         background-position: center center;
     }
+
 
     .box_navbar_top{
         width: 100%;

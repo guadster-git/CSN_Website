@@ -193,61 +193,61 @@ class MyFooter extends HTMLElement {
             <div class="col-xl-3 col-lg-4 col-6 text-white ps-0">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list"><a href="/conferencing.html#produkte"></a>Enthaltene Produkte</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen"></a>Telefonkonferenzen</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare"></a>Webinare & Online Training</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen"></a>Webkonferenzen</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen"></a>Videokonferenzen</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen"></a>Operatorgestützte Konferenzen</p>
+                    <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list"><a href="/conferencing.html#Einsatzbereiche"></a>Einsatzbereiche</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Marketing"></a>Marketing & Vertrieb</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Schulung"></a>Schulung & Training</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Business-Konferenzen"></a>Business-Konferenzen</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Investor"></a>Investor Relations Konferenzen</p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Recruiting"></a>Recruiting</p>
+                    <p class="font_medium footer_list"><a href="/conferencing.html#Einsatzbereiche">Einsatzbereiche</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Marketing">Marketing & Vertrieb</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Schulung">Schulung & Training</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Business-Konferenzen">Business-Konferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Investor">Investor Relations Konferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Recruiting">Recruiting</a></p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 text-white">
-                <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</p>
+                <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</a></p>
                 <div class="font_light">
-                    <p class="font_medium footer_list"><a href="/online-beratung.html#highlights"></a>Produkt-Features</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Video-Beratung</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Text- und Videochat</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Digitale Unterschrift</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Dateifreigabe & Mediathek</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights"></a>Umfragen</p>
+                    <p class="font_medium footer_list"><a href="/online-beratung.html#highlights">Produkt-Features</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Video-Beratung</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Text- und Videochat</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Digitale Unterschrift</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Dateifreigabe & Mediathek</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Umfragen</a></p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list"><a href="/online-beratung.html#branchen"></a>Branchen</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#Versicherungen"></a>Versicherungen & Makler</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#Banken"></a>Banken & Immobilien</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#Einzelhandel"></a>Einzelhandel / Onlineshops</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#Gesundheit"></a>Gesundheitswesen</p>
-                    <p class="font_light footer_list"><a href="/online-beratung.html#Telekommunikation"></a>Telekommunikation</p>
+                    <p class="font_medium footer_list"><a href="/online-beratung.html#branchen">Branchen</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Versicherungen">Versicherungen & Makler</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Banken">Banken & Immobilien</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Einzelhandel">Einzelhandel / Onlineshops</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Gesundheit">Gesundheitswesen</a></p>
+                    <p class="font_light footer_list"><a href="/online-beratung.html#Telekommunikation">Telekommunikation</a></p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 text-white mt-5 mt-lg-0">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list"><a href="/warum.html#kriterien"></a>Highlights</p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>20 Jahre Markterfahrung</p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Modernste Webtechnologien</p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Inhouse Kundenservice</p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Kostenlose Schulung & Beratung</p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien"></a>Premium Operatorservicen</p>
+                    <p class="font_medium footer_list"><a href="/warum.html#kriterien">Highlights</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien">20 Jahre Markterfahrung</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Modernste Webtechnologien</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Inhouse Kundenservice</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Kostenlose Schulung & Beratung</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Premium Operatorservicen</a></p>
                 </div>
 
                 <div class="font_light pt-4">
-                    <p class="font_medium footer_list"><a href="/warum.html#sicherheit"></a>Über uns</p>
-                    <p class="font_light footer_list"><a href="/warum.html#umwelt"></a>Unsere Vision</p>
-                    <p class="font_light footer_list"><a href="/warum.html#umwelt"></a>CSN Leitlinien</p>
-                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>Made and hosted in Germany</p>
-                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>zertifiziert und sicher</p>
-                    <p class="font_light footer_list"><a href="/warum.html#sicherheit"></a>DSGVO-, BDSG- und TKG-konform</p>
+                    <p class="font_medium footer_list"><a href="/warum.html#sicherheit">Über uns</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#umwelt">Unsere Vision</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#umwelt">CSN Leitlinien</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit">Made and hosted in Germany</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit">zertifiziert und sicher</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#sicherheit">DSGVO-, BDSG- und TKG-konform</a></p>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-6 d-flex flex-column justify-content-between text-white mt-md-5 mt-xl-0">
@@ -339,7 +339,6 @@ class MyPreFooter extends HTMLElement {
 }
 
 
-
 customElements.define('my-prefooter', MyPreFooter);
 
 class MyMobileFooter extends HTMLElement {
@@ -362,12 +361,12 @@ class MyMobileFooter extends HTMLElement {
                 </h2>
                 <div id="footer_conferencing" class="accordion-collapse mobile_footer_expand collapse" aria-labelledby="footer_one" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-                        <p class="font_medium footer_list">Enthaltene Produkte</p>
-                        <p class="font_light footer_list">Telefonkonferenzen</p>
-                        <p class="font_light footer_list">Webinare & Online Training</p>
-                        <p class="font_light footer_list">Webkonferenzen</p>
-                        <p class="font_light footer_list">Videokonferenzen</p>
-                        <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
+                       <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
                     </div>
                 </div>
             </div>
@@ -412,7 +411,6 @@ class MyMobileFooter extends HTMLElement {
 `
     }
 }
-
 
 
 customElements.define('my-mobile_footer', MyMobileFooter);
