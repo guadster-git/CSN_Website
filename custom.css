@@ -444,7 +444,7 @@ ul.arrow_list{
     top: 50%;
 }
 #banner4 .slider_left{
-    width: 1500px;
+    width: 70%;
 }
 
 
@@ -1664,7 +1664,7 @@ textarea:focus-visible{
         width: 100%;
     }
     .slider_left{
-        width: 30%!important;
+        width: 30%;
     }
     .slider_right, .slider_right_special{
         width: 20% !important;
@@ -1675,15 +1675,16 @@ textarea:focus-visible{
     #home_secondSlide{
         background-position: 40% center;
     }
+    #home_forthSlide{
+        background-position: 300px center;
+    }
     .footer_text_column{
         justify-content: start;
     }
     .footer_last_column{
         justify-content: end;
     }
-    #home_4_leftOverlay{
-        width: 1000px!important;
-    }
+
 
 }
 
