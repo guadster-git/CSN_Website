@@ -123,7 +123,7 @@ class MyCookie extends HTMLElement {
         this.innerHTML = `
 <div class="overlay" id="overlay">
     <div class="cookie position-fixed d-flex justify-content-between">
-        <div class=" d-flex flex-column overflow-hidden justify-content-between font_medium">
+        <div class=" d-flex flex-column overflow-hidden cookie_between font_medium">
             <div class="d-flex">
                 <span>Wir verwenden Cookies, um unsere Website und unseren Service für Sie zu Optimieren.</span>
             </div>

@@ -727,7 +727,9 @@ ul.arrow_list{
     left: 85%;
 }
 /* Cookie */
-
+.cookie_between{
+    justify-content: space-between;
+}
 .button_cookie{
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1802,6 +1804,15 @@ textarea:focus-visible{
 
 
 @media (max-width: 992px) {
+    .cookie{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        justify-content: center!important;
+
+
+    }
     #home_forthSlide{
         background-position: center center;
     }
@@ -2129,6 +2140,13 @@ textarea:focus-visible{
     }
     .tns-nav{
         bottom: 20px;
+    }
+    .cookie{
+        padding: 20px;
+        height: auto;
+    }
+    .cookie_between{
+        justify-content: end;
     }
 
 }
