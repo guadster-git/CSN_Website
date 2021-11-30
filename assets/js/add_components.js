@@ -50,28 +50,28 @@ class MyNavbar extends HTMLElement {
         <div id="dropdown_bar">
             <div class="hide bg-white" id="dropdown_conferencing">
                 <div class="box border-top d-flex justify-content-center py-3">
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#produkte">Enthaltene Produkte</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#bereiche">Einsatzbereiche</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#branchen">Branchen</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#highlights">Unsere Highlights</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#bereiche">Einsatzbereiche</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#Einsatzbereiche">Branchen</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#highlights">Unsere Highlights</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#features">Präsentations-Features</a></h3>
                 </div>
             </div>
             <div class="hide bg-white" id="dropdown_online">
                 <div class="box border-top d-flex justify-content-center py-3 ">
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#trend">Trend zur Realität</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#highlights">Unsere Highlights</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#features">Weitere Features</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#branchen">Branchen</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#sicherheit">Sicherheit</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#trend">Trend zur Realität</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#highlights">Unsere Highlights</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#features">Weitere Features</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#branchen">Branchen</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#sicherheit">Sicherheit</a></h3>
                 </div>
             </div>
             <div class="hide bg-white" id="dropdown_warum">
                 <div class="box border-top d-flex justify-content-center py-3">
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#kriterien">Entscheidungskriterien</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#sicherheit">Sicherheit & Service</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#umwelt">Umwelt & Effizienz</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#leitlinien">CSN Leitlinien</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/warum.html#kriterien">Entscheidungskriterien</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/warum.html#sicherheit">Sicherheit & Service</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/warum.html#umwelt">Umwelt & Effizienz</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="/warum.html#leitlinien">CSN Leitlinien</a></h3>
                 </div>
             </div>
             <div class="hide bg-white" id="dropdown_suche">

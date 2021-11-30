@@ -200,6 +200,7 @@ ul.arrow_list{
 }
 #home_forthSlide{
     background-image: url("assets/pictures/homepage4.png");
+    background-position: center left;
 }
 #online_firstSlide{
     background-image: url("assets/pictures/online_carousel_1.png");

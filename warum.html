@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -422,7 +422,7 @@
 
 <!-- Card Section --->
 
-<section class="margin_card_section" id="sicherheit">
+<section class="margin_card_section d-none d-md-block" id="sicherheit">
     <div class="box">
 
         <div class="text-center my-5 py-5">
@@ -555,6 +555,137 @@
     </div>
 </section>
 
+<section class="position-relative d-md-none my-5">
+    <div class="card_controls d-flex" id="card_control_1" aria-label="Carousel Navigation" tabindex="0">
+        <div class="card_prev" data-controls="prev" aria-controls="customize" tabindex="-1"><i
+                data-feather="chevron-left" class="feather-big"></i></div>
+        <div class="card_next" data-controls="next" aria-controls="customize" tabindex="-1"><i
+                data-feather="chevron-right" class="feather-big"></i></div>
+    </div>
+    <div class="box">
+        <div class="card_slider_1">
+            <div class="card_item">
+                <div class="normal_card">
+                    <div class="d-flex flex-column text-center">
+                        <div class="card_image_container">
+                            <img src="/assets/pictures/de.svg" alt="">
+                        </div>
+                        <h4>
+                            Deutsches Unternehmen
+                        </h4>
+                        <p class="card_text font-regular">Deutsches und EU Recht für Vertrags- <br>
+                            und Rechtsangelegenheiten</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="normal_card">
+                        <div class="d-flex flex-column text-center">
+                            <div class="card_image_container">
+                                <img src="/assets/pictures/hosting.svg" alt="">
+                            </div>
+                            <h4>
+                                Made and hosted in Germany
+                            </h4>
+                            <p class="card_text font-regular">Entwicklung und Betrieb in Deutschland, zertifiziert nach
+                                ISO 27001</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="normal_card">
+                        <div class="d-flex flex-column text-center">
+                            <div class="card_image_container">
+                                <img src="/assets/pictures/dsgvo_konform.svg" alt="">
+                            </div>
+                            <h4>
+                                DSGVO-konform
+                            </h4>
+                            <p class="card_text font-regular">Strikte Einhaltung der europäischen
+                                Datenschutzstandards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="normal_card">
+                        <div class="d-flex flex-column text-center">
+                            <div class="card_image_container">
+                                <img src="/assets/pictures/secure_lock.svg" alt="">
+                            </div>
+                            <h4>
+                                OPDV-zertifiziert
+                            </h4>
+                            <p class="card_text font-regular">Zur Nutzung in der Sparkassen- <br>
+                                Finanzgruppe</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="normal_card">
+                    <div class="d-flex flex-column text-center">
+                        <div class="card_image_container">
+                            <img src="/assets/pictures/secure_lock.svg" alt="">
+                        </div>
+                        <h4>
+                            BDSG- und TKG-konform
+                        </h4>
+                        <p class="card_text font-regular">Strikte Einhaltung der Schutzstandards</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+
+                <div class="normal_card">
+                    <div class="d-flex flex-column text-center">
+                        <div class="card_image_container">
+                            <img src="/assets/pictures/bsi.svg" alt="">
+                        </div>
+                        <h4>
+                            IT-Sicherheit nach BSI und BaFin
+                        </h4>
+                        <p class="card_text font-regular">Orientierung an den Leitlinien <br>
+                            des BSI der BaFin</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_item">
+                <div class="normal_card">
+                    <div class="d-flex flex-column text-center">
+                        <div class="card_image_container">
+                            <img src="/assets/pictures/certificat_cyan.svg" alt="">
+                        </div>
+                        <h4>
+                            Code Signing Zertifikate
+                        </h4>
+                        <p class="card_text font-regular">Gewährleisten die Authentizität und <br>
+                            Integrität der Software</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_item">
+                <div class="normal_card">
+                    <div class="d-flex flex-column text-center">
+                        <div class="card_image_container">
+                            <img src="/assets/pictures/256_bit.svg" alt="">
+                        </div>
+                        <h4>
+                            256-Bit AES-Verschlüsselung
+                        </h4>
+                        <p class="card_text font-regular">Höchste Sicherheit bei der <br>
+                            Datenübertragung im Browser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
 <!--Picture Column-->
 
 <section class=" py-5 grey_background" id="umwelt">
@@ -646,7 +777,23 @@
 <my-footer></my-footer>
 <my-mobile_footer></my-mobile_footer>
 
+<script>
+    const slider_cards_1 = tns({
+        preventScrollOnTouch: 'force',
+        container: '.card_slider_1',
+        items: 1,
+        center: true,
+        slideBy: '1',
+        autoplay: true,
+        mouseDrag: true,
+        autoplayButtonOutput: false,
+        autoplayTimeout: 6000,
+        speed: 1000,
+        nav: false,
+        controlsContainer: "#card_control_1",
+    });
 
+</script>
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/mobile_menu.js"></script>
 <script src="assets/js/navbar.js"></script>
