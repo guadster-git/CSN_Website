@@ -200,7 +200,7 @@ ul.arrow_list{
 }
 #home_forthSlide{
     background-image: url("assets/pictures/homepage4.png");
-    background-position: center left;
+    background-position: 400px center;
 }
 #online_firstSlide{
     background-image: url("assets/pictures/online_carousel_1.png");
@@ -332,8 +332,8 @@ ul.arrow_list{
     width: 903px;
 
 }
-#home_3rd_slide{
-    width: 1330px;
+#home_left{
+    width: 1400px;
 }
 #carousel_conference .slider_left{
     width: 1400px;
@@ -1679,6 +1679,9 @@ textarea:focus-visible{
     .footer_last_column{
         justify-content: end;
     }
+    #home_4_leftOverlay{
+        width: 1000px!important;
+    }
 
 }
 
@@ -1799,6 +1802,9 @@ textarea:focus-visible{
 
 
 @media (max-width: 992px) {
+    #home_forthSlide{
+        background-position: center center;
+    }
 
     .box_navbar_top{
         width: 100%;
