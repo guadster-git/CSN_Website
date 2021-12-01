@@ -3,7 +3,7 @@ class MyNavbar extends HTMLElement {
         this.innerHTML = `<section id="navbar_sticky">
         <div class="position-relative">
             <div class="box">
-            <nav class="d-flex justify-content-between py-4">
+            <nav class="d-flex py-4" id="navbar">
             <div class="d-flex ps-0">
             <a href="index.html"><img src="assets/pictures/CSN_Wortbildmarke_RZ.svg" alt=""
         class="banner_height img-fluid"></a>
@@ -39,6 +39,13 @@ class MyNavbar extends HTMLElement {
                 </div>
                 <p class="mx-auto no_padding_bot font_navbar font_medium">Deutsch</p>
             </div>
+        </div>
+        
+        <!-- Login -->
+        <div class="nav_login">
+            <i data-feather="user"></i>
+            <span class="font_medium ps-2 pt-1 text-uppercase f-14">Login</span>
+            
         </div>
 
         <!-- Mobile Menu Hamburger -->
@@ -361,13 +368,22 @@ class MyMobileFooter extends HTMLElement {
                 </h2>
                 <div id="footer_conferencing" class="accordion-collapse mobile_footer_expand collapse" aria-labelledby="footer_one" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-                       <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
-                    </div>
+        <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
+    </div>
+
+    <div class="font_light pt-4">
+        <p class="font_medium footer_list"><a href="/conferencing.html#Einsatzbereiche">Einsatzbereiche</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Marketing">Marketing & Vertrieb</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Schulung">Schulung & Training</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Business-Konferenzen">Business-Konferenzen</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Investor">Investor Relations Konferenzen</a></p>
+        <p class="font_light footer_list"><a href="/conferencing.html#Recruiting">Recruiting</a></p>
+    </div>
                 </div>
             </div>
             <div class="footer_item position-relative" id="footer_two">
@@ -378,13 +394,22 @@ class MyMobileFooter extends HTMLElement {
                 </h2>
                 <div id="footer_online" class="accordion-collapse mobile_footer_expand collapse" aria-labelledby="footer_two" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-                        <p class="font_medium footer_list">Enthaltene Produkte</p>
-                        <p class="font_light footer_list">Telefonkonferenzen</p>
-                        <p class="font_light footer_list">Webinare & Online Training</p>
-                        <p class="font_light footer_list">Webkonferenzen</p>
-                        <p class="font_light footer_list">Videokonferenzen</p>
-                        <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
-                    </div>
+        <p class="font_medium footer_list"><a href="/online-beratung.html#highlights">Produkt-Features</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Video-Beratung</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Text- und Videochat</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Digitale Unterschrift</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Dateifreigabe & Mediathek</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#highlights">Umfragen</a></p>
+    </div>
+
+    <div class="font_light pt-4">
+        <p class="font_medium footer_list"><a href="/online-beratung.html#branchen">Branchen</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#Versicherungen">Versicherungen & Makler</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#Banken">Banken & Immobilien</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#Einzelhandel">Einzelhandel / Onlineshops</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#Gesundheit">Gesundheitswesen</a></p>
+        <p class="font_light footer_list"><a href="/online-beratung.html#Telekommunikation">Telekommunikation</a></p>
+    </div>
                 </div>
             </div>
             <div class="footer_item position-relative" id="footer_three">
@@ -395,16 +420,62 @@ class MyMobileFooter extends HTMLElement {
                 </h2>
                 <div id="footer_warum" class="accordion-collapse mobile_footer_expand collapse" aria-labelledby="footer_three" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-                        <p class="font_medium footer_list">Enthaltene Produkte</p>
-                        <p class="font_light footer_list">Telefonkonferenzen</p>
-                        <p class="font_light footer_list">Webinare & Online Training</p>
-                        <p class="font_light footer_list">Webkonferenzen</p>
-                        <p class="font_light footer_list">Videokonferenzen</p>
-                        <p class="font_light footer_list">Operatorgestützte Konferenzen</p>
-                    </div>
+        <p class="font_medium footer_list"><a href="/warum.html#kriterien">Highlights</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#kriterien">20 Jahre Markterfahrung</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#kriterien">Modernste Webtechnologien</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#kriterien">Inhouse Kundenservice</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#kriterien">Kostenlose Schulung & Beratung</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#kriterien">Premium Operatorservicen</a></p>
+    </div>
+
+    <div class="font_light pt-4">
+        <p class="font_medium footer_list"><a href="/warum.html#sicherheit">Über uns</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#umwelt">Unsere Vision</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#umwelt">CSN Leitlinien</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#sicherheit">Made and hosted in Germany</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#sicherheit">zertifiziert und sicher</a></p>
+        <p class="font_light footer_list"><a href="/warum.html#sicherheit">DSGVO-, BDSG- und TKG-konform</a></p>
+    </div>
                 </div>
             </div>
-        </div>
+            <div class="box service_menu_footer"><div>
+                    <p class="text-uppercase primary pb-2 font_bold" style="letter-spacing: 1px">Service Menü</p>
+                    <div class="font_light text-white">
+                        <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
+                        <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
+                        <p class="font_light footer_list">Haftungsausschluss</p>
+                        <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
+                        <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
+                    </div>
+                </div>
+                <div class="mt-xl-0 mt-5 mt-xl-0">
+                    <div class="font_light pb-3">
+                        <p class="font_medium text-uppercase text-white">Folgen Sie uns Bei</p>
+                        <div class="row pe-5">
+                            <div class="col-auto social_media_row">
+                                <a href="#"><img src="assets/pictures/facebook_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/facebook.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-auto social_media_row">
+                                <a href="#"><img src="assets/pictures/twitter_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/twitter.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-auto social_media_row">
+                                <a href="#"><img src="assets/pictures/instagram_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/instagram.png" alt="" class="social_media">
+                            </div>
+                            <div class="col-auto social_media_row">
+                                <a href="#"><img src="assets/pictures/youtube_hover.svg" alt=""
+                                                 class="social_media_hover"></a>
+                                <img src="assets/pictures/youtube.png" alt="" class="social_media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div></div>S
     </div>
 </section>
 
@@ -421,28 +492,40 @@ class MyMobileNavbar extends HTMLElement {
         this.innerHTML = `
 <section id="mobile-menu" class=" section_mobile_menu">
     <nav class="container_mobile_nav d-flex flex-row position-absolute" id="mobile_container">
-        <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
-            <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
-            </button>
+        <div class="grey_sidebar d-flex justify-content-center align-items-start">
+            <button id="closing_button_white"><img src="assets/pictures/menu_close_white.svg" alt="" class="d-flex d-sm-none close_button_white">
+                        </button>
         </div>
         <div class="main_navigation_mobile">
             <div class="navigation_inner_box">
-                <div class="d-flex justify-content-between my-4">
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="globe" class="me-2"></i>
-                            <span class="font_medium">DE</span>
-                        </div>
+                <div class="d-flex mobile_icon_container">
+                   
+                    <a href="kontakt.html"><div class="d-flex flex-column align-items-center me-4">                        
+                            <i data-feather="mail"></i>
+                            <span class="font_medium text-uppercase mobile_nav_text mt-2">Kontakt</span>  
+                    </div></a>
+                    <div class="d-flex flex-column align-items-center me-4">                        
+                            <i data-feather="search"></i>
+                            <span class="font_medium text-uppercase mobile_nav_text mt-2">Suche</span>  
+                    </div> 
+                    <div class="d-flex flex-column align-items-center" id="mobile_nav_deutsch">
+                            <i data-feather="globe"></i>
+                            <span class="font_medium text-uppercase mobile_nav_text mt-2">Deutsch</span>
                     </div>
-
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="mail" class="me-2"></i>
-                            <span class="font_medium">Kontakt</span>
-                        </div>
+                    <div class="d-none d-sm-flex align-items-center closing_button_mobile">
+                        <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
+                        </button>
                     </div>
                 </div>
             </div>
+<div class="mobile_topbar bg-primary">
+<div class="navigation_inner_box d-flex d-md-none flex-column text-uppercase text-white py-4">
+<span class="font_light f-14 pb-1">Haben wir Ihr Interesse Geweckt?</span>
+<span class="font_medium f-14">Kostenlos Testen <i data-feather="chevron-right" style="height: 20px; width: 20px"></i></span>
+
+</div>
+
+</div>
             <div class="mobile_search_container">
                 <div class="navigation_inner_box d-flex w-100 py-4">
                     <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
@@ -457,13 +540,31 @@ class MyMobileNavbar extends HTMLElement {
                     </div>
                 </div>
             </div>
-            <div class="navigation_inner_box py-3">
+            <div class="navigation_inner_box">
                 <ul class="mobile_nav_items">
                     <li><a href="index.html" class="font_bold">Startseite</a></li>
                     <li><a href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></li>
                     <li><a href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></li>
                     <li><a href="warum.html" class="font_bold">Warum CSN</a></li>
                 </ul>
+            </div>
+            <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
+                <h3 class="font_bold f-18 text-uppercase">Teilen Sie die Seite via</h3>
+                <div class="d-flex mt-3 social_media_row_nav">
+                    <div class="social_media_icon_container">
+                        <i data-feather="facebook" class="feather-big"></i>
+                    </div>
+                    <div class="social_media_icon_container">
+                        <i data-feather="twitter" class="feather-big"></i>
+                    </div>
+                    <div class="social_media_icon_container">
+                        <i data-feather="instagram" class="feather-big"></i>
+                    </div>
+                    <div class="social_media_icon_container">
+                        <i data-feather="youtube" class="feather-big"></i>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </nav>

@@ -108,6 +108,9 @@
 #conferencing_nav #conferencing, #online_nav #online, #warum_nav #warum {
     color: #28A5BC;
 }
+#navbar{
+    justify-content: space-between;
+}
 
 .navbar_heading{
     letter-spacing:  0.54px;
@@ -200,7 +203,8 @@ ul.arrow_list{
 }
 #home_forthSlide{
     background-image: url("assets/pictures/homepage4.png");
-    background-position: 400px center;
+    background-position: 120% center;
+    background-size: contain;
 }
 #online_firstSlide{
     background-image: url("assets/pictures/online_carousel_1.png");
@@ -1184,6 +1188,45 @@ a:hover{
 
 /**************     Conferencing ***********/
 
+.custom_control_next, .custom_control_prev{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+    border: none;
+}
+#carousel_cards .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+
+    bottom: -2rem;
+}
+#carousel_cards .carousel-indicators [data-bs-target]:not(.active) {
+    background-color: lightgrey;
+}
+
+
+
+.slider_control{
+    height: 32px;
+    width: 32px;
+}
+.custom_control_prev{
+    left: 2%;
+}
+.custom_control_next{
+    right: 2%;
+}
+#carousel_cards .carousel-inner{
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+}
+
 .linear_background{
     background: linear-gradient(180deg, white, #EFEFEF35);
 }
@@ -1262,6 +1305,9 @@ a:hover{
     left: 0;
     z-index: 999;
 }
+.mobile_topbar{
+    margin-bottom: 3rem;
+}
 
 .grey_sidebar{
     background-color: #707070;
@@ -1279,12 +1325,16 @@ a:hover{
 }
 .mobile_search_container{
     background-color: #EBEBEB;
+    display: none;
 }
 .mobile_search_input_container{
     width: 95%;
 }
 .mobile_search_icon{
     width: 5%;
+}
+.close_button_white{
+    margin-top: 4rem;
 }
 .mobile_search_input{
     height: 100%;
@@ -1304,7 +1354,55 @@ a:hover{
     outline: none;
     border-right: none;
 }
+.closing_button_mobile{
+    margin-left: auto;
+}
+.mobile_nav_text{
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+.mobile_nav_items li{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid #F0F0F0;
+}
+.mobile_nav_items li:last-child{
+    border-bottom: 1px solid #F0F0F0;
+}
+.mobile_icon_container{
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+}
+.social_media_row_nav{
+    color: white;
+}
+#social_media_nav{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
 
+}
+#social_media_nav h3{
+    color: #BFBFBF;
+}
+#social_media_nav .feather-big{
+    width: auto;
+    height: auto;
+}
+
+.social_media_icon_container{
+    background-color: #BFBFBF;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
 
 .mobile_search_input:focus .mobile_search_icon{
     border: 1px solid #28A5BC;
@@ -1327,10 +1425,11 @@ a:hover{
 .mobile_nav_items li{
     padding-bottom: 1.25rem;
 }
-#closing_button{
+#closing_button, #closing_button_white{
     background-color: transparent;
     border: none;
 }
+
 #hamburger_button{
     background-color: transparent;
     border: none;
@@ -1614,12 +1713,22 @@ textarea:focus-visible{
     height: 36px;
 }
 #kontakt_banner .background_carousel_container{
-    background-image: url("assets/pictures/kontaktBanner.jpeg");
-    background-size: cover;
-    background-position: center 30%;
+    background-image: url("assets/pictures/kontaktBanner.png");
+    background-size: contain;
+    background-position: center center;
+}
+#kontakt_banner{
+    height: 500px;
 }
 #kontakt_banner .carousel_banner{
     height: 300px;
+}
+.f-14{
+    font-size: 14px;
+    line-height: 17px;
+}
+.nav_login{
+    display: none;
 }
 
 
@@ -1629,7 +1738,8 @@ textarea:focus-visible{
         display: flex;
     }
     #icon_section_navbar{
-        display: none!important;
+        margin-left: auto;
+        margin-right: 4%;
     }
     #dropdown_enabler{
         display: none!important;
@@ -1685,6 +1795,7 @@ textarea:focus-visible{
     }
     #home_forthSlide{
         background-position: 300px center;
+        background-size: cover;
     }
     .footer_text_column{
         justify-content: start;
@@ -1991,6 +2102,10 @@ textarea:focus-visible{
     .conference_left_overlay{
         display: none;
     }
+    #kontakt_banner .background_carousel_container{
+        background-size: cover;
+        background-position: center 20%;
+    }
 
 
 
@@ -2001,6 +2116,7 @@ textarea:focus-visible{
     .slider_height{
         height: 800px;
     }
+
     .owl_item_innner{
         margin-right: 1px;
         margin-left: 1px;
@@ -2009,6 +2125,15 @@ textarea:focus-visible{
         background-color: #28A5BC;
         color: white;
         border-radius: 50px 50px 50px 0;
+    }
+    #icon_section_navbar{
+        display: none!important;
+    }
+    .nav_login{
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: auto;
     }
 
     .flip_container{
@@ -2072,6 +2197,14 @@ textarea:focus-visible{
 }
 
 @media (max-width: 576px){
+    body{
+        word-break: break-word;
+    }
+
+
+    .nav_login{
+        display: none;
+    }
 
     .inner_box{
         margin-right: 7%;

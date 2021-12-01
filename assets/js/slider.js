@@ -1,5 +1,5 @@
 const slider = tns({
-    preventScrollOnTouch: 'force',
+    preventScrollOnTouch: 'auto',
     container: '.my-slider',
     items: 1,
     slideBy: '1',
@@ -17,7 +17,7 @@ const slider = tns({
     }
 });
 const slider_cards_2 = tns({
-    preventScrollOnTouch: 'force',
+    preventScrollOnTouch: 'auto',
     container: '.card_slider_2',
     items: 1,
     center: true,
@@ -32,7 +32,7 @@ const slider_cards_2 = tns({
 
 });
 const slider_cards_1 = tns({
-    preventScrollOnTouch: 'force',
+    preventScrollOnTouch: 'auto',
     container: '.card_slider_1',
     items: 1,
     center: true,
