@@ -1175,14 +1175,27 @@ a:hover{
 .footer_item{
     padding-top: 15px;
     padding-bottom: 15px;
+    border-top: 1px solid #EBEBEB20;
 }
 .footer_button:not(.collapsed) .footer_expand_icon{
     transform: rotate(45deg);
     color: #28A5BC;
 }
-.footer_item{
-    border-top: 2px solid #28A5BC50;
+.footer_item:last-child{
+    border-bottom: 1px solid #EBEBEB20;
+}
+#service_heading{
+    letter-spacing: 1px;
+}
+.footer_service_container{
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
 
+.mobile_footer_globe{
+    position: absolute;
+    z-index: 0;
 }
 
 

@@ -351,7 +351,7 @@ customElements.define('my-prefooter', MyPreFooter);
 class MyMobileFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-<section class="bg-secondary d-md-none overflow-x-hidden">
+<section class="bg-secondary d-md-none overflow-hidden">
     <div class="box">
         <div class="d-flex flex-column w-100 pt-5">
             <button class="button blue_full_button">Kostenlos testen</button>
@@ -437,9 +437,14 @@ class MyMobileFooter extends HTMLElement {
         <p class="font_light footer_list"><a href="/warum.html#sicherheit">DSGVO-, BDSG- und TKG-konform</a></p>
     </div>
                 </div>
-            </div>
-            <div class="box service_menu_footer"><div>
-                    <p class="text-uppercase primary pb-2 font_bold" style="letter-spacing: 1px">Service Menü</p>
+            </div></div>
+            <div class="box service_menu_footer position-relative">
+            <div>
+            <img src="assets/pictures/footer_globe.svg" alt="" class="mobile_footer_globe">
+</div>
+         <div class="footer_service_container">  
+            <div>
+                    <p class="text-uppercase primary pb-2 font_bold" id="service_heading">Service Menü</p>
                     <div class="font_light text-white">
                         <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
                         <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
@@ -474,8 +479,8 @@ class MyMobileFooter extends HTMLElement {
                             </div>
                         </div>
                     </div>
-                </div>
-        </div></div>S
+                </div></div> 
+        </div>
     </div>
 </section>
 
