@@ -128,7 +128,7 @@ customElements.define('my-topbar', MyTopbar);
 class MyCookie extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-<div class="overlay" id="overlay">
+<div class="overlay hide" id="overlay">
     <div class="cookie position-fixed d-flex justify-content-between">
         <div class=" d-flex flex-column overflow-hidden cookie_between font_medium">
             <div class="d-flex">
@@ -180,13 +180,13 @@ class MyFooter extends HTMLElement {
     <img src="/assets/pictures/footer_globe.svg" alt="" class="footer_globe position-absolute">
     <div class="box position-relative" id="footer">
         <div class="row py-5 no_gutter_x ">
-            <div class="col-4 col-xxl-3  d-flex justify-content-start align-content-center order-0">
+            <div class="col-auto col-xxl-3  d-flex justify-content-start align-content-center order-0">
                 <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
             </div>
             <div class="col-12 col-xxl-6 d-flex footer_text_column align-items-center text-white order-2 order-xxl-1 mt-4 mt-xxl-0">
                 <span class="text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
             </div>
-            <div class="col-8 col-xxl-3 d-flex footer_last_column order-1  order-xxl-2">
+            <div class="col-auto ms-auto col-xxl-3 d-flex footer_last_column order-1  order-xxl-2">
                 <button class="button blue_full_button">Kostenlos Testen</button>
                 <div class="flex-column my-auto justify-content-end icon ms-4 d-none d-lg-block">
                     <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
