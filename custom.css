@@ -935,10 +935,8 @@ ul.arrow_list{
 
 .flip_container{
     perspective: 1000px;
-
     min-height: 245px;
     margin-top: 1rem;
-
     width: 24%;
 }
 .flip_container:hover .flip_inner{
