@@ -1317,7 +1317,7 @@ a:hover{
 }
 
 .container_mobile_nav{
-    height: 100vh;
+    height: 100%;
     width: 40vw;
     top: 0;
     left: 0;
