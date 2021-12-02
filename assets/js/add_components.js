@@ -455,24 +455,24 @@ class MyMobileFooter extends HTMLElement {
                 </div>
                 <div class="mt-xl-0 mt-5 mt-xl-0">
                     <div class="font_light pb-3">
-                        <p class="font_medium text-uppercase text-white">Folgen Sie uns Bei</p>
+                        <p class="font_medium text-uppercase text-white">Teilen Sie die Seite</p>
                         <div class="row pe-5">
-                            <div class="col-auto social_media_row">
+                            <div class="col-3 social_media_row">
                                 <a href="#"><img src="assets/pictures/facebook_hover.svg" alt=""
                                                  class="social_media_hover"></a>
                                 <img src="assets/pictures/facebook.png" alt="" class="social_media">
                             </div>
-                            <div class="col-auto social_media_row">
+                            <div class="col-3 social_media_row">
                                 <a href="#"><img src="assets/pictures/twitter_hover.svg" alt=""
                                                  class="social_media_hover"></a>
                                 <img src="assets/pictures/twitter.png" alt="" class="social_media">
                             </div>
-                            <div class="col-auto social_media_row">
+                            <div class="col-3 social_media_row">
                                 <a href="#"><img src="assets/pictures/instagram_hover.svg" alt=""
                                                  class="social_media_hover"></a>
                                 <img src="assets/pictures/instagram.png" alt="" class="social_media">
                             </div>
-                            <div class="col-auto social_media_row">
+                            <div class="col-3 social_media_row">
                                 <a href="#"><img src="assets/pictures/youtube_hover.svg" alt=""
                                                  class="social_media_hover"></a>
                                 <img src="assets/pictures/youtube.png" alt="" class="social_media">
@@ -505,7 +505,7 @@ class MyMobileNavbar extends HTMLElement {
             <div class="navigation_inner_box">
                 <div class="d-flex mobile_icon_container">
                    
-                    <a href="kontakt.html"><div class="d-flex flex-column align-items-center me-4">                        
+                    <a href="Kontakt.html"><div class="d-flex flex-column align-items-center me-4">                        
                             <i data-feather="mail"></i>
                             <span class="font_medium text-uppercase mobile_nav_text mt-2">Kontakt</span>  
                     </div></a>
@@ -554,7 +554,7 @@ class MyMobileNavbar extends HTMLElement {
                 </ul>
             </div>
             <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
-                <h3 class="font_bold f-18 text-uppercase">Teilen Sie die Seite via</h3>
+                <h3 class="font_bold f-18 text-uppercase">Teilen Sie die Seite</h3>
                 <div class="d-flex mt-3 social_media_row_nav">
                     <div class="social_media_icon_container">
                         <i data-feather="facebook" class="feather-big"></i>

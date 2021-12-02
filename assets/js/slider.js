@@ -37,7 +37,7 @@ const slider_cards_1 = tns({
     items: 1,
     center: true,
     slideBy: '1',
-    autoplay: true,
+    autoplay: false,
     mouseDrag: true,
     autoplayButtonOutput: false,
     autoplayTimeout: 6000,
