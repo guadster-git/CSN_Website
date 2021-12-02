@@ -6,7 +6,8 @@ body{
 }
 
 *{
-    scroll-margin-top: 200px;
+    scroll-margin-top: 7rem;
+
 }
 
 .small_banner_height{
@@ -195,7 +196,7 @@ ul.arrow_list{
     width: 100%;
     height: 780px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
 }
 #home_firstSlide{
@@ -203,9 +204,11 @@ ul.arrow_list{
 }
 #home_secondSlide{
     background-image: url("assets/pictures/slide_2.png");
+    background-position: right center;
 }
 #home_thirdSlide{
-    background-image: url("assets/pictures/slide_3.png");
+    background-image: url("assets/pictures/home_banner_3.png");
+
 }
 #home_forthSlide{
     background-image: url("assets/pictures/homepage4.png");
@@ -257,7 +260,8 @@ ul.arrow_list{
 .firstSlide_text{
     right: 15%;
     z-index: 2;
-    top: 38%;
+    top: 45%;
+    width: 40%;
 
 }
 .slider_right_special{
@@ -332,24 +336,24 @@ ul.arrow_list{
     top:0;
     height: 779px;
     z-index: 1;
-    width: 850px;
+    width: 45%;
 }
 .slider_left{
     top: 0;
     left: 0;
     height: 779px;
     z-index: 1;
-    width: 903px;
+    width: 50%;
 
 }
 #home_left{
-    width: 1400px;
+    width: 70%;
 }
 #carousel_conference .slider_left{
-    width: 1400px;
+    width: 70%;
 }
 #warum_carousel .slider_left, #carousel_online .slider_left {
-    width: 1286px;
+    width: 70%;
 }
 .carousel_banner{
     position: absolute;
@@ -498,6 +502,7 @@ ul.arrow_list{
     background-color: white;
     top: 0;
     z-index: 99;
+    max-width: 1920px;
 }
 
 .hide{
@@ -818,7 +823,7 @@ ul.arrow_list{
 
 .box_navbar_top{
     border-radius: 0 0 0 5px;
-    width: 45%;
+    width: 50%;
 }
 /* Buttons */
 
@@ -967,15 +972,16 @@ ul.arrow_list{
     border-radius: 10px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+
 .flip_card_white{
-    padding-top: 42px;
-}
-#einzeilige_cards .flip_card_white{
-    padding-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_text_inner{
@@ -984,8 +990,7 @@ ul.arrow_list{
     margin-bottom: 0;
 }
 .card_blue{
-    padding-left: 7%;
-    padding-right: 7%;
+    padding: 1rem 7%;
     color: white;
     background-color: #28A5BC;
     transform: rotateY(180deg);
@@ -996,9 +1001,11 @@ ul.arrow_list{
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
 }
 
-#einzeilige_cards .card_image_container{
+.einzeilige_cards .card_image_container{
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -1215,14 +1222,14 @@ a:hover{
     background-color: transparent;
     border: none;
 }
-#carousel_cards .carousel-indicators {
+#carousel_cards .carousel-indicators, #carousel_cards_flip .carousel-indicators {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
 
     bottom: -2rem;
 }
-#carousel_cards .carousel-indicators [data-bs-target]:not(.active) {
+#carousel_cards .carousel-indicators [data-bs-target]:not(.active), #carousel_cards_flip .carousel-indicators [data-bs-target]:not(.active) {
     background-color: lightgrey;
 }
 
@@ -1238,7 +1245,7 @@ a:hover{
 .custom_control_next{
     right: 2%;
 }
-#carousel_cards .carousel-inner{
+#carousel_cards .carousel-inner, #carousel_cards_flip .carousel-inner {
     width: 86%;
     margin-left: auto;
     margin-right: auto;
@@ -1763,8 +1770,9 @@ textarea:focus-visible{
         display: none!important;
     }
     .box_navbar_top{
-        width: 70%;
+        width: 60%;
     }
+
 }
 
 /** @media (min-width: 2200px) {
@@ -1790,6 +1798,9 @@ textarea:focus-visible{
 
 @media (max-width: 1400px) {
 
+    .box_navbar_top{
+        width: 70%;
+    }
 
     .columns_2{
         width: 100%;
@@ -1822,6 +1833,10 @@ textarea:focus-visible{
 
 
 @media (max-width: 1200px) {
+
+    .firstSlide_text{
+        width: 30%;
+    }
 
     .box_navbar_top{
         width: 75%;
@@ -1933,21 +1948,14 @@ textarea:focus-visible{
     #sicherheit .w-60{
         width: 100% !important;
     }
-
-    .flip_inner{
-        display: flex;
-        align-items: center;
-    }
-    .flip_card_white{
-        padding-top: 0!important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 
 @media (max-width: 992px) {
+
+    .firstSlide_text{
+        width: 50%;
+    }
     .cookie{
         width: 100%;
         bottom: 0;
@@ -2102,7 +2110,7 @@ textarea:focus-visible{
 
     }
     .carousel-control-next, .carousel-control-prev{
-        top: calc(35% - 27px);
+        top: calc(30% - 27px);
         margin-top: 0;
         margin-bottom: 0;
         height: 55px;
@@ -2228,6 +2236,9 @@ textarea:focus-visible{
     body{
         word-break: break-word;
     }
+    *{
+        scroll-margin: 10rem;
+    }
 
 
     .nav_login{
@@ -2255,7 +2266,10 @@ textarea:focus-visible{
 
 
     .slider_height{
-        height: 85vh;
+        height: 90vh;
+    }
+    #navbar_sticky{
+        min-height: 10%;
     }
     .container_mobile_nav{
         width: 100vw;
@@ -2307,6 +2321,19 @@ textarea:focus-visible{
     .cookie_between{
         justify-content: end;
     }
+
+}
+@media (max-width: 375px) {
+    .background_carousel_container{
+        height: 30%;
+    }
+    .carousel_banner{
+        min-height: 70%;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        top: calc(15% - 20px);
+    }
+
 
 }
 

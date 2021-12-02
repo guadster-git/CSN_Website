@@ -57,11 +57,11 @@ class MyNavbar extends HTMLElement {
         <div id="dropdown_bar">
             <div class="hide bg-white" id="dropdown_conferencing">
                 <div class="box border-top d-flex justify-content-center py-3">
-                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#bereiche">Einsatzbereiche</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#Einsatzbereiche">Branchen</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#highlights">Unsere Highlights</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="/conferencing.html#features">Präsentations-Features</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#produkte">Enthaltene Produkte</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#bereiche">Einsatzbereiche</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#Einsatzbereiche">Branchen</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#highlights">Unsere Highlights</a></h3>
+                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a></h3>
                 </div>
             </div>
             <div class="hide bg-white" id="dropdown_online">
@@ -200,12 +200,12 @@ class MyFooter extends HTMLElement {
             <div class="col-xl-3 col-lg-4 col-6 text-white ps-0">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
+                    <p class="font_medium footer_list"><a href="conferencing.html#produkte">Enthaltene Produkte</a></p>
+                    <p class="font_light footer_list"><a href="conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="conferencing.html#Webinare">Webinare & Online Training</a></p>
+                    <p class="font_light footer_list"><a href="conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
                 </div>
 
                 <div class="font_light pt-4">
@@ -368,12 +368,12 @@ class MyMobileFooter extends HTMLElement {
                 </h2>
                 <div id="footer_conferencing" class="accordion-collapse mobile_footer_expand collapse" aria-labelledby="footer_one" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-        <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
-        <p class="font_light footer_list"><a href="/conferencing.html#telefonkonferenzen">Telefonkonferenzen</a></p>
-        <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online Training</a></p>
-        <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
-        <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
-        <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
+        <p class="font_medium footer_list"><a href="conferencing.html#produkte">Enthaltene Produkte</a></p>
+        <p class="font_light footer_list"><a href="conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a></p>
+        <p class="font_light footer_list"><a href="conferencing.html#Webinare">Webinare & Online Training</a></p>
+        <p class="font_light footer_list"><a href="conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+        <p class="font_light footer_list"><a href="conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
+        <p class="font_light footer_list"><a href="conferencing.html#Operatorkonferenzen">Operatorgestützte Konferenzen</a></p>
     </div>
 
     <div class="font_light pt-4">
