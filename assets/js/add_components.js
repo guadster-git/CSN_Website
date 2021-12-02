@@ -523,14 +523,14 @@ class MyMobileNavbar extends HTMLElement {
                     </div>
                 </div>
             </div>
-<div class="mobile_topbar bg-primary">
+<!--<div class="mobile_topbar bg-primary">
 <div class="navigation_inner_box d-flex d-md-none flex-column text-uppercase text-white py-4">
 <span class="font_light f-14 pb-1">Haben wir Ihr Interesse Geweckt?</span>
 <span class="font_medium f-14">Kostenlos Testen <i data-feather="chevron-right" style="height: 20px; width: 20px"></i></span>
 
 </div>
 
-</div>
+</div> -->
             <div class="mobile_search_container">
                 <div class="navigation_inner_box d-flex w-100 py-4">
                     <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">

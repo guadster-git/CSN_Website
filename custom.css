@@ -3,13 +3,10 @@
 .small_banner_height{
     height: 350px;
 }
-.tiles_height{
+.image_tile{
     min-height: 850px;
+}
 
-}
-#online_tiles .tiles_height{
-    min-height: 730px;
-}
 
 .conference_column_width{
     width: 479px;
@@ -1830,19 +1827,19 @@ textarea:focus-visible{
         margin-left: 7%;
         margin-right: 7%;
     }
-    .tiles_height{
-        min-height: 550px;
-        text-align: center;
-        width: 100%;
-    }
+
     .tiles_height li{
         text-align: left;
     }
-    .large_tile{
-        min-height: 700px;
+    .tiles_height{
+        height: auto;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        width: 100%;
     }
-    #online_tiles .tiles_height{
-        min-height: 600px;
+    .image_tile{
+        padding: 0;
     }
     .box-right{
         margin-right: 9%;
@@ -1961,7 +1958,8 @@ textarea:focus-visible{
         margin-right: 0;
     }
     .button_carousel{
-        bottom: 10%;
+        position: relative;
+        margin-top: 50px;
     }
 
     .all_inclusive{
@@ -1991,6 +1989,8 @@ textarea:focus-visible{
         top: auto;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        align-items: center;
     }
     .carousel_inner h2, .carousel_inner p{
         text-align: center;
@@ -2232,25 +2232,14 @@ textarea:focus-visible{
     .banner{
         padding-top: 3rem;
         padding-bottom: 3rem;
+        height: auto;
     }
 
-    .large_tile{
-        min-height: 900px;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-    .tiles_height{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        min-height: 600px;
-    }
+
     /*** Carousel ***/
 
 
-    .button_carousel{
-        bottom: 10%;
-        padding-right: 30px;
-    }
+
     .slider_height{
         height: 85vh;
     }
@@ -2266,13 +2255,13 @@ textarea:focus-visible{
     .carousel_banner{
         min-height: 50%;
         padding: 30px;
+        height: auto;
     }
-    .banner{
-        min-height: 70%;
+    .button:after{
+        content: none!important;
     }
-    .banner_background{
-        height: 40%;
-    }
+
+
     .owl_icon, .owl_heading, .owl_paragraph{
         justify-content: center;
         text-align: center;
@@ -2303,12 +2292,6 @@ textarea:focus-visible{
     }
     .cookie_between{
         justify-content: end;
-    }
-
-}
-@media (max-width: 350px) {
-    .button_carousel{
-        bottom: 15px;
     }
 
 }
