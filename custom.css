@@ -1,4 +1,9 @@
 /* Layout */
+body{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .small_banner_height{
     height: 350px;
@@ -1777,12 +1782,7 @@ textarea:focus-visible{
     }
 
 } **/
-@media (min-width: 1921px){
-    .box{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+
 @media (max-width: 1400px) {
 
 
