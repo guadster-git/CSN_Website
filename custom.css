@@ -5,6 +5,10 @@ body{
     margin-right: auto;
 }
 
+*{
+    scroll-margin-top: 200px;
+}
+
 .small_banner_height{
     height: 350px;
 }
