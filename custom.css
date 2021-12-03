@@ -37,7 +37,7 @@ body{
 
 .subpages_box{
     margin-right: 30%;
-    margin-left: 140px;
+    margin-left: 7%;
 }
 
 .z_front{
@@ -201,10 +201,10 @@ ul.arrow_list{
 }
 #home_firstSlide{
     background-image: url("assets/pictures/homepage_banner1_.png");
+    background-size: cover;
 }
 #home_secondSlide{
-    background-image: url("assets/pictures/slide_2.png");
-    background-position: right center;
+    background-image: url("assets/pictures/Banner/banner_home_2.png");
 }
 #home_thirdSlide{
     background-image: url("assets/pictures/home_banner_3.png");
@@ -213,7 +213,6 @@ ul.arrow_list{
 #home_forthSlide{
     background-image: url("assets/pictures/homepage4.png");
     background-position: 120% center;
-    background-size: contain;
 }
 #online_firstSlide{
     background-image: url("assets/pictures/online_carousel_1.png");
@@ -222,34 +221,39 @@ ul.arrow_list{
     background-image: url("assets/pictures/online_carousel_2.png");
 }
 #online_thirdSlide{
-    background-image: url("assets/pictures/online_carousel_3.png");
+    background-image: url("assets/pictures/Banner/banner_online_3.png");
 }
 #online_forthSlide{
     background-image: url("assets/pictures/online_carousel_4.png");
 }
 #conferencing_firstSlide{
-    background-image: url("assets/pictures/conference_carousel_1.png");
+    background-image: url("assets/pictures/Banner/banner_conferencing_1.png");
+    background-size: contain;
+}
+#conferencing_firstSlide .slider_right{
+    width: 48%;
 }
 #conferencing_secondSlide{
-    background-image: url("assets/pictures/conference_carousel_2.png");
+    background-image: url("assets/pictures/Banner/banner_conferencing_2.png");
 }
 #conferencing_thirdSlide{
-    background-image: url("assets/pictures/conference_carousel_3.png");
+    background-image: url("assets/pictures/Banner/banner_conferencing_3.png");
 }
 #conferencing_forthSlide{
-    background-image: url("assets/pictures/conference_carousel_4.png");
+    background-image: url("assets/pictures/Banner/banner_conferencing_4.png");
 }
 #warum_firstSlide{
-    background-image: url("assets/pictures/warum_carousel_1.png");
+    background-image: url("assets/pictures/Banner/banner_warum_1.png");
+    background-position: 50% center;
 }
 #warum_secondSlide{
-    background-image: url("assets/pictures/warum_carousel_2.png");
+    background-image: url("assets/pictures/Banner/banner_warum_2.png");
 }
 #warum_thirdSlide{
-    background-image: url("assets/pictures/warum_carousel_3.png");
+    background-image: url("assets/pictures/Banner/banner_warum_3.png");
 }
 #warum_forthSlide{
-    background-image: url("assets/pictures/warum_carousel_4.png");
+    background-image: url("assets/pictures/Banner/banner_warum_4.png");
 }
 
 
@@ -343,7 +347,7 @@ ul.arrow_list{
     left: 0;
     height: 779px;
     z-index: 1;
-    width: 50%;
+    width: 60%;
 
 }
 #home_left{
@@ -556,7 +560,7 @@ ul.arrow_list{
 }
 
 /* Tiles */
-#conf_first_tile{
+/*#conf_first_tile{
     background-image: url("assets/pictures/first_tile.png");
 }
 #conf_second_tile{
@@ -573,10 +577,15 @@ ul.arrow_list{
 }
 #conf_sixth_tile{
     background-image: url("assets/pictures/second_tile.png");
-}
+} */
 .image_tile{
     background-size: cover;
     background-position: center center;
+}
+.tile_picture{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
  /* Circles */
@@ -1255,11 +1264,7 @@ a:hover{
 .linear_background{
     background: linear-gradient(180deg, white, #EFEFEF35);
 }
-#conferenceBanner_1{
 
-    left: 0;
-    right: auto;
-}
 #first_tile{
     background-image: url("assets/pictures/online_tile_1.png");
     background-position: center center;
@@ -1405,8 +1410,7 @@ a:hover{
     color: white;
 }
 #social_media_nav{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     margin-bottom: 3rem;
 
 }
@@ -1501,16 +1505,32 @@ a:hover{
 .banner_overlay_right{
     right: 0;
     top: 0;
-    height: 750px;
-    width: 400px;
+    width: 50%;
+    height: 100%;
 }
 .banner_overlay_left{
     left: 0;
     top: 0;
+    width: 60%;
     height: 100%;
-
 }
-
+#conferenceBanner_1 .banner_top_left{
+    z-index: 1;
+}
+#conferenceBanner_1 .overlay_right{
+    height: 100%;
+    width: 40%;
+}
+#conferenceBanner_1 .banner_overlay_left{
+    width: 40%;
+}
+#conf_banner .overlay_right{
+    width: 40%;
+    height: 100%;
+}
+#conf_banner .conference_left_overlay{
+    height: 100%;
+}
 /* Warum CSN */
 
 #warum_banner .container_banner{
@@ -1518,7 +1538,7 @@ a:hover{
 }
 .warum_banner_overlay{
     height: 100%;
-    width: 70%;
+    width: 80%;
     top: 0;
     right: 0;
 }
@@ -1545,16 +1565,69 @@ a:hover{
 .width_datenschutz_mail{
     width: 70px;
 }
-#AGB p{
+#Impressum p{
     font-family: "Azo Sans Lt", Helvetica, Arial, serif;
 }
-#AGB a{
+#Impressum a{
     color: #28A5BC;
 }
-#AGB h3{
+#Impressum h3{
     font-family: "Azo Sans Md", Helvetica, Arial, serif;
     font-weight: 500;
 }
+
+#AGB ol{
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 3rem;
+    counter-reset: item;
+}
+#AGB li{
+    padding-left: 3rem;
+}
+
+#AGB ol{
+    padding-left: 0;
+    counter-reset: item;
+
+}
+#AGB ol li ol li:before{
+    font-size: 22px;
+}
+#AGB li:before{
+    position: absolute;
+    left: 7%;
+    content: counters(item, ".");
+    counter-increment: item;
+    font-family: "Azo Sans", Helvetica, Arial, serif;
+    font-size: 26px;
+}
+#AGB h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 26px;
+}
+#AGB h4{
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#AGB li{
+    font-family: "Azo Sans", Helvetica, Arial, serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+#AGB .arrow_list li:before{
+    content: none;
+}
+#AGB .arrow_list{
+    margin-bottom: 1rem;
+}
+
+
 #kontaktform .form-control{
     border: 1px solid lightgrey;
     padding: 0.5rem 1rem;
@@ -1673,6 +1746,7 @@ textarea:focus-visible{
 .top_right{
     top: 0;
     right: 0;
+    height: 100%;
 }
 
 /* Owl Carousel */
@@ -1755,6 +1829,16 @@ textarea:focus-visible{
 .nav_login{
     display: none;
 }
+.banner_{
+    height: 100%;
+}
+.banner_ .tile_picture{
+    height: 750px;
+}
+.tiles_height{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 
 
 /* MEDIA QUERIES */
@@ -1798,8 +1882,25 @@ textarea:focus-visible{
 
 @media (max-width: 1400px) {
 
+    .banner_ .tile_picture{
+        height: auto;
+    }
+    #conf_banner .overlay_right{
+        width: 10%;
+    }
+    #conf_banner .conference_left_overlay{
+        width: 40%;
+    }
+    .top_right{
+        width: 50%;
+    }
+
+
     .box_navbar_top{
         width: 70%;
+    }
+    .tile_picture{
+        object-fit: cover;
     }
 
     .columns_2{
@@ -1827,16 +1928,23 @@ textarea:focus-visible{
     .footer_last_column{
         justify-content: end;
     }
+    .warum_banner_overlay{
+        width: 50%;
+    }
 
 
 }
 
 
 @media (max-width: 1200px) {
+    .background_carousel_container{
+        background-size: cover!important;
+    }
 
     .firstSlide_text{
         width: 30%;
     }
+
 
     .box_navbar_top{
         width: 75%;
@@ -1851,8 +1959,6 @@ textarea:focus-visible{
     }
     .tiles_height{
         height: auto;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
         text-align: center;
         width: 100%;
     }
@@ -1892,12 +1998,10 @@ textarea:focus-visible{
         left: 60%;
     }
     .communication_grey_opposite{
-        left: 15%;
+        left: 10%;
     }
 
-    .online_orange_circle, .online_orange_circle_top{
-        width: 30% !important;
-    }
+
     .width_2_columns{
         width: 100%;
     }
@@ -1921,6 +2025,9 @@ textarea:focus-visible{
         width: 100%;
         height: 100%;
     }
+    .online_orange_circle, .online_orange_circle_top{
+        width: 30% !important;
+    }
     .communication_blue_circle_fat, .communication_blue_circle_thin, .communication_grey, .conferencing_orange_circle, .communication_orange_circle{
         width: 30% !important;
     }
@@ -1928,10 +2035,11 @@ textarea:focus-visible{
         right: 50%;
     }
     .communication_blue_circle_thin{
-        left: 10%;
+        left: 5%;
+
     }
     .communication_blue_circle_fat{
-        left: 15%;
+        left: 0;
     }
     #conferencing_pictures_blue_middle .communication_blue_circle_fat{
         width: 30%;
@@ -1943,18 +2051,23 @@ textarea:focus-visible{
         top: 10%;
     }
     #orange_conferencing_first{
-        right: 15%;
+        right: 0;
     }
     #sicherheit .w-60{
         width: 100% !important;
+    }
+    .conferencing_orange_circle{
+        left: 0;
     }
 }
 
 
 @media (max-width: 992px) {
 
+
     .firstSlide_text{
         width: 50%;
+        right: 10%;
     }
     .cookie{
         width: 100%;
@@ -1962,14 +2075,16 @@ textarea:focus-visible{
         right: 0;
         border-radius: 0;
         justify-content: center!important;
-
-
     }
     #home_forthSlide{
         background-position: center center;
     }
-
-
+    .subpages_box{
+        margin-right: 7%;
+    }
+    #conferenceBanner_1 .overlay_right{
+       right: 0;
+    }
     .box_navbar_top{
         width: 100%;
         border-radius: 0;
@@ -2059,15 +2174,16 @@ textarea:focus-visible{
     .banner_overlay_left{
         display: none;
     }
-    .banner_overlay_right{
+    /*.banner_overlay_right{
         display: block;
         left: 0;
         transform: rotate(180deg);
         width: 70%;
         height: 100%;
 
-    }
+    }*/
     .banner{
+        position: relative!important;
         width: 100%;
         min-height: 50%;
         left: 0;
@@ -2105,7 +2221,6 @@ textarea:focus-visible{
         height: 60%;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
         overflow: hidden;
 
     }
@@ -2119,10 +2234,7 @@ textarea:focus-visible{
     #home_banner_container .banner{
         right: auto;
     }
-    #home_banner_container .top_right{
-        top: auto;
-        right: auto;
-    }
+
     #warum_banner .banner_background{
         height: 60%;
     }
@@ -2151,6 +2263,12 @@ textarea:focus-visible{
     .slider_height{
         height: 800px;
     }
+    .circle_image{
+        width: 80%;
+    }
+    #home_conferencing_section h4{
+        margin-bottom: 0;
+    }
 
     .owl_item_innner{
         margin-right: 1px;
@@ -2163,6 +2281,9 @@ textarea:focus-visible{
     }
     #icon_section_navbar{
         display: none!important;
+    }
+    .top_right{
+        display: none;
     }
     .nav_login{
         display: flex;
@@ -2199,6 +2320,10 @@ textarea:focus-visible{
     }
     .tns-nav{
         bottom: 80px;
+    }
+    .online_grey_bottom_left{
+        width: 40%;
+        right: 10%;
     }
 
     .banner_image{
@@ -2237,7 +2362,11 @@ textarea:focus-visible{
         word-break: break-word;
     }
     *{
-        scroll-margin: 10rem;
+        scroll-margin: 15vh;
+    }
+
+    #home_secondSlide{
+        background-position: right center;
     }
 
 
@@ -2260,6 +2389,11 @@ textarea:focus-visible{
         padding-bottom: 3rem;
         height: auto;
     }
+    .banner_overlay_left{
+        display: none!important;
+    }
+
+
 
 
     /*** Carousel ***/
@@ -2321,6 +2455,15 @@ textarea:focus-visible{
     .cookie_between{
         justify-content: end;
     }
+    .online_fat_firstandlast,.communication_blue_circle_thin_opposite, .communication_grey_opposite, .online_thin_firstandlast, .online_grey_firstandlast, .conferencing_middle_grey, .online_grey_middle, .online_thin_middle, .online_fat_middle{
+        width: 50%;
+    }
+    .online_orange_circle, .online_orange_circle_top{
+        width: 50% !important;
+    }
+    .communication_blue_circle_fat, .communication_blue_circle_thin, .communication_grey, .conferencing_orange_circle, .communication_orange_circle{
+        width: 50% !important;
+    }
 
 }
 @media (max-width: 375px) {
@@ -2334,6 +2477,22 @@ textarea:focus-visible{
         top: calc(15% - 20px);
     }
 
+
+}
+@media (max-height: 550px) {
+    #social_media_nav{
+        display: none!important;
+    }
+    .mobile_icon_container{
+        padding-top: 1.5rem;
+    }
+    .nav_sticky{
+        position: relative;
+        display: block;
+    }
+    .slider_height{
+        height: 700px;
+    }
 
 }
 

@@ -22,33 +22,12 @@
 
 <my-topbar></my-topbar>
 
-<section id="navbar-" class="hide">
-    <div class="row">
-        <div class="col-6 position-relative"></div>
-        <div class="col-6 bg-primary py-2 box_navbar_top">
-            <div class="box-right d-flex justify-content-between align-content-center box-right ps-3 text-uppercase text-white">
-                <div class="">
-                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
-                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-                </div>
-
-                <div class="">
-                    <span class="font_navbar me-3">Bereits registriert?</span>
-                    <span class="font_navbar font_bold arrow_after">Login</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Navbar -->
 
 <my-navbar></my-navbar>
 
 
-<!-- Navbar Mobile ToDo: slide-in -->
+<!-- Navbar Mobile-->
 
 <my-mobile_nav></my-mobile_nav>
 
@@ -79,7 +58,7 @@
 
 <section id="Kontakt">
     <div class="box">
-        <div class="row py-5 my-5">
+        <div class="row py-lg-5 my-lg-5">
             <div class="col-lg-6 mb-5 mb-lg-0 ">
                 <h2 class="font_medium mb-4">Persönliche Beratung</h2>
                 <p class="picture_column_width">
@@ -106,25 +85,25 @@
             <div class="col-lg-6">
                 <h2 class="font_medium mb-4">Kontaktformular</h2>
                 <form id="kontaktform">
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="produkt_dropdown">
                         <option selected>Bitte wählen Sie ein Produkt</option>
-                        <option value="1">CSN Conferencing</option>
-                        <option value="2">CSN Online Beratung</option>
-                        <option value="3">Beide Produkte</option>
+                        <option value="Conferencing">CSN Conferencing</option>
+                        <option value="Online-Beratung">CSN Online Beratung</option>
+                        <option value="Beide Produkte">Beide Produkte</option>
                         <option value="4"></option>
-                        <option value="5">Kein Produktbezug</option>
+                        <option value="Kein Bezug">Kein Produktbezug</option>
                     </select>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="anliegen_dropdown">
                         <option selected>Bitte wählen Sie ihr Anliegen</option>
-                        <option value="1">Kostenloser Testaccount</option>
-                        <option value="2">Demotermin vereinbaren</option>
-                        <option value="3">Persönliche Beratung</option>
-                        <option value="4">Kostenlose Schulung</option>
-                        <option value="5">Angebot anfordern</option>
-                        <option value="6">Fragen zu CSN</option>
-                        <option value="7">Infomaterial</option>
+                        <option value="Testaccount">Kostenloser Testaccount</option>
+                        <option value="Demotermin">Demotermin vereinbaren</option>
+                        <option value="Beratung">Persönliche Beratung</option>
+                        <option value="Schulung">Kostenlose Schulung</option>
+                        <option value="Angebot">Angebot anfordern</option>
+                        <option value="Fragen">Fragen zu CSN</option>
+                        <option value="Info">Infomaterial</option>
                         <option value="8"></option>
-                        <option value="9">Anderes Anliegen</option>
+                        <option value="Anderes">Anderes Anliegen</option>
                     </select>
                     <div class="row">
                         <div class="col-12 col-sm-6 pe-sm-3">
@@ -171,6 +150,9 @@
                         <div class="col-12 col-sm-6 ps-sm-3">
                             <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                 <option value="Deutschland" selected>Deutschland</option>
+                                <option value="Österreich">Österreich</option>
+                                <option value="Schweiz">Schweiz</option>
+                                <option value="Trenner"></option>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -425,7 +407,7 @@
                         <textarea rows="4" cols="50" id="nachrichtenbox" class="textfeld" placeholder="Ihre Nachricht"></textarea>
                     </div>
                     <div class="d-flex w-100 justify-content-end mb-5 mt-3">
-                        <button type="submit" class="button blue_full_button submit_button">Anfrage senden</button>
+                        <button type="submit" class="button blue_full_button submit_button" onclick="mailto()">Anfrage senden</button>
                     </div>
                 </form>
             </div>
@@ -438,6 +420,10 @@
 <my-footer></my-footer>
 <my-mobile_footer></my-mobile_footer>
 
+<script src="assets/js/search.js"></script>
+
+
+<script src="assets/js/init_kontakt.js"></script>
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/mobile_menu.js"></script>
 <script src="assets/js/navbar.js"></script>

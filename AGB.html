@@ -15,224 +15,20 @@
     <title>Allgemeine Geschäftsbedingungen</title>
 </head>
 <body>
-<div class="overlay" id="overlay">
-    <div class="cookie position-fixed d-flex justify-content-between">
-        <div class=" d-flex flex-column overflow-hidden justify-content-between font_medium">
-            <div class="d-flex">
-                <span>Wir verwenden Cookies, um unsere Website und unseren Service für Sie zu Optimieren.</span>
-            </div>
-
-            <div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox"
-                           id="flexSwitchCheckChecked" checked>
-                    <label class="form-check-label my-auto" for="flexSwitchCheckChecked">Funktionale Cookies</label>
-                </div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox" checked>
-                    <label class="form-check-label my-auto">Statistische Cookies</label>
-                </div>
-                <div class="form-check form-switch my-3 d-flex">
-                    <input class="form-check-input shadow-none width_cookie me-3 my-auto" type="checkbox">
-                    <label class="form-check-label my-auto">Marketing Cookies</label>
-                </div>
-            </div>
-            <div class="d-flex flex-column">
-                <button type="button" class="button_cookie accept_all my-3 text-uppercase" id="all_cookies">Ausgewählte
-                    Cookies zulassen
-                </button>
-                <button type="button" class="button_cookie accept_functional text-uppercase" id="functional_cookies">Nur
-                    funktionale Cookies zulassen
-                </button>
-            </div>
-        </div>
-    </div>
-
-</div>
+<my-cookie></my-cookie>
 
 <!--TOP BAR DONE -->
-
-<section id="navbar" class="d-flex justify-content-end">
-    <div class="bg-primary py-2 box_navbar_top">
-        <div class="box-right d-flex justify-content-between box-right ps-3 text-uppercase text-white">
-            <div class="">
-                <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
-                <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-            </div>
-
-            <div class="">
-                <span class="font_navbar font-regular me-3">Bereits registriert?</span>
-                <span class="font_navbar font_bold arrow_after">Login</span>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="navbar-" class="hide">
-    <div class="row">
-        <div class="col-6 position-relative"></div>
-        <div class="col-6 bg-primary py-2 box_navbar_top">
-            <div class="box-right d-flex justify-content-between align-content-center box-right ps-3 text-uppercase text-white">
-                <div class="">
-                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
-                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-                </div>
-
-                <div class="">
-                    <span class="font_navbar me-3">Bereits registriert?</span>
-                    <span class="font_navbar font_bold arrow_after">Login</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+<my-topbar></my-topbar>
 
 
 <!-- Navbar -->
 
-<section id="navbar_sticky">
-    <div class="position-relative">
-        <div class="box">
-            <nav class="d-flex justify-content-between py-4">
-                <div class="d-flex ps-0">
-                    <a href="index.html"><img src="assets/pictures/CSN_Wortbildmarke_RZ.svg" alt=""
-                                              class="banner_height"></a>
-                </div>
-                <div class="d-flex justify-content-between text-uppercase " id="dropdown_enabler">
-                    <ul class="d-flex justify-content-between align-items-center" id="navbar_items">
-                        <li><h3 class="my-auto me-5 py-1 navbar_heading position-relative" id="conferencing"><a
-                                href="conferencing.html">CSN <span class="font_bold">Conferencing</span></a></h3></li>
-                        <li><h3 class="my-auto me-5  py-1 navbar_heading position-relative"
-                                id="online"><a
-                                href="online-beratung.html">CSN <span class="font_bold">Online Beratung</span></a></h3>
-                        </li>
-                        <li><h3 class="font_bold my-auto py-1 navbar_heading position-relative" id="warum"><a
-                                href="warum.html">Warum CSN</a></h3></li>
-                    </ul>
-                </div>
-                <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
-                    <div class="d-flex flex-column align-self-center pe-5 icon">
-                        <div class="mx-auto icons_height icon_jump">
-                            <i data-feather="mail"></i>
-                        </div>
-                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a></p>
-                    </div>
-                    <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
-                        <div class="mx-auto icons_height icon_jump">
-                            <i data-feather="search"></i>
-                        </div>
-                        <p class="mx-auto no_padding_bot font_navbar font_medium">Suche</p>
-                    </div>
-                    <div class="d-flex flex-column align-content-center icon">
-                        <div class="mx-auto icons_height icon_jump">
-                            <i data-feather="globe"></i>
-                        </div>
-                        <p class="mx-auto no_padding_bot font_navbar font_medium">Deutsch</p>
-                    </div>
-                </div>
-
-                <!-- Mobile Menu Hamburger -->
-                <div class="align-items-center" id="hamburger">
-                    <button id="hamburger_button"><img src="assets/pictures/hamburger.svg" alt=""></button>
-                </div>
-            </nav>
-        </div>
-        <div id="dropdown_bar">
-            <div class="hide bg-white" id="dropdown_conferencing">
-                <div class="box border-top d-flex justify-content-center py-3">
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#produkte">Enthaltene Produkte</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#bereiche">Einsatzbereiche</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#branchen">Branchen</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#highlights">Unsere Highlights</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a></h3>
-                </div>
-            </div>
-            <div class="hide bg-white" id="dropdown_online">
-                <div class="box border-top d-flex justify-content-center py-3 ">
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#trend">Trend zur Realität</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#highlights">Unsere Highlights</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#features">Weitere Features</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#branchen">Branchen</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="online-beratung.html#sicherheit">Sicherheit</a></h3>
-                </div>
-            </div>
-            <div class="hide bg-white" id="dropdown_warum">
-                <div class="box border-top d-flex justify-content-center py-3">
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#kriterien">Entscheidungskriterien</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#sicherheit">Sicherheit & Service</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#umwelt">Umwelt & Effizienz</a></h3>
-                    <h3 class="mx-5 dropdown_font"><a href="warum.html#leitlinien">CSN Leitlinien</a></h3>
-                </div>
-            </div>
-            <div class="hide bg-white" id="dropdown_suche">
-                <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
-                    <div class="input-group search_bar w-25">
-                        <input type="text" class="form-control" placeholder="Suche" aria-label="Recipient's username"
-                               aria-describedby="basic-addon2">
-                        <button class="search_button d-flex align-items-center"><img src="assets/pictures/search.svg"
-                                                                                     alt=""></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+<my-navbar></my-navbar>
 
 
-<!-- Navbar Mobile ToDo: slide-in -->
+<!-- Navbar Mobile -->
 
-<section id="mobile-menu" class=" section_mobile_menu">
-    <nav class="container_mobile_nav d-flex flex-row position-absolute" id="mobile_container">
-        <div class="grey_sidebar pt-4 d-flex justify-content-center align-items-start">
-            <button id="closing_button"><img src="assets/pictures/menu_close.svg" alt="" class="align-self-start">
-            </button>
-        </div>
-        <div class="main_navigation_mobile">
-            <div class="navigation_inner_box">
-                <div class="d-flex justify-content-between my-4">
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="globe" class="me-2"></i>
-                            <span class="font_medium">DE</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex col-auto">
-                        <div class="d-flex align-items-center">
-                            <i data-feather="mail" class="me-2"></i>
-                            <span class="font_medium">Kontakt</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile_search_container">
-                <div class="navigation_inner_box d-flex w-100 py-4">
-                    <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
-                        <div class="mobile_search_input_container">
-                            <input type="search" placeholder="Suche ..." class="mobile_search_input"
-                                   id="mobile-search-input"/>
-                        </div>
-                        <div class="mobile_search_icon d-flex justify-content-end pe-3">
-                            <button class="search_button d-flex align-items-center" id="mobile_search_button"><i
-                                    data-feather="search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="navigation_inner_box py-3">
-                <ul class="mobile_nav_items">
-                    <li><a href="" class="font_bold">Startseite</a></li>
-                    <li><a href="">CSN <span class="font_bold">Conferencing</span></a></li>
-                    <li><a href="">CSN <span class="font_bold">Online Beratung</span></a></li>
-                    <li><a href="" class="font_bold">Warum CSN</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</section>
+<my-mobile_nav></my-mobile_nav>
 
 <!--- Blue Banner DONE --->
 
@@ -246,9 +42,483 @@
     </div>
 </section>
 
-<!--- Footer DONE --->
+<section class="py-5 my-5 position-relative" id="AGB">
+    <div class="subpages_box">
+        <h2 class="font_medium">Allgemeine Geschäftsbedingungen</h2>
+        <ol>
+            <li>
+                <h3>Allgemeines</h3>
+                <p>
+                    Die nachstehenden Allgemeinen Geschäftsbedingungen gelten für die Rechtsbeziehung zwischen CSN.
+                    GmbH und den Kunden im Rahmen des Vertrages zur Bereitstellung eines Zuganges zu den von CSN.
+                    bereitgestellten Produkten sowie damit in Verbindung stehenden Serviceleistungen. Entgegenstehende
+                    oder von diesen Allgemeinen Geschäftsbedingungen abweichende Bedingungen des Kunden gelten auch
+                    dann nicht, wenn CSN. diesen nicht ausdrücklich widerspricht.
+                </p>
+            </li>
+            <li>
+                <h3>Leistungsumfang</h3>
+                <p>
+                    CSN. gewährt dem Kunden nach diesen allgemeinen Geschäftsbedingungen in Verbindung mit dem vom
+                    Kunden gewählten Tarifmodell das nicht ausschließliche Nutzungsrecht an den von CSN.
+                    bereitgestellten SoftwareProdukten in der jeweils Vereinbarten Ausprägung. Damit erhält der Kunde
+                    das zeitliche befristete Recht, die Endkundenkomponente des Produktes auf einem durch CSN.
+                    zugewiesenen Webserver zu nutzen. Nutzen i.S.d. Vertrages ist der Abruf der von den
+                    Softwareprodukten bereitgestellten Dienstleistungen. Eine Übertragung des Programms selbst ist nicht
+                    Gegenstand des Vertrages.
+                </p>
+                <ol>
+                    <li>
+                        <h4>
+                            Telefonkonferenzen
+                        </h4>
+                        <p>
+                            CSN. bietet dem Kunden die Möglichkeit, eine gleichzeitige Verbindung zwischen mehreren
+                            Teilnehmern über nationale und internationale Telefonnetze herzustellen (Telefonkonferenz).
+                            Der Telefonkonferenzservice wird durch den Kunden über das Internet initiiert und
+                            gesteuert. Der Kunde benötigt zum initiieren von Telefonkonferenzen und zur Steuerung des
+                            Dienstes Username und Passwort. CSN. übersendet dem Kunden nach Vertragsabschluss das für
+                            den Zugang zum Kundenkonto notwendige Passwort. Sowohl CSN. als auch der Kunde können sich
+                            aus Sicherheitsgründen veranlasst sehen, diese Zugangsdaten zu ändern.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Datenkonferenzen
+                        </h4>
+                        <p>
+                            CSN. stellt dem Kunden eine Software zum Download zur Verfügung, mittels der die Steuerung
+                            von Bildpräsentationen durch den Moderator und das gleichzeitige Betrachten des
+                            Moderatorbildschirms durch mehrere Teilnehmer im Web nach einem gesicherten Login ermöglicht
+                            wird.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Audioplayback
+                        </h4>
+                        <p>
+                            CSN. bietet dem Kunden die Möglichkeit, C2CButtons auf seiner Internetpräsenz und in eMail
+                            zu positionieren. Der Kunde kann somit Rückrufwünsche der Besucher seiner Website oder
+                            Empfänger seiner eMail vollautomatisch realisieren. Die RückrufFunktionalität wird über
+                            international betriebene öffentliche Telefonnetze abgewickelt. Der Kunde erhält zur
+                            Installation von C2CButtons Zugangsdaten durch CSN. übersendet.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Click2Call
+                        </h4>
+                        <p>
+                            CSN. bietet dem Kunden die Möglichkeit, C2CButtons auf seiner Internetpräsenz und in eMail
+                            zu positionieren. Der Kunde kann somit Rückrufwünsche der Besucher seiner Website oder
+                            Empfänger seiner eMail vollautomatisch realisieren. Die RückrufFunktionalität wird über
+                            international betriebene öffentliche Telefonnetze abgewickelt. Der Kunde erhält zur
+                            Installation von C2CButtons Zugangsdaten durch CSN. übersendet.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Verfügbarkeit der von CSN. bereitgestellten webbasierten Produkte
+                        </h4>
+                        <p>
+                            Die Produkte sind grundsätzlich täglich 24 Stunden erreichbar; Die durchschnittliche
+                            Jahresverfügbarkeit beträgt 97,5 %. Der Zugang zu den Produkten kann aus Gründen der
+                            Instandhaltung, Wartung und Pflege des Systems und der Dateien vorübergehend unterbrochen
+                            sein. CSN. wird Maßnahmen, die solche Störungen zur Folge
+                            haben können, soweit möglich außerhalb der Hauptgeschäftszeit durchführen. CSN. wird den
+                            Kunden – soweit vorhersehbar  von diesen Einschränkungen rechtzeitig informieren. Ferner
+                            können zeitweise Einschränkungen oder Unterbrechungen des Telekommunikations und
+                            Internetdienstes in Fällen von höherer Gewalt, Arbeitskampfmaßnahmen und behördlicher
+                            Anordnungen auftreten. CSN. bedient sich zur Erfüllung seiner Leistungen auch der Hilfe
+                            anderer Unternehmen. Die CSN. Leistungen stehen insofern unter dem Vorbehalt richtiger und
+                            rechtzeitiger Selbstbelieferung, sowie Verfügbarkeit und Qualität der Übertragungswege.
 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Ein Schadensersatzanspruch des Kunden wegen des verhinderten Zugriffs auf den Server während
+                            der Wartung ist ausgeschlossen.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Vertragsdauer, Kündigung</h3>
+                <ol>
+                    <li>
+                        <p>
+                            Die Vertragsdauer hängt von der vom Kunden gewählten Zahlungsart ab. Die Laufzeit beginnt
+                            mit dem Zeitpunkt, an dem CSN. dem Vertragspartner die erforderlichen Zugangsdaten zum
+                            Kundenkonto zur Verfügung stellt.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Die Mindestlaufzeit eines Vertrages bei dem die entstehenden Gebühren aufgrund der Wahl
+                            des Kunden per Bankeinzug gezahlt werden sollen, beträgt drei Monate. Er verlängert sich
+                            automatisch auf unbestimmte Zeit und kann mit einer Frist von drei Monaten zum Monatsende
+                            schriftlich gekündigt werden. Die Kündigung bedarf der Schriftform. Zur Einhaltung der
+                            Frist genügt die rechtzeitige Absendung.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Ist der Kunde ein Verbraucher im Sinne von § 13 BGB, so kann er seine Vertragserklärung
+                            innerhalb von zwei Wochen gegenüber der Firma CSN. GmbH, Kasernenstr. 23, D40213
+                            Düsseldorf, widerrufen. Die Widerrufsfrist beginnt mit dem Tag des Vertragsabschlusses. Zur
+                            Fristwahrung genügt die rechtzeitige Absendung des Widerrufs. Der Widerruf muss keine
+                            Begründung enthalten und ist in Textform (Brief, Telefax, EMail etc.) zu erklären. Das
+                            Widerrufsrecht erlischt bei Dienstleistungen, wenn CSN. mit ausdrücklicher Zustimmung des
+                            Verbrauchers mit der Ausführung der Dienstleistung vor Ablauf der Widerrufsfrist begonnen
+                            hat oder der Verbraucher dies selbst veranlasst hat.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            CSN. kann auch eine Vertragsvariante „Prepaid“ oder andere im Voraus zu betzahlende
+                            Leistungen anbieten. Ein Anspruch, diese Vertrags/Zahlungsvariante nutzen zu können,
+                            besteht nicht für den Kunden. Hat der Kunde eventuell bestehende Guthaben per Vorkasse
+                            aufgeladen oder hat er Minutenkontingente gekauft, ist er zur Nutzung der Einrichtungen bis
+                            zum Verbrauch des Guthabens berechtigt, ohne dass er sich für eine bestimmte Laufzeit zu
+                            binden hat. Die Rückzahlung eines Restguthabens oder der Gegenwert ggf. noch bestehender
+                            Minutenkontingente ist ausgeschlossen.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Das Recht zur außerordentlichen Kündigung des Vertrages bleibt für beide Vertragsparteien
+                            unberührt. Als wichtiger Grund zählen insbesondere:
+                        </p>
+                        <ul class="arrow_list">
+                            <li>Rechtswidrige Handlungen des Vertragspartners im Zusammenhang mit der Nutzung</li>
+                            <li>Missbräuchliche Nutzung, die auf Überlastung der technischen Einrichtung abzielt</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Einschränkungen und Ausschlüsse</h3>
+                <ol>
+                    <li>
+                        <p>
+                            Der Kunde darf bei der Nutzung der CSN. Kommunikation und Informationseinrichtungen keine
+                            rechtswidrigen Inhalte und/oder rechtswidrige Aussagen tätigen, verwenden oder auf Seiten
+                            Dritter mit rechtswidrigen Inhalten verweisen. Als Verweis in diesem Sinne gilt auch ein
+                            Link. Als rechtswidrige Inhalte gelten insbesondere Angaben, die Tatbestände des
+                            Strafgesetzbuchs erfüllen, wie beispielsweise:
+                        </p>
+                        <ul class="arrow_list">
+                            <li>Anleitung oder öffentliche Aufforderung zu Straftaten;</li>
+                            <li>Verwenden von Kennzeichen verfassungswidriger Organisationen;</li>
+                            <li>Schilderungen grausamer oder sonst unmenschlicher Gewalttätigkeiten gegen Menschen in
+                                einer Art, die eine Verherrlichung oder Verharmlosung solcher Gewalttätigkeiten
+                                ausdrückt oder die das Grausame oder Unmenschliche des Vorgangs in einer die
+                                Menschenwürde verletzenden Weise darstellt;
+                            </li>
+                            <li>
+                                Pornographische Schriften, die Gewalttätigkeiten, den sexuellen Missbrauch von Kindern
+                                oder sexuellen Handlungen von Menschen mit Tie
+                                ren zum Gegenstand haben.
+                            </li>
+                        </ul>
+                        <p>
+                            Der Kunde verpflichtet sich in Zweifelsfällen rechtskundigen Rat einzuholen.
+                            Der Kunde darf das System nicht missbräuchlich nutzen. Eine solche missbräuchliche Nutzung
+                            läge beispielsweise vor, wenn sie auf Überlastung der technischen Einrichtung abzielt
+                        </p>
+                    </li>
+                    <li>
+                        CSN. hat das Recht, aus wichtigem Grund Kundenaccounts, WebSites, einzelne Inhalte, Erträge,
+                        Werbung etc. zu sperren und zu ändern oder zu löschen. Ein wichtiger Grund liegt beispielsweise
+                        vor bei Angeboten, die mit der freiheitlichen Grundordnung der Bundesrepublik Deutschland
+                        nicht vereinbar sind bzw. die Sekten, kommerzielle „Religionen“, religiöse, politische,
+                        erotische, sexistische, links, rechts – oder sonstige extreme Vereinigungen, oder weitere
+                        CSN. und ihren Zielen widersprechende Einstellungen, Ziele oder Belange werben, bzw. solche
+                        Inhalte enthalten und/oder direkt oder indirekt unterstützen.
+                    </li>
+                    <li>
+                        Erscheinen rechtswidrige Inhalte auf den Seiten Dritter erst nach dem der Kunde auf seinen
+                        Netzwerkseiten einen Verweis auf diesen Seiten gesetzt hat, so ist der Kunde verpflichtet den
+                        Verweis zu entfernen oder entfernen zu lassen, sobald er Kenntnis von den rechtswidrigen
+                        Inhalten erhält.
+                    </li>
+                    <li>
+                        Urheberrechte, Kennzeichenrechte und sonstige Schutzrechte Dritter müssen beachtet werden.
+                    </li>
+                    <li>
+                        Die Verbreitung von Inhalten, die geeignet sind, Kinder oder Jugendliche sittlich zu gefährden
+                        ist unzulässig.
+                    </li>
+                    <li>
+                        In den Accounts des Kunden darf keine Software verwendet werden, die geeignet ist, das
+                        bestimmungsgemäße Betriebsverhalten der von CSN. zur Verfügung gestellten Infrastruktur zu
+                        beeinträchtigen. Software in diesem Sinne ist eine Folge von Befehlen, die nach Aufnahme in
+                        einen maschinenlesbaren Träger fähig sind zu bewirken, dass eine Maschine mit
+                        informationsverarbeitenden Fähigkeiten eine bestimmte Funktion oder Aufgabe oder ein
+                        bestimmtes Ergebnis anzeigt, ausführt oder erzielt, ohne dass eine vorhergehende
+                        Programmiertätigkeit erforderlich ist.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Vergütung</h3>
+                <ol>
+                    <li>
+                        Für Kunden, die per Bankeinzug zahlen, wird gemäß dem gewählten Tarif ein monatlicher
+                        Mindestumsatz
+                        und /oder Pauschale(n) für die Dauer des Vertrages erhoben Der Mindestumsatz /die Pauschale(n)
+                        Version Juni 2013 CSN. GmbH Allgemeine Geschäftsbedingungen entfällt bei Abrechnung über ein
+                        Guthabenkonto.
+                    </li>
+                    <li>
+                        Für die Benutzung der Dienste fällt eine Benutzungsgebühr an, deren Höhe entsprechend der
+                        Benutzungsdauer und der Anzahl der Gesprächsteilnehmer unter Berücksichtigung des Sitzes der
+                        Teilnehmer und des benutzten Telekommunikationsnetzes berechnet wird. CSN. berechnet dem Kunden
+                        die Kosten gemäß der jeweils gültigen Tarifliste .Die Benutzungszeiten werden minutengenau
+                        abgerechnet.
+                    </li>
+                    <li>
+                        Für von CSN. erbrachte Sonderleistungen (z.B. Gesprächsmitschnitt) werden Gebühren entsprechend
+                        der dem jeweiligen Vertrag beigefügten Tarifliste erhoben.
+                    </li>
+                    <li>
+                        Rechnungen werden regelmäßig mit der Zustellung an den Kunden fällig. Die Rechnung kann per
+                        EMail übermittelt werden. Ein Einzelgesprächsnachweis steht im Kundenaccount zur Verfügung.
+                    </li>
+                    <li>
+                        Löst die vom Kunden benannte Bank bei Fälligkeit die von CSN. vorgelegte Lastschrift nicht ein,
+                        kann CSN. dem Kunden den Zugang zum Portal sofort verweigern. Der Kunde hat CSN. die Kosten zu
+                        ersetzen, die CSN. aufgrund von Bankspesen, Sperrung und Freischaltung der Accounts entstehen.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Änderungen und Vereinbarungen</h3>
+                <ol>
+                    <li>
+                        Diese Allgemeinen Geschäftsbedingungen werden von Zeit zu Zeit aktualisiert, wenn dies aus der
+                        Sicht
+                        von CSN. und /oder aufgrund von gesetzlichen Bestimmungen erforderlich ist oder wird. Die
+                        Aktualisierungen der AGB werden Bestandteil des jeweiligen Vertrages zwischen CSN. und dem
+                        Kunden
+                        und ändern diesen entsprechend ab, wenn der Kunde nicht innerhalb von 30 Tagen nach
+                        Benachrichtigung
+                        über vorgenommene Änderungen durch CSN. der Vertragsanpassung widerspricht. Im Falle eines
+                        fristgemäßen Widerspruchs läuft der Vertrag, der dann nicht abgeändert wird, am Ende des
+                        jeweiligen
+                        Zeitraumes im Sinne von Ziffer 3 aus. Die aktualisierten AGB werden auf den Webseiten von CSN.
+                        veröffentlicht. CSN. wird den Kunden durch geeignete Maßnahmen hinweisen.
+                    </li>
+                    <li>
+                        Die Benutzungsgebühren können von CSN. durch entsprechende Mitteilung an den Kunden unter
+                        Einhaltung einer Frist von mindestens einem Monat geändert werden. Sofern sich die Preise
+                        erhöhen, steht den Kunden ein sofortiges Kündigungsrecht mit Wirkung zum Zeitpunkt der
+                        Einführung der erhöhten Preise zu.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Änderungen und Aktualisierung der Website</h3>
+                <p>
+                    CSN. hat das Recht, ohne vorherige Benachrichtigung der Kunden die WebSites, auf denen die Produkte
+                    bereitgestellt werden, inklusive eventueller Partnerseiten zu ändern und zu aktualisieren.
+                </p>
+            </li>
+            <li>
+                <h3>Kommerzielle Kommunikation</h3>
+                <ol>
+                    <li>
+                        Der Kunde darf sich zur Bewerbung seiner Produkte, Dienstleistungen oder Geschäftsideen nicht
+                        unerlaubt sogenannter SpamingMethoden bedienen und/oder Werbemethoden verwenden, die gegen
+                        geltendes Recht verstoßen. Es dürfen also weder ungefragte Telefaxe, MassenEMails noch
+                        ungefragte EMails und unzulässige Anrufe zu Werbezwecken eingesetzt werden.
+                    </li>
+                    <li>
+                        Der Kunde verpflichtet sich, die von CSN. bereitgestellte Infrastruktur nicht für kommerzielle
+                        Kommunikation zu nutzen, sofern der Empfänger diese Kommunikation nicht angefordert oder ihr
+                        vorab zugestimmt hat bzw. sofern keine laufenden Geschäftsbeziehungen zwischen dem Kunden und
+                        dem Empfänger der Kommunikation bestehen.
+                        Der Kunde stellt CSN. von jeglichen Ansprüchen Dritter frei, die sich aus Versendung,
+                        Versendungsinhalten, Auswahl des Adressaten und sonstiger missbräuchlicher Nutzung ergeben.
+                    </li>
+                    <li>
+                        Der Kunde stellt Adressen, Textinhalte oder sonstige Angaben eigenverantwortlich und kostenfrei
+                        zur Verfügung. Die Übermittlung vom Kunden an CSN. erfolgt auf Gefahr des Kunden. CSN. ist
+                        nicht zur Überprüfung verpflichtet. Der Kunde ist verpflichtet, bei der Eingabe von
+                        Adressdaten größtmögliche Sorgfalt walten zu lassen und die Richtigkeit des Datenbestandes
+                        laufend zu überprüfen. CSN. ist ohne Ankündigung zur Sperrung oder Blockierung unrichtiger
+                        Adressdatensätze berechtigt.
+                    </li>
+                    <li>
+                        Verstößt der Kunde gegen die Bestimmungen dieses Vertrages, kann CSN. das Vertragsverhältnis
+                        mit dem Kunden fristlos kündigen.
+                    </li>
+                    <li>
+                        Der Kunde ist verpflichtet, CSN. alle Kosten zu ersetzen, die sich aus einem Verstoß gegen
+                        vorstehende Absätze ergeben.
+                    </li>
+                    <li>
+                        <span>Der Kunde ist verpflichtet, CSN. alle Kosten zu ersetzen, die sich aus einem Verstoß gegen vorstehende Absätze ergeben.</span>
+                        <ul class="arrow_list">
+                            <li>
+                                bis 15 Tage vor Termin 20 %
+                            </li>
+                            <li>
+                                bis 10 Tage vor Termin 35 %
+                            </li>
+                            <li>
+                                bis 5 Tage vor Termin 50 %
+                            </li>
+                            <li>
+                                bis 3 Tage vor Termin 75 %
+                            </li>
+                            <li>
+                                am Tag vor Termin 80 %
+                            </li>
+                            <li>
+                                am Abwicklungstag und während der Auftragsabwicklung 100 % (z.B. bei Auftragsabbruch)
+                            </li>
+                        </ul>
+                        <p>
+                            Der Auftragsgeber akzeptiert die in diesen Fällen sofort fälligen Stornogebühren. Zuviel
+                            gezahlte Beträge werden innerhalb 5 Arbeitstagen wieder an den Auftragsgeber zurückgezahlt.
+                            Der Auftraggeber war sich vor Vertragsabschluß über alle Vertragswirksamkeiten bewusst.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Nutzungsbedingungen des Kundenaccounts</h3>
+                <ol>
+                    <li>
+                        Zwecks Qualitätssicherung von Produkten und Dienstleistungen ist es CSN. gestattet, das
+                        Benutzerkonto der Kunden samt aller Bereiche zu sichten.
+                    </li>
+                    <li>
+                        Der Content (Information, Software, Flash, Photos, Video, Test, Grafiken, Musik, Ton oder
+                        weiteres Material, oder ähnliches) der Websites von CSN. sind urheberrechtlich und ggf.
+                        zusätzlich durch Patente, Marken oder durch andere Schutzrechte geschützt. Der Kunde wird diese
+                        Rechte weder während der Dauer des Vertrages noch nach dessen Beendigung verletzten.
+                    </li>
+                    <li>
+                        Eine Untervermietung des Systems durch den Kunden ist ausdrücklich ausgeschlossen. Gleiches
+                        gilt auch für die Mehrfachnutzung eines Accounts von mehreren Personen oder mehreren Firmen.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Haftung</h3>
+                <ol>
+                    <li>
+                        <h4>
+                            Haftung von CSN.
+                        </h4>
+                        <p>
+                            CSN. haftet nach Maßgabe der gesetzlichen Bestimmungen nur für Vorsatz oder grobe
+                            Fahrlässigkeit.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Haftung des Kunden für unbefugte Benutzung
+                        </h4>
+                        <p>
+                            Der Kunde verpflichtet sich zur Geheimhaltung aller durch CSN übermittelten Zugangsdaten
+                            gegenüber unbefugten Dritten. Er stellt sicher, dass auch die von ihm benannten und
+                            informierten verantwortlichen Mitarbeiter, Erfüllungsgehilfen und externen Dienstleister
+                            diese Daten gegenüber unbefugten Dritten geheim halten.
+                            CSN. haftet nicht für Schäden, die aus der Benutzung der Zugangdaten durch unbefugte Dritte
+                            entstehen. Für die dabei entstehenden Gebühren haftet der Kunde. CSN. haftet nicht für
+                            Inhalte, die der Kunde im Rahmen von Geschäftspräsentationen zeigt und erläutert; dies
+                            bezieht sich insbesondere auf Bild und Markenrechtsverletzungen.
+
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            Haftung des Kunden für missbräuchliche Nutzung
+                        </h4>
+                        <p>
+                            Laut Urteil des Oberlandesgerichts Frankfurt am Main (Az. 6 U 36/03) vom 24.Juli 2003 sind
+                            DialOut Playbacks und Telefonwerbung nur zulässig, wenn der Anzurufende "ausdrücklich
+                            oder konkludent sein Einverständnis mit derartigen Anrufen erklärt habe oder wenn aufgrund
+                            konkreter tatsächlicher Umstände ein sachliches Interesse des Anrufers vermutet werden
+                            könne". Der Kunde hat sicherzustellen, dass das Produkt ausschließlich im gesetzlich
+                            zulässigen Rahmen genutzt wird und haftet für Zuwiderhandlungen in vollem Umfang.
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h3>Geheimhaltung</h3>
+                <p>
+                    CSN. verpflichtet sich – über die gesetzliche Verpflichtung hinaus  keinerlei Daten der
+                    Telefonkonferenzen (Datum, Teilnehmer, Dauer etc.) sowie über die übermittelten oder gespeicherte
+                    Dateien herauszugeben.
+                </p>
+            </li>
+            <li>
+                <h3>Abtreten an Dritte</h3>
+                <p>
+                    Der Kunde kann seine Rechte und Pflichten aus dem Vertrag nicht ohne die vorherige schriftliche
+                    Zustimmung von CSN. an Dritte abtreten. Die Gebührenforderungen von CSN. sind abtretbar. CSN. ist
+                    berechtigt ihre Rechte und Pflichten an einen geeigneten Dritten abzutreten.
+                </p>
+            </li>
+            <li>
+                <h3>Geschäftsreferenz</h3>
+                <p>
+                    Soweit der Kunde nicht ausdrücklich gegenteilige Weisung erteilt, erklärt er sich bereit, als
+                    Geschäftsreferenz für CSN. zu dienen. CSN. darf Namen, Anschrift sowie Art und Umfang der
+                    Kundenbeziehung nennen.
+                </p>
+            </li>
+            <li>
+                <h3>Vertragsänderungen</h3>
+                <p>
+                    Diese Vereinbarung gibt den Inhalt der vertraglichen Abreden zwischen den Parteien abschließend
+                    wieder und ersetzt alle etwaigen bisherigen Vereinbarungen zwischen den Parteien betreffend des
+                    Vertragsgegenstandes. Nebenabreden, auch mündlicher Art, sind nicht getroffen. Änderungen oder
+                    Ergänzungen dieser Vereinbarung bedürfen der Schriftform. Das gleich gilt für einen Verzicht auf
+                    das Schriftformerfordernis.
+                </p>
+            </li>
+            <li>
+                <h3>Gerichtsstand</h3>
+                <p>
+                    Gerichtsstand ist Düsseldorf, sofern der Vertragspartner Vollkaufmann, juristische Person des
+                    öffentlichen Rechts oder öffentlichrechtliches Sondervermögen ist. CSN. kann jedoch für das Vorgehen
+                    gegen den Vertragspartner auch dessen gesetzlichen Gerichtsstand wählen.
+                </p>
+            </li>
+            <li>
+                <h3>Anwendbares Recht und Teilnichtigkeit</h3>
+                <ol>
+                    <li>
+                        Auf den Vertrag findet deutsches Recht Anwendung. Die Bestimmungen des Übereinkommens der
+                        Vereinten Nationen betreffenden Verträge über den internationalen Warenkauf sind nur anwendbar,
+                        soweit sie zwingende Regelungen enthalten.
+                    </li>
+                    <li>
+                        Sollten einzelne Bestimmungen des Kundenvertrages und/oder der Allgemeinen
+                        Geschäftsbedingungen ganz oder teilweise unwirksam oder unvollständig bzw. lückenhaft sein
+                        oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt. Anstelle der
+                        unwirksamen Bedingung soll eine wirksame treten, die dem Gewollten am Nächsten kommt.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h5>Version Juni 2013</h5>
+    </div>
+
+</section>
+
+<!--- Footer DONE --->
+<my-prefooter></my-prefooter>
 <my-footer></my-footer>
+<my-mobile_footer></my-mobile_footer>
 
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/mobile_menu.js"></script>
