@@ -23,7 +23,8 @@ body{
 }
 
 .margin_card_section{
-    padding-bottom: 100px;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
 }
 .overflow-x-hidden{
     overflow-x: hidden;
@@ -189,6 +190,52 @@ ul.arrow_list{
 
 
 /* Carousel */
+
+
+.overlay_left_new{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%;
+}
+.overlay_right_new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+}
+.new_banner{
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    border-radius: 50px 50px 50px 0;
+    width: 450px;
+    left: 10%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.hero_banner_image{
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 10%;
+
+}
+#home_slider #banner_forth_slide .hero_banner_image{
+    margin-right: 0;
+}
+#home_slider #banner_forth_slide .overlay_left_new{
+    width: 60%;
+}
 
 .background_carousel_container{
     position: absolute;
@@ -1080,6 +1127,10 @@ ul.arrow_list{
     margin-top: -15px;
 }
 
+.logo_row{
+    justify-content: space-between;
+}
+
 /* Colors */
 
 .bg-primary{
@@ -1321,7 +1372,7 @@ a:hover{
     top: 0;
     left: 0;
     z-index: 999;
-    transition: 500ms ease-in;
+    transition: 250ms ease-in;
     overflow-x: hidden;
 }
 .navbar_width{
@@ -1330,7 +1381,7 @@ a:hover{
 
 .container_mobile_nav{
     height: 100%;
-    width: 40vw;
+    width: 60vw;
     top: 0;
     left: 0;
     z-index: 999;
@@ -1355,7 +1406,6 @@ a:hover{
 }
 .mobile_search_container{
     background-color: #EBEBEB;
-    display: none;
 }
 .mobile_search_input_container{
     width: 95%;
@@ -1410,7 +1460,8 @@ a:hover{
     color: white;
 }
 #social_media_nav{
-    position: relative;
+    position: absolute;
+    bottom: 0;
     margin-bottom: 3rem;
 
 }
@@ -1421,11 +1472,14 @@ a:hover{
     width: auto;
     height: auto;
 }
+.share{
+    letter-spacing: 1px;
+}
 
 .social_media_icon_container{
     background-color: #BFBFBF;
-    height: 52px;
-    width: 52px;
+    height: 64px;
+    width: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1471,6 +1525,21 @@ a:hover{
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+}
+
+#social_media_footer .social_media_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB10;
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+}
+.icon-32{
+    color: white;
+    height: 32px;
+    width: 32px;
 }
 
 
@@ -1575,9 +1644,9 @@ a:hover{
     font-family: "Azo Sans Md", Helvetica, Arial, serif;
     font-weight: 500;
 }
-
+/*
 #AGB ol{
-    list-style-type: none;
+    list-style-type: upper-roman;
     padding-left: 0;
     padding-right: 3rem;
     counter-reset: item;
@@ -1602,24 +1671,6 @@ a:hover{
     font-family: "Azo Sans", Helvetica, Arial, serif;
     font-size: 26px;
 }
-#AGB h3{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    font-size: 26px;
-}
-#AGB h4{
-    font-family: "Azo Sans Md", Helvetica, Arial, serif;
-    font-weight: normal;
-    font-size: 22px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-#AGB li{
-    font-family: "Azo Sans", Helvetica, Arial, serif;
-    font-size: 18px;
-    line-height: 30px;
-}
 #AGB .arrow_list li:before{
     content: none;
 }
@@ -1627,6 +1678,55 @@ a:hover{
     margin-bottom: 1rem;
 }
 
+
+*/
+#AGB h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 26px;
+    color: #28A5BC;
+}
+#AGB h4{
+    font-family: "Azo Sans Md", Helvetica, Arial, serif;
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#AGB li{
+    font-family: "Azo Sans", Helvetica, Arial, serif;
+
+}
+#AGB ul{
+    margin-bottom: 10px;
+}
+.roman_list{
+    list-style-type: upper-roman;
+}
+.roman_list li{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.roman_list li::marker{
+    color: #28A5BC;
+}
+.roman_list li ol li{
+    font-size: 18px;
+}
+
+.roman_list li ol li::marker{
+    color: black;
+}
+.roman_list{
+    padding-left: 1.2rem!important;
+}
+#AGB ol{
+    padding-left: 0;
+}
+.list_with_heading{
+    font-size: 22px!important;
+}
 
 #kontaktform .form-control{
     border: 1px solid lightgrey;
@@ -1811,17 +1911,7 @@ textarea:focus-visible{
     width: 36px;
     height: 36px;
 }
-#kontakt_banner .background_carousel_container{
-    background-image: url("assets/pictures/kontaktBanner.png");
-    background-size: contain;
-    background-position: center center;
-}
-#kontakt_banner{
-    height: 500px;
-}
-#kontakt_banner .carousel_banner{
-    height: 300px;
-}
+
 .f-14{
     font-size: 14px;
     line-height: 17px;
@@ -1839,7 +1929,19 @@ textarea:focus-visible{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
-
+#kontakt_banner .hero_banner_image{
+    margin-right: auto;
+    margin-left: auto;
+}
+#kontakt_banner .overlay_right_new{
+    width: 69% ;
+}
+#kontakt_banner .overlay_left_new{
+    width: 100%;
+}
+#kontakt_banner .new_banner{
+    height: 60%;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1670px) {
@@ -1882,6 +1984,54 @@ textarea:focus-visible{
 
 @media (max-width: 1400px) {
 
+    .new_slider{
+        height: auto!important;
+    }
+    .new_banner{
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin-top: -10%;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .new_banner p, .new_banner h2{
+        text-align: center;
+    }
+
+    #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
+        display: none;
+    }
+    .carousel-indicators{
+        display:none;
+    }
+    .made_in_germany{
+        display: none!important;
+    }
+
+    .button_carousel{
+        position: relative;
+        margin-top: 1rem;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay_right_new{
+        width: 20% !important;
+    }
+    .overlay_left_new{
+        width: 23.03% !important;
+    }
+    .hero_banner_image{
+        margin-right: auto;
+    }
+
+
     .banner_ .tile_picture{
         height: auto;
     }
@@ -1893,6 +2043,11 @@ textarea:focus-visible{
     }
     .top_right{
         width: 50%;
+    }
+
+    .hero_banner_image{
+       background-position: center center;
+        background-size: cover;
     }
 
 
@@ -1930,6 +2085,12 @@ textarea:focus-visible{
     }
     .warum_banner_overlay{
         width: 50%;
+    }
+    #kontakt_banner .overlay_right_new{
+        width: 50% !important;
+    }
+    #kontakt_banner .overlay_left_new{
+        width: 60% !important;
     }
 
 
@@ -2059,10 +2220,15 @@ textarea:focus-visible{
     .conferencing_orange_circle{
         left: 0;
     }
+    .last_card{
+        margin-left: 2%;
+    }
 }
 
 
 @media (max-width: 992px) {
+
+
 
 
     .firstSlide_text{
@@ -2094,10 +2260,7 @@ textarea:focus-visible{
     .box-right{
         margin-right: 0;
     }
-    .button_carousel{
-        position: relative;
-        margin-top: 50px;
-    }
+
 
     .all_inclusive{
         width: 75%;
@@ -2145,15 +2308,7 @@ textarea:focus-visible{
         width: 50%;
     }
 
-    #circle_forthSlide, #circle_thirdSlide, #circle_secondSlide, #circle_firstSlide{
-        display: none;
-    }
-    .carousel-indicators{
-        display:none;
-    }
-    .made_in_germany{
-        display: none!important;
-    }
+
     .flip_container, .normal_card{
         width: 49%;
     }
@@ -2215,6 +2370,9 @@ textarea:focus-visible{
     .slider_right_special{
         display: none;
     }
+    .last_card{
+        margin-left: auto;
+    }
 
 
     .background_carousel_container{
@@ -2225,9 +2383,6 @@ textarea:focus-visible{
 
     }
     .carousel-control-next, .carousel-control-prev{
-        top: calc(30% - 27px);
-        margin-top: 0;
-        margin-bottom: 0;
         height: 55px;
         width: 55px;
     }
@@ -2249,10 +2404,6 @@ textarea:focus-visible{
     .conference_left_overlay{
         display: none;
     }
-    #kontakt_banner .background_carousel_container{
-        background-size: cover;
-        background-position: center 20%;
-    }
 
 
 
@@ -2262,6 +2413,16 @@ textarea:focus-visible{
 @media (max-width: 768px) {
     .slider_height{
         height: 800px;
+    }
+    .overlay_left_new, .overlay_right_new{
+        display: none;
+    }
+    .new_banner{
+        margin-top: auto;
+        width: 100%;
+    }
+    .logo_row{
+        justify-content: space-around;
     }
     .circle_image{
         width: 80%;
@@ -2334,9 +2495,7 @@ textarea:focus-visible{
     .button_carousel{
         padding-right: 35px;
     }
-    .carousel-control-next, .carousel-control-prev{
-        top: calc(30% - 27px);
-    }
+
 
     .carousel-control-next-icon{
         padding-right: 5px;
@@ -2364,6 +2523,16 @@ textarea:focus-visible{
     *{
         scroll-margin: 15vh;
     }
+    .slider_height{
+        height: 100%;
+    }
+    .background_carousel_container{
+        height: 200px;
+
+    }
+    .new_banner{
+        padding: 25px;
+    }
 
     #home_secondSlide{
         background-position: right center;
@@ -2384,7 +2553,7 @@ textarea:focus-visible{
     #warum_banner .banner{
         min-height: 50%;
     }
-    .banner{
+    .banner, #warum_banner .banner{
         padding-top: 3rem;
         padding-bottom: 3rem;
         height: auto;
@@ -2435,7 +2604,6 @@ textarea:focus-visible{
     .carousel-control-prev, .carousel-control-next{
         width: 40px;
         height: 40px;
-        top: calc(25% - 20px);
     }
     .owl_item_innner{
         padding: 0;
@@ -2473,9 +2641,7 @@ textarea:focus-visible{
     .carousel_banner{
         min-height: 70%;
     }
-    .carousel-control-next, .carousel-control-prev{
-        top: calc(15% - 20px);
-    }
+
 
 
 }
@@ -2495,7 +2661,25 @@ textarea:focus-visible{
     }
 
 }
+/* Testing */
 
+.background_test{
+    height: 780px;
+    background-size: contain;
+    background-position: center center;
+}
+#first{
+    background-image: url("assets/pictures/homepage_banner1_.png");
+}
+#second{
+    background-image: url("/assets/pictures/Banner/banner_home_2.png");
+}
+.background_carousel_container{
+    height: 780px!important;
+}
+.carousel-inner, .carousel-item{
+    height: auto;
+}
 
 
 

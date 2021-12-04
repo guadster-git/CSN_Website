@@ -26,41 +26,17 @@
 
 <my-topbar></my-topbar>
 
-<section id="navbar-" class="hide">
-    <div class="row">
-        <div class="col-6 position-relative"></div>
-        <div class="col-6 bg-primary py-2 box_navbar_top">
-            <div class="box-right d-flex justify-content-between align-items-center box-right ps-3 text-uppercase text-white">
-                <div class="">
-                    <span class="font_navbar me-3">Haben wir Ihr Interesse geweckt?</span>
-                    <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
-                </div>
-
-                <div class="">
-                    <span class="font_navbar me-3">Bereits registriert?</span>
-                    <span class="font_navbar font_bold arrow_after">Login</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Navbar -->
 
 <my-navbar id="online_nav"></my-navbar>
 
 
-<my-mobile_nav></my-mobile_nav>
+<my-mobile_nav id="mobile_online_nav"></my-mobile_nav>
 
 <!-- Slider DONE -->
 
-<section class="position-relative outer_box">
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
-         data-bs-ride="carousel">
-
+<section id="online_slider">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators z_front">
             <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -73,8 +49,8 @@
         </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item d-flex active align-items-center" data-bs-interval="10000">
-                <div class="background_carousel_container" id="online_firstSlide">
+            <div class="carousel-item active ">
+                <div class="position-relative d-flex" data-bs-interval="10000" id="banner_first_slide">
                     <div id="circle_firstSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -83,26 +59,29 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_online_1.png" alt="" class="hero_banner_image">
 
-                    <img src="assets/pictures/banner_right_overlay.png" alt=""
-                         class="position-absolute slider_right_special">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading">Ortsungebunden</h2>
-                        <p>Machen Sie es sich bequem. An einer CSN Online Beratung können Sie von Zuhause aus und mit
-                            einem Gerät Ihrer Wahl teilnehmen. </p>
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>
-                    </div>
-                </div>
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Ortsungebunden</h2>
+                    <p>Machen Sie es sich bequem. An einer CSN Online Beratung können Sie von Zuhause aus und mit
+                        einem Gerät Ihrer Wahl teilnehmen.</p>
 
+                    <button class=" button_carousel" onclick="kostenlos_online()">Kostenlos testen</button>
+                </div>
             </div>
-            <div class="carousel-item d-flex align-items-center " data-bs-interval="10000">
-
-
-                <div class="background_carousel_container" id="online_secondSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_second_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_secondSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -111,22 +90,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading">Persönlich</h2>
-                        <p>Zu Gesprächsbeginn ist es oft hilfreich, eine persönliche Verbindung zum Kunden aufzubauen.
-                            Zeigen Sie Ihr Videobild. Vielleicht möchte Ihr Kunde sein Bild ebenfalls übertragen.</p>
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>
-                    </div>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/online_carousel_2.png" alt="" class="hero_banner_image">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Persönlich</h2>
+                    <p>Zu Gesprächsbeginn ist es oft hilfreich, eine persönliche Verbindung zum Kunden aufzubauen.
+                        Zeigen Sie Ihr Videobild. Vielleicht möchte Ihr Kunde sein Bild ebenfalls übertragen.</p>
+
+                    <button class=" button_carousel" onclick="kostenlos_online()">Kostenlos testen</button>
+                </div>
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000">
-
-                <div class="background_carousel_container" id="online_thirdSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_third_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_thirdSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -137,25 +124,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right "
-                         id="home_3rd_slide_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
-                         id="home_3rd_slide">
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Geprüft & zertifiziert</h2>
-                        <p>Bei uns sind Ihre Daten sicher. Die CSN Online Beratung wurde für den Einsatz in Banken,
-                            Versicherungen und vielen anderen sensiblen Branchen konzipiert.</p>
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>
-                    </div>
+                    <img src="assets/pictures/Banner/banner_online_3.png" alt="" class="hero_banner_image">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Geprüft & zertifiziert</h2>
+                    <p>Bei uns sind Ihre Daten sicher. Die CSN Online Beratung wurde für den Einsatz in Banken,
+                        Versicherungen und vielen anderen sensiblen Branchen konzipiert.</p>
+
+                    <button class="button_carousel" onclick="kostenlos_online()">Kostenlos testen</button>
+                </div>
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000"
-                 id="banner4">
-
-                <div class="background_carousel_container" id="online_forthSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_forth_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_forthSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -164,22 +156,27 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/overlay_new_left.png" alt="" class="position-absolute slider_left">
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading">Digitale Unterschrift</h2>
-                        <p>Der Turbo für Ihren Vertrieb. In Online-Beratungen können Verträge gemeinsam ausgefüllt und
-                            direkt vom Kunden rechtssicher digital unterschrieben werden.
-                        </p>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_online_4.png" alt="" class="hero_banner_image">
 
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>
-                    </div>
-
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading"> Digitale Unterschrift</h2>
+                    <p>Der Turbo für Ihren Vertrieb. In Online-Beratungen können Verträge gemeinsam ausgefüllt und
+                        direkt vom Kunden rechtssicher digital unterschrieben werden.</p>
+
+                    <button class=" button_carousel" onclick="kostenlos_online()">Kostenlos testen</button>
+                </div>
             </div>
         </div>
 
@@ -187,20 +184,7 @@
             <img src="assets/pictures/german_stripes.svg" alt="">
             <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
-
-
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
     </div>
-
-
 </section>
 
 <!-- Overview Column-->
@@ -274,10 +258,10 @@
         <div class="my-slider">
             <div class="owl_item">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/videochat.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Face-to-Face dank <br>
                             Videoberatung</h4>
                     </div>
@@ -289,10 +273,10 @@
 
             <div class="owl_item">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/speaking_cyan.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Online-Beratung als <br>
                             digitales Erlebnis</h4>
                     </div>
@@ -305,10 +289,10 @@
 
             <div class="owl_item" id="owl_short">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/signature.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Elektronische Unterschrift
                             der Umwelt zuliebe</h4>
                     </div>
@@ -340,7 +324,7 @@
                     Für viele Menschen ist Online-Beratung schon fast so selbstverständlich
                     wie Online-Banking.
                 </p>
-                <button class="button white_button mt-4">Testaccount anfordern</button>
+                <button class="button white_button mt-4" onclick="kostenlos_online()">Testaccount anfordern</button>
             </div>
 
         </div>
@@ -354,7 +338,7 @@
         <div class="col-xl-6 col-12 position-relative d-flex justify-content-center align-items-center  overflow-hidden"
              id="second_tile">
             <div class="position-absolute">
-                <img src="assets/pictures/play_button.svg" alt="">
+                <a href="https://www.csnstart.de/video/online-beratung-ovc/playback.mp4"><img src="assets/pictures/play_button.svg" alt=""></a>
             </div>
             <img src="assets/pictures/online_tile_2.png" alt="" class="tile_picture">
         </div>
@@ -370,7 +354,10 @@
                     An einem Ort und mit einem Gerät Ihrer Wahl loggen sie sich in die
                     Online-Beratungssitzung ein und können interaktiv miteinander kommunizieren.
                 </p>
-                <button class="button white_button mt-4">Unser Video ansehen</button>
+                <div class="d-flex">
+                    <a href="https://www.csnstart.de/video/online-beratung-ovc/playback.mp4" class="button white_button mt-4">Unser Video ansehen</a>
+                </div>
+
             </div>
         </div>
     </div>
@@ -381,16 +368,14 @@
     <section class="margin_card_section d-none d-md-block">
         <div class="box">
 
-            <div class="text-center my-5 py-5">
+            <div class="text-center my-5 pt-5 pb-2">
                 <h2 class="f-35 font_medium">Unsere Highlights im Überblick</h2>
                 <div class="d-flex justify-content-center pt-4">
                     <p class="w-50">In einer CSN. Online-Beratung stehen dem Berater vielfältige Funktionen zur Seite,
                         um
                         dem Kunden ein
                         ansprechendes Erlebnis zu vermitteln und die Beratung erfolgreich zum Abschluss zu bringen.</p>
-
                 </div>
-
             </div>
             <div id="einzeilige_cards">
                 <div class="d-flex flex-wrap justify-content-between">
@@ -716,7 +701,7 @@
             </div>
 
 
-            <div class="my-5 py-5 text-center" id="features">
+            <div class="my-5 pt-5 pb-2 text-center" id="features">
                 <h2 class="font_medium f-35">Weitere Features</h2>
             </div>
 
@@ -1355,7 +1340,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für Versicherungen und Makler</button>
+                        <button class="button blue_button" onclick="versicherungen_online()">Testaccount für Versicherungen und Makler</button>
                     </div>
                 </div>
             </div>
@@ -1407,7 +1392,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für Finanzinstitute</button>
+                        <button class="button blue_button" onclick="finanzwirtschaft_online()">Testaccount für Finanzinstitute</button>
                     </div>
                 </div>
             </div>
@@ -1433,7 +1418,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für Immobilienmakler und Architekten</button>
+                        <button class="button blue_button" onclick="immobilien_online()">Testaccount für Immobilienmakler und Architekten</button>
                     </div>
                 </div>
             </div>
@@ -1486,7 +1471,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für den Einzelhandel</button>
+                        <button class="button blue_button" onclick="einzelhandel()">Testaccount für den Einzelhandel</button>
                     </div>
                 </div>
             </div>
@@ -1512,7 +1497,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für den Gesundheitssektor</button>
+                        <button class="button blue_button" onclick="gesundheitswesen()">Testaccount für den Gesundheitssektor</button>
                     </div>
                 </div>
             </div>
@@ -1561,7 +1546,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Testaccount für Bereich Telekommunikation & Energie</button>
+                        <button class="button blue_button" onclick="telekommunikation()">Testaccount für Bereich Telekommunikation & Energie</button>
                     </div>
                 </div>
             </div>
@@ -1620,7 +1605,10 @@
             Dieses Modell basiert auf dem Grundsatz, dass die Software und die IT-Infrastruktur von
             CSN zentral betrieben und vom Kunden über das Internet mit einem einfachen Browser genutzt werden
             kann.</p>
-        <button class="button white_button mt-4">Mehr zum Thema Datensicherheit</button>
+        <div class="d-flex">
+            <a href="warum.html#sicherheit" class="button white_button mt-4">Mehr zum Thema Datensicherheit</a>
+        </div>
+
     </div>
 </section>
 
@@ -1651,8 +1639,8 @@
                         zuverlässige und sicheres Beratungs-Software zu bieten.
                     </p>
                 </div>
-                <div>
-                    <button class="button blue_button">Zertifikat anzeigen</button>
+                <div class="d-flex">
+                    <a href="warum.html#sicherheit" class="button blue_button">Zertifikat anzeigen</a>
                 </div>
             </div>
 
@@ -1676,8 +1664,8 @@
                         256-Bit AES verschlüsselt übertragen werden.
                     </p>
                 </div>
-                <div>
-                    <button class="button blue_button">Mehr zum Thema Datensicherheit</button>
+                <div class="d-flex">
+                    <a href="warum.html#sicherheit" class="button blue_button">Mehr zum Thema Datensicherheit</a>
                 </div>
             </div>
 
@@ -1692,6 +1680,7 @@
 <my-footer></my-footer>
 <my-mobile_footer></my-mobile_footer>
 
+<script src="assets/js/button.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/slider.js"></script>
 <script src="assets/js/flip_cards.js"></script>

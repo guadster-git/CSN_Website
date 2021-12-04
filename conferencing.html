@@ -37,11 +37,8 @@
 
 <!-- Slider DONE -->
 
-<section class="position-relative outer_box">
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
-         data-bs-ride="carousel">
-
+<section id="conferencing_slider">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators z_front">
             <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,8 +51,8 @@
         </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item d-flex active align-items-center" data-bs-interval="10000">
-                <div class="background_carousel_container" id="conferencing_firstSlide">
+            <div class="carousel-item active ">
+                <div class="position-relative d-flex" data-bs-interval="10000" id="banner_first_slide">
                     <div id="circle_firstSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -64,25 +61,29 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_conferencing_1.png" alt="" class="hero_banner_image">
 
-                    <img src="assets/pictures/banner_right_overlay.png" alt=""
-                         class="position-absolute slider_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Live-Feeling</h2>
-                        <p>In CSN Events sind Ihre Teilnehmer hautnah dabei. Full HD-Präsentationen, WebRTC-Videos und interaktive Funktionen sorgen für ein beeindruckendes Konferenzerlebnis.</p>
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Jederzeit & überall</h2>
+                    <p>Telefonkonferenzen in erstklassiger Qualität. Egal wo sie sich gerade befinden - ihr Meeting ist
+                        in wenigen Sekunden initiiert. </p>
 
-                        <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>                    </div>
+                    <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>
                 </div>
-
             </div>
-            <div class="carousel-item d-flex align-items-center " data-bs-interval="10000">
-
-
-                <div class="background_carousel_container" id="conferencing_secondSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_second_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_secondSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -91,22 +92,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_conferencing_2.png" alt="" class="hero_banner_image">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading">Business Konferenzen</h2>
-                        <p>Investor Relations & Business Konferenzen sind im Geschäftsalltag nicht mehr wegzudenken. Schnelle und effiziente Kommunikation ist die Basis für den Erfolg eines jeden Unternehmens. </p>
-                        <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>                    </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Webinar-Plattform</h2>
+                    <p>CSN hat sich auf Online-Fortbildung spezialisiert. Von der Teilnehmer-Registrierung, über
+                        vielfältige Webinar-Modi bis hin zur Auswertung und Teilnehmer-Zertifizierung.</p>
 
+                    <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>
                 </div>
-
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000">
-
-                <div class="background_carousel_container" id="conferencing_thirdSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_third_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_thirdSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -117,23 +126,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="position-absolute slider_right "
-                         id="home_3rd_slide_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
-                         id="home_3rd_slide">
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Jederzeit & überall</h2>
-                        <p>Telefonkonferenzen in erstklassiger Qualität. Egal wo sie sich gerade befinden - ihr Meeting ist in wenigen Sekunden initiiert. </p>
-                        <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>                    </div>
+                    <img src="assets/pictures/Banner/banner_conferencing_3.png" alt="" class="hero_banner_image">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Dynamische Entwicklung</h2>
+                    <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams, um
+                        die Wünsche und Anregungen der Kunden bestmöglich umzusetzen.</p>
+
+                    <button class="button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>
+                </div>
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000"
-                 id="banner4">
-
-                <div class="background_carousel_container" id="conferencing_forthSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_forth_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_forthSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -142,20 +158,27 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/overlay_new_left.png" alt="" class="position-absolute slider_left">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_conferencing_4.png" alt="" class="hero_banner_image">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Webinar-Plattform</h2>
-                        <p>CSN hat sich auf Online-Fortbildung spezialisiert. Von der Teilnehmer-Registrierung, über vielfältige Webinar-Modi bis hin zur Auswertung und Teilnehmer-Zertifizierung.
-                        </p>
 
-                        <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>                    </div>
+                <div class="new_banner">
+                    <h2 class="carousel_heading"> Einfach & sicher</h2>
+                    <p>Die Bedienung unserer Online-Plattform ist kinderleicht.
+                        Moderne Benutzeroberflächen und Wizards sorgen dafür, dass Sie sich sofort zurecht finden.</p>
 
-
+                    <button class=" button_carousel" onclick="kostenlos_conferencing()">Kostenlos testen</button>
                 </div>
-
             </div>
         </div>
 
@@ -164,19 +187,7 @@
             <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
 
-
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
     </div>
-
-
 </section>
 
 
@@ -249,10 +260,10 @@
         <div class="my-slider">
             <div class="owl_item">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/diamond.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Erstklassige Audioqualität<br>
                             bei Großkonferenzen</h4>
                     </div>
@@ -264,10 +275,10 @@
 
             <div class="owl_item">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/webkonferenzen.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Webkonferenzen für <br>
                             mehr Effizienz</h4>
                     </div>
@@ -279,10 +290,10 @@
 
             <div class="owl_item" id="owl_short">
                 <div class="row owl_item_innner">
-                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon">
+                    <div class="col-12 col-sm-3 col-md-12 col-lg-3 d-flex owl_icon align-items-center">
                         <img src="assets/pictures/diplom_hut.svg" alt="" class="owl_blue">
                     </div>
-                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3">
+                    <div class="col-12 col-sm-9 col-md-12 col-lg-9 d-flex owl_heading mt-3 align-items-center">
                         <h4 class="font_medium">Virtuelle Schulungen <br>
                             statt Präsenzunterricht</h4>
                     </div>
@@ -352,7 +363,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button" onclick="telefonkonferenz()">Beratung zur klassischen Telefonkonferenz</button>
+                        <button class="button blue_button" onclick="telefonkonferenz()">Beratung zur klassischen
+                            Telefonkonferenz
+                        </button>
                     </div>
                 </div>
             </div>
@@ -396,7 +409,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Beratung zu Webinaren</button>
+                        <button class="button blue_button" onclick="webinar()">Beratung zu Webinaren</button>
                     </div>
                 </div>
             </div>
@@ -460,7 +473,8 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Beratung zu Webkonferenzen</button>
+                        <button class="button blue_button" onclick="webkonferenzen()">Beratung zu Webkonferenzen
+                        </button>
                     </div>
                 </div>
             </div>
@@ -491,7 +505,8 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Beratung zu Videkonferenzen</button>
+                        <button class="button blue_button" onclick="videokonferenz()">Beratung zu Videkonferenzen
+                        </button>
                     </div>
                 </div>
             </div>
@@ -540,7 +555,9 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-4">
-                        <button class="button blue_button">Beratung zu Operator-Telefonkonferenzen</button>
+                        <button class="button blue_button" onclick="operatorkonferenz()">Beratung zu
+                            Operator-Telefonkonferenzen
+                        </button>
                     </div>
                 </div>
             </div>
@@ -577,8 +594,8 @@
 <!-- Card Section --->
 <section class="margin_card_section linear_background d-none d-md-block overflow-x-hidden" id="highlights">
 
-    <div class="box py-4">
-        <div class="text-center mt-5 mb-3 py-5">
+    <div class="box ">
+        <div class="text-center mt-5  mb-2">
             <h2 class="f-35 font_medium">Unsere Highlights im Überblick</h2>
         </div>
     </div>
@@ -775,7 +792,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flip_container">
+                        <div class="flip_container me-lg-auto me-xl-0 last_card">
                             <div class="flip_inner">
                                 <div class="flip_card_white">
                                     <div class="d-flex flex-column text-center">
@@ -992,7 +1009,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flip_container">
+                        <div class="flip_container me-lg-auto me-xl-0 last_card">
                             <div class="flip_inner">
                                 <div class="flip_card_white">
                                     <div class="d-flex flex-column text-center">
@@ -1412,15 +1429,18 @@
             Durch die OPDV-Zertifizierung unserer Plattform und der Entwicklung gem. ISO/IEC 9126 gewährleisten wir
             einen hohen Qualitätsstandard, um Ihnen eine einfach zu
             bedienende, zuverlässige und sichere Plattform zu bieten.</p>
-        <button class="button white_button">Mehr zum Thema Datensicherheit</button>
+        <div class="d-flex">
+            <a class="button white_button" href="warum.html#sicherheit">Mehr zum Thema Datensicherheit</a>
+        </div>
+
     </div>
 </section>
 
 <!-- Card Section --->
 <section class="margin_card_section linear_background d-none d-md-block overflow-x-hidden" id="features">
 
-    <div class="box py-4">
-        <div class="text-center mt-5 mb-3 py-5">
+    <div class="box mt-5">
+        <div class="text-center mt-5">
             <h2 class="f-35 font_medium">Alle Präsentations-Features inklusive</h2>
         </div>
     </div>
@@ -1448,7 +1468,7 @@
                             <h4>
                                 Screen Sharing
                             </h4>
-                            <p class="card_text font-regular">Bildschirmübertragung an <br>
+                            <p class="card_text font-regular">Bildschirmübertragung an
                                 die Teilnehmer</p>
                         </div>
                     </div>
@@ -1461,7 +1481,7 @@
                             <h4>
                                 Weblinks
                             </h4>
-                            <p class="card_text font-regular">Integration von YouTube-Videos, <br>
+                            <p class="card_text font-regular">Integration von YouTube-Videos,
                                 Websites und mehr</p>
                         </div>
                     </div>
@@ -1474,7 +1494,7 @@
                             <h4>
                                 Whiteboard
                             </h4>
-                            <p class="card_text font-regular">Skizzen, Anmerkungen, Mindmaps <br>
+                            <p class="card_text font-regular">Skizzen, Anmerkungen, Mindmaps
                                 – inkl. Downloadfreigabe</p>
                         </div>
                     </div>
@@ -1487,7 +1507,7 @@
                             <h4>
                                 Umfragen
                             </h4>
-                            <p class="card_text font-regular">Kurzumfragen, Abstimmungen und <br> Meinungsbildung
+                            <p class="card_text font-regular">Kurzumfragen, Abstimmungen und Meinungsbildung
                             </p>
                         </div>
                     </div>
@@ -1500,7 +1520,7 @@
                             <h4>
                                 Multiple Choice Tests
                             </h4>
-                            <p class="card_text font-regular">Fragenkataloge, Tests und <br>
+                            <p class="card_text font-regular">Fragenkataloge, Tests und
                                 Bewertungen</p>
                         </div>
                     </div>
@@ -1513,13 +1533,13 @@
                             <h4>
                                 Dateifreigabe
                             </h4>
-                            <p class="card_text font-regular">Download-Freigaben für Präsentationen, <br> Dateien
+                            <p class="card_text font-regular">Download-Freigaben für Präsentationen,  Dateien
                                 und Skizzen
                             </p>
                         </div>
                     </div>
 
-                    <div class="normal_card">
+                    <div class="normal_card me-lg-auto me-xl-0 last_card">
                         <div class="d-flex flex-column text-center">
                             <div class="card_image_container">
                                 <img src="/assets/pictures/microphone.svg" alt="">
@@ -1527,7 +1547,7 @@
                             <h4>
                                 Co-Moderation
                             </h4>
-                            <p class="card_text font-regular">Bis zu 6 Moderatoren und <br>
+                            <p class="card_text font-regular">Bis zu 6 Moderatoren und
                                 Co-Moderatoren</p>
                         </div>
                     </div>
@@ -1546,7 +1566,7 @@
                             <h4>
                                 Visitenkarten
                             </h4>
-                            <p class="card_text font-regular">Bis zu 100 Visitenkarten mit Bild <br>
+                            <p class="card_text font-regular">Bis zu 100 Visitenkarten mit Bild
                                 frei gestalten</p>
                         </div>
                     </div>
@@ -1559,7 +1579,7 @@
                             <h4>
                                 Live-Video
                             </h4>
-                            <p class="card_text font-regular">Übertragung des Videobildes statt <br> statischer
+                            <p class="card_text font-regular">Übertragung des Videobildes statt statischer
                                 Visitenkarten
                             </p>
                         </div>
@@ -1585,7 +1605,7 @@
                             <h4>
                                 Private Nachrichten
                             </h4>
-                            <p class="card_text font-regular">Messenger zur Kommunikation mit <br> einzelnen Teilnehmern
+                            <p class="card_text font-regular">Messenger zur Kommunikation mit einzelnen Teilnehmern
                             </p>
                         </div>
                     </div>
@@ -1629,7 +1649,7 @@
                         </div>
                     </div>
 
-                    <div class="normal_card">
+                    <div class="normal_card me-lg-auto me-xl-0 last_card">
                         <div class="d-flex flex-column text-center">
                             <div class="card_image_container">
                                 <img src="/assets/pictures/timer.svg" alt="">
@@ -1929,7 +1949,9 @@
                     CSN. Live-Konferenzen und Playbacks haben eine unglaubliche Reichweite.
                     Sie sind das perfekte Marketinginstrument.
                 </p>
-                <button class="button white_button mt-4">Webkonferenz als Marketing und Vertriebskanal</button>
+                <button class="button white_button mt-4" onclick="marketingkonferenz()">Webkonferenz als Marketing und
+                    Vertriebskanal
+                </button>
             </div>
 
         </div>
@@ -1954,7 +1976,8 @@
                     zum Erlebnis, sowohl in 1-zu-1 Schulungen, Gruppenschulungen
                     oder ganzen Kursreihen.
                 </p>
-                <button class="button white_button mt-4">Beratung zur Online-Schulung</button>
+                <button class="button white_button mt-4" onclick="trainingkonferenz()">Beratung zur Online-Schulung
+                </button>
             </div>
 
         </div>
@@ -1980,7 +2003,8 @@
                         <li>Ad-hoc Telefonkonferenzen</li>
                     </ul>
                 </div>
-                <button class="button blue_button mt-4">Beratung zur Geschäftskonferenz</button>
+                <button class="button blue_button mt-4" onclick="geschäftskonferenz()">Beratung zur Geschäftskonferenz
+                </button>
             </div>
 
         </div>
@@ -2016,7 +2040,8 @@
                         <li>Online-Präsentationen, Screensharing, Live-Video uvm.</li>
                     </ul>
                 </div>
-                <button class="button white_button mt-4">Beratung zur IR-Konferenz</button>
+                <button class="button white_button mt-4" onclick="investorkonferenz()">Beratung zur IR-Konferenz
+                </button>
             </div>
 
         </div>
@@ -2035,7 +2060,9 @@
                     Teilnehmer und Interviewer können an jedem beliebigen Ort der Welt sitzen, auf Reisen kann komplett
                     verzichtet werden.
                 </p>
-                <button class="button white_button mt-4">Beratung zur Recruiting-Konferenz</button>
+                <button class="button white_button mt-4" onclick="recruiting_beratung()">Beratung zur
+                    Recruiting-Konferenz
+                </button>
             </div>
         </div>
         <div class="col-xl-6 col-12  order-first order-xl-last " id="conf_fifth_tile">
@@ -2065,7 +2092,8 @@
                     Zugang zu hoch qualifizierten Geschäftskontakten zu bekom-men.
 
                 </p>
-                <button class="button blue_button mt-4">Beratung zur Geschäftskonferenz</button>
+                <button class="button blue_button mt-4" onclick="geschäftskonferenz()">Beratung zur Geschäftskonferenz
+                </button>
             </div>
 
         </div>
@@ -2082,7 +2110,8 @@
         <h2 class="font_light mb-4 text-white">
             Wir haben ihr Interesse für unser <br> <span class="font_medium">CSN Conferencing geweckt?</span>
         </h2>
-        <button class="button white_button">Jetzt kostenlos testen</button>
+
+        <button class="button white_button" onclick="kostenlos_conferencing()">Jetzt kostenlos testen</button>
     </div>
 </section>
 
@@ -2134,7 +2163,8 @@
                                         <li>Statements vorab aufzeichnen und live einspielen</li>
                                         <li>Aufzeichnung für verhinderte Teilnehmer</li>
                                     </ul>
-                                    <button class="button blue_button">Testaccount für die Finanzwirtschaft anfordern
+                                    <button class="button blue_button" onclick="finanzwirtschaft()">Testaccount für die
+                                        Finanzwirtschaft anfordern
                                     </button>
                                 </div>
                             </div>
@@ -2176,7 +2206,8 @@
                                         „gut beraten“ gut geschrieben. <br><br>
                                     </p>
 
-                                    <button class="button blue_button">Testaccount für Versicherung anfordern
+                                    <button class="button blue_button" onclick="versicherungen()">Testaccount für
+                                        Versicherung anfordern
                                     </button>
                                 </div>
                             </div>
@@ -2239,7 +2270,8 @@
 
                                         Made and hosted im Germany - zertifiziert, DSGVO-konform und sicher! <br><br>
                                     </p>
-                                    <button class="button blue_button">Testaccount für Bildungseinrichtungen anfordern
+                                    <button class="button blue_button" onclick="bildung()">Testaccount für
+                                        Bildungseinrichtungen anfordern
                                     </button>
                                 </div>
                             </div>
@@ -2288,7 +2320,8 @@
                                         </li>
 
                                     </ul>
-                                    <button class="button blue_button">Testaccount für Behörden anfordern
+                                    <button class="button blue_button" onclick="behörden()">Testaccount für Behörden
+                                        anfordern
                                     </button>
                                 </div>
                             </div>
@@ -2307,7 +2340,6 @@
 <my-mobile_footer></my-mobile_footer>
 
 <script src="assets/js/search.js"></script>
-
 <script src="assets/js/button.js"></script>
 <script src="assets/js/slider.js"></script>
 <script src="assets/js/cookie.js"></script>

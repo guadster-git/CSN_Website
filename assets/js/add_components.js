@@ -188,7 +188,7 @@ class MyFooter extends HTMLElement {
                 <span class="text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
             </div>
             <div class="col-auto ms-auto col-xxl-3 d-flex footer_last_column order-1  order-xxl-2">
-                <button class="button blue_full_button">Kostenlos Testen</button>
+                <button class="button blue_full_button" onclick="kostenlos_beides()">Kostenlos Testen</button>
                 <div class="flex-column my-auto justify-content-end icon ms-4 d-none d-lg-block">
                     <div class="d-flex justify-content-center pb-2 icon_jump" style="color: white">
                         <i data-feather="globe"></i>
@@ -348,14 +348,14 @@ class MyPreFooter extends HTMLElement {
                 <div class="height-contact d-flex justify-content-center">
                     <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
                 </div>
-                <p class="text-center pt-3 footer_heading font_light">Zum Kontaktformular</p>
+                <p class="text-center pt-3 footer_heading font_light"><a href="Kontakt.html">Zum Kontaktformular</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
             <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0">
                 <div class="height-contact d-flex justify-content-center">
                     <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
                 </div>
-                <p class="text-center pt-3 footer_heading font_light">info@csn-gmbh.de</p>
+                <p class="text-center pt-3 footer_heading font_light"><a href="mailto:info@csn-gmbh.de">info@csn-gmbh.de</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
         </div>
@@ -375,7 +375,7 @@ class MyMobileFooter extends HTMLElement {
 <section class="bg-secondary d-md-none overflow-hidden">
     <div class="box">
         <div class="d-flex flex-column w-100 pt-5">
-            <button class="button blue_full_button">Kostenlos testen</button>
+            <button class="button blue_full_button" onclick="kostenlos_beides()">Kostenlos testen</button>
             <span class="text-uppercase font_light text-white text-center mt-3">© 2021 CSN GmbH</span>
         </div>
     </div>
@@ -511,29 +511,29 @@ class MyMobileFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="mt-xl-0 mt-5 mt-xl-0">
-                    <div class="font_light pb-3">
-                        <p class="font_bold text-uppercase text-white">Teilen Sie die Seite</p>
-                        <div class="row pe-5">
-                            <div class="col-3 col-sm-2 social_media_row">
-                                <a href="#"><img src="assets/pictures/facebook_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/facebook.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 col-sm-2 social_media_row">
-                                <a href="#"><img src="assets/pictures/twitter_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/twitter.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 col-sm-2 social_media_row">
-                                <a href="#"><img src="assets/pictures/instagram_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/instagram.png" alt="" class="social_media">
-                            </div>
-                            <div class="col-3 col-sm-2 social_media_row">
-                                <a href="#"><img src="assets/pictures/youtube_hover.svg" alt=""
-                                                 class="social_media_hover"></a>
-                                <img src="assets/pictures/youtube.png" alt="" class="social_media">
-                            </div>
+                    <div class="pb-3">
+                        <p class="font_bold text-uppercase text-white no_padding_bot share">Teilen Sie die Seite</p>
+                        <div class="d-flex flex-wrap" id="social_media_footer">
+                            <a href="">
+                                <div class="me-3 mt-3 social_media_row" >
+                                    <i data-feather="facebook" class="icon-32"></i>
+                                </div> 
+                            </a>
+                            <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share">
+                                <div class="me-3 mt-3 social_media_row">
+                                    <img src="assets/pictures/whatsapp-32.png" alt="">
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="me-3 mt-3 social_media_row">
+                                    <i data-feather="twitter" class="icon-32"></i>
+                                </div>
+                            </a>
+                            <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de">
+                                <div class="me-3 mt-3 social_media_row">
+                                    <i data-feather="mail" class="icon-32"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -570,7 +570,7 @@ class MyMobileNavbar extends HTMLElement {
                             <span class="font_medium text-uppercase mobile_nav_text mt-2">Kontakt</span>
                         </div>
                     </a>
-                    <div class="d-flex flex-column align-items-center me-4">
+                    <div class="d-flex flex-column align-items-center me-4" onclick="search_trigger()">
                         <i data-feather="search"></i>
                         <span class="font_medium text-uppercase mobile_nav_text mt-2">Suche</span>
                     </div>
@@ -593,7 +593,7 @@ class MyMobileNavbar extends HTMLElement {
             </div>
             
             </div> -->
-            <div class="mobile_search_container">
+            <div class="mobile_search_container hide" id="mobile_search_bar">
                 <div class="navigation_inner_box d-flex w-100 py-4">
                     <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
                         <div class="mobile_search_input_container">
@@ -601,7 +601,7 @@ class MyMobileNavbar extends HTMLElement {
                                    id="mobile-search-input"/>
                         </div>
                         <div class="mobile_search_icon d-flex justify-content-end pe-3">
-                            <button class="search_button d-flex align-items-center" id="mobile_search_button"><i
+                            <button class="search_button d-flex align-items-center" id="mobile_search_button" onclick="mobileSearch()"><i
                                     data-feather="search"></i></button>
                         </div>
                     </div>
@@ -616,19 +616,19 @@ class MyMobileNavbar extends HTMLElement {
                 </ul>
             </div>
             <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
-                <h3 class="font_bold f-18 text-uppercase">Teilen Sie die Seite</h3>
+                <h3 class="font_bold f-18 text-uppercase share">Teilen Sie die Seite</h3>
                 <div class="d-flex mt-3 social_media_row_nav">
                     <div class="social_media_icon_container">
-                        <i data-feather="facebook" class="feather-big"></i>
+                        <i data-feather="facebook" class="icon-32"></i>
                     </div>
                     <div class="social_media_icon_container">
-                        <i data-feather="send" class="feather-big"></i>
+                        <img src="assets/pictures/whatsapp-32.png" alt="">
                     </div>
                     <div class="social_media_icon_container">
-                        <i data-feather="twitter" class="feather-big"></i>
+                        <i data-feather="twitter" class="icon-32"></i>
                     </div>
                     <div class="social_media_icon_container">
-                        <i data-feather="mail" class="feather-big"></i>
+                        <i data-feather="mail" class="icon-32"></i>
                     </div>
                 </div>
 

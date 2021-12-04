@@ -57,11 +57,8 @@
 
 <!-- Slider DONE -->
 
-<section class="position-relative outer_box">
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade slider_height overflow-hidden"
-         data-bs-ride="carousel">
-
+<section id="warum_slider">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators z_front">
             <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,8 +71,8 @@
         </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item d-flex active align-items-center" data-bs-interval="10000">
-                <div class="background_carousel_container" id="warum_firstSlide">
+            <div class="carousel-item active ">
+                <div class="position-relative d-flex" data-bs-interval="10000" id="banner_first_slide">
                     <div id="circle_firstSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -84,27 +81,29 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_warum_1.png" alt="" class="hero_banner_image">
 
-                    <img src="assets/pictures/banner_right_overlay.png" alt=""
-                         class="position-absolute slider_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Das brandneue CSN</h2>
-                        <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch
-                            attraktiver.
-                            Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Inhouse Kundenservice</h2>
+                    <p>Unsere persönlichen Ansprechpartner haben ein offenes Ohr für Ihre Fragen, Wünsche und
+                        Anregungen. Wir bieten Ihnen kostenlose Schulungen und Beratungen zu allen Funktionen.</p>
 
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>                    </div>
+                    <button class=" button_carousel" onclick="kostenlosTesten()">Kostenlos testen</button>
                 </div>
-
             </div>
-            <div class="carousel-item d-flex align-items-center " data-bs-interval="10000">
-
-
-                <div class="background_carousel_container" id="warum_secondSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_second_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_secondSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -113,24 +112,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/banner_right_overlay.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_warum_2.png" alt="" class="hero_banner_image">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading">Full Service Provider</h2>
-                        <p>Für CSN Kunden sind individuelle Beratungen, Online-Schulungen und Workshops inklusive. Rufen
-                            Sie
-                            uns an und lernen Sie Ihren persönlichen Ansprechpartner kennen. </p>
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>                    </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Geprüfte Sicherheit</h2>
+                    <p>Der Schutz Ihrer Daten hat bei CSN oberste Priorität. Sämtliche Systeme werden regelmäßig geprüft
+                        und zertifiziert. </p>
 
+                    <button class=" button_carousel" onclick="kostenlosTesten()">Kostenlos testen</button>
                 </div>
-
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000">
-
-                <div class="background_carousel_container" id="warum_thirdSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_third_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_thirdSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -141,24 +146,30 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="position-absolute slider_right ">
-                    <img src="assets/pictures/banner_left_overlay.png" alt="" class="position-absolute slider_left"
-                         id="home_3rd_slide">
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Dynamische Entwicklung</h2>
-                        <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams,
-                            um
-                            die Wünsche und Anregungen der Kunden bestmöglich umzusetzen. </p>
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>                    </div>
+                    <img src="assets/pictures/Banner/banner_warum_3.png" alt="" class="hero_banner_image">
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Dynamische Entwicklung</h2>
+                    <p>Erfahrene Entwickler, Designer, Operator und Marktstrategen arbeiten bei CSN in agilen Teams, um
+                        die Wünsche und Anregungen der Kunden bestmöglich umzusetzen..</p>
+
+                    <button class="button_carousel" onclick="kostenlosTesten()">Kostenlos testen</button>
+                </div>
             </div>
-            <div class="carousel-item d-flex align-items-center" data-bs-interval="10000"
-                 id="banner4">
-
-                <div class="background_carousel_container" id="warum_forthSlide">
+            <div class="carousel-item" data-bs-interval="10000" id="banner_forth_slide">
+                <div class="position-relative d-flex">
                     <div id="circle_forthSlide">
                         <img src="assets/pictures/banner_fat_circle.svg" alt=""
                              class="position-absolute circle_fat_slider">
@@ -167,22 +178,27 @@
                         <img src="assets/pictures/white_fat_circle.svg" alt=""
                              class="position-absolute circle_middle_slider">
                     </div>
-                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="position-absolute slider_right">
-                    <img src="assets/pictures/overlay_new_left.png" alt="" class="position-absolute slider_left"
-                         >
-                </div>
-                <div class="carousel_banner my-lg-auto">
-                    <div class="carousel_inner">
-                        <h2 class="carousel_heading"> Einfach & sicher</h2>
-                        <p>Die Bedienung unserer Online-Plattform ist kinderleicht.
-                            Moderne Benutzeroberflächen und Wizards sorgen dafür, dass Sie sich sofort zurecht finden.
-                        </p>
+                    <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                    <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                    <img src="assets/pictures/Banner/banner_warum_4.png" alt="" class="hero_banner_image">
 
-                        <button class=" button_carousel" href="Kontakt.html">Kostenlos testen</button>                    </div>
-
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
+                <div class="new_banner">
+                    <h2 class="carousel_heading">Einfach & Intuitiv</h2>
+                    <p>Die Bedienung des CSN Systems ist kinderleicht. Moderne Benutzeroberflächen sorgen dafür, dass
+                        Sie sich sofort zurecht finden und Ihre Konferenzen sicher organisieren.</p>
+
+                    <button class=" button_carousel" onclick="kostenlosTesten()">Kostenlos testen</button>
+                </div>
             </div>
         </div>
 
@@ -190,20 +206,7 @@
             <img src="assets/pictures/german_stripes.svg" alt="">
             <p style="font-size: 14px; line-height: 30px;" class="pt-1">Made and hosted in Germany</p>
         </div>
-
-
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-
     </div>
-
-
 </section>
 
 <!--- 2 Items Gegenüberstellung -->
@@ -410,11 +413,12 @@
     </div>
 
     <div class="banner bg-primary d-flex position-absolute text-white flex-column">
-        <h2 class="f-35">Wir haben Ihr Interesse an<br><span class="font_medium">unseren Lösungen geweckt?</span>
+        <h2 class="f-35">Haben wir Ihr Interesse an<br><span class="font_medium">unseren Lösungen geweckt?</span>
         </h2>
         <p class="pt-3 mb-4 pb-3">Wir beraten Sie gern und finden das passende Produkt
             für Ihren ganz persönlichen Anspruch.</p>
-        <button class="button white_button">Jetzt kostenlos testen</button>
+
+        <button class="button white_button" onclick="kostenlos_beides()">Jetzt kostenlos testen</button>
     </div>
 </section>
 
@@ -789,6 +793,7 @@
     });
 
 </script>
+<script src="assets/js/button.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/mobile_menu.js"></script>

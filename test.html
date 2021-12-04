@@ -14,16 +14,145 @@
 </head>
 <body>
 
-<div>
-    <img src="assets/pictures/forth_tile.png" alt="" style="object-fit: contain">
-</div>
 
 <my-cookie></my-cookie>
 <my-mobile_nav></my-mobile_nav>
 <my-topbar></my-topbar>
 <my-navbar></my-navbar>
 
+<div id="carouselExampleFade" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+
+    <div class="carousel-indicators z_front">
+        <button type="button" id="first_button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner new_slider">
+        <div class="carousel-item active " >
+            <div class="position-relative background_test" id="home_firstSlide">
+                <div id="circle_firstSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+                <img src="assets/pictures/schriftzug.png" alt="" class="firstSlide_text img-fluid position-absolute">
+            </div>
+            <div class="new_banner">
+                <h2 class="carousel_heading" > Das brandneue CSN</h2>
+                <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                    Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+
+                <button class=" button_carousel" onclick="kostenlos_beides()">Kostenlos testen</button>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+            <div class="background_test position-relative" id="home_secondSlide">
+                <div id="circle_secondSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+            </div>
+
+            <div class="new_banner">
+                <h2 class="carousel_heading"> Second</h2>
+                <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                    Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+
+                <button class=" button_carousel" onclick="kostenlos_beides()">Kostenlos testen</button>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="100000">
+            <div class="background_test position-relative" id="home_thirdSlide" >
+                <div id="circle_thirdSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider2">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+            </div>
+
+            <div class="new_banner">
+                <h2 class="carousel_heading"> Das brandneue CSN</h2>
+                <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                    Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+
+                <button class="button_carousel" onclick="kostenlos_beides()">Kostenlos testen</button>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="100000">
+            <div class="background_test position-relative" id="home_forthSlide" >
+                <div id="circle_forthSlide">
+                    <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
+                    <img src="assets/pictures/white_thin_circle.svg" alt=""
+                         class="position-absolute circle_thin_slider">
+                    <img src="assets/pictures/white_fat_circle.svg" alt=""
+                         class="position-absolute circle_middle_slider">
+                </div>
+                <img src="assets/pictures/overlay_new_left.png" alt="" class="overlay_left_new">
+                <img src="assets/pictures/overlay_right_banner.png" alt="" class="overlay_right_new">
+            </div>
+
+            <div class="new_banner">
+                <h2 class="carousel_heading"> Das brandneue CSN</h2>
+                <p>Mit modernster Konferenztechnologie wird Conferencing und Online-Beratung nun noch attraktiver.
+                    Begeistern Sie Ihre Kunden mit interaktiven Inhalten in bester HD-Qualität.</p>
+
+                <button class=" button_carousel" onclick="kostenlos_beides()">Kostenlos testen</button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<my-prefooter></my-prefooter>
 <my-footer></my-footer>
 
 </body>
 </html>
+<a href="">
+    <div class="me-3 mt-3 social_media_row" >
+        <i data-feather="facebook" class="icon-32"></i>
+    </div>
+</a>
+<a href="">
+    <div class="me-3 mt-3 social_media_row">
+        <img src="assets/pictures/whatsapp-32.png" alt="">
+    </div>
+</a>
+<a href="">
+    <div class="me-3 mt-3 social_media_row">
+        <i data-feather="twitter" class="icon-32"></i>
+    </div>
+</a>
+<a href="">
+    <div class="me-3 mt-3 social_media_row">
+        <i data-feather="mail" class="icon-32"></i>
+    </div>
+</a>
