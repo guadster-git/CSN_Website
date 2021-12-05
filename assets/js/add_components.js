@@ -560,7 +560,9 @@ class MyMobileNavbar extends HTMLElement {
                                                    class="d-flex d-sm-none close_button_white">
             </button>
         </div>
-        <div class="main_navigation_mobile">
+        <div class="main_navigation_mobile d-flex flex-column justify-content-between">
+       
+        <div>
             <div class="navigation_inner_box">
                 <div class="d-flex mobile_icon_container">
                     <a href="Kontakt.html" id="mobile_kontakt_nav_section">
@@ -584,14 +586,6 @@ class MyMobileNavbar extends HTMLElement {
                     </div>
                 </div>
             </div>
-            <!--<div class="mobile_topbar bg-primary">
-            <div class="navigation_inner_box d-flex d-md-none flex-column text-uppercase text-white py-4">
-            <span class="font_light f-14 pb-1">Haben wir Ihr Interesse Geweckt?</span>
-            <span class="font_medium f-14">Kostenlos Testen <i data-feather="chevron-right" style="height: 20px; width: 20px"></i></span>
-            
-            </div>
-            
-            </div> -->
             <div class="mobile_search_container hide" id="mobile_search_bar">
                 <div class="navigation_inner_box d-flex w-100 py-4">
                     <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
@@ -613,7 +607,7 @@ class MyMobileNavbar extends HTMLElement {
                     <li><a href="online-beratung.html" id="mobile_online">CSN <span class="font_bold">Online Beratung</span></a></li>
                     <li><a href="warum.html" class="font_bold" id="mobile_warum">Warum CSN</a></li>
                 </ul>
-            </div>
+            </div></div>
             <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
                 <h3 class="font_bold f-18 text-uppercase share">Teilen Sie die Seite</h3>
                 <div class="d-flex flex-wrap social_media_row_nav">
@@ -640,6 +634,7 @@ class MyMobileNavbar extends HTMLElement {
                 </div>
 
             </div>
+            
         </div>
     </nav>
 </section>
