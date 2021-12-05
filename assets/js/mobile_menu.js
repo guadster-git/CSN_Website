@@ -23,3 +23,15 @@ function whatsapp_mobile(){
     const site = window.location.href;
     window.open(`whatsapp://send?text=Schau dir die neue CSN Seite an - ${site}`)
 }
+function mail_share(){
+    const site = window.location.href;
+    window.open(`mailto:?subject=Schau dir die neue CSN Website an&body=${site}`)
+}
+function twitter(){
+    const site = window.location.href;
+    window.open(`https://twitter.com/share?text=Die neue CSN Website&url=${site}&hashtags=CSN`)
+}
+function facebook(){
+    const site = window.location.href;
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${site}`)
+}

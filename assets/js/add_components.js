@@ -292,7 +292,7 @@ class MyFooter extends HTMLElement {
                     <div class="font_light pb-3">
                         <p class="font_medium text-uppercase no_padding_bot">Teilen Sie uns</p>
                         <div class="d-flex flex-wrap social_media_footer">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=csn-gmbh.de">
+                            <a href="#" onclick="facebook()">
                                 <div class="me-3 mt-3 social_media_row" >
                                     <i data-feather="facebook" class="icon-32"></i>
                                 </div> 
@@ -301,12 +301,12 @@ class MyFooter extends HTMLElement {
                                     <img src="assets/pictures/whatsapp-32.svg" alt="" class="icon-32">
                                 </div>
          
-                            <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN">
+                            <a href="#" onclick="twitter()">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="twitter" class="icon-32"></i>
                                 </div>
                             </a>
-                            <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de">
+                            <a href="#" onclick="mail_share()">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="mail" class="icon-32"></i>
                                 </div>
@@ -513,7 +513,7 @@ class MyMobileFooter extends HTMLElement {
                     <div class="pb-3">
                         <p class="font_bold text-uppercase text-white no_padding_bot share">Teilen Sie die Seite</p>
                         <div class="d-flex flex-wrap social_media_footer">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=csn-gmbh.de">
+                            <a href="#" onclick="facebook()">
                                 <div class="me-3 mt-3 social_media_row" >
                                     <i data-feather="facebook" class="icon-32"></i>
                                 </div> 
@@ -522,12 +522,12 @@ class MyMobileFooter extends HTMLElement {
                                     <img src="assets/pictures/whatsapp-32.svg" alt="">
                                 </div>
                             
-                            <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN">
+                            <a href="#" onclick="twitter()">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="twitter" class="icon-32"></i>
                                 </div>
                             </a>
-                            <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de">
+                            <a href="#" onclick="mail_share()">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="mail" class="icon-32"></i>
                                 </div>
@@ -609,22 +609,22 @@ class MyMobileNavbar extends HTMLElement {
             <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
                 <h3 class="font_bold f-18 text-uppercase share">Teilen Sie die Seite</h3>
                 <div class="d-flex flex-wrap social_media_row_nav">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=csn-gmbh.de" class="mt-3">
+                    <a href="#" onclick="facebook()" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="facebook" class="icon-32"></i>
                         </div>
                     </a>
-                    <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share" class="mt-3">
+                    <a href="#" onclick="whatsapp_mobile()" class="mt-3">
                         <div class="social_media_icon_container">
                             <img src="assets/pictures/whatsapp-32.svg" alt="">
                         </div>
                     </a>
-                    <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN" class="mt-3">
+                    <a href="#" onclick="twitter()" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="twitter" class="icon-32"></i>
                         </div>
                     </a>
-                    <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de" class="mt-3">
+                    <a href="#" onclick="mail_share()" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="mail" class="icon-32"></i>
                         </div>

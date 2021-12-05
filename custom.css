@@ -1669,7 +1669,9 @@ a:hover {
 .social_media_row_nav {
     color: white;
 }
-
+#social_media_nav{
+    margin-bottom: 3rem;
+}
 
 #social_media_nav h3 {
     color: #BFBFBF;
@@ -1924,6 +1926,10 @@ a:hover {
 
 
 */
+
+#conf_second_tile .tile_picture{
+    object-fit: fill;
+}
 #AGB h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -2249,6 +2255,29 @@ textarea:focus-visible {
         display: none !important;
     }
 
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .made_in_germany {
+        display: none !important;
+    }
+
+    .button_carousel {
+        position: relative;
+        margin-top: 1rem;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #home_slider #banner_forth_slide .overlay_left_new{
+        width: 20%;
+    }
+
     .box_navbar_top {
         width: 60%;
     }
@@ -2271,6 +2300,7 @@ textarea:focus-visible {
     .new_banner p, .new_banner h2 {
         text-align: center;
     }
+
 
 }
 
@@ -2297,9 +2327,7 @@ textarea:focus-visible {
 
 @media (max-width: 1400px) {
 
-    .new_slider {
-        height: auto !important;
-    }
+
 
 
 
@@ -2307,23 +2335,7 @@ textarea:focus-visible {
         display: none;
     }
 
-    .carousel-indicators {
-        display: none;
-    }
 
-    .made_in_germany {
-        display: none !important;
-    }
-
-    .button_carousel {
-        position: relative;
-        margin-top: 1rem;
-        bottom: auto;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     .overlay_right_new {
         width: 20% !important;
