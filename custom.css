@@ -2142,6 +2142,7 @@ textarea:focus-visible {
     border-radius: 100%;
     border: none;
     z-index: 2;
+    padding: 0!important;
 }
 
 .tns-nav-active {
