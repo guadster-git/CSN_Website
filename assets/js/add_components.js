@@ -283,7 +283,7 @@ class MyFooter extends HTMLElement {
                     <div class="font_light">
                         <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
                         <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
-                        <p class="font_light footer_list">Haftungsausschluss</p>
+                        <p class="font_light footer_list"><a href="Impressum.html#haftung">Haftungsausschluss</a></p>
                         <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
                         <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
                     </div>
@@ -505,7 +505,7 @@ class MyMobileFooter extends HTMLElement {
                     <div class="font_light text-white">
                         <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
                         <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
-                        <p class="font_light footer_list">Haftungsausschluss</p>
+                        <p class="font_light footer_list"><a href="Impressum.html#haftung">Haftungsausschluss</a></p>
                         <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
                         <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
                     </div>

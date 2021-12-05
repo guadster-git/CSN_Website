@@ -1670,12 +1670,6 @@ a:hover {
     color: white;
 }
 
-#social_media_nav {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 3rem;
-
-}
 
 #social_media_nav h3 {
     color: #BFBFBF;
@@ -2918,10 +2912,7 @@ textarea:focus-visible {
     .button{
         text-align: center;
     }
-    #social_media_nav {
-        position: relative;
 
-    }
 
     * {
         scroll-margin: 15vh;

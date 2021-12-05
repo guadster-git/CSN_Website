@@ -30,13 +30,13 @@ function mailto(){
 
     const email_body =
         `
-    Vorname: ${vorname.value}%0D%0A
-    Nachname: ${nachname.value}%0D%0A
-    E-Mail: ${email.value}%0D%0A
-    Telefon: ${telefon.value}%0D%0A
-    Firma: ${firma.value}%0D%0A
-    Land: ${land.value}%0D%0A %0D%0A
-    Ihre Nachricht: ${nachricht.value}%0D%0A
+    Vorname: ${vorname.value} \r\n
+    Nachname: ${nachname.value}\r\n
+    E-Mail: ${email.value}\r\n
+    Telefon: ${telefon.value}\r\n
+    Firma: ${firma.value}\r\n
+    Land: ${land.value}\r\n
+    Ihre Nachricht: ${nachricht.value}\r\n
     `
 
     document.location.href = `mailto:info@csn.de?subject=${subject}&body=${email_body}`;

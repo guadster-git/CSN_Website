@@ -190,6 +190,10 @@ function ansprechpartner(){
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
-function kontaktform(){
-    window.location.href="Kontakt.html#kontaktform"
+function sicherheit(){
+    sessionStorage.setItem("produkt", "Conferencing")
+    sessionStorage.setItem("anliegen", "Fragen")
+    sessionStorage.setItem("nachricht", "Sicherheit von CSN Conferencing")
+    sessionStorage.setItem("init", "true")
+    window.location.href="Kontakt.html"
 }
