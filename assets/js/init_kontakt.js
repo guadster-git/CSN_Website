@@ -26,20 +26,26 @@ function mailto(){
     const firma = document.getElementById("input_firma");
     const land = document.getElementById("input_land");
 
-    const subject = produkte.value + " " + anliegen.value
+    let subject = "Thema: "
 
-    const email_body =
-        `
-    Vorname: ${vorname.value} \r\n
-    Nachname: ${nachname.value}\r\n
-    E-Mail: ${email.value}\r\n
-    Telefon: ${telefon.value}\r\n
-    Firma: ${firma.value}\r\n
-    Land: ${land.value}\r\n
-    Ihre Nachricht: ${nachricht.value}\r\n
+    if (produkte.value !== "" && anliegen.value !== ""){
+        subject = subject + produkte.value + " | " + anliegen.value
+    }
+
+
+    let email_body =
+        `Vorname: ${vorname.value}
+Nachname: ${nachname.value}
+E-Mail: ${email.value}
+Telefon: ${telefon.value}
+Firma: ${firma.value}
+Land: ${land.value}
+Ihre Nachricht: \n\n${nachricht.value}
     `
+    email_body = encodeURIComponent(email_body)
 
-    document.location.href = `mailto:info@csn.de?subject=${subject}&body=${email_body}`;
+
+    document.location.href = `mailto:info@csn.de?subject=${subject}&body=${email_body}`
 
 
 

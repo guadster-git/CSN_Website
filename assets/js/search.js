@@ -14,9 +14,11 @@ searchbar_mobile.addEventListener("keydown", function (event){
 function mobileSearch(){
     const to_search = document.getElementById("mobile-search-input");
     const close_menu = document.getElementById("mobile-menu")
-    if (search_term_map.hasOwnProperty(to_search.value.toLowerCase())){
+    let to_search_formatted = to_search.value.split(' ').join('')
+    to_search_formatted = to_search_formatted.replace(/[^a-zA-Z\u00c4\u00e4\u00d6\u00f6\u00dc\u00fc\u00df]/g, "")
+    if (search_term_map.hasOwnProperty(to_search_formatted.toLowerCase())){
         close_menu.style.width = "0"
-        window.location.href = search_term_map[to_search.value.toLowerCase()]
+        window.location.href = search_term_map[to_search_formatted.toLowerCase()]
     }
     else if(to_search.value === "") {
         alert("Bitte einen Suchbegriff eingeben!")
@@ -28,8 +30,11 @@ function mobileSearch(){
 
 function search(){
     const to_search = document.getElementById("search_bar");
-    if (search_term_map.hasOwnProperty(to_search.value.toLowerCase())){
-        window.location.href = search_term_map[to_search.value.toLowerCase()]
+    let to_search_formatted = to_search.value.split(' ').join('')
+    to_search_formatted = to_search_formatted.replace(/[^a-zA-Z\u00c4\u00e4\u00d6\u00f6\u00dc\u00fc\u00df]/g, "")
+    console.log(to_search_formatted)
+    if (search_term_map.hasOwnProperty(to_search_formatted.toLowerCase())){
+        window.location.href = search_term_map[to_search_formatted.toLowerCase()]
     }
     else if(to_search.value === "") {
         alert("Bitte einen Suchbegriff eingeben!")
@@ -66,15 +71,14 @@ const search_term_map = {
     "webcast" : "conferencing.html#highlights",
     "dashboard" : "conferencing.html#highlights",
     "steuerung" : "conferencing.html#highlights",
-    "realtime steuerung" : "conferencing.html#highlights",
-    "online-präsentationen" : "conferencing.html#features",
+    "realtimesteuerung" : "conferencing.html#highlights",
+    "onlinepräsentationen" : "conferencing.html#features",
     "weblinks" : "conferencing.html#features",
     "dateifreigabe" : "conferencing.html#features",
     "moderation" : "conferencing.html#features",
     "co-moderation" : "conferencing.html#features",
     "whiteboard" : "conferencing.html#features",
-    "multiple choice" : "conferencing.html#features",
-    "multiple-choice" : "conferencing.html#features",
+    "multiplechoice" : "conferencing.html#features",
     "umfragen" : "conferencing.html#features",
     "privat" : "conferencing.html#features",
     "nachrichten" : "conferencing.html#features",

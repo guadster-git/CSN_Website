@@ -197,3 +197,10 @@ function sicherheit(){
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html"
 }
+function zertifikat(){
+    sessionStorage.setItem("produkt", "Online-Beratung")
+    sessionStorage.setItem("anliegen", "Fragen")
+    sessionStorage.setItem("nachricht", "OPDV-Zertifikat")
+    sessionStorage.setItem("init", "true")
+    window.location.href="Kontakt.html"
+}

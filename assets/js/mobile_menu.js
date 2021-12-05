@@ -14,3 +14,12 @@ hamburger.addEventListener("click", function () {
     mobile_menu.style.setProperty('width', '100vw');
 
 })
+
+function whatsapp(){
+    const site = window.location.href;
+    window.open(`https://web.whatsapp.com://send?text=Schau dir die neue CSN Seite an - ${site}`)
+}
+function whatsapp_mobile(){
+    const site = window.location.href;
+    window.open(`whatsapp://send?text=Schau dir die neue CSN Seite an - ${site}`)
+}

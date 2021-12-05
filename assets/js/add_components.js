@@ -87,7 +87,7 @@ class MyNavbar extends HTMLElement {
                 <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
                     <div class="input-group search_bar w-25">
                         <input type="text" class="form-control" placeholder="Suche" aria-label="Recipient's username"
-                               aria-describedby="basic-addon2" id="search_bar" onkeydown="search_enter()">
+                               aria-describedby="basic-addon2" id="search_bar">
                         <button class="search_button d-flex align-items-center" onclick="search(null)"><img src="assets/pictures/search.svg"
                                                                                      alt=""></button>
                     </div>
@@ -297,11 +297,10 @@ class MyFooter extends HTMLElement {
                                     <i data-feather="facebook" class="icon-32"></i>
                                 </div> 
                             </a>
-                            <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share">
-                                <div class="me-3 mt-3 social_media_row">
+                                <div class="me-3 mt-3 social_media_row" onclick="whatsapp()">
                                     <img src="assets/pictures/whatsapp-32.svg" alt="" class="icon-32">
                                 </div>
-                            </a>
+         
                             <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="twitter" class="icon-32"></i>
@@ -519,11 +518,10 @@ class MyMobileFooter extends HTMLElement {
                                     <i data-feather="facebook" class="icon-32"></i>
                                 </div> 
                             </a>
-                            <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share">
-                                <div class="me-3 mt-3 social_media_row">
+                                <div class="me-3 mt-3 social_media_row" onclick="whatsapp_mobile()">
                                     <img src="assets/pictures/whatsapp-32.svg" alt="">
                                 </div>
-                            </a>
+                            
                             <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN">
                                 <div class="me-3 mt-3 social_media_row">
                                     <i data-feather="twitter" class="icon-32"></i>
