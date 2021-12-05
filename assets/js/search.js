@@ -43,7 +43,7 @@ function search(){
 const search_term_map = {
     "telefon" : "conferencing.html#Telefonkonferenzen",
     "audio" : "conferencing.html#Telefonkonferenzen",
-    "webinar" : "conferencing.html#Webinar",
+    "webinar" : "conferencing.html#Webinare",
     "web" : "conferencing.html#Webkonferenz",
     "einsatzbereiche" : "conferencing.html#bereiche",
     "bereiche" : "conferencing.html#bereiche",
@@ -186,8 +186,6 @@ const search_term_map = {
     "individuelle beratung" : "Kontakt.html",
     "beratung" : "Kontakt.html",
     "home" : "index.html",
-
-
 }
 
 function search_trigger(){

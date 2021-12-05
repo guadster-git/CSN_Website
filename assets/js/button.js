@@ -1,35 +1,35 @@
 function telefonkonferenz(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Anderes")
-    sessionStorage.setItem("nachricht", "Beratung zur klassichen Telefonkonferenz")
+    sessionStorage.setItem("anliegen", "Beratung")
+    sessionStorage.setItem("nachricht", "Beratung zur klassischen Telefonkonferenz")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
 function webinar(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Anderes")
+    sessionStorage.setItem("anliegen", "Beratung")
     sessionStorage.setItem("nachricht", "Beratung zu Webinaren und Online-Trainings")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
 function webkonferenzen(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Anderes")
+    sessionStorage.setItem("anliegen", "Beratung")
     sessionStorage.setItem("nachricht", "Beratung zu Webkonferenzen und Online-Meetings")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
 function videokonferenz(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Anderes")
+    sessionStorage.setItem("anliegen", "Beratung")
     sessionStorage.setItem("nachricht", "Beratung zur Videokonferenz")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
 function operatorkonferenz(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Anderes")
-    sessionStorage.setItem("nachricht", "Beratung zu operatorgestütze Konferenz")
+    sessionStorage.setItem("anliegen", "Beratung")
+    sessionStorage.setItem("nachricht", "Beratung zu operatorgestützte Konferenz")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
@@ -42,7 +42,7 @@ function marketingkonferenz(){
 }
 function trainingkonferenz(){
     sessionStorage.setItem("produkt", "Conferencing")
-    sessionStorage.setItem("anliegen", "Schulung")
+    sessionStorage.setItem("anliegen", "Beratung")
     sessionStorage.setItem("nachricht", "Beratung zur Online-Schulung")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
@@ -51,6 +51,13 @@ function geschäftskonferenz(){
     sessionStorage.setItem("produkt", "Conferencing")
     sessionStorage.setItem("anliegen", "Beratung")
     sessionStorage.setItem("nachricht", "Beratung zur Geschäftskonferenz")
+    sessionStorage.setItem("init", "true")
+    window.location.href="Kontakt.html";
+}
+function vertriebskonferenz(){
+    sessionStorage.setItem("produkt", "Conferencing")
+    sessionStorage.setItem("anliegen", "Beratung")
+    sessionStorage.setItem("nachricht", "Beratung zur Vertriebskonferenz")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
@@ -107,7 +114,7 @@ function finanzwirtschaft_online(){
 function versicherungen_online(){
     sessionStorage.setItem("produkt", "Online-Beratung")
     sessionStorage.setItem("anliegen", "Testaccount")
-    sessionStorage.setItem("nachricht", "Testaccount für Versicherungen")
+    sessionStorage.setItem("nachricht", "Testaccount für Versicherungen und Makler")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
 }
@@ -182,4 +189,7 @@ function ansprechpartner(){
     sessionStorage.setItem("anliegen", "Fragen")
     sessionStorage.setItem("init", "true")
     window.location.href="Kontakt.html";
+}
+function kontaktform(){
+    window.location.href="Kontakt.html#kontaktform"
 }

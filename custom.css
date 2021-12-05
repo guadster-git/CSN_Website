@@ -154,7 +154,7 @@ body {
     transition: margin-top 150ms ease-in, margin-bottom 150ms ease-in;
 }
 
-.icon:hover .icon_jump {
+.icon:hover .icon_jump, .icon_footer:hover .icon_jump {
     margin-bottom: 5px;
     margin-top: -5px;
 }
@@ -504,7 +504,7 @@ ul.arrow_list {
     left: 2%;
 }
 
-#nav_conferencing #conferencing, #mobile_conferencing_nav #mobile_conferencing, #nav_online #online, #mobile_online_nav #mobile_online, #nav_warum #warum, #mobile_warum_nav #mobile_warum, #mobile_home_nav #mobile_home {
+#nav_conferencing #conferencing, #mobile_kontakt_nav #mobile_kontakt_nav_section  ,#kontakt_nav #kontakt_nav_section , #mobile_conferencing_nav #mobile_conferencing, #nav_online #online, #mobile_online_nav #mobile_online, #nav_warum #warum, #mobile_warum_nav #mobile_warum, #mobile_home_nav #mobile_home {
     color: #28A5BC;
 }
 
@@ -1685,6 +1685,14 @@ a:hover {
     width: auto;
     height: auto;
 }
+#social_media_nav .icon-32{
+    width: 24px;
+    height: 24px;
+}
+#social_media_nav .social_media_icon_container{
+    width: 48px;
+    height: 48px;
+}
 
 .share {
     letter-spacing: 1px;
@@ -2229,7 +2237,7 @@ textarea:focus-visible {
 }
 
 #kontakt_banner .new_banner {
-    height: 60%;
+    height: 70%;
 }
 
 /* MEDIA QUERIES */
@@ -2416,6 +2424,9 @@ textarea:focus-visible {
 
 
 @media (max-width: 1200px) {
+    .zentriert_lg{
+        justify-content: center;
+    }
     .background_carousel_container {
         background-size: cover !important;
     }
@@ -2903,8 +2914,15 @@ textarea:focus-visible {
 }
 
 @media (max-width: 576px) {
-    body {
-        word-break: break-word;
+
+    .button{
+        text-align: center;
+    }
+    #social_media_nav {
+        position: relative;
+        margin-bottom: 0;
+        margin-top: 3em;
+
     }
 
     * {

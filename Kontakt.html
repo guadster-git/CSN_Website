@@ -24,16 +24,16 @@
 
 <!-- Navbar -->
 
-<my-navbar></my-navbar>
+<my-navbar id="kontakt_nav"></my-navbar>
 
 
 <!-- Navbar Mobile-->
 
-<my-mobile_nav></my-mobile_nav>
+<my-mobile_nav id="mobile_kontakt_nav"></my-mobile_nav>
 
 <!--- Blue Banner DONE --->
 
-<section class=" overflow-hidden position-relative"  id="kontakt_banner">
+<section class=" overflow-hidden position-relative" id="kontakt_banner">
     <div class="position-relative overflow-hidden d-flex justify-content-center">
         <div id="circle_secondSlide">
             <img src="assets/pictures/banner_fat_circle.svg" alt="" class="position-absolute circle_fat_slider">
@@ -44,12 +44,13 @@
         </div>
         <img src="assets/pictures/kontaktBanner.png" alt="" class="hero_banner_image">
         <img src="assets/pictures/banner_right_overlay.png" alt="" class="overlay_right_new">
-        <img src="assets/pictures/banner_left_overlay.png" alt="" class="overlay_left_new" >
+        <img src="assets/pictures/banner_left_overlay.png" alt="" class="overlay_left_new">
     </div>
     <div class="new_banner">
-            <h2 class="carousel_heading"> Sprechen Sie mit uns</h2>
-            <p>Wir sind für Sie da. Online, telefonisch oder persönlich bei Ihnen vor Ort. </p>
-            <button class=" button_carousel">Kostenlos testen</button>
+        <h2 class="carousel_heading">Brauchen Sie Hilfe?</h2>
+        <p>Kontaktieren Sie uns - wir sind für Sie da. Online, telefonisch oder persönlich bei Ihnen vor Ort.</p>
+
+        <button class="button_carousel"><a href="#formular">Kostenlos testen</a></button>
     </div>
 
 
@@ -82,10 +83,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="formular">
                 <h2 class="font_medium mb-4">Kontaktformular</h2>
                 <form id="kontaktform">
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="produkt_dropdown">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="produkt_dropdown">
                         <option selected>Bitte wählen Sie ein Produkt</option>
                         <option value="Conferencing">CSN Conferencing</option>
                         <option value="Online-Beratung">CSN Online Beratung</option>
@@ -93,7 +95,8 @@
                         <option value="4"></option>
                         <option value="Kein Bezug">Kein Produktbezug</option>
                     </select>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="anliegen_dropdown">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="anliegen_dropdown">
                         <option selected>Bitte wählen Sie ihr Anliegen</option>
                         <option value="Testaccount">Kostenloser Testaccount</option>
                         <option value="Demotermin">Demotermin vereinbaren</option>
@@ -109,14 +112,16 @@
                         <div class="col-12 col-sm-6 pe-sm-3">
                             <div class="mb-3">
                                 <label for="input_vorname" class="form-label">Vorname</label>
-                                <input type="text" class="form-control" id="input_vorname" placeholder="Vorname" aria-describedby="emailHelp" required>
+                                <input type="text" class="form-control" id="input_vorname" placeholder="Vorname"
+                                       aria-describedby="emailHelp" required>
 
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 ps-sm-3">
                             <div class="mb-3">
                                 <label for="input_nachname" class="form-label">Nachname</label>
-                                <input type="text" class="form-control" id="input_nachname" placeholder="Nachname" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" id="input_nachname" placeholder="Nachname"
+                                       aria-describedby="emailHelp">
 
                             </div>
                         </div>
@@ -126,14 +131,16 @@
                         <div class="col-12 col-sm-6 pe-sm-3">
                             <div class="mb-3">
                                 <label for="input_email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="input_email" placeholder="E-Mail" aria-describedby="emailHelp" required>
+                                <input type="email" class="form-control" id="input_email" placeholder="E-Mail"
+                                       aria-describedby="emailHelp" required>
 
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 ps-sm-3">
                             <div class="mb-3">
                                 <label for="input_telefon" class="form-label">Telefon</label>
-                                <input type="tel" class="form-control" id="input_telefon" placeholder="Telefon" aria-describedby="emailHelp">
+                                <input type="tel" class="form-control" id="input_telefon" placeholder="Telefon"
+                                       aria-describedby="emailHelp">
 
                             </div>
                         </div>
@@ -143,7 +150,8 @@
                         <div class="col-12 col-sm-6 pe-sm-3">
                             <div class="mb-3">
                                 <label for="input_firma" class="form-label">Firma</label>
-                                <input type="text" class="form-control" id="input_firma" placeholder="Firma" aria-describedby="emailHelp" required>
+                                <input type="text" class="form-control" id="input_firma" placeholder="Firma"
+                                       aria-describedby="emailHelp" required>
 
                             </div>
                         </div>
@@ -404,10 +412,13 @@
                     </div>
                     <div class="mb-3" id="form_nachricht">
                         <label for="nachrichtenbox" class="form-label">Nachricht</label>
-                        <textarea rows="4" cols="50" id="nachrichtenbox" class="textfeld" placeholder="Ihre Nachricht"></textarea>
+                        <textarea rows="4" cols="50" id="nachrichtenbox" class="textfeld"
+                                  placeholder="Ihre Nachricht"></textarea>
                     </div>
                     <div class="d-flex w-100 justify-content-end mb-5 mt-3">
-                        <button type="submit" class="button blue_full_button submit_button" onclick="mailto()">Anfrage senden</button>
+                        <button type="submit" class="button blue_full_button submit_button" onclick="mailto()">Anfrage
+                            senden
+                        </button>
                     </div>
                 </form>
             </div>

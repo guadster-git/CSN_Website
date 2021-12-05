@@ -24,7 +24,7 @@ function mailto(){
     const email = document.getElementById("input_email");
     const telefon = document.getElementById("input_telefon");
     const firma = document.getElementById("input_firma");
-    const land = document.getElementById("input_vorname");
+    const land = document.getElementById("input_land");
 
     const subject = produkte.value + " " + anliegen.value
 
@@ -39,7 +39,7 @@ function mailto(){
     Ihre Nachricht: ${nachricht.value}%0D%0A
     `
 
-    document.location.href = `mailto:mayr.patrick8@gmail.com?subject=${subject}&body=${email_body}`;
+    document.location.href = `mailto:info@csn.de?subject=${subject}&body=${email_body}`;
 
 
 

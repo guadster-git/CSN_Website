@@ -22,7 +22,7 @@ class MyNavbar extends HTMLElement {
                     </ul>
                 </div>
                 <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
-                    <div class="d-flex flex-column  pe-5 icon">
+                    <div class="d-flex flex-column  pe-5 icon" id="kontakt_nav_section">
                         <div class="mx-auto icons_height icon_jump">
                             <a href="Kontakt.html"><i data-feather="mail"></i></a>
                         </div>
@@ -107,14 +107,14 @@ class MyTopbar extends HTMLElement {
 <section id="navbar" class="d-flex justify-content-end d-md-flex d-none">
     <div class="bg-primary py-2 box_navbar_top">
         <div class="box-right d-flex justify-content-between box-right ps-lg-3 text-uppercase text-white">
-            <div class="">
+            <div class="" onclick="kostenlos_beides()">
                 <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
-                <span class="font_navbar font_bold arrow_after">Kostenlos testen</span>
+                <a href="Kontakt.html"><span class="font_navbar font_bold arrow_after" >Kostenlos testen</span></a>
             </div>
 
             <div class="">
                 <span class="font_navbar font-regular me-3">Bereits registriert?</span>
-                <span class="font_navbar font_bold arrow_after">Login</span>
+                <a href="https://www.konferenzportal.com"><span class="font_navbar font_bold arrow_after">Login</span></a>
             </div>
 
         </div>
@@ -337,23 +337,23 @@ class MyPreFooter extends HTMLElement {
             Kontakt mit uns auf und
             sprechen Sie mit einem unserer Experten.</h4>
         <div class="row justify-content-between align-content-center d-flex text-white pt-5">
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3">
-                <div class="height-contact d-flex justify-content-center">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3 icon_footer">
+                <div class="height-contact d-flex justify-content-center icon_jump">
                     <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
                 </div>
                 <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/contact.svg" alt="" class="align-self-center">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0 icon_footer">
+                <div class="height-contact d-flex justify-content-center icon_jump">
+                    <a href="Kontakt.html"><img src="assets/pictures/contact.svg" alt="" class="align-self-center"></a>
                 </div>
                 <p class="text-center pt-3 footer_heading font_light"><a href="Kontakt.html">Zum Kontaktformular</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
-            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0">
-                <div class="height-contact d-flex justify-content-center">
-                    <img src="assets/pictures/mail.svg" alt="" class="align-self-center">
+            <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0 icon_footer">
+                <div class="height-contact d-flex justify-content-center icon_jump">
+                    <a href="mailto:info@csn-gmbh.de"><img src="assets/pictures/mail.svg" alt="" class="align-self-center"></a>
                 </div>
                 <p class="text-center pt-3 footer_heading font_light"><a href="mailto:info@csn-gmbh.de">info@csn-gmbh.de</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
@@ -563,8 +563,7 @@ class MyMobileNavbar extends HTMLElement {
         <div class="main_navigation_mobile">
             <div class="navigation_inner_box">
                 <div class="d-flex mobile_icon_container">
-
-                    <a href="Kontakt.html">
+                    <a href="Kontakt.html" id="mobile_kontakt_nav_section">
                         <div class="d-flex flex-column align-items-center me-4">
                             <i data-feather="mail"></i>
                             <span class="font_medium text-uppercase mobile_nav_text mt-2">Kontakt</span>
@@ -617,23 +616,23 @@ class MyMobileNavbar extends HTMLElement {
             </div>
             <div class="d-flex flex-column navigation_inner_box" id="social_media_nav">
                 <h3 class="font_bold f-18 text-uppercase share">Teilen Sie die Seite</h3>
-                <div class="d-flex flex-wrap mt-3 social_media_row_nav">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=csn-gmbh.de">
+                <div class="d-flex flex-wrap social_media_row_nav">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=csn-gmbh.de" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="facebook" class="icon-32"></i>
                         </div>
                     </a>
-                    <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share">
+                    <a href="whatsapp://send?text=Schau dir die neue CSN Website an! - https://csn-gmbh.de" data-action="share/whatsapp/share" class="mt-3">
                         <div class="social_media_icon_container">
                             <img src="assets/pictures/whatsapp-32.svg" alt="">
                         </div>
                     </a>
-                    <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN">
+                    <a href="https://twitter.com/share?text=Die neue CSN Website&url=https://csn-gmbh.de&hashtags=CSN" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="twitter" class="icon-32"></i>
                         </div>
                     </a>
-                    <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de">
+                    <a href="mailto:?subject=Schau dir die neue CSN Website an&amp;body=https://csn-gmbh.de" class="mt-3">
                         <div class="social_media_icon_container">
                             <i data-feather="mail" class="icon-32"></i>
                         </div>
