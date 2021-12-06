@@ -44,8 +44,11 @@ class MyNavbar extends HTMLElement {
 
                 <!-- Login -->
                 <div class="nav_login">
-                    <i data-feather="user"></i>
+                <a href="https://www.konferenzportal.com/conference/">
+                <i data-feather="user"></i>
                     <span class="font_medium ps-2 pt-1 text-uppercase f-14">Login</span>
+</a>
+                    
 
                 </div>
 
@@ -338,9 +341,9 @@ class MyPreFooter extends HTMLElement {
         <div class="row justify-content-between align-content-center d-flex text-white pt-5">
             <div class="col-12 col-lg-4 d-flex flex-column pt-3 icon_footer">
                 <div class="height-contact d-flex justify-content-center icon_jump">
-                    <img src="assets/pictures/phone.svg" alt="" class="align-self-center">
+                    <a href="tel:0049221730634-0"><img src="assets/pictures/phone.svg" alt="" class="align-self-center"></a>
                 </div>
-                <p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p>
+                <a href="tel:0049221730634-0"><p class="text-center pt-3 footer_heading font_light">+49 (0) 211. 730 634 – 0</p></a>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
             <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0 icon_footer">

@@ -17,15 +17,15 @@ hamburger.addEventListener("click", function () {
 
 function whatsapp(){
     const site = window.location.href;
-    window.open(`https://web.whatsapp.com://send?text=Schau dir die neue CSN Seite an - ${site}`)
+    window.open(`https://web.whatsapp.com://send?text=Schau Dir die neue CSN Seite an - ${site}`)
 }
 function whatsapp_mobile(){
     const site = window.location.href;
-    window.open(`whatsapp://send?text=Schau dir die neue CSN Seite an - ${site}`)
+    window.open(`whatsapp://send?text=Schau Dir die neue CSN Seite an - ${site}`)
 }
 function mail_share(){
     const site = window.location.href;
-    window.open(`mailto:?subject=Schau dir die neue CSN Website an&body=${site}`)
+    window.open(`mailto:?subject=Schau Dir die neue CSN Website an&body=${site}`)
 }
 function twitter(){
     const site = window.location.href;
