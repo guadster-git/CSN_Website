@@ -5,10 +5,10 @@ body {
     margin-right: auto;
 }
 
-* {
-    scroll-margin-top: 7rem;
-    scroll-snap-margin-top: 7rem;
-
+html {
+    scroll-padding-top: 200px;
+    scroll-snap-padding-top: 200px;
+    scroll-behavior: smooth;
 }
 
 .small_banner_height {
@@ -283,77 +283,10 @@ ul.arrow_list {
     background-position: center center;
 }
 
-#home_firstSlide {
-    background-image: url("assets/pictures/homepage_banner1_.png");
-    background-size: cover;
-}
 
-#home_secondSlide {
-    background-image: url("assets/pictures/Banner/banner_home_2.png");
-}
-
-#home_thirdSlide {
-    background-image: url("assets/pictures/home_banner_3.png");
-
-}
-
-#home_forthSlide {
-    background-image: url("assets/pictures/homepage4.png");
-    background-position: 120% center;
-}
-
-#online_firstSlide {
-    background-image: url("assets/pictures/online_carousel_1.png");
-}
-
-#online_secondSlide {
-    background-image: url("assets/pictures/online_carousel_2.png");
-}
-
-#online_thirdSlide {
-    background-image: url("assets/pictures/Banner/banner_online_3.png");
-}
-
-#online_forthSlide {
-    background-image: url("assets/pictures/online_carousel_4.png");
-}
-
-#conferencing_firstSlide {
-    background-image: url("assets/pictures/Banner/banner_conferencing_1.png");
-    background-size: contain;
-}
 
 #conferencing_firstSlide .slider_right {
     width: 48%;
-}
-
-#conferencing_secondSlide {
-    background-image: url("assets/pictures/Banner/banner_conferencing_2.png");
-}
-
-#conferencing_thirdSlide {
-    background-image: url("assets/pictures/Banner/banner_conferencing_3.png");
-}
-
-#conferencing_forthSlide {
-    background-image: url("assets/pictures/Banner/banner_conferencing_4.png");
-}
-
-#warum_firstSlide {
-    background-image: url("assets/pictures/Banner/banner_warum_1.png");
-    background-position: 50% center;
-}
-
-#warum_secondSlide {
-    background-image: url("assets/pictures/Banner/banner_warum_2.png");
-}
-
-#warum_thirdSlide {
-    background-image: url("assets/pictures/Banner/banner_warum_3.png");
-}
-
-#warum_forthSlide {
-    background-image: url("assets/pictures/Banner/banner_warum_4.png");
 }
 
 
@@ -633,8 +566,7 @@ ul.arrow_list {
     max-width: 1920px;
 }
 
-.hide {
-    display: none;
+.dropdown {
     position: absolute;
     top: 100px;
     width: 100%;
@@ -691,25 +623,7 @@ ul.arrow_list {
     border-color: #28A5BC50;
 }
 
-/* Tiles */
-/*#conf_first_tile{
-    background-image: url("assets/pictures/first_tile.png");
-}
-#conf_second_tile{
-    background-image: url("assets/pictures/sixth_tile.png");
-}
-#conf_third_tile{
-    background-image: url("assets/pictures/third_tile.png");
-}
-#conf_forth_tile{
-    background-image: url("assets/pictures/forth_tile.png");
-}
-#conf_fifth_tile{
-    background-image: url("assets/pictures/fifth_tile.png");
-}
-#conf_sixth_tile{
-    background-image: url("assets/pictures/second_tile.png");
-} */
+
 .image_tile {
     background-size: cover;
     background-position: center center;
@@ -1075,19 +989,20 @@ ul.arrow_list {
     border: 1px solid white;
     padding: 17px 28px;
     background-color: transparent;
+    transition-duration: 200ms;
+    transition-property: background-color, color;
 }
 
 
 .white_button {
     color: white;
-    transition-duration: 200ms;
-    transition-property: background-color, color;
+
 }
 
 .white_button:after {
     padding-left: 15px;
     content: url("assets/pictures/arrow_right.svg");
-    transition: all 2000ms ease-in;
+
 
 }
 
@@ -1103,8 +1018,7 @@ ul.arrow_list {
 .blue_button {
     color: #28A5BC;
     border-color: #28A5BC;
-    transition-duration: 200ms;
-    transition-property: background-color, color;
+
 }
 
 .blue_button:after {
@@ -1245,10 +1159,11 @@ ul.arrow_list {
 .social_media_row:hover .social_media_hover {
     display: block;
 }
-
-.social_media_row:hover .social_media {
-    display: none;
+.social_media_footer a:hover .social_media_row {
+    background-color: #28A5BC;
 }
+
+
 
 .footer_list {
     margin-bottom: 0;
@@ -1520,6 +1435,12 @@ a:hover {
 .accordion_container {
     box-shadow: 0 0 20px #00000010;
     border-radius: 10px;
+    min-height: 120px;
+    align-items: center;
+    display: flex;
+}
+.accordion{
+    width: 100%;
 }
 
 .accordion_button {
@@ -1954,6 +1875,7 @@ a:hover {
 
 #AGB ul {
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .roman_list {
@@ -1971,22 +1893,31 @@ a:hover {
 
 .roman_list li ol li {
     font-size: 18px;
+    line-height: 30px;
 }
 
 .roman_list li ol li::marker {
     color: black;
 }
 
-.roman_list {
-    padding-left: 1.2rem !important;
-}
+
 
 #AGB ol {
     padding-left: 0;
 }
+#AGB ol{
+    padding-left: 0;
+    list-style-position: inside;
+}
+#AGB h3, #AGB h4 #AGB p, #AGB h2, #AGB ol li p{
+    display: inline-block!important;
+}
 
 .list_with_heading {
     font-size: 22px !important;
+}
+.list_with_heading h4{
+    display: inline-block!important;
 }
 
 #kontaktform .form-control {
@@ -2239,13 +2170,20 @@ textarea:focus-visible {
 }
 
 #kontakt_banner .new_banner {
-    height: 70%;
+    height: 55%;
+    justify-content: center;
 }
 #banner_first_slide, #banner_second_slide, #banner_third_slide, #banner_forth_slide{
     align-items: flex-start;
 }
 #home_slider #banner_first_slide .overlay_right_new{
     width: 20%;
+}
+.hide_error{
+    display: none!important;
+}
+#error_message {
+    color: black;
 }
 
 /* MEDIA QUERIES */
@@ -2644,6 +2582,11 @@ textarea:focus-visible {
 
 @media (max-width: 992px) {
 
+    *html{
+        scroll-padding-top: 15vh;
+        scroll-snap-padding-top: 15vh;
+    }
+
 
     .firstSlide_text {
         width: 50%;
@@ -2668,6 +2611,12 @@ textarea:focus-visible {
 
     #conferenceBanner_1 .overlay_right {
         right: 0;
+    }
+    .button{
+        transition: none;
+    }
+    .button_carousel{
+        transition: none;
     }
 
     .box_navbar_top {
@@ -3008,10 +2957,7 @@ textarea:focus-visible {
     }
 
 
-    * {
-        scroll-margin: 15vh;
-        scroll-snap-margin-top: 15vh;
-    }
+
 
     .slider_height {
         height: 100%;

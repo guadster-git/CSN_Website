@@ -27,3 +27,6 @@ acceptBtn_functional.onclick = () => {
 let checkCookie = document.cookie.indexOf("CookieBy=CSN"); //checking our cookie
 //if cookie is set then hide the cookie box else show it
 checkCookie !== -1 ? overlay.classList.add("hide") : overlay.classList.remove("hide");
+
+
+

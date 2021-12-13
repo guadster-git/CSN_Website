@@ -7,48 +7,50 @@ const dropdown_conferencing = document.getElementById("dropdown_conferencing");
 const dropdown_online = document.getElementById("dropdown_online");
 const dropdown_warum = document.getElementById("dropdown_warum");
 
+
 suche.addEventListener("mouseover", function () {
-    dropdown_suche.classList.add("show");
-    dropdown_conferencing.classList.remove("show")
-    dropdown_online.classList.remove("show");
-    dropdown_warum.classList.remove("show");
+    dropdown_suche.classList.remove("hide");
+    dropdown_conferencing.classList.add("hide")
+    dropdown_online.classList.add("hide");
+    dropdown_warum.classList.add("hide");
     unhide_conferencing.classList.remove("active_heading");
     unhide_online.classList.remove("active_heading");
     unhide_warum.classList.remove("active_heading");
 })
 unhide_conferencing.addEventListener("mouseover", function () {
-    dropdown_suche.classList.remove("show");
+    dropdown_suche.classList.add("hide");
     suche.classList.remove("active_heading");
-    dropdown_conferencing.classList.add("show");
-    dropdown_online.classList.remove("show");
-    dropdown_warum.classList.remove("show");
+    dropdown_conferencing.classList.remove("hide");
+    dropdown_online.classList.add("hide");
+    dropdown_warum.classList.add("hide");
     unhide_conferencing.classList.add("active_heading");
     unhide_online.classList.remove("active_heading");
     unhide_warum.classList.remove("active_heading");
 })
 unhide_online.addEventListener("mouseover", function () {
-    dropdown_suche.classList.remove("show");
+    dropdown_suche.classList.add("hide");
     suche.classList.remove("active_heading");
-    dropdown_conferencing.classList.remove("show");
-    dropdown_online.classList.add("show");
-    dropdown_warum.classList.remove("show");
+    dropdown_conferencing.classList.add("hide");
+    dropdown_online.classList.remove("hide");
+    dropdown_warum.classList.add("hide");
     unhide_conferencing.classList.remove("active_heading");
     unhide_online.classList.add("active_heading");
     unhide_warum.classList.remove("active_heading");
 })
 unhide_warum.addEventListener("mouseover", function () {
-    dropdown_suche.classList.remove("show");
+    dropdown_suche.classList.add("hide");
     suche.classList.remove("active_heading");
-    dropdown_conferencing.classList.remove("show");
-    dropdown_online.classList.remove("show");
-    dropdown_warum.classList.add("show");
+    dropdown_conferencing.classList.add("hide");
+    dropdown_online.classList.add("hide");
+    dropdown_warum.classList.remove("hide");
     unhide_conferencing.classList.remove("active_heading");
     unhide_online.classList.remove("active_heading");
     unhide_warum.classList.add("active_heading");
 })
 
 dropdown_suche.addEventListener("mouseleave", function () {
-    leave_function()
+    leave_function();
+
 })
 dropdown_conferencing.addEventListener("mouseleave", function () {
     leave_function()
@@ -61,14 +63,15 @@ dropdown_warum.addEventListener("mouseleave", function () {
 })
 
 function leave_function() {
-    dropdown_suche.classList.remove("show");
-    dropdown_conferencing.classList.remove("show");
-    dropdown_online.classList.remove("show");
-    dropdown_warum.classList.remove("show");
+    dropdown_suche.classList.add("hide");
+    dropdown_conferencing.classList.add("hide");
+    dropdown_online.classList.add("hide");
+    dropdown_warum.classList.add("hide");
     suche.classList.remove("active_heading")
     unhide_conferencing.classList.remove("active_heading");
     unhide_online.classList.remove("active_heading");
     unhide_warum.classList.remove("active_heading");
+    error_message.classList.add("hide_error");
 }
 
 window.onscroll = function () {

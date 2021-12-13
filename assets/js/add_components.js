@@ -1,3 +1,10 @@
+const year = new Date().getFullYear().toString()
+const copyright_desc = "Copyright (c) "+year+ " by CSN. Communication Service Network GmbH. All rights reserved."
+let link = document.createElement('meta');
+link.setAttribute('name', "copyright");
+link.content = copyright_desc;
+document.getElementsByTagName('head')[0].appendChild(link);
+
 class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -24,9 +31,9 @@ class MyNavbar extends HTMLElement {
                 <div class="d-flex my-auto align-items-center text-uppercase" id="icon_section_navbar">
                     <div class="d-flex flex-column  pe-5 icon" id="kontakt_nav_section">
                         <div class="mx-auto icons_height icon_jump">
-                            <a href="Kontakt.html"><i data-feather="mail"></i></a>
+                            <a href="kontakt.html"><i data-feather="mail"></i></a>
                         </div>
-                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="Kontakt.html">Kontakt</a></p>
+                        <p class="mx-auto no_padding_bot font_navbar font_medium"><a href="kontakt.html">Kontakt</a></p>
                     </div>
                     <div class="d-flex flex-column align-content-center pe-5 icon" id="suche">
                         <div class="mx-auto icons_height icon_jump">
@@ -59,7 +66,7 @@ class MyNavbar extends HTMLElement {
             </nav>
         </div>
         <div id="dropdown_bar">
-            <div class="hide bg-white" id="dropdown_conferencing">
+            <div class="hide dropdown bg-white" id="dropdown_conferencing">
                 <div class="box border-top d-flex justify-content-center py-3">
                     <h3 class="mx-5 dropdown_font"><a href="conferencing.html#conference_einsatz">Enthaltene Produkte</a></h3>
                     <h3 class="mx-5 dropdown_font"><a href="conferencing.html#Einsatzbereiche">Einsatzbereiche</a>
@@ -69,7 +76,7 @@ class MyNavbar extends HTMLElement {
                     <h3 class="mx-5 dropdown_font"><a href="conferencing.html#features">Präsentations-Features</a></h3>
                 </div>
             </div>
-            <div class="hide bg-white" id="dropdown_online">
+            <div class="hide dropdown bg-white" id="dropdown_online">
                 <div class="box border-top d-flex justify-content-center py-3 ">
                     <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#trend">Trend zur Realität</a></h3>
                     <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#highlights">Unsere Highlights</a></h3>
@@ -78,7 +85,7 @@ class MyNavbar extends HTMLElement {
                     <h3 class="mx-5 dropdown_font"><a href="/online-beratung.html#sicherheit">Sicherheit</a></h3>
                 </div>
             </div>
-            <div class="hide bg-white" id="dropdown_warum">
+            <div class="hide dropdown bg-white" id="dropdown_warum">
                 <div class="box border-top d-flex justify-content-center py-3">
                     <h3 class="mx-5 dropdown_font"><a href="/warum.html#kriterien">Entscheidungskriterien</a></h3>
                     <h3 class="mx-5 dropdown_font"><a href="/warum.html#sicherheit">Sicherheit & Service</a></h3>
@@ -86,15 +93,21 @@ class MyNavbar extends HTMLElement {
                     <h3 class="mx-5 dropdown_font"><a href="/warum.html#leitlinien">CSN Leitlinien</a></h3>
                 </div>
             </div>
-            <div class="hide bg-white" id="dropdown_suche">
+            <div class="hide dropdown bg-white" id="dropdown_suche">
                 <div class="box border-top d-flex justify-content-end py-3 dropdown_font">
+                               <div class="d-flex text-center hide_error position-relative me-5" id="error_message">
+                <p class="no_padding_bot f-14 my-auto ">Suchbegriff nicht gefunden, versuchen Sie es erneut!</p>
+                
+</div>
                     <div class="input-group search_bar w-25">
-                        <input type="text" class="form-control" placeholder="Suche" aria-label="Recipient's username"
+                        <input type="text" class="form-control" placeholder="Suche" aria-label="Suche"
                                aria-describedby="basic-addon2" id="search_bar">
                         <button class="search_button d-flex align-items-center" onclick="search(null)"><img src="assets/pictures/search.svg"
                                                                                      alt=""></button>
                     </div>
                 </div>
+                
+ 
             </div>
         </div>
     </div>
@@ -112,7 +125,7 @@ class MyTopbar extends HTMLElement {
         <div class="box-right d-flex justify-content-between box-right ps-lg-3 text-uppercase text-white">
             <div class="" onclick="kostenlos_beides()">
                 <span class="font_navbar font-regular me-3">Haben wir Ihr Interesse geweckt?</span>
-                <a href="Kontakt.html"><span class="font_navbar font_bold arrow_after" >Kostenlos testen</span></a>
+                <a href="kontakt.html"><span class="font_navbar font_bold arrow_after" >Kostenlos testen</span></a>
             </div>
 
             <div class="">
@@ -188,7 +201,7 @@ class MyFooter extends HTMLElement {
                 <img src="assets/pictures/CSN_Wortbildmarke_weiß_RZ.svg" alt="" class="align-self-start banner_height">
             </div>
             <div class="col-12 col-xxl-6 d-flex footer_text_column align-items-center text-white order-2 order-xxl-1 mt-4 mt-xxl-0">
-                <span class="text-uppercase font_light" style="font-size: 16px;">© 2021 CSN Communication Service Network GmbH</span>
+                <span class="text-uppercase font_light" style="font-size: 16px;">© ${year} CSN Communication Service Network GmbH</span>
             </div>
             <div class="col-auto ms-auto col-xxl-3 d-flex footer_last_column order-1  order-xxl-2">
                 <button class="button blue_full_button" onclick="kostenlos_beides()">Kostenlos Testen</button>
@@ -201,18 +214,18 @@ class MyFooter extends HTMLElement {
             </div>
         </div>
         <div class="row py-5 top_border no_gutter_x">
-            <div class="col-xl-3 col-lg-4 col-6 text-white ps-0">
+            <div class="col-xl-3 col-lg-4 col-6 text-white ps-0 pe-3">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Conferencing</p>
                 <div class="font_light">
-                    <p class="font_medium footer_list"><a href="conferencing.html#produkte">Enthaltene Produkte</a></p>
+                    <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a></p>
                     <p class="font_light footer_list"><a
-                            href="conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a></p>
+                            href="/conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a></p>
                     <p class="font_light footer_list"><a href="conferencing.html#Webinare">Webinare & Online
                         Training</a></p>
-                    <p class="font_light footer_list"><a href="conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
-                    <p class="font_light footer_list"><a href="conferencing.html#Videokonferenzen">Videokonferenzen</a>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a></p>
+                    <p class="font_light footer_list"><a href="/conferencing.html#Videokonferenzen">Videokonferenzen</a>
                     </p>
-                    <p class="font_light footer_list"><a href="conferencing.html#Operatorkonferenzen">Operatorgestützte
+                    <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte
                         Konferenzen</a></p>
                 </div>
 
@@ -229,7 +242,7 @@ class MyFooter extends HTMLElement {
                     <p class="font_light footer_list"><a href="/conferencing.html#Recruiting">Recruiting</a></p>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-6 text-white">
+            <div class="col-xl-3 col-lg-4 col-6 text-white pe-3">
                 <p class="text-uppercase pb-2 font_bold primary">Csn Online-Beratung</a></p>
                 <div class="font_light">
                     <p class="font_medium footer_list"><a href="/online-beratung.html#highlights">Produkt-Features</a>
@@ -257,16 +270,16 @@ class MyFooter extends HTMLElement {
                     </p>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-6 text-white mt-5 mt-lg-0">
+            <div class="col-xl-3 col-lg-4 col-6 text-white mt-5 mt-lg-0 pe-3">
                 <p class="text-uppercase pb-2 font_bold primary">Warum CSN</p>
                 <div class="font_light">
                     <p class="font_medium footer_list"><a href="/warum.html#kriterien">Highlights</a></p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien">20 Jahre Markterfahrung</a></p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Modernste Webtechnologien</a></p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Inhouse Kundenservice</a></p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Kostenlose Schulung & Beratung</a>
+                    <p class="font_light footer_list"><a href="/warum.html#markterfahrung">20 Jahre Markterfahrung</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#webtechnologien">Modernste Webtechnologien</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#inhouse_service">Inhouse Kundenservice</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#kostenlose_schulung">Kostenlose Schulung & Beratung</a>
                     </p>
-                    <p class="font_light footer_list"><a href="/warum.html#kriterien">Premium Operatorservicen</a></p>
+                    <p class="font_light footer_list"><a href="/warum.html#premium_service">Premium Operatorservicen</a></p>
                 </div>
 
                 <div class="font_light pt-4">
@@ -284,11 +297,11 @@ class MyFooter extends HTMLElement {
                 <div>
                     <p class="text-uppercase primary pb-2 font_bold">Service Menü</p>
                     <div class="font_light">
-                        <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
-                        <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
-                        <p class="font_light footer_list"><a href="Impressum.html#haftung">Haftungsausschluss</a></p>
-                        <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
-                        <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
+                        <p class="font_light footer_list special_child"><a href="impressum.html">Impressum</a></p>
+                        <p class="font_light footer_list"><a href="datenschutz.html">Datenschutzerklärung</a></p>
+                        <p class="font_light footer_list"><a href="impressum.html#haftung">Haftungsausschluss</a></p>
+                        <p class="font_light footer_list"><a href="agb.html">Allgemeine Geschäftsbedingungen</a></p>
+                        <p class="font_light footer_list"><a href="kontakt.html">Kontakt</a></p>
                     </div>
                 </div>
                 <div class="mt-xl-0 mt-5 mt-xl-0">
@@ -300,9 +313,12 @@ class MyFooter extends HTMLElement {
                                     <i data-feather="facebook" class="icon-32"></i>
                                 </div> 
                             </a>
-                                <div class="me-3 mt-3 social_media_row" onclick="whatsapp()">
+                            <a href="" onclick="whatsapp()">
+                                 <div class="me-3 mt-3 social_media_row">
                                     <img src="assets/pictures/whatsapp-32.svg" alt="" class="icon-32">
-                                </div>
+                                </div>                            
+                            </a>
+                               
          
                             <a href="#" onclick="twitter()">
                                 <div class="me-3 mt-3 social_media_row">
@@ -348,16 +364,16 @@ class MyPreFooter extends HTMLElement {
             </div>
             <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0 icon_footer">
                 <div class="height-contact d-flex justify-content-center icon_jump">
-                    <a href="Kontakt.html"><img src="assets/pictures/contact.svg" alt="" class="align-self-center"></a>
+                    <a href="kontakt.html"><img src="assets/pictures/contact.svg" alt="" class="align-self-center"></a>
                 </div>
-                <p class="text-center pt-3 footer_heading font_light"><a href="Kontakt.html">Zum Kontaktformular</a></p>
+                <p class="text-center pt-3 footer_heading font_light"><a href="kontakt.html">Zum Kontaktformular</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
             <div class="col-12 col-lg-4 d-flex flex-column pt-3 mt-5 mt-lg-0 icon_footer">
                 <div class="height-contact d-flex justify-content-center icon_jump">
-                    <a href="mailto:info@csn-gmbh.de"><img src="assets/pictures/mail.svg" alt="" class="align-self-center"></a>
+                    <a href="mailto:info@csn.de"><img src="assets/pictures/mail.svg" alt="" class="align-self-center"></a>
                 </div>
-                <p class="text-center pt-3 footer_heading font_light"><a href="mailto:info@csn-gmbh.de">info@csn-gmbh.de</a></p>
+                <p class="text-center pt-3 footer_heading font_light"><a href="mailto:info@csn.de">info@csn.de</a></p>
                 <img src="assets/pictures/line_white.png" alt="" class="align-self-center pt-2">
             </div>
         </div>
@@ -371,6 +387,8 @@ class MyPreFooter extends HTMLElement {
 
 customElements.define('my-prefooter', MyPreFooter);
 
+
+
 class MyMobileFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -378,7 +396,7 @@ class MyMobileFooter extends HTMLElement {
     <div class="box">
         <div class="d-flex flex-column w-100 pt-5">
             <button class="button blue_full_button" onclick="kostenlos_beides()">Kostenlos testen</button>
-            <span class="text-uppercase font_light text-white text-center mt-3">© 2021 CSN GmbH</span>
+            <span class="text-uppercase font_light text-white text-center mt-3" id="copyright">© ${year} CSN GmbH</span>
         </div>
     </div>
     <div class="d-flex w-100 flex-column mobile_footer_row mt-3">
@@ -394,17 +412,17 @@ class MyMobileFooter extends HTMLElement {
                 <div id="footer_conferencing" class="accordion-collapse mobile_footer_expand collapse"
                      aria-labelledby="footer_one" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
-                        <p class="font_medium footer_list"><a href="conferencing.html#produkte">Enthaltene Produkte</a>
+                        <p class="font_medium footer_list"><a href="/conferencing.html#produkte">Enthaltene Produkte</a>
                         </p>
-                        <p class="font_light footer_list"><a href="conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a>
+                        <p class="font_light footer_list"><a href="/conferencing.html#Telefonkonferenzen">Telefonkonferenzen</a>
                         </p>
-                        <p class="font_light footer_list"><a href="conferencing.html#Webinare">Webinare & Online
+                        <p class="font_light footer_list"><a href="/conferencing.html#Webinare">Webinare & Online
                             Training</a></p>
-                        <p class="font_light footer_list"><a href="conferencing.html#Webkonferenzen">Webkonferenzen</a>
+                        <p class="font_light footer_list"><a href="/conferencing.html#Webkonferenzen">Webkonferenzen</a>
                         </p>
                         <p class="font_light footer_list"><a
                                 href="conferencing.html#Videokonferenzen">Videokonferenzen</a></p>
-                        <p class="font_light footer_list"><a href="conferencing.html#Operatorkonferenzen">Operatorgestützte
+                        <p class="font_light footer_list"><a href="/conferencing.html#Operatorkonferenzen">Operatorgestützte
                             Konferenzen</a></p>
                     </div>
 
@@ -472,14 +490,14 @@ class MyMobileFooter extends HTMLElement {
                      aria-labelledby="footer_three" data-bs-parent="#mobile_footer_accordion">
                     <div class="font_light">
                         <p class="font_medium footer_list"><a href="/warum.html#kriterien">Highlights</a></p>
-                        <p class="font_light footer_list"><a href="/warum.html#kriterien">20 Jahre Markterfahrung</a>
+                        <p class="font_light footer_list"><a href="/warum.html#markterfahrung">20 Jahre Markterfahrung</a>
                         </p>
-                        <p class="font_light footer_list"><a href="/warum.html#kriterien">Modernste Webtechnologien</a>
+                        <p class="font_light footer_list"><a href="/warum.html#webtechnologien">Modernste Webtechnologien</a>
                         </p>
-                        <p class="font_light footer_list"><a href="/warum.html#kriterien">Inhouse Kundenservice</a></p>
-                        <p class="font_light footer_list"><a href="/warum.html#kriterien">Kostenlose Schulung &
+                        <p class="font_light footer_list"><a href="/warum.html#inhouse_service">Inhouse Kundenservice</a></p>
+                        <p class="font_light footer_list"><a href="/warum.html#kostenlose_schulung">Kostenlose Schulung &
                             Beratung</a></p>
-                        <p class="font_light footer_list"><a href="/warum.html#kriterien">Premium Operatorservicen</a>
+                        <p class="font_light footer_list"><a href="/warum.html#premium_service">Premium Operatorservicen</a>
                         </p>
                     </div>
 
@@ -505,11 +523,11 @@ class MyMobileFooter extends HTMLElement {
                 <div>
                     <p class="text-uppercase primary pb-2 font_bold" id="service_heading">Service Menü</p>
                     <div class="font_light text-white">
-                        <p class="font_light footer_list special_child"><a href="Impressum.html">Impressum</a></p>
-                        <p class="font_light footer_list"><a href="Datenschutz.html">Datenschutzerklärung</a></p>
-                        <p class="font_light footer_list"><a href="Impressum.html#haftung">Haftungsausschluss</a></p>
-                        <p class="font_light footer_list"><a href="AGB.html">Allgemeine Geschäftsbedingungen</a></p>
-                        <p class="font_light footer_list"><a href="Kontakt.html">Kontakt</a></p>
+                        <p class="font_light footer_list special_child"><a href="impressum.html">Impressum</a></p>
+                        <p class="font_light footer_list"><a href="datenschutz.html">Datenschutzerklärung</a></p>
+                        <p class="font_light footer_list"><a href="impressum.html#haftung">Haftungsausschluss</a></p>
+                        <p class="font_light footer_list"><a href="agb.html">Allgemeine Geschäftsbedingungen</a></p>
+                        <p class="font_light footer_list"><a href="kontakt.html">Kontakt</a></p>
                     </div>
                 </div>
                 <div class="mt-xl-0 mt-5 mt-xl-0">
@@ -566,7 +584,7 @@ class MyMobileNavbar extends HTMLElement {
         <div>
             <div class="navigation_inner_box">
                 <div class="d-flex mobile_icon_container">
-                    <a href="Kontakt.html" id="mobile_kontakt_nav_section">
+                    <a href="kontakt.html" id="mobile_kontakt_nav_section">
                         <div class="d-flex flex-column align-items-center me-4">
                             <i data-feather="mail"></i>
                             <span class="font_medium text-uppercase mobile_nav_text mt-2">Kontakt</span>
@@ -588,7 +606,11 @@ class MyMobileNavbar extends HTMLElement {
                 </div>
             </div>
             <div class="mobile_search_container hide" id="mobile_search_bar">
+             <div class="w-100 pt-4 d-flex justify-content-center align-items-center hide_error navigation_inner_box" id="mobile_error">
+                    <p class="f-14 no_padding_bot">Suchbegriff nicht gefunden, versuchen Sie es erneut!</p>
+</div>
                 <div class="navigation_inner_box d-flex w-100 py-4">
+                
                     <div class="d-flex w-100 mobile_search_bar" style="height: 35px;">
                         <div class="mobile_search_input_container">
                             <input type="search" placeholder="Suche ..." class="mobile_search_input"
@@ -599,6 +621,7 @@ class MyMobileNavbar extends HTMLElement {
                                     data-feather="search"></i></button>
                         </div>
                     </div>
+                   
                 </div>
             </div>
             <div class="navigation_inner_box">
@@ -645,3 +668,4 @@ class MyMobileNavbar extends HTMLElement {
 }
 
 customElements.define('my-mobile_nav', MyMobileNavbar);
+

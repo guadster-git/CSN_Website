@@ -26,7 +26,7 @@ function mailto(){
     const firma = document.getElementById("input_firma");
     const land = document.getElementById("input_land");
 
-    let subject = "Thema: "
+    let subject = "Anfrage über Homepage: "
 
     if (produkte.value !== "" && anliegen.value !== ""){
         subject = subject + produkte.value + " | " + anliegen.value
@@ -40,7 +40,7 @@ E-Mail: ${email.value}
 Telefon: ${telefon.value}
 Firma: ${firma.value}
 Land: ${land.value}
-Ihre Nachricht: \n\n${nachricht.value}
+\n${nachricht.value}
     `
     email_body = encodeURIComponent(email_body)
 
